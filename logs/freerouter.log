@@ -1,0 +1,190 @@
+2026-07-02 09:15:51.666 [main] INFO  Freerouting v1.5.0 (build-date: 2022-01-27)
+2026-07-02 09:15:51.693 [main] INFO  Opening '/Users/jadenrhee/JRWatch/hardware/jrwatch.dsn'...
+2026-07-02 09:15:53.919 [main] INFO  Opening 'jrwatch.rules'...
+2026-07-02 09:15:53.921 [main] ERROR File 'jrwatch.rules' was not found.
+2026-07-02 09:15:54.072 [Thread-0] INFO  Starting auto-routing...
+2026-07-02 09:15:54.075 [main] TRACE Method 'MainApplication.main()' was performed in 2.74 seconds.
+2026-07-02 09:15:58.507 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #1 on board '855f5b7eae7a4afe58ef54fc2e2a0743' making 109 changes' was performed in 4.36 seconds.
+2026-07-02 09:16:01.660 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #2 on board '6a0a55dad83077b9e837f988fb91877d' making 89 changes' was performed in 3.13 seconds.
+2026-07-02 09:16:05.225 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #3 on board '955b602c90a784f4799c951c9f2f7cb8' making 57 changes' was performed in 3.55 seconds.
+2026-07-02 09:16:09.072 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #4 on board '5b55494519a5f926975421184ff1afb5' making 58 changes' was performed in 3.83 seconds.
+2026-07-02 09:16:11.883 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #5 on board '15a39a2a3ceee2e47dbb8d2804b95f9f' making 47 changes' was performed in 2.79 seconds.
+2026-07-02 09:16:15.641 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #6 on board 'e5df398d666e07eca9b42d3e0cf912b7' making 50 changes' was performed in 3.74 seconds.
+2026-07-02 09:16:19.125 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #7 on board 'a7f19fd64a221d95f7a420f48f5c6038' making 62 changes' was performed in 3.47 seconds.
+2026-07-02 09:16:22.320 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #8 on board '479c9595756a5986fab5986a3353f267' making 69 changes' was performed in 3.18 seconds.
+2026-07-02 09:16:25.492 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #9 on board '7e0d8bef5fa6f184289ba265ca6dbfa3' making 45 changes' was performed in 3.16 seconds.
+2026-07-02 09:16:29.273 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #10 on board '3ff9237f08e682240b2052cf62bb2318' making 6 changes' was performed in 3.77 seconds.
+2026-07-02 09:16:33.005 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #11 on board '799c04f97d7551d49b510da0ea9f2c40' making 16 changes' was performed in 3.71 seconds.
+2026-07-02 09:16:37.049 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #12 on board '54f48038a457f3c120d2378143b4f149' making 15 changes' was performed in 4.04 seconds.
+2026-07-02 09:16:40.755 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #13 on board '6ac72d5c111d566dbab896d11c317eaf' making 10 changes' was performed in 3.70 seconds.
+2026-07-02 09:16:45.114 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #14 on board '93fbf31c6b7c0d1bb419203a2b6da80d' making 12 changes' was performed in 4.35 seconds.
+2026-07-02 09:16:48.960 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #15 on board '08e8450117df3145c513d2379d956600' making 11 changes' was performed in 3.84 seconds.
+2026-07-02 09:16:53.052 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #16 on board '2b2415b0d168b39c56bbe608bc2b9129' making 13 changes' was performed in 4.08 seconds.
+2026-07-02 09:16:56.812 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #17 on board '57a97d1f768e4478d3c8b1a7ed517889' making 11 changes' was performed in 3.75 seconds.
+2026-07-02 09:17:00.840 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #18 on board 'ad32c2f3b60b906e673c132b67aa2758' making 13 changes' was performed in 4.02 seconds.
+2026-07-02 09:17:04.465 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #19 on board '4bbbf06723e893b9820bf8302879abc8' making 11 changes' was performed in 3.61 seconds.
+2026-07-02 09:17:08.397 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #20 on board '29503f9492655a0b0d3e4f49c518b80f' making 13 changes' was performed in 3.92 seconds.
+2026-07-02 09:17:11.889 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #21 on board 'bd586c69cb75c12eff3170278ee19fb4' making 11 changes' was performed in 3.48 seconds.
+2026-07-02 09:17:15.843 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #22 on board 'ddf50f43ed1fad496909b77001d7f3d0' making 13 changes' was performed in 3.95 seconds.
+2026-07-02 09:17:19.265 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #23 on board 'd2387f3bfae7b6f893d6c06fc4f8ac94' making 11 changes' was performed in 3.41 seconds.
+2026-07-02 09:17:23.047 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #24 on board 'd282c890dfe21bc7034e39f140bb1276' making 13 changes' was performed in 3.77 seconds.
+2026-07-02 09:17:26.683 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #25 on board '186ac7fae4986a0f068b97cc1097b60c' making 11 changes' was performed in 3.63 seconds.
+2026-07-02 09:17:30.469 [Thread-0] WARN  There were only 18.95 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:17:30.470 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #26 on board 'e02e14fce3bf08b7efba6641bd130063' making 13 changes' was performed in 3.78 seconds.
+2026-07-02 09:17:33.892 [Thread-0] WARN  There were only 16.4 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:17:33.893 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #27 on board 'a97115603350aa26189e6789b4e1da3c' making 11 changes' was performed in 3.42 seconds.
+2026-07-02 09:17:37.655 [Thread-0] WARN  There were only 13.6 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:17:37.656 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #28 on board 'd8b5fa8edc42e698c269554290058408' making 13 changes' was performed in 3.76 seconds.
+2026-07-02 09:17:41.142 [Thread-0] WARN  There were only 11.9 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:17:41.143 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #29 on board '9656b86c186198060a6f193f5a6a6cfe' making 11 changes' was performed in 3.48 seconds.
+2026-07-02 09:17:44.773 [Thread-0] WARN  There were only 12.25 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:17:44.774 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #30 on board 'cee44d9302165dd43ad890d9bf297ee5' making 13 changes' was performed in 3.62 seconds.
+2026-07-02 09:17:48.155 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:17:48.155 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #31 on board 'f41c492f68fa5b7badaf8f5686d4b6be' making 11 changes' was performed in 3.37 seconds.
+2026-07-02 09:17:51.727 [Thread-0] WARN  There were only 11.9 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:17:51.727 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #32 on board 'a05f7154abaa5ffd5ff58eef153b46da' making 13 changes' was performed in 3.56 seconds.
+2026-07-02 09:17:55.144 [Thread-0] WARN  There were only 11.95 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:17:55.145 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #33 on board '83e7c86cb9b90329cb0e5bd98e674bc8' making 11 changes' was performed in 3.41 seconds.
+2026-07-02 09:17:58.721 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:17:58.722 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #34 on board '9321c449b2688febec5e12637846b346' making 13 changes' was performed in 3.57 seconds.
+2026-07-02 09:18:02.264 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:18:02.265 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #35 on board '74bab56f5e17819dcd02f140d374a752' making 11 changes' was performed in 3.54 seconds.
+2026-07-02 09:18:05.826 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:18:05.827 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #36 on board 'a66daf75d62e9d6ce757a7aa6a58a424' making 13 changes' was performed in 3.56 seconds.
+2026-07-02 09:18:10.876 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:18:10.878 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #37 on board '7e7e3698a332b084553be2296179786e' making 11 changes' was performed in 5.04 seconds.
+2026-07-02 09:18:14.900 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:18:14.901 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #38 on board '7a95b10e9de75dab0b39061003ca3546' making 13 changes' was performed in 4.01 seconds.
+2026-07-02 09:18:18.394 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:18:18.395 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #39 on board '372f189cf14a187782c46fd5d35106c2' making 11 changes' was performed in 3.49 seconds.
+2026-07-02 09:18:22.275 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:18:22.276 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #40 on board 'c1ee64b38d739a5f977b29e511d921c6' making 13 changes' was performed in 3.87 seconds.
+2026-07-02 09:18:25.832 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:18:25.834 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #41 on board '2c0cb3671770494d4c361a33c1e2f358' making 11 changes' was performed in 3.55 seconds.
+2026-07-02 09:18:29.542 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:18:29.543 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #42 on board 'd1ee4c92eca40fdace5eabb82b4735ae' making 13 changes' was performed in 3.70 seconds.
+2026-07-02 09:18:33.035 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:18:33.036 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #43 on board 'b8eb6d1a868a46c449ee73aae5eae3f6' making 11 changes' was performed in 3.49 seconds.
+2026-07-02 09:18:36.687 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:18:36.688 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #44 on board '137038695d3c9d432b377f7d61255fa8' making 13 changes' was performed in 3.65 seconds.
+2026-07-02 09:18:40.161 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:18:40.162 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #45 on board 'b39cce819567209a79799f08de440821' making 11 changes' was performed in 3.47 seconds.
+2026-07-02 09:18:43.807 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:18:43.807 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #46 on board 'd9c669cd1ba3ffd226a37b8655e69d23' making 13 changes' was performed in 3.64 seconds.
+2026-07-02 09:18:47.260 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:18:47.261 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #47 on board '876848732cb86196fa7b82bee422e9cc' making 11 changes' was performed in 3.45 seconds.
+2026-07-02 09:18:51.087 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:18:51.088 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #48 on board 'a282813bb81180d131efff493ed25c57' making 13 changes' was performed in 3.82 seconds.
+2026-07-02 09:18:54.561 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:18:54.561 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #49 on board '6c6ec9a69ca277d4ea043586eea9d91c' making 11 changes' was performed in 3.47 seconds.
+2026-07-02 09:18:58.255 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:18:58.256 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #50 on board 'dac7b8d633c5ee3871ae97860345ce74' making 13 changes' was performed in 3.69 seconds.
+2026-07-02 09:19:01.765 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:19:01.766 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #51 on board '8870f32c961762e116fbf815b781ca09' making 11 changes' was performed in 3.50 seconds.
+2026-07-02 09:19:05.471 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:19:05.472 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #52 on board '42b7f7fafa1d7d8eeb27042687d09270' making 13 changes' was performed in 3.70 seconds.
+2026-07-02 09:19:08.925 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:19:08.926 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #53 on board '929b9cb7c6e3b45f01d036ed56aafe08' making 11 changes' was performed in 3.45 seconds.
+2026-07-02 09:19:12.624 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:19:12.625 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #54 on board '43fcfee4ca040a90fb66ff8346e304f7' making 13 changes' was performed in 3.69 seconds.
+2026-07-02 09:19:16.112 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:19:16.112 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #55 on board '059b794ce0a9257e0fb6df40830cadbe' making 11 changes' was performed in 3.48 seconds.
+2026-07-02 09:19:19.823 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:19:19.824 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #56 on board 'd93cbac1c9cb894ef077dfbd2c794757' making 13 changes' was performed in 3.71 seconds.
+2026-07-02 09:19:23.337 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:19:23.338 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #57 on board 'd5e38a0d71fba7e55908f24028a3f2df' making 11 changes' was performed in 3.51 seconds.
+2026-07-02 09:19:27.260 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:19:27.261 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #58 on board 'd7456420c0eaf344040b567325335799' making 13 changes' was performed in 3.92 seconds.
+2026-07-02 09:19:30.899 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:19:30.900 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #59 on board 'fed5dab19a5fa539061e15b0b881ef38' making 11 changes' was performed in 3.63 seconds.
+2026-07-02 09:19:34.930 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:19:34.931 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #60 on board 'ec5c60a6a560f377f86168049ec1111b' making 13 changes' was performed in 4.02 seconds.
+2026-07-02 09:19:38.503 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:19:38.504 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #61 on board '7e55efb25c38c2e147514c15baeb8f04' making 11 changes' was performed in 3.57 seconds.
+2026-07-02 09:19:42.198 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:19:42.198 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #62 on board '10f5ef969587cff8e525ac2124084125' making 13 changes' was performed in 3.69 seconds.
+2026-07-02 09:19:45.864 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:19:45.864 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #63 on board 'd0181ed5672dcda143f02f0df125c417' making 11 changes' was performed in 3.66 seconds.
+2026-07-02 09:19:49.537 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:19:49.538 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #64 on board 'afddbc98ec4f26ea7d63f18fcd5e52a5' making 13 changes' was performed in 3.67 seconds.
+2026-07-02 09:19:53.140 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:19:53.141 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #65 on board '923b5c34adc226c4295a3bf2b5b03a1b' making 11 changes' was performed in 3.60 seconds.
+2026-07-02 09:19:56.857 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:19:56.857 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #66 on board 'ad7b3eedf29ab95a65dfa741fc2acd71' making 13 changes' was performed in 3.71 seconds.
+2026-07-02 09:20:00.323 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:20:00.324 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #67 on board 'e79211dc3a7ca7b3dd74f8388e2173e7' making 11 changes' was performed in 3.46 seconds.
+2026-07-02 09:20:04.088 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:20:04.089 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #68 on board '61121d1cbefb8a22450687672b6aab55' making 13 changes' was performed in 3.76 seconds.
+2026-07-02 09:20:07.593 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:20:07.594 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #69 on board 'b0d35fa48353a0c5496af3f336d63fb4' making 11 changes' was performed in 3.50 seconds.
+2026-07-02 09:20:11.313 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:20:11.314 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #70 on board '10011673bda76342255b6d9a70191758' making 13 changes' was performed in 3.71 seconds.
+2026-07-02 09:20:14.902 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:20:14.903 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #71 on board '04dd00e3844f8e5e9241cc918c817550' making 11 changes' was performed in 3.58 seconds.
+2026-07-02 09:20:18.610 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:20:18.610 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #72 on board 'a92c9ad3cc37aa5535f7e72ea64caab5' making 13 changes' was performed in 3.70 seconds.
+2026-07-02 09:20:22.356 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:20:22.358 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #73 on board 'b8c7d300f32ba0349530ca99a7d87796' making 11 changes' was performed in 3.74 seconds.
+2026-07-02 09:20:27.212 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:20:27.213 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #74 on board '0997535716e936206c4f71829114a28a' making 13 changes' was performed in 4.85 seconds.
+2026-07-02 09:20:32.724 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:20:32.725 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #75 on board 'b2d192aa815bcd58d1f5164736b671a4' making 11 changes' was performed in 5.50 seconds.
+2026-07-02 09:20:38.673 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:20:38.675 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #76 on board '52095a1352b6607cce182094a5e81e7f' making 13 changes' was performed in 5.94 seconds.
+2026-07-02 09:20:42.865 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:20:42.865 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #77 on board '42d11efdea1b3252ea1d7d2afc466f06' making 11 changes' was performed in 4.18 seconds.
+2026-07-02 09:20:46.599 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:20:46.600 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #78 on board '4b785138356538e6c09c36f04e029c53' making 13 changes' was performed in 3.73 seconds.
+2026-07-02 09:20:50.158 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:20:50.159 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #79 on board '9739913e5fa59d284336c32c8bb9327f' making 11 changes' was performed in 3.55 seconds.
+2026-07-02 09:20:53.942 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:20:53.943 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #80 on board '9928a41a97f5df855cc90c5c383bb0d3' making 13 changes' was performed in 3.78 seconds.
+2026-07-02 09:20:57.463 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:20:57.465 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #81 on board 'b5d59a1183635f853c3a9b11a1a4dff5' making 11 changes' was performed in 3.52 seconds.
+2026-07-02 09:21:01.238 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:21:01.239 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #82 on board '36562de2ceb48a9c9ffa3d18071beb99' making 13 changes' was performed in 3.76 seconds.
+2026-07-02 09:21:04.716 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:21:04.717 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #83 on board 'a5e5cbe08f70740f3741cc466823d99e' making 11 changes' was performed in 3.47 seconds.
+2026-07-02 09:21:08.648 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:21:08.649 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #84 on board '714bd5176a6dcef25d8cd99bb6bbeb17' making 13 changes' was performed in 3.92 seconds.
+2026-07-02 09:21:12.138 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:21:12.139 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #85 on board '4effb9cd2db05090c7ac5d3ded1cc345' making 11 changes' was performed in 3.48 seconds.
+2026-07-02 09:21:16.055 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:21:16.056 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #86 on board 'b1b73849da0e42d9695011f7b042b9b9' making 13 changes' was performed in 3.91 seconds.
+2026-07-02 09:21:19.797 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:21:19.798 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #87 on board '06b3072d68624adc8b76c9286111ed7c' making 11 changes' was performed in 3.74 seconds.
+2026-07-02 09:21:23.592 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:21:23.592 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #88 on board '8d3f92a37ff1f05974571cb4002aca7e' making 13 changes' was performed in 3.79 seconds.
+2026-07-02 09:21:27.095 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:21:27.096 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #89 on board '1263233fc36922b791647a2167a7d8e2' making 11 changes' was performed in 3.50 seconds.
+2026-07-02 09:21:31.041 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:21:31.041 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #90 on board '70a32627ab6b7e89fa336707209130e8' making 13 changes' was performed in 3.94 seconds.
+2026-07-02 09:21:34.524 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:21:34.525 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #91 on board '265d228f54d03f02842630b8142c2d38' making 11 changes' was performed in 3.48 seconds.
+2026-07-02 09:21:38.342 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:21:38.343 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #92 on board '25dff4775fece13cc7aaa8e2e8748256' making 13 changes' was performed in 3.81 seconds.
+2026-07-02 09:21:41.819 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:21:41.820 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #93 on board '6d8ff26dfac6c2d63a77881085ff2839' making 11 changes' was performed in 3.47 seconds.
+2026-07-02 09:21:45.507 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:21:45.507 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #94 on board 'a855ecae239510c7a5b736d9d0105499' making 13 changes' was performed in 3.68 seconds.
+2026-07-02 09:21:48.927 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:21:48.928 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #95 on board '062c8ef0dcc96e0d1d61409485652f56' making 11 changes' was performed in 3.41 seconds.
+2026-07-02 09:21:52.579 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:21:52.580 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #96 on board '5a2182443e31f943bb3592962c57d9a9' making 13 changes' was performed in 3.65 seconds.
+2026-07-02 09:21:55.994 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:21:55.995 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #97 on board 'bfcb0d829c4ae8d97b46795230fc363a' making 11 changes' was performed in 3.41 seconds.
+2026-07-02 09:21:59.772 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:21:59.773 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #98 on board 'ecfec0e4d680aec980f30c8943fa617d' making 13 changes' was performed in 3.77 seconds.
+2026-07-02 09:22:03.353 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:22:03.354 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #99 on board '2bbcd8313e84a3b0b34198043c61db47' making 11 changes' was performed in 3.58 seconds.
+2026-07-02 09:22:07.060 [Thread-0] WARN  There were only 12.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-02 09:22:07.061 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #100 on board '61df11ee8794d713780dc06a6100a05b' making 13 changes' was performed in 3.70 seconds.
+2026-07-02 09:22:07.065 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()-autorouting' was performed in 6 minute(s) 12.99 seconds.
+2026-07-02 09:22:07.065 [Thread-0] INFO  Auto-routing was completed in 6 minute(s) 12.99 seconds.
+2026-07-02 09:22:07.066 [Thread-0] INFO  Starting route optimization on 11 threads...
+2026-07-02 09:22:07.522 [Thread-0] TRACE Method 'BatchOptRouteMT.opt_route_pass #1 with 0 items, 60 vias and 675,345.32 trace length running on 11 threads.' was performed in 0.45 seconds.
+2026-07-02 09:22:07.907 [Thread-0] TRACE Method 'BatchOptRouteMT.opt_route_pass #2 with 92 items, 60 vias and 675,345.32 trace length running on 11 threads.' was performed in 0.38 seconds.
+2026-07-02 09:22:07.908 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()-routeoptimization' was performed in 0.84 seconds.
+2026-07-02 09:22:07.909 [Thread-0] INFO  Route optimization was completed in 0.84 seconds.
+2026-07-02 09:22:07.918 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()' was performed in 6 minute(s) 13.85 seconds.
+2026-07-02 09:22:07.919 [Thread-0] INFO  Saving '/Users/jadenrhee/JRWatch/hardware/jrwatch.ses'...

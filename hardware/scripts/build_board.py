@@ -227,7 +227,8 @@ class Builder:
         sat('10uF', 'VSYS',      86.3, 107.1, 90)      # VSYS pin
         sat('10uF', 'VBAT',      86.3, 110.15, 90)     # VBAT (battery is west anyway)
         sat('1uF', 'VBUS_OUT',   84.7, 103.8, 90)      # VBUSOUT (west of col)
-        sat('100nF', 'VSYS',     95.4, 103.45, 90)      # PVDD, pocket E of U2
+        sat('100nF', 'VSYS',     84.7, 107.0, 90)       # PVDD 100n on west bank
+                                                        # (pocket kept clear for SW routes)
         # north row y=100.0, 0402 rot-0, pitch 2.05 (sits N of U2 courtyard)
         sat('1uF', 'VDD_DISP',   89.2, 100.0, 0)       # LSOUT1
         sat('1uF', 'VDD_IMU',    91.25, 100.0, 0)      # LSOUT2
@@ -241,11 +242,11 @@ class Builder:
         sat('100nF', '3V0',      97.6, 99.9, 90, idx=1)     # VDD
         sat('100nF', '3V0',      99.0, 99.9, 90, idx=2)     # VDDH
         sat('10uF', '3V0',       100.55, 100.45, 90, idx=1)   # module bulk
-        sat('100nF', 'VBUS_OUT', 106.9, 98.2, 90)           # module VBUS pad
+        sat('100nF', 'VBUS_OUT', 93.2, 98.6, 0)             # module VBUS pin32 (96.0,97.7)
         # crystal load caps — row south of Y1 (XL pads at 103.2/102.4, 97.7);
         # XL2 stack west, XL1 stack east (matches crystal pin swap, no crossover)
-        sat('12pF', 'XL2',       102.1, 102.65, 0)
-        sat('12pF', 'XL1',       104.5, 102.65, 0)
+        sat('12pF', 'XL2',       102.1, 102.65, 270)
+        sat('12pF', 'XL1',       104.5, 102.65, 270)
         # IMU — U3 at (91.0, 92.0): caps south of U3, clear of J3/J4
         sat('100nF', 'VDD_IMU',  89.8, 94.35, 0)
         sat('100nF', '3V0',      91.9, 94.35, 0, idx=3)     # VDDIO
@@ -269,8 +270,10 @@ class Builder:
         # resistors resolved by net membership
         rmap = [
             # (value, net, x, y, rot, side)
-            ('47k',  'N/A_VSET1', 88.3, 110.5, 0, 'B'),   # VSETs SW of U2
-            ('150k', 'N/A_VSET2', 88.3, 108.8, 0, 'B'),
+            # VSET straps are sampled once at power-on; placed in the open east
+            # zone to decongest the west power bank (noted in review checklist)
+            ('47k',  'N/A_VSET1', 110.0, 101.5, 0, 'B'),
+            ('150k', 'N/A_VSET2', 110.0, 103.2, 0, 'B'),
             ('4.7k', 'I2C_SDA',   93.6, 96.9, 90, 'B'),   # near module I2C pads
             ('4.7k', 'I2C_SCL',   92.2, 96.9, 90, 'B'),
             ('100k', 'IMU_CS',    92.2, 89.4, 0, 'B'),    # CSB pad12 N of U3

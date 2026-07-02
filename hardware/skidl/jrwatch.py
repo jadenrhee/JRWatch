@@ -229,11 +229,13 @@ j1['A6'] += usb_dp_conn; j1['B6'] += usb_dp_conn
 j1['A7'] += usb_dm_conn; j1['B7'] += usb_dm_conn
 j1['A8'] += NC; j1['B8'] += NC
 
-# ESD array in the data path (flow-through), before the module
-u4[1] += usb_dp_conn                     # IO1
-u4[6] += usb_dp                          # IO1'
-u4[3] += usb_dm_conn                     # IO2
-u4[4] += usb_dm                          # IO2'
+# ESD array in the data path (flow-through), before the module.
+# IO1/IO2 channels are identical; assignment matches placed pad geometry
+# (pin1 is the east pad of the south row after the bottom-side flip).
+u4[1] += usb_dm_conn                     # IO1
+u4[6] += usb_dm                          # IO1'
+u4[3] += usb_dp_conn                     # IO2
+u4[4] += usb_dp                          # IO2'
 u4[5] += vbus_usb
 u4[2] += gnd
 u1[35] += usb_dp                         # D+
