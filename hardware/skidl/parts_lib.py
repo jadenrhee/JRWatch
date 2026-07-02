@@ -297,10 +297,10 @@ PASSIVE_LCSC = {
     ('C', '1uF'):   ('C52923', 'CL05A105KA5NQNC', 'Samsung'),
     ('C', '2.2uF'): ('C23630', 'CL10B225KO8NNNC', 'Samsung'),
     ('C', '10uF'):  ('C19702', 'CL10A106KP8NNNC', 'Samsung'),
-    ('C', '12pF'):  ('C1546',  'CL05C120JB5NNNC', 'Samsung'),
+    ('C', '12pF'):  ('C1547',  '0402CG120J500NT', 'FH'),
     ('R', '100R'):  ('C25076', '0402WGF1000TCE', 'UNI-ROYAL'),
     ('R', '4.7k'):  ('C25900', '0402WGF4701TCE', 'UNI-ROYAL'),
-    ('R', '47k'):   ('C25563', '0402WGF4702TCE', 'UNI-ROYAL'),
+    ('R', '47k'):   ('C25792', '0402WGF4702TCE', 'UNI-ROYAL'),
     ('R', '100k'):  ('C25741', '0402WGF1003TCE', 'UNI-ROYAL'),
-    ('R', '150k'):  ('C25867', '0402WGF1503TCE', 'UNI-ROYAL'),
+    ('R', '150k'):  ('C25755', '0402WGF1503TCE', 'UNI-ROYAL'),
 }

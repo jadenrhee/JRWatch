@@ -2,7 +2,7 @@
   (version "D")
   (design
     (source "jrwatch.py")
-    (date "07/02/2026 09:14 AM")
+    (date "07/02/2026 01:53 PM")
     (tool "SKiDL (2.2.3)")
     (sheet
       (number 1)
@@ -63,7 +63,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "2qrB7AfYgA")
+          (name "SKiDL Tag") "flc40odvDI")
         (field
           (name "SKiDL Line") "jrwatch.py:72"))
       (libsource
@@ -73,7 +73,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "6dd217d4-4fb3-5806-8301-deaf7985a3f4"))
+      (tstamps "beecd68c-9e38-5589-a20b-bffd189558bf"))
     (comp
       (ref "C10")
       (value "1uF")
@@ -95,7 +95,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "F2XMSjdKEh")
+          (name "SKiDL Tag") "IvNACA7RQT")
         (field
           (name "SKiDL Line") "jrwatch.py:72"))
       (libsource
@@ -105,7 +105,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "70b16768-3b48-5f2e-9a27-d2a4de5db59f"))
+      (tstamps "08e23d60-9d72-5b9f-be57-acd619252002"))
     (comp
       (ref "C11")
       (value "100nF")
@@ -127,7 +127,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "sohJsLzJA9")
+          (name "SKiDL Tag") "ZBFZ_4YUdl")
         (field
           (name "SKiDL Line") "jrwatch.py:72"))
       (libsource
@@ -137,7 +137,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "2ff61894-a0da-514e-b7f0-6025bf99c93b"))
+      (tstamps "66e02e80-7633-5723-9485-635d4c4ae1fe"))
     (comp
       (ref "C12")
       (value "10uF")
@@ -159,7 +159,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "eh4h9omm5y")
+          (name "SKiDL Tag") "dfuzaw4EyJ")
         (field
           (name "SKiDL Line") "jrwatch.py:72"))
       (libsource
@@ -169,7 +169,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "433f8583-e039-5b16-900a-c00f1b5a3b7d"))
+      (tstamps "c7d19ffd-d022-5a94-ae51-a91bc223a039"))
     (comp
       (ref "C13")
       (value "100nF")
@@ -191,7 +191,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "eDii5jwIp8")
+          (name "SKiDL Tag") "w3D2t48zXe")
         (field
           (name "SKiDL Line") "jrwatch.py:72"))
       (libsource
@@ -201,7 +201,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "cfc7c5b3-07da-5f4c-8c75-434872aa06d8"))
+      (tstamps "00936083-146f-579c-92d3-5eb60b0aee8c"))
     (comp
       (ref "C14")
       (value "100nF")
@@ -223,7 +223,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "Equ7yp7YSE")
+          (name "SKiDL Tag") "LRgScKCFaE")
         (field
           (name "SKiDL Line") "jrwatch.py:72"))
       (libsource
@@ -233,7 +233,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "b0a6eadf-d20a-5009-84ce-8c80166a20c0"))
+      (tstamps "7536f4de-52b7-5a0f-9f1f-8b0265ce3339"))
     (comp
       (ref "C15")
       (value "100nF")
@@ -255,7 +255,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "1W6gGWvjUm")
+          (name "SKiDL Tag") "R8OQcgcVZh")
         (field
           (name "SKiDL Line") "jrwatch.py:72"))
       (libsource
@@ -265,7 +265,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "2bb7c82b-d8f0-50f1-b0e7-83799f8fc595"))
+      (tstamps "eba66699-8139-5fd5-82f0-ef1b5ec8d834"))
     (comp
       (ref "C16")
       (value "12pF")
@@ -273,11 +273,11 @@
       (footprint "Capacitor_SMD:C_0402_1005Metric")
       (fields
         (field
-          (name "LCSC") "C1546")
+          (name "LCSC") "C1547")
         (field
-          (name "MPN") "CL05C120JB5NNNC")
+          (name "MPN") "0402CG120J500NT")
         (field
-          (name "Mfr") "Samsung")
+          (name "Mfr") "FH")
         (field
           (name "Sourcing") "jlc")
         (field
@@ -287,7 +287,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "5Bzc6k6y4s")
+          (name "SKiDL Tag") "S2nR0957sU")
         (field
           (name "SKiDL Line") "jrwatch.py:72"))
       (libsource
@@ -297,7 +297,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "2af91668-1351-5c79-a91e-d1d7a4ae1e7d"))
+      (tstamps "8f3f3c06-30a5-5f0f-8606-6c59ebfec1d2"))
     (comp
       (ref "C17")
       (value "12pF")
@@ -305,11 +305,11 @@
       (footprint "Capacitor_SMD:C_0402_1005Metric")
       (fields
         (field
-          (name "LCSC") "C1546")
+          (name "LCSC") "C1547")
         (field
-          (name "MPN") "CL05C120JB5NNNC")
+          (name "MPN") "0402CG120J500NT")
         (field
-          (name "Mfr") "Samsung")
+          (name "Mfr") "FH")
         (field
           (name "Sourcing") "jlc")
         (field
@@ -319,7 +319,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "JkeOxZIdHz")
+          (name "SKiDL Tag") "sl_5xfyd4v")
         (field
           (name "SKiDL Line") "jrwatch.py:72"))
       (libsource
@@ -329,7 +329,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "5ae8aaf5-7502-5710-a6a5-a3dddde31598"))
+      (tstamps "c6c7971a-623c-5a9e-9885-e28587a69fae"))
     (comp
       (ref "C18")
       (value "100nF")
@@ -351,7 +351,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "uj4kSlOkkW")
+          (name "SKiDL Tag") "yUKFhJK978")
         (field
           (name "SKiDL Line") "jrwatch.py:72"))
       (libsource
@@ -361,7 +361,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "fb0853a1-4925-59e2-b81b-8a1c600c5f3b"))
+      (tstamps "fc859e8b-c044-5290-aab8-99849bf1168b"))
     (comp
       (ref "C19")
       (value "100nF")
@@ -383,7 +383,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "fthdWMB1SI")
+          (name "SKiDL Tag") "ykaWRHHInU")
         (field
           (name "SKiDL Line") "jrwatch.py:72"))
       (libsource
@@ -393,7 +393,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "2a53c75b-dcc9-5665-bad4-921e4a67f3b2"))
+      (tstamps "c75526c0-3720-5acc-95c9-5c0ca54277c8"))
     (comp
       (ref "C2")
       (value "10uF")
@@ -415,7 +415,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "UZ2_wYQx_4")
+          (name "SKiDL Tag") "DxWOmKvuYV")
         (field
           (name "SKiDL Line") "jrwatch.py:72"))
       (libsource
@@ -425,7 +425,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "fbbcf7ed-5378-57cc-bb78-ccc44d09a104"))
+      (tstamps "73858792-beb6-54e2-b2f3-d5540d1ae7e9"))
     (comp
       (ref "C20")
       (value "1uF")
@@ -447,7 +447,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "VuEhwznEFE")
+          (name "SKiDL Tag") "ekOS8uzGaT")
         (field
           (name "SKiDL Line") "jrwatch.py:72"))
       (libsource
@@ -457,7 +457,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "ab412467-0e42-5dcd-994d-f710bf9ac010"))
+      (tstamps "e0282d3f-fad6-5b2d-b98a-8836390a7594"))
     (comp
       (ref "C21")
       (value "100nF")
@@ -479,7 +479,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "jz4qi0_M5W")
+          (name "SKiDL Tag") "wl_XzQJBp3")
         (field
           (name "SKiDL Line") "jrwatch.py:72"))
       (libsource
@@ -489,7 +489,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "23519d3a-ab36-561c-8728-34f94e814b41"))
+      (tstamps "dd1c1ba9-8e9d-5307-a01e-66846e03b3a7"))
     (comp
       (ref "C22")
       (value "1uF")
@@ -511,7 +511,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "P3nq8Q33sd")
+          (name "SKiDL Tag") "I9A8KjgjBl")
         (field
           (name "SKiDL Line") "jrwatch.py:72"))
       (libsource
@@ -521,7 +521,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "a2757970-c6c7-5420-b5a8-c73269b8a8a2"))
+      (tstamps "1d9f6ac4-8d14-5e01-ab70-b3a3287feb14"))
     (comp
       (ref "C23")
       (value "100nF")
@@ -543,7 +543,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "SmPD6yi9BG")
+          (name "SKiDL Tag") "TxUayjeHz_")
         (field
           (name "SKiDL Line") "jrwatch.py:72"))
       (libsource
@@ -553,7 +553,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "14b7ef58-6358-5362-ad75-18456249648e"))
+      (tstamps "c9f1f036-32b7-5f19-8b8d-76f886546326"))
     (comp
       (ref "C3")
       (value "2.2uF")
@@ -575,7 +575,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "bcUtXUI1VY")
+          (name "SKiDL Tag") "beT3jPByUx")
         (field
           (name "SKiDL Line") "jrwatch.py:72"))
       (libsource
@@ -585,7 +585,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "5075a40e-9cad-56e3-b953-4cb4506d861b"))
+      (tstamps "26682009-176b-5756-9057-cbc730187b55"))
     (comp
       (ref "C4")
       (value "100nF")
@@ -607,7 +607,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "58HqtvR3C6")
+          (name "SKiDL Tag") "mnkLKUvWf6")
         (field
           (name "SKiDL Line") "jrwatch.py:72"))
       (libsource
@@ -617,7 +617,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "43dc7d29-08bc-57f5-bf8c-bc0b9b644139"))
+      (tstamps "bf20b7df-fcd1-5d4a-b306-75876a45eead"))
     (comp
       (ref "C5")
       (value "10uF")
@@ -639,7 +639,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "oGj0Qvz7ox")
+          (name "SKiDL Tag") "k8qDaXcgSM")
         (field
           (name "SKiDL Line") "jrwatch.py:72"))
       (libsource
@@ -649,7 +649,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "fa989164-c86a-592d-9d4f-1bf5b6112949"))
+      (tstamps "b2db9c1c-0ae3-5a5d-a982-c4df7616ee54"))
     (comp
       (ref "C6")
       (value "1uF")
@@ -671,7 +671,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "Fsw4gPbgfa")
+          (name "SKiDL Tag") "S3zRXAbP8y")
         (field
           (name "SKiDL Line") "jrwatch.py:72"))
       (libsource
@@ -681,7 +681,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "e9c64d5e-488a-57bb-bd8b-1a61aec684ba"))
+      (tstamps "daafd0f8-6f3e-5bec-b903-2a1877b6ff4c"))
     (comp
       (ref "C7")
       (value "10uF")
@@ -703,7 +703,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "A48ehYTIhF")
+          (name "SKiDL Tag") "ZgkKdnXI1K")
         (field
           (name "SKiDL Line") "jrwatch.py:72"))
       (libsource
@@ -713,7 +713,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "11cc6de6-b28e-5386-bfa4-d212a380e5d8"))
+      (tstamps "7fd99642-ba8d-5113-b2c9-6a2a43964bd1"))
     (comp
       (ref "C8")
       (value "10uF")
@@ -735,7 +735,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "JZYc4M7BN0")
+          (name "SKiDL Tag") "ger_bP52oS")
         (field
           (name "SKiDL Line") "jrwatch.py:72"))
       (libsource
@@ -745,7 +745,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "64b5ccd5-5715-5bcf-b36c-90dabdf373dd"))
+      (tstamps "7913f7c0-bfce-5870-8a0c-416983a9991d"))
     (comp
       (ref "C9")
       (value "1uF")
@@ -767,7 +767,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "Mys1T76dJj")
+          (name "SKiDL Tag") "EERV8p0qNh")
         (field
           (name "SKiDL Line") "jrwatch.py:72"))
       (libsource
@@ -777,7 +777,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "42c3d1ad-36e0-5e07-b0ed-61723482af01"))
+      (tstamps "5b9f42fe-097b-5b11-aa26-63ea893f0bf0"))
     (comp
       (ref "D1")
       (value "ESD9B5.0")
@@ -801,7 +801,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "Fwz6t6IAW9")
+          (name "SKiDL Tag") "JMyP8C8fgG")
         (field
           (name "SKiDL Line") "jrwatch.py:286"))
       (libsource
@@ -811,7 +811,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "282fccad-7ffa-5375-b3a8-be82571a80cb"))
+      (tstamps "e5854bca-a1a8-5b4a-8528-fbd71b715eca"))
     (comp
       (ref "D2")
       (value "ESD9B3.3")
@@ -833,7 +833,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "hvhXwOgPGm")
+          (name "SKiDL Tag") "C9hpzXZ2Am")
         (field
           (name "SKiDL Line") "jrwatch.py:299"))
       (libsource
@@ -843,7 +843,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "9027c3f6-b2c0-59c3-b159-40af0edcfb4d"))
+      (tstamps "2063553b-771a-59cb-b767-7cbe5254d080"))
     (comp
       (ref "J1")
       (value "TYPE-C-31-M-12")
@@ -865,7 +865,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "IMd5tsUVhk")
+          (name "SKiDL Tag") "c9doiDq2k_")
         (field
           (name "SKiDL Line") "jrwatch.py:218"))
       (libsource
@@ -875,7 +875,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "30cee964-32ef-5fa0-b3a0-1c0ce4fad616"))
+      (tstamps "0bf73321-12ab-56a5-8bc7-2e2d4932553f"))
     (comp
       (ref "J2")
       (value "FH12A-10S-0.5SH")
@@ -899,7 +899,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "oietdHomoy")
+          (name "SKiDL Tag") "lVM5zeGHg1")
         (field
           (name "SKiDL Line") "jrwatch.py:266"))
       (libsource
@@ -909,7 +909,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "896ae951-5da7-5989-b35c-34c128e50375"))
+      (tstamps "44b4f202-fa61-5640-867e-f197158b66c6"))
     (comp
       (ref "J3")
       (value "SM02B-SRSS-TB")
@@ -931,7 +931,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "s9gVYaAKvA")
+          (name "SKiDL Tag") "ncUCmKs6D8")
         (field
           (name "SKiDL Line") "jrwatch.py:156"))
       (libsource
@@ -941,7 +941,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "83090239-5f16-5ff0-95e6-bf1594a6d5ab"))
+      (tstamps "7437adfa-c19b-5de9-8ef9-ce6a78f1813f"))
     (comp
       (ref "J4")
       (value "TC2030-IDC-NL")
@@ -963,7 +963,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "qKwlm2qW97")
+          (name "SKiDL Tag") "u7IWescqXa")
         (field
           (name "SKiDL Line") "jrwatch.py:187"))
       (libsource
@@ -973,7 +973,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "6649281b-81f6-558f-b0ac-24420d5f4976"))
+      (tstamps "f85d6182-02c9-5223-bd68-8d8f21dbd4b3"))
     (comp
       (ref "L1")
       (value "2.2uH")
@@ -995,7 +995,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "p_ocF6NZj9")
+          (name "SKiDL Tag") "qV33NGjkgs")
         (field
           (name "SKiDL Line") "jrwatch.py:108"))
       (libsource
@@ -1005,7 +1005,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "be73f6c7-7502-534e-be7a-c8fdd0232531"))
+      (tstamps "fe5e5d1b-afaa-5b43-b909-aa2fbd35c24a"))
     (comp
       (ref "L2")
       (value "2.2uH")
@@ -1027,7 +1027,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "JenFaLyfC_")
+          (name "SKiDL Tag") "DKytSf46q6")
         (field
           (name "SKiDL Line") "jrwatch.py:118"))
       (libsource
@@ -1037,7 +1037,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "40f2c0e1-dba6-5093-8283-2490b4eb6c29"))
+      (tstamps "15d2e7cd-6081-5243-bd1e-259892e76ffd"))
     (comp
       (ref "R1")
       (value "47k")
@@ -1045,7 +1045,7 @@
       (footprint "Resistor_SMD:R_0402_1005Metric")
       (fields
         (field
-          (name "LCSC") "C25563")
+          (name "LCSC") "C25792")
         (field
           (name "MPN") "0402WGF4702TCE")
         (field
@@ -1059,7 +1059,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "owT_C2ngh3")
+          (name "SKiDL Tag") "sNMwbXXrf2")
         (field
           (name "SKiDL Line") "jrwatch.py:76"))
       (libsource
@@ -1069,7 +1069,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "7602bb7d-0f78-5326-9f42-98fda1b1fc8d"))
+      (tstamps "b1f0e0c2-5e42-5e7b-bf6b-188f6e5428fa"))
     (comp
       (ref "R2")
       (value "150k")
@@ -1077,7 +1077,7 @@
       (footprint "Resistor_SMD:R_0402_1005Metric")
       (fields
         (field
-          (name "LCSC") "C25867")
+          (name "LCSC") "C25755")
         (field
           (name "MPN") "0402WGF1503TCE")
         (field
@@ -1091,7 +1091,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "h1OncDaCqB")
+          (name "SKiDL Tag") "XjWQ2TYXg1")
         (field
           (name "SKiDL Line") "jrwatch.py:76"))
       (libsource
@@ -1101,7 +1101,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "53c37c5e-505b-5555-b84c-89e7eae8de14"))
+      (tstamps "bd32c9d6-1188-5c56-a622-46a3d9e3686e"))
     (comp
       (ref "R3")
       (value "4.7k")
@@ -1123,7 +1123,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "n_rKvRAPyE")
+          (name "SKiDL Tag") "RQBzmCzh5i")
         (field
           (name "SKiDL Line") "jrwatch.py:76"))
       (libsource
@@ -1133,7 +1133,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "df249a16-497f-5301-9888-2d2c47c872d1"))
+      (tstamps "d3f93724-49c6-591f-ba64-9351fc8f5541"))
     (comp
       (ref "R4")
       (value "4.7k")
@@ -1155,7 +1155,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "99puTOWQy7")
+          (name "SKiDL Tag") "zidLKxz5o2")
         (field
           (name "SKiDL Line") "jrwatch.py:76"))
       (libsource
@@ -1165,7 +1165,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "f8e568f8-8b91-5749-8f01-a496bc4f65f7"))
+      (tstamps "1db882a4-f30b-5229-90ef-3f38547af158"))
     (comp
       (ref "R5")
       (value "100k")
@@ -1187,7 +1187,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "k10C8S0tsp")
+          (name "SKiDL Tag") "jCxJe2siIO")
         (field
           (name "SKiDL Line") "jrwatch.py:76"))
       (libsource
@@ -1197,7 +1197,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "2c179276-8dfd-51f4-aa9e-9d5c71be9f63"))
+      (tstamps "6237ede6-58f0-5a9a-a1fa-a8895f7aa455"))
     (comp
       (ref "R6")
       (value "100k")
@@ -1219,7 +1219,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "3HvCvaFbfH")
+          (name "SKiDL Tag") "MxsHdBiVB9")
         (field
           (name "SKiDL Line") "jrwatch.py:76"))
       (libsource
@@ -1229,7 +1229,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "6ffbc22d-12d9-5600-ad5c-2d4ef7180802"))
+      (tstamps "efa3d8ee-66a6-5a01-8ca1-19df2a7784ec"))
     (comp
       (ref "R7")
       (value "100R")
@@ -1251,7 +1251,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "Yu0TDC3evD")
+          (name "SKiDL Tag") "r5_keaZ01b")
         (field
           (name "SKiDL Line") "jrwatch.py:76"))
       (libsource
@@ -1261,7 +1261,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "61f737c2-9a23-559d-8e9b-e75ca9dc7d9c"))
+      (tstamps "0fb6e0fa-3dd4-58ab-8b6e-1422889369ef"))
     (comp
       (ref "R8")
       (value "100R")
@@ -1283,7 +1283,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "g4O9N4Qm09")
+          (name "SKiDL Tag") "tYWxDNxxoU")
         (field
           (name "SKiDL Line") "jrwatch.py:76"))
       (libsource
@@ -1293,7 +1293,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "22bec2ef-c2f4-5b2b-a129-3349f53e65be"))
+      (tstamps "a9d5dd21-3692-5236-bdb6-babb91339bd3"))
     (comp
       (ref "RT1")
       (value "10k NTC")
@@ -1315,7 +1315,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "yBf2c35c5d")
+          (name "SKiDL Tag") "lPrfeLuMb4")
         (field
           (name "SKiDL Line") "jrwatch.py:150"))
       (libsource
@@ -1325,7 +1325,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "ba94678d-b1dd-5a0f-a559-377841602ffb"))
+      (tstamps "36b86486-bdcb-59c3-9a51-84c172649921"))
     (comp
       (ref "SW1")
       (value "PWR/SHIP")
@@ -1347,7 +1347,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "TNNx_99FbX")
+          (name "SKiDL Tag") "81N01ce6eo")
         (field
           (name "SKiDL Line") "jrwatch.py:285"))
       (libsource
@@ -1357,7 +1357,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "c3cc6306-02d0-5d01-b5ab-b391c489b041"))
+      (tstamps "951d5542-4ff0-5b85-b9a3-6ab53bf986dd"))
     (comp
       (ref "SW2")
       (value "USER")
@@ -1379,7 +1379,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "ZLH2GQD37R")
+          (name "SKiDL Tag") "Uqmrv0O7XN")
         (field
           (name "SKiDL Line") "jrwatch.py:298"))
       (libsource
@@ -1389,7 +1389,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "5a6e5cbb-20ed-52ec-a87d-3d1661f53bd8"))
+      (tstamps "d7df8b6a-d4b9-5850-a929-7126ecbc4d88"))
     (comp
       (ref "U1")
       (value "MDBT50Q-1MV2")
@@ -1411,7 +1411,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "fErteF7j45")
+          (name "SKiDL Tag") "SkPmLyNbNC")
         (field
           (name "SKiDL Line") "jrwatch.py:162"))
       (libsource
@@ -1421,7 +1421,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "f5a37a38-7ea2-561c-9556-ee26783ce2cf"))
+      (tstamps "da1f14e4-3290-58cc-a798-36e5f33074d7"))
     (comp
       (ref "U2")
       (value "nPM1300-QEAA-R7")
@@ -1443,7 +1443,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "zpZo45kKwP")
+          (name "SKiDL Tag") "iPRutpIjOp")
         (field
           (name "SKiDL Line") "jrwatch.py:87"))
       (libsource
@@ -1453,7 +1453,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "ff6adaf7-3913-5ed5-ae2f-d17aa368bd08"))
+      (tstamps "2b700e10-6ff4-5257-bfde-e1fbfd03ecae"))
     (comp
       (ref "U3")
       (value "BMI270")
@@ -1475,7 +1475,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "Ra_JEghur1")
+          (name "SKiDL Tag") "FmPzowDDZ_")
         (field
           (name "SKiDL Line") "jrwatch.py:245"))
       (libsource
@@ -1485,7 +1485,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "1c7d5e4b-e3bc-5e83-860c-445887b37afa"))
+      (tstamps "b86cacc6-9f72-59f2-8feb-ef7820f07ab3"))
     (comp
       (ref "U4")
       (value "USBLC6-2SC6")
@@ -1507,7 +1507,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "uP2l4hjdyb")
+          (name "SKiDL Tag") "wHeuiInxn2")
         (field
           (name "SKiDL Line") "jrwatch.py:219"))
       (libsource
@@ -1517,7 +1517,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "d2b4fd0a-a6ef-5313-be79-549f36881860"))
+      (tstamps "7f37f92d-d20d-513e-92ab-821168d0a8a0"))
     (comp
       (ref "Y1")
       (value "32.768kHz")
@@ -1539,7 +1539,7 @@
         (field
           (name "Datasheet"))
         (field
-          (name "SKiDL Tag") "aL7vNXusnd")
+          (name "SKiDL Tag") "Bty48Y1Dkd")
         (field
           (name "SKiDL Line") "jrwatch.py:174"))
       (libsource
@@ -1549,7 +1549,7 @@
         (names "/")
         (tstamps "/"))
       (component_classes)
-      (tstamps "fa4186b8-cdf0-5538-97c7-983cd374db66")))
+      (tstamps "19f92506-9298-5ee1-b098-d67847ac115c")))
   (nets
     (net
       (code 1)

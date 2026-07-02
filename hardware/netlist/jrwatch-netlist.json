@@ -90,9 +90,9 @@
    "name": "C_0402",
    "footprint": "Capacitor_SMD:C_0402_1005Metric",
    "fields": {
-    "LCSC": "C1546",
-    "MPN": "CL05C120JB5NNNC",
-    "Mfr": "Samsung",
+    "LCSC": "C1547",
+    "MPN": "0402CG120J500NT",
+    "Mfr": "FH",
     "Sourcing": "jlc"
    }
   },
@@ -102,9 +102,9 @@
    "name": "C_0402",
    "footprint": "Capacitor_SMD:C_0402_1005Metric",
    "fields": {
-    "LCSC": "C1546",
-    "MPN": "CL05C120JB5NNNC",
-    "Mfr": "Samsung",
+    "LCSC": "C1547",
+    "MPN": "0402CG120J500NT",
+    "Mfr": "FH",
     "Sourcing": "jlc"
    }
   },
@@ -380,7 +380,7 @@
    "name": "R_0402",
    "footprint": "Resistor_SMD:R_0402_1005Metric",
    "fields": {
-    "LCSC": "C25563",
+    "LCSC": "C25792",
     "MPN": "0402WGF4702TCE",
     "Mfr": "UNI-ROYAL",
     "Sourcing": "jlc"
@@ -392,7 +392,7 @@
    "name": "R_0402",
    "footprint": "Resistor_SMD:R_0402_1005Metric",
    "fields": {
-    "LCSC": "C25867",
+    "LCSC": "C25755",
     "MPN": "0402WGF1503TCE",
     "Mfr": "UNI-ROYAL",
     "Sourcing": "jlc"

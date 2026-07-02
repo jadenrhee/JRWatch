@@ -160,10 +160,10 @@ parts:
   C_1u_0402:   {mpn: CL05A105KA5NQNC, mfr: Samsung, lcsc: C52923, desc: 1uF X5R 25V 0402,  footprint: Capacitor_SMD:C_0402_1005Metric, verify_at_bom: true}
   C_2u2_0603:  {mpn: CL10B225KO8NNNC, mfr: Samsung, lcsc: C23630, desc: 2.2uF X7R 16V 0603, footprint: Capacitor_SMD:C_0603_1608Metric, verify_at_bom: true}
   C_10u_0603:  {mpn: CL10A106KP8NNNC, mfr: Samsung, lcsc: C19702, desc: 10uF X5R 10V 0603,  footprint: Capacitor_SMD:C_0603_1608Metric, verify_at_bom: true}
-  C_12p_0402:  {mpn: CL05C120JB5NNNC, mfr: Samsung, lcsc: C1546,  desc: 12pF C0G 50V 0402 (LFXO load — value finalized in verification calc), footprint: Capacitor_SMD:C_0402_1005Metric, verify_at_bom: true}
+  C_12p_0402:  {mpn: 0402CG120J500NT, mfr: FH, lcsc: C1547,  desc: 12pF C0G 50V 0402 (LFXO load — value finalized in verification calc), footprint: Capacitor_SMD:C_0402_1005Metric, verify_at_bom: true}
   # resistors (0402, 1% except noted)
-  R_150k_1pct: {lcsc: C25867, desc: 150k 1% 0402 — VSET2 -> BUCK2 3.0V, verify_at_bom: true, footprint: Resistor_SMD:R_0402_1005Metric}
-  R_47k_1pct:  {lcsc: C25563, desc: 47k 1% 0402 — VSET1 -> BUCK1 1.8V,  verify_at_bom: true, footprint: Resistor_SMD:R_0402_1005Metric}
+  R_150k_1pct: {lcsc: C25755, desc: 150k 1% 0402 — VSET2 -> BUCK2 3.0V (verified 2026-07-02), footprint: Resistor_SMD:R_0402_1005Metric}
+  R_47k_1pct:  {lcsc: C25792, desc: 47k 1% 0402 — VSET1 -> BUCK1 1.8V (verified 2026-07-02), footprint: Resistor_SMD:R_0402_1005Metric}
   R_4k7:       {lcsc: C25900, desc: 4.7k 0402 — I2C pullups,            verify_at_bom: true, footprint: Resistor_SMD:R_0402_1005Metric}
   R_100k:      {lcsc: C25741, desc: 100k 0402 — CSB pullup / SCS pulldown strapping, verify_at_bom: true, footprint: Resistor_SMD:R_0402_1005Metric}
   R_100R:      {lcsc: C25076, desc: 100R 0402 — button series ESD/debounce, verify_at_bom: true, footprint: Resistor_SMD:R_0402_1005Metric}
