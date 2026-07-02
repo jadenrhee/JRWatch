@@ -156,7 +156,7 @@ jrwatch = SchLib(tool=SKIDL).add_parts(*[
             Pin(num='4',name='IO2B',func=pin_types.PASSIVE),
             Pin(num='5',name='VBUS',func=pin_types.PWRIN),
             Pin(num='6',name='IO1B',func=pin_types.PASSIVE)] }),
-        Part(**{ 'name':'BMI270', 'dest':TEMPLATE, 'tool':SKIDL, 'aliases':Alias({'BMI270'}), 'ref_prefix':'U', 'fplist':None, 'footprint':'JRWatch:Bosch_LGA-14_3x2.5mm_P0.5mm_BMI270', 'keywords':None, 'description':'6-axis IMU, low-power any-motion wake + step counter, SPI 4-wire', 'datasheet':None, 'pins':[
+        Part(**{ 'name':'BMI270', 'dest':TEMPLATE, 'tool':SKIDL, 'aliases':Alias({'BMI270'}), 'ref_prefix':'U', 'fplist':None, 'footprint':'Package_LGA:Bosch_LGA-14_3x2.5mm_P0.5mm', 'keywords':None, 'description':'6-axis IMU, low-power any-motion wake + step counter, SPI 4-wire', 'datasheet':None, 'pins':[
             Pin(num='1',name='SDO',func=pin_types.TRISTATE),
             Pin(num='2',name='ASDX',func=pin_types.INPUT),
             Pin(num='3',name='ASCX',func=pin_types.INPUT),

@@ -145,7 +145,7 @@ NPM1300 = _mk(
 # Bosch BMI270, LGA-14 (custom footprint from DS §8.3)
 # --------------------------------------------------------------------------
 BMI270 = _mk(
-    'BMI270', 'U', 'JRWatch:Bosch_LGA-14_3x2.5mm_P0.5mm_BMI270',
+    'BMI270', 'U', 'Package_LGA:Bosch_LGA-14_3x2.5mm_P0.5mm',
     '6-axis IMU, low-power any-motion wake + step counter, SPI 4-wire',
     [
         (1,  'SDO',   _t.TRISTATE),

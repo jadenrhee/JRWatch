@@ -31,7 +31,7 @@ parts:
     desc: 6-axis IMU, LGA-14 2.5x3.0mm, low-power any-motion + step counter
     lcsc: C2836813
     lcsc_stock: 11182
-    footprint: JRWatch:Bosch_LGA-14_3x2.5mm_P0.5mm_BMI270   # custom, from DS §8.3
+    footprint: Package_LGA:Bosch_LGA-14_3x2.5mm_P0.5mm   # stock KiCad lib, geometry verified vs DS §8.3
     sourcing: jlc            # extended part
     datasheet: datasheets/bmi270.pdf (BST-BMI270-DS000-08)
   U4:
