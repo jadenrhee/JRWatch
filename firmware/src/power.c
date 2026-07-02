@@ -111,6 +111,6 @@ void jr_power_ship_mode(void)
 	jr_power_imu_rail(false);
 	(void)jr_ui_display_power(false);
 	k_msleep(10);
-	mfd_npm1300_hibernate(pmic, 0, false);
+	mfd_npm1300_hibernate(pmic, 0);
 	k_sleep(K_FOREVER);
 }

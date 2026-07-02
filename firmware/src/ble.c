@@ -16,6 +16,7 @@
 #include <zephyr/bluetooth/gatt.h>
 #include <zephyr/bluetooth/services/bas.h>
 #include <zephyr/settings/settings.h>
+#include <zephyr/sys/byteorder.h>
 
 #include "jrwatch.h"
 
