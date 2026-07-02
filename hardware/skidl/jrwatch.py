@@ -174,8 +174,10 @@ decouple(vbus_out, '100nF')
 y1 = XTAL32K(ref='Y1', value='32.768kHz')
 u1[17] += xl1
 u1[18] += xl2
-y1[1] += xl1
-y1[2] += xl2
+# crystal pins are interchangeable; assignment chosen so the placed
+# geometry routes without a crossover (XL1 pad sits east of XL2)
+y1[2] += xl1
+y1[1] += xl2
 for xnet in (xl1, xl2):
     c = cap('12pF')
     xnet += c[1]

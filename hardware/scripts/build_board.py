@@ -31,7 +31,7 @@ KISYS = '/Applications/KiCad/KiCad.app/Contents/SharedSupport/footprints'
 LOCAL_LIB = os.path.join(HW, 'footprints')
 
 CX, CY = 100.0, 100.0          # board center (sheet mm)
-SIZE, RAD = 36.0, 9.0          # outline
+SIZE, RAD = 36.0, 6.0          # outline (R6 corners clear the SW connector zone)
 
 # ------------------------------------------------------------------ helpers
 def P(x, y):
@@ -145,17 +145,34 @@ class Builder:
         fp.SetValue(part['value'])
         self.board.Add(fp)
         fp.SetPosition(P(x, y))
-        if side == 'B':
-            fp.Flip(P(x, y), True)          # left-right flip
+        # Rotation FIRST, then flip. Flip() encodes left-right as mirror+180deg
+        # internally, so a later SetOrientationDegrees() would silently turn it
+        # into a top-bottom flip (bug found the hard way — pads landed y-mirrored).
         fp.SetOrientationDegrees(rot)
+        if side == 'B':
+            fp.Flip(P(x, y), pcbnew.FLIP_DIRECTION_LEFT_RIGHT)
         # net hookup by pad name
         for pad in fp.Pads():
             name = pad.GetNumber()
             netname = self.padnets.get(ref, {}).get(name)
             if netname:
                 pad.SetNet(self.nets[netname])
+        # dense wearable: no refdes silk (assembly uses fab layer + CPL);
+        # functional silk (battery polarity, board id) added separately
+        fp.Reference().SetVisible(False)
         self.fps[ref] = fp
         return fp
+
+    def add_silk_text(self, text, x, y, layer, size=0.8):
+        t = pcbnew.PCB_TEXT(self.board)
+        t.SetText(text)
+        t.SetPosition(P(x, y))
+        t.SetLayer(layer)
+        t.SetTextSize(pcbnew.VECTOR2I(FromMM(size), FromMM(size)))
+        t.SetTextThickness(FromMM(0.15))
+        if layer in (pcbnew.B_SilkS, pcbnew.B_Cu, pcbnew.B_Fab):
+            t.SetMirrored(True)
+        self.board.Add(t)
 
     def pad_xy(self, ref, pad):
         p = self.fps[ref].FindPadByNumber(str(pad))
@@ -175,64 +192,68 @@ class Builder:
         return sorted(out)
 
     def place_all(self):
+        # NOTE on flips: Flip(pos, True) negates local X. Module pads with
+        # local x<0 (pins 1-14) land EAST of center; pins 34-55 land WEST.
         # ---------------- anchors (x, y, rot, side)
         self.add_part('U1', CX, 90.55, 0, 'B')        # module, antenna north
         self.add_part('J1', CX, 113.60, 0, 'B')       # USB-C, opening south
         self.add_part('U2', 91.0, 104.2, 0, 'B')      # PMIC
-        self.add_part('U3', 91.3, 97.3, 0, 'B')       # IMU
-        self.add_part('Y1', 97.2, 99.6, 0, 'B')       # 32k crystal
-        self.add_part('U4', 96.3, 108.0, 90, 'B')     # USB ESD
-        self.add_part('J3', 84.9, 97.0, 270, 'B')     # battery conn, entry west
-        self.add_part('J4', 106.0, 101.0, 90, 'B')    # TC2030 pads
-        self.add_part('J2', 91.5, 112.5, 0, 'F')      # display FPC, TOP side
-        self.add_part('SW1', 115.9, 95.0, 270, 'B')   # power button, east edge
-        self.add_part('SW2', 115.9, 106.0, 270, 'B')  # user button, east edge
-        self.add_part('L1', 96.6, 102.4, 90, 'B')     # BUCK1 L
-        self.add_part('L2', 96.6, 106.0, 90, 'B')     # BUCK2 L
-        self.add_part('RT1', 86.5, 100.8, 0, 'B')     # NTC at battery conn
-        self.add_part('D1', 113.4, 95.0, 90, 'B')     # TVS at SW1
-        self.add_part('D2', 113.4, 106.0, 90, 'B')    # TVS at SW2
+        self.add_part('U3', 91.0, 92.0, 0, 'B')       # IMU — at module W col SPI pads
+        self.add_part('Y1', 103.4, 100.3, 0, 'B')     # 32k crystal — XL pads land E
+        self.add_part('U4', 92.2, 109.6, 90, 'B')     # USB ESD, in pair corridor
+        self.add_part('J3', 85.4, 97.0, 90, 'B')      # battery conn, entry west
+        self.add_part('J4', 86.9, 89.0, 90, 'B')      # TC2030 — SWD pads land W
+        self.add_part('J2', 89.3, 112.5, 0, 'F')      # display FPC, TOP side (W of USB SH pads)
+        self.add_part('SW1', 115.9, 95.0, 90, 'B')    # power button, east edge
+        self.add_part('SW2', 115.9, 106.0, 90, 'B')   # user button, east edge
+        self.add_part('L1', 98.0, 102.4, 90, 'B')     # BUCK1 L (east col of U2)
+        self.add_part('L2', 98.0, 106.0, 90, 'B')     # BUCK2 L
+        self.add_part('RT1', 84.3, 93.2, 0, 'B')      # NTC north of battery conn
+        self.add_part('D1', 112.6, 95.0, 90, 'B')     # TVS at SW1
+        self.add_part('D2', 112.6, 106.0, 90, 'B')    # TVS at SW2
 
         # ---------------- satellites: (value, net, x, y, rot, side)
         sats = []
         def sat(value, net, x, y, rot=0, side='B', idx=0):
             sats.append((value, net, x, y, rot, side, idx))
 
-        # PMIC decoupling — U2 at (91.0, 104.2), pins after flip:
-        #   1-8 east col (top->bot), 9-16 south row (E->W), 17-24 west col
-        #   (bot->top), 25-32 north row (W->E)
-        sat('10uF', 'VBAT',      87.6, 106.6, 90)      # near VBAT pin (west col)
-        sat('10uF', 'VSYS',      87.6, 104.4, 90)      # near VSYS pin
-        sat('2.2uF', 'VSYS',     87.6, 102.4, 90)
-        sat('100nF', 'VSYS',     89.2, 101.0, 0)       # PVDD
-        sat('10uF', 'VBUS_USB',  87.6, 108.8, 90)      # near VBUS pin
-        sat('1uF', 'VBUS_OUT',   89.6, 108.4, 90)      # VBUSOUT
-        sat('100nF', '3V0',      93.0, 101.0, 0, idx=0)     # VDDIO
-        sat('10uF', '3V0',       94.6, 106.9, 90, idx=0)    # BUCK2 output bulk
-        sat('10uF', '1V8_AUX',   94.6, 101.2, 90)           # BUCK1 output bulk
-        sat('1uF', 'VDD_DISP',   92.8, 107.2, 90)      # LSOUT1
-        sat('1uF', 'VDD_IMU',    92.8, 105.4, 90)      # LSOUT2
-        # VSET straps near south row pins 16/17 (flipped: west portion of S row)
-        sat('150k', 'VSET2_R', 0, 0)   # placeholder replaced below
-        sats.pop()
-        # (VSET nets are named by SKiDL as N$ or the resistor nets — resolve via find)
+        # PMIC decoupling — U2 flipped: pins 1-8 east col (top->bot),
+        # 9-16 south row (E->W), 17-24 west col (bot->top), 25-32 north (W->E)
+        # Courtyard envelopes (KiCad lib): 0402 = 1.92 x 1.12 mm, 0603 =
+        # 2.96 x 1.52 mm, custom L = 3.16 x 2.2. Pitches below respect them.
+        # west column x=86.3, 0603 rot-90, pitch 3.05
+        sat('10uF', 'VBUS_USB',  86.3, 101.0, 90)      # VBUS pin (closest)
+        sat('2.2uF', 'VSYS',     86.3, 104.05, 90)
+        sat('10uF', 'VSYS',      86.3, 107.1, 90)      # VSYS pin
+        sat('10uF', 'VBAT',      86.3, 110.15, 90)     # VBAT (battery is west anyway)
+        sat('1uF', 'VBUS_OUT',   84.7, 103.8, 90)      # VBUSOUT (west of col)
+        sat('100nF', 'VSYS',     95.4, 103.45, 90)      # PVDD, pocket E of U2
+        # north row y=100.0, 0402 rot-0, pitch 2.05 (sits N of U2 courtyard)
+        sat('1uF', 'VDD_DISP',   89.2, 100.0, 0)       # LSOUT1
+        sat('1uF', 'VDD_IMU',    91.25, 100.0, 0)      # LSOUT2
+        sat('100nF', '3V0',      93.3, 100.0, 0, idx=0)     # VDDIO (I2C ref)
+        # buck bulk caps at inductor outputs
+        sat('10uF', '3V0',       100.6, 106.2, 90, idx=0)   # BUCK2 output bulk
+        sat('10uF', '1V8_AUX',   95.4, 100.9, 90)           # BUCK1 output bulk
 
-        # module decoupling — module VDD pad28 flipped -> x = CX-1.6 = 98.4, y 97.7
-        sat('10uF', '3V0',       98.4, 99.2, 90, idx=1)
-        sat('100nF', '3V0',      96.9, 98.6, 0, idx=1)      # VDD
-        sat('100nF', '3V0',      99.9, 98.6, 0, idx=2)      # VDDH (pad30 x=98.9... adjacent)
-        sat('100nF', 'VBUS_OUT', 101.9, 98.6, 0)            # module VBUS pad32
-        # crystal load caps — Y1 at (97.2, 99.6) pads E/W
-        sat('12pF', 'XL1',       95.6, 100.6, 0)
-        sat('12pF', 'XL2',       98.8, 100.6, 0)
-        # IMU — U3 at (91.3, 97.3)
-        sat('100nF', 'VDD_IMU',  89.3, 96.0, 90)
-        sat('100nF', '3V0',      89.3, 98.4, 90, idx=3)     # VDDIO
-        # display connector caps (TOP side, near J2 pads 6/7)
-        sat('1uF', 'VDD_DISP',   88.0, 109.9, 0, 'F')
-        sat('100nF', 'VDD_DISP', 90.4, 109.9, 0, 'F')
-        sat('1uF', 'VDD_DISP',   92.8, 109.9, 0, 'F', idx=1)
-        sat('100nF', 'VDD_DISP', 95.2, 109.9, 0, 'F', idx=1)
+        # module decoupling — VDD pad28 (98.4, 97.7), VDDH pad30 (100.0, 97.7),
+        # VBUS pad32 (101.6, 97.7); module courtyard ends ~y=98.6
+        sat('100nF', '3V0',      97.6, 99.9, 90, idx=1)     # VDD
+        sat('100nF', '3V0',      99.0, 99.9, 90, idx=2)     # VDDH
+        sat('10uF', '3V0',       100.55, 100.45, 90, idx=1)   # module bulk
+        sat('100nF', 'VBUS_OUT', 106.9, 98.2, 90)           # module VBUS pad
+        # crystal load caps — row south of Y1 (XL pads at 103.2/102.4, 97.7);
+        # XL2 stack west, XL1 stack east (matches crystal pin swap, no crossover)
+        sat('12pF', 'XL2',       102.1, 102.65, 0)
+        sat('12pF', 'XL1',       104.5, 102.65, 0)
+        # IMU — U3 at (91.0, 92.0): caps south of U3, clear of J3/J4
+        sat('100nF', 'VDD_IMU',  89.8, 94.35, 0)
+        sat('100nF', '3V0',      91.9, 94.35, 0, idx=3)     # VDDIO
+        # display connector caps (TOP side, row north of J2, pitch 2.05)
+        sat('1uF', 'VDD_DISP',   87.0, 108.5, 0, 'F')
+        sat('100nF', 'VDD_DISP', 89.05, 108.5, 0, 'F')
+        sat('1uF', 'VDD_DISP',   91.1, 108.5, 0, 'F', idx=1)
+        sat('100nF', 'VDD_DISP', 93.15, 108.5, 0, 'F', idx=1)
 
         used = set()
         for value, net, x, y, rot, side, idx in sats:
@@ -248,14 +269,14 @@ class Builder:
         # resistors resolved by net membership
         rmap = [
             # (value, net, x, y, rot, side)
-            ('47k',  'N/A_VSET1', 88.6, 99.4, 0, 'B'),
-            ('150k', 'N/A_VSET2', 91.2, 99.4, 0, 'B'),
-            ('4.7k', 'I2C_SDA',   95.0, 96.9, 90, 'B'),
-            ('4.7k', 'I2C_SCL',   93.6, 96.9, 90, 'B'),
-            ('100k', 'IMU_CS',    89.3, 94.6, 90, 'B'),
-            ('100k', 'DISP_CS',   97.6, 109.9, 0, 'F'),
-            ('100R', 'BTN2',      112.0, 106.0, 90, 'B'),
-            ('100R', 'SHPHLD',    112.0, 95.0, 90, 'B'),
+            ('47k',  'N/A_VSET1', 88.3, 110.5, 0, 'B'),   # VSETs SW of U2
+            ('150k', 'N/A_VSET2', 88.3, 108.8, 0, 'B'),
+            ('4.7k', 'I2C_SDA',   93.6, 96.9, 90, 'B'),   # near module I2C pads
+            ('4.7k', 'I2C_SCL',   92.2, 96.9, 90, 'B'),
+            ('100k', 'IMU_CS',    92.2, 89.4, 0, 'B'),    # CSB pad12 N of U3
+            ('100k', 'DISP_CS',   84.95, 108.5, 0, 'F'),  # west of J2 cap row
+            ('100R', 'BTN2',      110.9, 106.0, 90, 'B'),
+            ('100R', 'SHPHLD',    110.9, 95.0, 90, 'B'),
         ]
         for value, net, x, y, rot, side in rmap:
             if net.startswith('N/A_VSET'):
@@ -278,6 +299,13 @@ class Builder:
         if missing:
             print('!! UNPLACED:', missing)
 
+        # functional silkscreen: battery polarity beside the actual J3 pads
+        # (safety: pigtail polarity varies by vendor — see review checklist)
+        for pad, sym in (('1', '+'), ('2', '-')):
+            px, py = self.pad_xy('J3', pad)
+            self.add_silk_text(sym, px + 1.6, py, pcbnew.B_SilkS, 0.9)
+        self.add_silk_text('JRWatch r1', 100.0, 87.6, pcbnew.F_SilkS, 1.0)
+
     # ------------------------------------------------- antenna keep-out
     def antenna_keepout(self):
         """Board-level rule area: extend the module's keep-out to the board
@@ -289,7 +317,7 @@ class Builder:
         top = ToMM(bb.GetTop())
         z = pcbnew.ZONE(self.board)
         z.SetIsRuleArea(True)
-        z.SetDoNotAllowCopperPour(True)
+        z.SetDoNotAllowZoneFills(True)
         z.SetDoNotAllowTracks(True)
         z.SetDoNotAllowVias(True)
         z.SetDoNotAllowPads(False)
