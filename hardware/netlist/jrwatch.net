@@ -1,0 +1,2477 @@
+(export 
+  (version "D")
+  (design
+    (source "jrwatch.py")
+    (date "07/02/2026 03:25 AM")
+    (tool "SKiDL (2.2.3)")
+    (sheet
+      (number 1)
+      (name "/")
+      (tstamps "/")
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source "jrwatch.py")
+        (comment
+          (number "1")
+          (value ""))
+        (comment
+          (number "2")
+          (value ""))
+        (comment
+          (number "3")
+          (value ""))
+        (comment
+          (number "4")
+          (value ""))
+        (comment
+          (number "5")
+          (value ""))
+        (comment
+          (number "6")
+          (value ""))
+        (comment
+          (number "7")
+          (value ""))
+        (comment
+          (number "8")
+          (value ""))
+        (comment
+          (number "9")
+          (value "")))))
+  (components
+    (comp
+      (ref "C1")
+      (value "10uF")
+      (description "C_0603")
+      (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (fields
+        (field
+          (name "LCSC") "C19702")
+        (field
+          (name "MPN") "CL10A106KP8NNNC")
+        (field
+          (name "Mfr") "Samsung")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "C_0603")
+        (field
+          (name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "gd4h9mdo09")
+        (field
+          (name "SKiDL Line") "jrwatch.py:72"))
+      (libsource
+        (lib "NO_LIB")
+        (part "C_0603"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "12da10d4-0a4b-59d1-9a97-c46748775abd"))
+    (comp
+      (ref "C10")
+      (value "1uF")
+      (description "C_0402")
+      (footprint "Capacitor_SMD:C_0402_1005Metric")
+      (fields
+        (field
+          (name "LCSC") "C52923")
+        (field
+          (name "MPN") "CL05A105KA5NQNC")
+        (field
+          (name "Mfr") "Samsung")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "C_0402")
+        (field
+          (name "Footprint") "Capacitor_SMD:C_0402_1005Metric")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "aA5u_lr5Hm")
+        (field
+          (name "SKiDL Line") "jrwatch.py:72"))
+      (libsource
+        (lib "NO_LIB")
+        (part "C_0402"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "738145d9-a301-5be6-be68-7abee47ccdbf"))
+    (comp
+      (ref "C11")
+      (value "100nF")
+      (description "C_0402")
+      (footprint "Capacitor_SMD:C_0402_1005Metric")
+      (fields
+        (field
+          (name "LCSC") "C1525")
+        (field
+          (name "MPN") "CL05B104KO5NNNC")
+        (field
+          (name "Mfr") "Samsung")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "C_0402")
+        (field
+          (name "Footprint") "Capacitor_SMD:C_0402_1005Metric")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "bVpu04chSc")
+        (field
+          (name "SKiDL Line") "jrwatch.py:72"))
+      (libsource
+        (lib "NO_LIB")
+        (part "C_0402"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "e8b825fc-9b10-536b-a34b-04fc9d11d1cb"))
+    (comp
+      (ref "C12")
+      (value "10uF")
+      (description "C_0603")
+      (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (fields
+        (field
+          (name "LCSC") "C19702")
+        (field
+          (name "MPN") "CL10A106KP8NNNC")
+        (field
+          (name "Mfr") "Samsung")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "C_0603")
+        (field
+          (name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "8lzt4K7jCC")
+        (field
+          (name "SKiDL Line") "jrwatch.py:72"))
+      (libsource
+        (lib "NO_LIB")
+        (part "C_0603"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "5c55efde-823d-5233-b072-190f0fc7a866"))
+    (comp
+      (ref "C13")
+      (value "100nF")
+      (description "C_0402")
+      (footprint "Capacitor_SMD:C_0402_1005Metric")
+      (fields
+        (field
+          (name "LCSC") "C1525")
+        (field
+          (name "MPN") "CL05B104KO5NNNC")
+        (field
+          (name "Mfr") "Samsung")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "C_0402")
+        (field
+          (name "Footprint") "Capacitor_SMD:C_0402_1005Metric")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "1BZnDW5W0Z")
+        (field
+          (name "SKiDL Line") "jrwatch.py:72"))
+      (libsource
+        (lib "NO_LIB")
+        (part "C_0402"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "463bc357-6f36-52d4-abb9-8e4ad9ee93ef"))
+    (comp
+      (ref "C14")
+      (value "100nF")
+      (description "C_0402")
+      (footprint "Capacitor_SMD:C_0402_1005Metric")
+      (fields
+        (field
+          (name "LCSC") "C1525")
+        (field
+          (name "MPN") "CL05B104KO5NNNC")
+        (field
+          (name "Mfr") "Samsung")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "C_0402")
+        (field
+          (name "Footprint") "Capacitor_SMD:C_0402_1005Metric")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "dId56Qwgmf")
+        (field
+          (name "SKiDL Line") "jrwatch.py:72"))
+      (libsource
+        (lib "NO_LIB")
+        (part "C_0402"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "66aadc44-84a8-5cd7-9efc-cf57de3ee8e2"))
+    (comp
+      (ref "C15")
+      (value "100nF")
+      (description "C_0402")
+      (footprint "Capacitor_SMD:C_0402_1005Metric")
+      (fields
+        (field
+          (name "LCSC") "C1525")
+        (field
+          (name "MPN") "CL05B104KO5NNNC")
+        (field
+          (name "Mfr") "Samsung")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "C_0402")
+        (field
+          (name "Footprint") "Capacitor_SMD:C_0402_1005Metric")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "VAMcW0Kg7C")
+        (field
+          (name "SKiDL Line") "jrwatch.py:72"))
+      (libsource
+        (lib "NO_LIB")
+        (part "C_0402"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "96da4589-249d-5863-8a31-aa19cb6b6443"))
+    (comp
+      (ref "C16")
+      (value "12pF")
+      (description "C_0402")
+      (footprint "Capacitor_SMD:C_0402_1005Metric")
+      (fields
+        (field
+          (name "LCSC") "C1546")
+        (field
+          (name "MPN") "CL05C120JB5NNNC")
+        (field
+          (name "Mfr") "Samsung")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "C_0402")
+        (field
+          (name "Footprint") "Capacitor_SMD:C_0402_1005Metric")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "SMSmyyeeLt")
+        (field
+          (name "SKiDL Line") "jrwatch.py:72"))
+      (libsource
+        (lib "NO_LIB")
+        (part "C_0402"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "ef4d5308-2628-5394-8347-99c8177fe4b7"))
+    (comp
+      (ref "C17")
+      (value "12pF")
+      (description "C_0402")
+      (footprint "Capacitor_SMD:C_0402_1005Metric")
+      (fields
+        (field
+          (name "LCSC") "C1546")
+        (field
+          (name "MPN") "CL05C120JB5NNNC")
+        (field
+          (name "Mfr") "Samsung")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "C_0402")
+        (field
+          (name "Footprint") "Capacitor_SMD:C_0402_1005Metric")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "6D8zH4zn20")
+        (field
+          (name "SKiDL Line") "jrwatch.py:72"))
+      (libsource
+        (lib "NO_LIB")
+        (part "C_0402"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "0c1b8588-28d8-5568-b48a-8c949078a2f3"))
+    (comp
+      (ref "C18")
+      (value "100nF")
+      (description "C_0402")
+      (footprint "Capacitor_SMD:C_0402_1005Metric")
+      (fields
+        (field
+          (name "LCSC") "C1525")
+        (field
+          (name "MPN") "CL05B104KO5NNNC")
+        (field
+          (name "Mfr") "Samsung")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "C_0402")
+        (field
+          (name "Footprint") "Capacitor_SMD:C_0402_1005Metric")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "vAy5fKbr_Y")
+        (field
+          (name "SKiDL Line") "jrwatch.py:72"))
+      (libsource
+        (lib "NO_LIB")
+        (part "C_0402"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "15c14cfd-51d1-5c36-9fbe-44042650ef2a"))
+    (comp
+      (ref "C19")
+      (value "100nF")
+      (description "C_0402")
+      (footprint "Capacitor_SMD:C_0402_1005Metric")
+      (fields
+        (field
+          (name "LCSC") "C1525")
+        (field
+          (name "MPN") "CL05B104KO5NNNC")
+        (field
+          (name "Mfr") "Samsung")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "C_0402")
+        (field
+          (name "Footprint") "Capacitor_SMD:C_0402_1005Metric")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "Mt9cJpcTOx")
+        (field
+          (name "SKiDL Line") "jrwatch.py:72"))
+      (libsource
+        (lib "NO_LIB")
+        (part "C_0402"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "6b591e67-70ac-551e-b63d-ea3722b5e765"))
+    (comp
+      (ref "C2")
+      (value "10uF")
+      (description "C_0603")
+      (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (fields
+        (field
+          (name "LCSC") "C19702")
+        (field
+          (name "MPN") "CL10A106KP8NNNC")
+        (field
+          (name "Mfr") "Samsung")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "C_0603")
+        (field
+          (name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "BJz0nzFc8N")
+        (field
+          (name "SKiDL Line") "jrwatch.py:72"))
+      (libsource
+        (lib "NO_LIB")
+        (part "C_0603"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "63ff9ba3-d720-5b1f-bf9f-1243fc6f301d"))
+    (comp
+      (ref "C20")
+      (value "1uF")
+      (description "C_0402")
+      (footprint "Capacitor_SMD:C_0402_1005Metric")
+      (fields
+        (field
+          (name "LCSC") "C52923")
+        (field
+          (name "MPN") "CL05A105KA5NQNC")
+        (field
+          (name "Mfr") "Samsung")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "C_0402")
+        (field
+          (name "Footprint") "Capacitor_SMD:C_0402_1005Metric")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "EB2wDXiP2V")
+        (field
+          (name "SKiDL Line") "jrwatch.py:72"))
+      (libsource
+        (lib "NO_LIB")
+        (part "C_0402"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "6b5066b3-b8c9-5cd2-b520-41350b5ab38e"))
+    (comp
+      (ref "C21")
+      (value "100nF")
+      (description "C_0402")
+      (footprint "Capacitor_SMD:C_0402_1005Metric")
+      (fields
+        (field
+          (name "LCSC") "C1525")
+        (field
+          (name "MPN") "CL05B104KO5NNNC")
+        (field
+          (name "Mfr") "Samsung")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "C_0402")
+        (field
+          (name "Footprint") "Capacitor_SMD:C_0402_1005Metric")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "Q3ST3iYRNt")
+        (field
+          (name "SKiDL Line") "jrwatch.py:72"))
+      (libsource
+        (lib "NO_LIB")
+        (part "C_0402"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "09bdfbf7-8530-5ccc-9f5e-f50e86bb1d95"))
+    (comp
+      (ref "C22")
+      (value "1uF")
+      (description "C_0402")
+      (footprint "Capacitor_SMD:C_0402_1005Metric")
+      (fields
+        (field
+          (name "LCSC") "C52923")
+        (field
+          (name "MPN") "CL05A105KA5NQNC")
+        (field
+          (name "Mfr") "Samsung")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "C_0402")
+        (field
+          (name "Footprint") "Capacitor_SMD:C_0402_1005Metric")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "dz2ODehbPj")
+        (field
+          (name "SKiDL Line") "jrwatch.py:72"))
+      (libsource
+        (lib "NO_LIB")
+        (part "C_0402"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "e1797eb0-a79f-5bd3-8b3b-6cd8b74c7317"))
+    (comp
+      (ref "C23")
+      (value "100nF")
+      (description "C_0402")
+      (footprint "Capacitor_SMD:C_0402_1005Metric")
+      (fields
+        (field
+          (name "LCSC") "C1525")
+        (field
+          (name "MPN") "CL05B104KO5NNNC")
+        (field
+          (name "Mfr") "Samsung")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "C_0402")
+        (field
+          (name "Footprint") "Capacitor_SMD:C_0402_1005Metric")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "aGM7I5bOBp")
+        (field
+          (name "SKiDL Line") "jrwatch.py:72"))
+      (libsource
+        (lib "NO_LIB")
+        (part "C_0402"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "f930e3a0-ad09-58d5-9fc7-2356c08fc1cd"))
+    (comp
+      (ref "C3")
+      (value "2.2uF")
+      (description "C_0603")
+      (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (fields
+        (field
+          (name "LCSC") "C23630")
+        (field
+          (name "MPN") "CL10B225KO8NNNC")
+        (field
+          (name "Mfr") "Samsung")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "C_0603")
+        (field
+          (name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "E_3pnJkOXP")
+        (field
+          (name "SKiDL Line") "jrwatch.py:72"))
+      (libsource
+        (lib "NO_LIB")
+        (part "C_0603"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "f8128562-474a-5f8b-8f7f-ce5883985bd4"))
+    (comp
+      (ref "C4")
+      (value "100nF")
+      (description "C_0402")
+      (footprint "Capacitor_SMD:C_0402_1005Metric")
+      (fields
+        (field
+          (name "LCSC") "C1525")
+        (field
+          (name "MPN") "CL05B104KO5NNNC")
+        (field
+          (name "Mfr") "Samsung")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "C_0402")
+        (field
+          (name "Footprint") "Capacitor_SMD:C_0402_1005Metric")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "HI69QjUTPD")
+        (field
+          (name "SKiDL Line") "jrwatch.py:72"))
+      (libsource
+        (lib "NO_LIB")
+        (part "C_0402"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "9ddfe1fc-4300-57e6-bf5d-80bb234f9d5c"))
+    (comp
+      (ref "C5")
+      (value "10uF")
+      (description "C_0603")
+      (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (fields
+        (field
+          (name "LCSC") "C19702")
+        (field
+          (name "MPN") "CL10A106KP8NNNC")
+        (field
+          (name "Mfr") "Samsung")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "C_0603")
+        (field
+          (name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "pgvM5EEQHH")
+        (field
+          (name "SKiDL Line") "jrwatch.py:72"))
+      (libsource
+        (lib "NO_LIB")
+        (part "C_0603"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "bdb89549-175d-5d70-bc35-6d89fbc0b8f2"))
+    (comp
+      (ref "C6")
+      (value "1uF")
+      (description "C_0402")
+      (footprint "Capacitor_SMD:C_0402_1005Metric")
+      (fields
+        (field
+          (name "LCSC") "C52923")
+        (field
+          (name "MPN") "CL05A105KA5NQNC")
+        (field
+          (name "Mfr") "Samsung")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "C_0402")
+        (field
+          (name "Footprint") "Capacitor_SMD:C_0402_1005Metric")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "fFnv4iqAs8")
+        (field
+          (name "SKiDL Line") "jrwatch.py:72"))
+      (libsource
+        (lib "NO_LIB")
+        (part "C_0402"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "c2ba4e45-664e-5d61-bc78-acac551c8b54"))
+    (comp
+      (ref "C7")
+      (value "10uF")
+      (description "C_0603")
+      (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (fields
+        (field
+          (name "LCSC") "C19702")
+        (field
+          (name "MPN") "CL10A106KP8NNNC")
+        (field
+          (name "Mfr") "Samsung")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "C_0603")
+        (field
+          (name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "nqS7bFUOgx")
+        (field
+          (name "SKiDL Line") "jrwatch.py:72"))
+      (libsource
+        (lib "NO_LIB")
+        (part "C_0603"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "32c5095a-f415-517c-bec3-80a3c5b79b89"))
+    (comp
+      (ref "C8")
+      (value "10uF")
+      (description "C_0603")
+      (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (fields
+        (field
+          (name "LCSC") "C19702")
+        (field
+          (name "MPN") "CL10A106KP8NNNC")
+        (field
+          (name "Mfr") "Samsung")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "C_0603")
+        (field
+          (name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "bqsSMomAX2")
+        (field
+          (name "SKiDL Line") "jrwatch.py:72"))
+      (libsource
+        (lib "NO_LIB")
+        (part "C_0603"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "4d04ea57-869b-53b0-b337-b8cf0fcb6e03"))
+    (comp
+      (ref "C9")
+      (value "1uF")
+      (description "C_0402")
+      (footprint "Capacitor_SMD:C_0402_1005Metric")
+      (fields
+        (field
+          (name "LCSC") "C52923")
+        (field
+          (name "MPN") "CL05A105KA5NQNC")
+        (field
+          (name "Mfr") "Samsung")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "C_0402")
+        (field
+          (name "Footprint") "Capacitor_SMD:C_0402_1005Metric")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "tYav0keNcd")
+        (field
+          (name "SKiDL Line") "jrwatch.py:72"))
+      (libsource
+        (lib "NO_LIB")
+        (part "C_0402"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "67e032e4-4eee-5bd9-9b48-ffd1c0cf03a2"))
+    (comp
+      (ref "D1")
+      (value "ESD9B5.0")
+      (description "Bidirectional ESD TVS, 5.0 V working (SHPHLD swings to VBAT)")
+      (footprint "Diode_SMD:D_SOD-923")
+      (fields
+        (field
+          (name "LCSC") "C3008065")
+        (field
+          (name "MPN") "ESD9B5.0ST5G")
+        (field
+          (name "Mfr") "MSKSEMI")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Note") "onsemi original acceptable substitute")
+        (field
+          (name "Description") "Bidirectional ESD TVS, 5.0 V working (SHPHLD swings to VBAT)")
+        (field
+          (name "Footprint") "Diode_SMD:D_SOD-923")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "IxP8RTGTpo")
+        (field
+          (name "SKiDL Line") "jrwatch.py:282"))
+      (libsource
+        (lib "NO_LIB")
+        (part "ESD9B5.0ST5G"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "c8d0e431-3a89-53cb-9ed4-ac295b407772"))
+    (comp
+      (ref "D2")
+      (value "ESD9B3.3")
+      (description "Bidirectional ESD TVS, 3.3 V working (logic-level button line)")
+      (footprint "Diode_SMD:D_SOD-923")
+      (fields
+        (field
+          (name "LCSC") "C96512")
+        (field
+          (name "MPN") "ESD9B3.3ST5G")
+        (field
+          (name "Mfr") "onsemi")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "Bidirectional ESD TVS, 3.3 V working (logic-level button line)")
+        (field
+          (name "Footprint") "Diode_SMD:D_SOD-923")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "4C04D_mBWU")
+        (field
+          (name "SKiDL Line") "jrwatch.py:295"))
+      (libsource
+        (lib "NO_LIB")
+        (part "ESD9B3.3ST5G"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "a2200de8-4262-5401-a979-28efd74a177c"))
+    (comp
+      (ref "J1")
+      (value "TYPE-C-31-M-12")
+      (description "USB-C receptacle 16P (charge + FS data)")
+      (footprint "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12")
+      (fields
+        (field
+          (name "LCSC") "C165948")
+        (field
+          (name "MPN") "TYPE-C-31-M-12")
+        (field
+          (name "Mfr") "Korean Hroparts")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "USB-C receptacle 16P (charge + FS data)")
+        (field
+          (name "Footprint") "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "hwuOifFdoT")
+        (field
+          (name "SKiDL Line") "jrwatch.py:216"))
+      (libsource
+        (lib "NO_LIB")
+        (part "TYPE-C-31-M-12"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "c6995703-71ac-529a-ada8-4d01a5912df1"))
+    (comp
+      (ref "J2")
+      (value "FH12A-10S-0.5SH")
+      (description "Display FPC connector — LS013B7DH03 pinout (Sharp Table 4)")
+      (footprint "Connector_FFC-FPC:Hirose_FH12-10S-0.5SH_1x10-1MP_P0.50mm_Horizontal")
+      (fields
+        (field
+          (name "LCSC") "C5139870")
+        (field
+          (name "MPN") "FH12A-10S-0.5SH(55)")
+        (field
+          (name "Mfr") "Hirose")
+        (field
+          (name "Sourcing") "hand")
+        (field
+          (name "Note") "display LS013B7DH03 attaches here; panel from DigiKey/Adafruit")
+        (field
+          (name "Description") "Display FPC connector — LS013B7DH03 pinout (Sharp Table 4)")
+        (field
+          (name "Footprint") "Connector_FFC-FPC:Hirose_FH12-10S-0.5SH_1x10-1MP_P0.50mm_Horizontal")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "bte8cgzdZ0")
+        (field
+          (name "SKiDL Line") "jrwatch.py:262"))
+      (libsource
+        (lib "NO_LIB")
+        (part "FH12A-10S-0.5SH"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "28e5497e-841d-540e-a10d-2920522b403d"))
+    (comp
+      (ref "J3")
+      (value "SM02B-SRSS-TB")
+      (description "Battery connector, JST-SH 2P right angle. PIN 1 = BAT+ (verify pigtail!)")
+      (footprint "Connector_JST:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal")
+      (fields
+        (field
+          (name "LCSC") "C160402")
+        (field
+          (name "MPN") "SM02B-SRSS-TB(LF)(SN)")
+        (field
+          (name "Mfr") "JST")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "Battery connector, JST-SH 2P right angle. PIN 1 = BAT+ (verify pigtail!)")
+        (field
+          (name "Footprint") "Connector_JST:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "kbq18_8bXF")
+        (field
+          (name "SKiDL Line") "jrwatch.py:156"))
+      (libsource
+        (lib "NO_LIB")
+        (part "SM02B-SRSS-TB"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "728b3f03-6978-57e5-aafa-e51174d2c88f"))
+    (comp
+      (ref "J4")
+      (value "TC2030-IDC-NL")
+      (description "SWD pads (Tag-Connect, no part fitted)")
+      (footprint "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical")
+      (fields
+        (field
+          (name "MPN") "TC2030-IDC-NL")
+        (field
+          (name "Mfr") "Tag-Connect")
+        (field
+          (name "Sourcing") "none")
+        (field
+          (name "DNP") "footprint only")
+        (field
+          (name "Description") "SWD pads (Tag-Connect, no part fitted)")
+        (field
+          (name "Footprint") "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "3MqMAUFkPy")
+        (field
+          (name "SKiDL Line") "jrwatch.py:185"))
+      (libsource
+        (lib "NO_LIB")
+        (part "TC2030-IDC-NL"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "eba1b691-d07a-5359-aaf3-99b10732e342"))
+    (comp
+      (ref "L1")
+      (value "2.2uH")
+      (description "2.2 uH power inductor, 116 mOhm, Isat 2.4 A (nPM1300 buck)")
+      (footprint "JRWatch:L_Murata_DFE201612E_2016")
+      (fields
+        (field
+          (name "LCSC") "C337893")
+        (field
+          (name "MPN") "DFE201612E-2R2M=P2")
+        (field
+          (name "Mfr") "Murata")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "2.2 uH power inductor, 116 mOhm, Isat 2.4 A (nPM1300 buck)")
+        (field
+          (name "Footprint") "JRWatch:L_Murata_DFE201612E_2016")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "zl7lk9faoo")
+        (field
+          (name "SKiDL Line") "jrwatch.py:108"))
+      (libsource
+        (lib "NO_LIB")
+        (part "DFE201612E-2R2M"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "0feda125-3731-5a2e-a112-3e229cb046b8"))
+    (comp
+      (ref "L2")
+      (value "2.2uH")
+      (description "2.2 uH power inductor, 116 mOhm, Isat 2.4 A (nPM1300 buck)")
+      (footprint "JRWatch:L_Murata_DFE201612E_2016")
+      (fields
+        (field
+          (name "LCSC") "C337893")
+        (field
+          (name "MPN") "DFE201612E-2R2M=P2")
+        (field
+          (name "Mfr") "Murata")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "2.2 uH power inductor, 116 mOhm, Isat 2.4 A (nPM1300 buck)")
+        (field
+          (name "Footprint") "JRWatch:L_Murata_DFE201612E_2016")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "8BfCMcY3Kt")
+        (field
+          (name "SKiDL Line") "jrwatch.py:118"))
+      (libsource
+        (lib "NO_LIB")
+        (part "DFE201612E-2R2M"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "67d66038-75b8-5e22-b7b7-91770d0058c4"))
+    (comp
+      (ref "R1")
+      (value "47k")
+      (description "R_0402")
+      (footprint "Resistor_SMD:R_0402_1005Metric")
+      (fields
+        (field
+          (name "LCSC") "C25563")
+        (field
+          (name "MPN") "0402WGF4702TCE")
+        (field
+          (name "Mfr") "UNI-ROYAL")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "R_0402")
+        (field
+          (name "Footprint") "Resistor_SMD:R_0402_1005Metric")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "QN_IhpoHKz")
+        (field
+          (name "SKiDL Line") "jrwatch.py:76"))
+      (libsource
+        (lib "NO_LIB")
+        (part "R_0402"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "7fc9fb28-f89e-5491-ae0d-6cc6752c7fe5"))
+    (comp
+      (ref "R2")
+      (value "150k")
+      (description "R_0402")
+      (footprint "Resistor_SMD:R_0402_1005Metric")
+      (fields
+        (field
+          (name "LCSC") "C25867")
+        (field
+          (name "MPN") "0402WGF1503TCE")
+        (field
+          (name "Mfr") "UNI-ROYAL")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "R_0402")
+        (field
+          (name "Footprint") "Resistor_SMD:R_0402_1005Metric")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "nXgeSXFqjA")
+        (field
+          (name "SKiDL Line") "jrwatch.py:76"))
+      (libsource
+        (lib "NO_LIB")
+        (part "R_0402"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "44e0e670-89c7-5b37-aec4-6628b0331a3f"))
+    (comp
+      (ref "R3")
+      (value "4.7k")
+      (description "R_0402")
+      (footprint "Resistor_SMD:R_0402_1005Metric")
+      (fields
+        (field
+          (name "LCSC") "C25900")
+        (field
+          (name "MPN") "0402WGF4701TCE")
+        (field
+          (name "Mfr") "UNI-ROYAL")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "R_0402")
+        (field
+          (name "Footprint") "Resistor_SMD:R_0402_1005Metric")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "S62qCbUNkj")
+        (field
+          (name "SKiDL Line") "jrwatch.py:76"))
+      (libsource
+        (lib "NO_LIB")
+        (part "R_0402"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "5fef7571-7d8b-5c7e-813a-a94a93893c71"))
+    (comp
+      (ref "R4")
+      (value "4.7k")
+      (description "R_0402")
+      (footprint "Resistor_SMD:R_0402_1005Metric")
+      (fields
+        (field
+          (name "LCSC") "C25900")
+        (field
+          (name "MPN") "0402WGF4701TCE")
+        (field
+          (name "Mfr") "UNI-ROYAL")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "R_0402")
+        (field
+          (name "Footprint") "Resistor_SMD:R_0402_1005Metric")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "aZbP5t8u1K")
+        (field
+          (name "SKiDL Line") "jrwatch.py:76"))
+      (libsource
+        (lib "NO_LIB")
+        (part "R_0402"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "c3344b96-5325-5e05-a049-d90335654599"))
+    (comp
+      (ref "R5")
+      (value "100k")
+      (description "R_0402")
+      (footprint "Resistor_SMD:R_0402_1005Metric")
+      (fields
+        (field
+          (name "LCSC") "C25741")
+        (field
+          (name "MPN") "0402WGF1003TCE")
+        (field
+          (name "Mfr") "UNI-ROYAL")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "R_0402")
+        (field
+          (name "Footprint") "Resistor_SMD:R_0402_1005Metric")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "Dlnzl1J9OW")
+        (field
+          (name "SKiDL Line") "jrwatch.py:76"))
+      (libsource
+        (lib "NO_LIB")
+        (part "R_0402"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "156a2ec6-2cff-567f-84b7-34b5dc9fef64"))
+    (comp
+      (ref "R6")
+      (value "100k")
+      (description "R_0402")
+      (footprint "Resistor_SMD:R_0402_1005Metric")
+      (fields
+        (field
+          (name "LCSC") "C25741")
+        (field
+          (name "MPN") "0402WGF1003TCE")
+        (field
+          (name "Mfr") "UNI-ROYAL")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "R_0402")
+        (field
+          (name "Footprint") "Resistor_SMD:R_0402_1005Metric")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "5E5ZvTdFWF")
+        (field
+          (name "SKiDL Line") "jrwatch.py:76"))
+      (libsource
+        (lib "NO_LIB")
+        (part "R_0402"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "0945e097-bd2e-54a1-8176-00c86df025ca"))
+    (comp
+      (ref "R7")
+      (value "100R")
+      (description "R_0402")
+      (footprint "Resistor_SMD:R_0402_1005Metric")
+      (fields
+        (field
+          (name "LCSC") "C25076")
+        (field
+          (name "MPN") "0402WGF1000TCE")
+        (field
+          (name "Mfr") "UNI-ROYAL")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "R_0402")
+        (field
+          (name "Footprint") "Resistor_SMD:R_0402_1005Metric")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "AAQbbAxw5_")
+        (field
+          (name "SKiDL Line") "jrwatch.py:76"))
+      (libsource
+        (lib "NO_LIB")
+        (part "R_0402"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "ec96bb02-2a06-5bd5-a05f-fe65eb7f6c50"))
+    (comp
+      (ref "R8")
+      (value "100R")
+      (description "R_0402")
+      (footprint "Resistor_SMD:R_0402_1005Metric")
+      (fields
+        (field
+          (name "LCSC") "C25076")
+        (field
+          (name "MPN") "0402WGF1000TCE")
+        (field
+          (name "Mfr") "UNI-ROYAL")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "R_0402")
+        (field
+          (name "Footprint") "Resistor_SMD:R_0402_1005Metric")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "zJIEhv5F3A")
+        (field
+          (name "SKiDL Line") "jrwatch.py:76"))
+      (libsource
+        (lib "NO_LIB")
+        (part "R_0402"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "b5b3344f-2aa4-5c20-a53b-ca10f9c54406"))
+    (comp
+      (ref "RT1")
+      (value "10k NTC")
+      (description "NTC 10k 1% B=3380 (battery temperature, nPM1300 NTC)")
+      (footprint "Resistor_SMD:R_0402_1005Metric")
+      (fields
+        (field
+          (name "LCSC") "C77131")
+        (field
+          (name "MPN") "NCP15XH103F03RC")
+        (field
+          (name "Mfr") "Murata")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "NTC 10k 1% B=3380 (battery temperature, nPM1300 NTC)")
+        (field
+          (name "Footprint") "Resistor_SMD:R_0402_1005Metric")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "0_KBmZrYld")
+        (field
+          (name "SKiDL Line") "jrwatch.py:150"))
+      (libsource
+        (lib "NO_LIB")
+        (part "NCP15XH103F03RC"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "45fad778-8dd6-5ca8-ac70-1bf657b150e9"))
+    (comp
+      (ref "SW1")
+      (value "PWR/SHIP")
+      (description "Side-actuated tact switch 4.5x3.4 mm")
+      (footprint "Button_Switch_SMD:SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010")
+      (fields
+        (field
+          (name "LCSC") "C110293")
+        (field
+          (name "MPN") "SKRTLAE010")
+        (field
+          (name "Mfr") "Alps Alpine")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "Side-actuated tact switch 4.5x3.4 mm")
+        (field
+          (name "Footprint") "Button_Switch_SMD:SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "dFUfPHaqux")
+        (field
+          (name "SKiDL Line") "jrwatch.py:281"))
+      (libsource
+        (lib "NO_LIB")
+        (part "SKRTLAE010"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "4c96f61d-03a4-528b-942d-490b062c9220"))
+    (comp
+      (ref "SW2")
+      (value "USER")
+      (description "Side-actuated tact switch 4.5x3.4 mm")
+      (footprint "Button_Switch_SMD:SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010")
+      (fields
+        (field
+          (name "LCSC") "C110293")
+        (field
+          (name "MPN") "SKRTLAE010")
+        (field
+          (name "Mfr") "Alps Alpine")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "Side-actuated tact switch 4.5x3.4 mm")
+        (field
+          (name "Footprint") "Button_Switch_SMD:SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "u3QwXyxi3q")
+        (field
+          (name "SKiDL Line") "jrwatch.py:294"))
+      (libsource
+        (lib "NO_LIB")
+        (part "SKRTLAE010"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "a2163924-cced-50d8-95cf-ea2afe330d71"))
+    (comp
+      (ref "U1")
+      (value "MDBT50Q-1MV2")
+      (description "BLE module, nRF52840, chip antenna, BT5.x certified")
+      (footprint "RF_Module:Raytac_MDBT50Q")
+      (fields
+        (field
+          (name "LCSC") "C5118826")
+        (field
+          (name "MPN") "MDBT50Q-1MV2")
+        (field
+          (name "Mfr") "Raytac")
+        (field
+          (name "Sourcing") "hand/DigiKey")
+        (field
+          (name "Description") "BLE module, nRF52840, chip antenna, BT5.x certified")
+        (field
+          (name "Footprint") "RF_Module:Raytac_MDBT50Q")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "L9G7zCTNod")
+        (field
+          (name "SKiDL Line") "jrwatch.py:162"))
+      (libsource
+        (lib "NO_LIB")
+        (part "MDBT50Q-1MV2"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "6f61622a-22ef-5789-ba2d-c3eed14bf01f"))
+    (comp
+      (ref "U2")
+      (value "nPM1300-QEAA-R7")
+      (description "PMIC: LiPo charger + 2x buck + 2x LDO/loadswitch + fuel gauge + ship mode")
+      (footprint "Package_DFN_QFN:VQFN-32-1EP_5x5mm_P0.5mm_EP3.5x3.5mm_ThermalVias")
+      (fields
+        (field
+          (name "LCSC") "C7501206")
+        (field
+          (name "MPN") "nPM1300-QEAA-R7")
+        (field
+          (name "Mfr") "Nordic")
+        (field
+          (name "Sourcing") "hand/DigiKey")
+        (field
+          (name "Description") "PMIC: LiPo charger + 2x buck + 2x LDO/loadswitch + fuel gauge + ship mode")
+        (field
+          (name "Footprint") "Package_DFN_QFN:VQFN-32-1EP_5x5mm_P0.5mm_EP3.5x3.5mm_ThermalVias")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "vQ87ttiqXp")
+        (field
+          (name "SKiDL Line") "jrwatch.py:87"))
+      (libsource
+        (lib "NO_LIB")
+        (part "nPM1300-QEAA"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "05720606-f697-59af-999f-4f93c4ade076"))
+    (comp
+      (ref "U3")
+      (value "BMI270")
+      (description "6-axis IMU, low-power any-motion wake + step counter, SPI 4-wire")
+      (footprint "JRWatch:Bosch_LGA-14_3x2.5mm_P0.5mm_BMI270")
+      (fields
+        (field
+          (name "LCSC") "C2836813")
+        (field
+          (name "MPN") "BMI270")
+        (field
+          (name "Mfr") "Bosch Sensortec")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "6-axis IMU, low-power any-motion wake + step counter, SPI 4-wire")
+        (field
+          (name "Footprint") "JRWatch:Bosch_LGA-14_3x2.5mm_P0.5mm_BMI270")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "yzeS3nv6xb")
+        (field
+          (name "SKiDL Line") "jrwatch.py:241"))
+      (libsource
+        (lib "NO_LIB")
+        (part "BMI270"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "561960f7-3037-549a-aa5e-0a6b24506176"))
+    (comp
+      (ref "U4")
+      (value "USBLC6-2SC6")
+      (description "USB ESD protection array (flow-through)")
+      (footprint "Package_TO_SOT_SMD:SOT-23-6")
+      (fields
+        (field
+          (name "LCSC") "C7519")
+        (field
+          (name "MPN") "USBLC6-2SC6")
+        (field
+          (name "Mfr") "ST")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "USB ESD protection array (flow-through)")
+        (field
+          (name "Footprint") "Package_TO_SOT_SMD:SOT-23-6")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "ahmLpgkc0R")
+        (field
+          (name "SKiDL Line") "jrwatch.py:217"))
+      (libsource
+        (lib "NO_LIB")
+        (part "USBLC6-2SC6"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "d0331bd8-6cc1-5dd4-a692-d5ef0dddea02"))
+    (comp
+      (ref "Y1")
+      (value "32.768kHz")
+      (description "32.768 kHz crystal, CL=12.5 pF, +/-20 ppm (FC-135R family)")
+      (footprint "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm")
+      (fields
+        (field
+          (name "LCSC") "C32346")
+        (field
+          (name "MPN") "Q13FC13500004")
+        (field
+          (name "Mfr") "Epson")
+        (field
+          (name "Sourcing") "jlc")
+        (field
+          (name "Description") "32.768 kHz crystal, CL=12.5 pF, +/-20 ppm (FC-135R family)")
+        (field
+          (name "Footprint") "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "evZSzWfjGy")
+        (field
+          (name "SKiDL Line") "jrwatch.py:174"))
+      (libsource
+        (lib "NO_LIB")
+        (part "Q13FC13500004"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "4972d90f-d89f-5e4a-9626-3245b14a9b55")))
+  (nets
+    (net
+      (code 1)
+      (name "1V8_AUX")
+      (class "Default")
+      (node
+        (ref "C7")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "L1")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U2")
+        (pin "1")
+        (pintype "POWER-OUT")))
+    (net
+      (code 2)
+      (name "3V0")
+      (class "Default")
+      (node
+        (ref "C11")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C12")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C13")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C14")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C19")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C8")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "J4")
+        (pin "1")
+        (pintype "POWER-IN"))
+      (node
+        (ref "L2")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "R3")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "R4")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "R5")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U1")
+        (pin "28")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U1")
+        (pin "30")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U2")
+        (pin "12")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U2")
+        (pin "28")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U2")
+        (pin "30")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U2")
+        (pin "32")
+        (pintype "POWER-OUT"))
+      (node
+        (ref "U3")
+        (pin "2")
+        (pintype "INPUT"))
+      (node
+        (ref "U3")
+        (pin "3")
+        (pintype "INPUT"))
+      (node
+        (ref "U3")
+        (pin "5")
+        (pintype "POWER-IN")))
+    (net
+      (code 3)
+      (name "BTN1_PAD")
+      (class "Default")
+      (node
+        (ref "D1")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "R7")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "SW1")
+        (pin "1")
+        (pintype "PASSIVE")))
+    (net
+      (code 4)
+      (name "BTN2")
+      (class "Default")
+      (node
+        (ref "R8")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U1")
+        (pin "6")
+        (pintype "BIDIRECTIONAL")))
+    (net
+      (code 5)
+      (name "BTN2_PAD")
+      (class "Default")
+      (node
+        (ref "D2")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "R8")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "SW2")
+        (pin "1")
+        (pintype "PASSIVE")))
+    (net
+      (code 6)
+      (name "CC1")
+      (class "Default")
+      (node
+        (ref "J1")
+        (pin "A5")
+        (pintype "BIDIRECTIONAL"))
+      (node
+        (ref "U2")
+        (pin "23")
+        (pintype "BIDIRECTIONAL")))
+    (net
+      (code 7)
+      (name "CC2")
+      (class "Default")
+      (node
+        (ref "J1")
+        (pin "B5")
+        (pintype "BIDIRECTIONAL"))
+      (node
+        (ref "U2")
+        (pin "24")
+        (pintype "BIDIRECTIONAL")))
+    (net
+      (code 8)
+      (name "DISP_CS")
+      (class "Default")
+      (node
+        (ref "J2")
+        (pin "3")
+        (pintype "INPUT"))
+      (node
+        (ref "R6")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U1")
+        (pin "39")
+        (pintype "BIDIRECTIONAL")))
+    (net
+      (code 9)
+      (name "DISP_MOSI")
+      (class "Default")
+      (node
+        (ref "J2")
+        (pin "2")
+        (pintype "INPUT"))
+      (node
+        (ref "U1")
+        (pin "44")
+        (pintype "BIDIRECTIONAL")))
+    (net
+      (code 10)
+      (name "DISP_ON")
+      (class "Default")
+      (node
+        (ref "J2")
+        (pin "5")
+        (pintype "INPUT"))
+      (node
+        (ref "U1")
+        (pin "38")
+        (pintype "BIDIRECTIONAL")))
+    (net
+      (code 11)
+      (name "DISP_SCK")
+      (class "Default")
+      (node
+        (ref "J2")
+        (pin "1")
+        (pintype "INPUT"))
+      (node
+        (ref "U1")
+        (pin "41")
+        (pintype "BIDIRECTIONAL")))
+    (net
+      (code 12)
+      (name "EXTCOMIN")
+      (class "Default")
+      (node
+        (ref "J2")
+        (pin "4")
+        (pintype "INPUT"))
+      (node
+        (ref "U1")
+        (pin "50")
+        (pintype "BIDIRECTIONAL")))
+    (net
+      (code 13)
+      (name "GND")
+      (class "Default")
+      (node
+        (ref "C1")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C10")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C11")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C12")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C13")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C14")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C15")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C16")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C17")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C18")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C19")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C2")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C20")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C21")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C22")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C23")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C3")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C4")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C5")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C6")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C7")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C8")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C9")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "D1")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "D2")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "J1")
+        (pin "A1")
+        (pintype "POWER-IN"))
+      (node
+        (ref "J1")
+        (pin "A12")
+        (pintype "POWER-IN"))
+      (node
+        (ref "J1")
+        (pin "B1")
+        (pintype "POWER-IN"))
+      (node
+        (ref "J1")
+        (pin "B12")
+        (pintype "POWER-IN"))
+      (node
+        (ref "J1")
+        (pin "SH")
+        (pintype "PASSIVE"))
+      (node
+        (ref "J2")
+        (pin "10")
+        (pintype "POWER-IN"))
+      (node
+        (ref "J2")
+        (pin "9")
+        (pintype "POWER-IN"))
+      (node
+        (ref "J2")
+        (pin "MP")
+        (pintype "PASSIVE"))
+      (node
+        (ref "J3")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "J3")
+        (pin "MP")
+        (pintype "PASSIVE"))
+      (node
+        (ref "J4")
+        (pin "5")
+        (pintype "POWER-IN"))
+      (node
+        (ref "R1")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "R2")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "R6")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "RT1")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "SW1")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "SW1")
+        (pin "MP")
+        (pintype "PASSIVE"))
+      (node
+        (ref "SW2")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "SW2")
+        (pin "MP")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U1")
+        (pin "1")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U1")
+        (pin "15")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U1")
+        (pin "2")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U1")
+        (pin "33")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U1")
+        (pin "55")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U2")
+        (pin "2")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U2")
+        (pin "33")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U2")
+        (pin "6")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U3")
+        (pin "6")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U3")
+        (pin "7")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U4")
+        (pin "2")
+        (pintype "POWER-IN")))
+    (net
+      (code 14)
+      (name "I2C_SCL")
+      (class "Default")
+      (node
+        (ref "R4")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U1")
+        (pin "37")
+        (pintype "BIDIRECTIONAL"))
+      (node
+        (ref "U2")
+        (pin "14")
+        (pintype "INPUT")))
+    (net
+      (code 15)
+      (name "I2C_SDA")
+      (class "Default")
+      (node
+        (ref "R3")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U1")
+        (pin "36")
+        (pintype "BIDIRECTIONAL"))
+      (node
+        (ref "U2")
+        (pin "13")
+        (pintype "BIDIRECTIONAL")))
+    (net
+      (code 16)
+      (name "IMU_CS")
+      (class "Default")
+      (node
+        (ref "R5")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U1")
+        (pin "46")
+        (pintype "BIDIRECTIONAL"))
+      (node
+        (ref "U3")
+        (pin "12")
+        (pintype "INPUT")))
+    (net
+      (code 17)
+      (name "IMU_INT1")
+      (class "Default")
+      (node
+        (ref "U1")
+        (pin "49")
+        (pintype "BIDIRECTIONAL"))
+      (node
+        (ref "U3")
+        (pin "4")
+        (pintype "OUTPUT")))
+    (net
+      (code 18)
+      (name "IMU_MISO")
+      (class "Default")
+      (node
+        (ref "U1")
+        (pin "45")
+        (pintype "BIDIRECTIONAL"))
+      (node
+        (ref "U3")
+        (pin "1")
+        (pintype "TRISTATE")))
+    (net
+      (code 19)
+      (name "IMU_MOSI")
+      (class "Default")
+      (node
+        (ref "U1")
+        (pin "43")
+        (pintype "BIDIRECTIONAL"))
+      (node
+        (ref "U3")
+        (pin "14")
+        (pintype "INPUT")))
+    (net
+      (code 20)
+      (name "IMU_SCK")
+      (class "Default")
+      (node
+        (ref "U1")
+        (pin "42")
+        (pintype "BIDIRECTIONAL"))
+      (node
+        (ref "U3")
+        (pin "13")
+        (pintype "INPUT")))
+    (net
+      (code 21)
+      (name "N$1")
+      (class "Default")
+      (node
+        (ref "L1")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U2")
+        (pin "3")
+        (pintype "OUTPUT")))
+    (net
+      (code 22)
+      (name "N$2")
+      (class "Default")
+      (node
+        (ref "R1")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U2")
+        (pin "17")
+        (pintype "INPUT")))
+    (net
+      (code 23)
+      (name "N$3")
+      (class "Default")
+      (node
+        (ref "L2")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U2")
+        (pin "5")
+        (pintype "OUTPUT")))
+    (net
+      (code 24)
+      (name "N$4")
+      (class "Default")
+      (node
+        (ref "R2")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U2")
+        (pin "16")
+        (pintype "INPUT")))
+    (net
+      (code 25)
+      (name "NTC")
+      (class "Default")
+      (node
+        (ref "RT1")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U2")
+        (pin "18")
+        (pintype "INPUT")))
+    (net
+      (code 26)
+      (name "PMIC_INT")
+      (class "Default")
+      (node
+        (ref "U1")
+        (pin "29")
+        (pintype "BIDIRECTIONAL"))
+      (node
+        (ref "U2")
+        (pin "7")
+        (pintype "BIDIRECTIONAL")))
+    (net
+      (code 27)
+      (name "SHPHLD")
+      (class "Default")
+      (node
+        (ref "R7")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U2")
+        (pin "15")
+        (pintype "INPUT")))
+    (net
+      (code 28)
+      (name "SWDCLK")
+      (class "Default")
+      (node
+        (ref "J4")
+        (pin "4")
+        (pintype "BIDIRECTIONAL"))
+      (node
+        (ref "U1")
+        (pin "53")
+        (pintype "INPUT")))
+    (net
+      (code 29)
+      (name "SWDIO")
+      (class "Default")
+      (node
+        (ref "J4")
+        (pin "2")
+        (pintype "BIDIRECTIONAL"))
+      (node
+        (ref "U1")
+        (pin "51")
+        (pintype "BIDIRECTIONAL")))
+    (net
+      (code 30)
+      (name "SWO")
+      (class "Default")
+      (node
+        (ref "J4")
+        (pin "6")
+        (pintype "BIDIRECTIONAL"))
+      (node
+        (ref "U1")
+        (pin "47")
+        (pintype "BIDIRECTIONAL")))
+    (net
+      (code 31)
+      (name "USB_DM")
+      (class "Default")
+      (node
+        (ref "U1")
+        (pin "34")
+        (pintype "BIDIRECTIONAL"))
+      (node
+        (ref "U4")
+        (pin "4")
+        (pintype "PASSIVE")))
+    (net
+      (code 32)
+      (name "USB_DM_CONN")
+      (class "Default")
+      (node
+        (ref "J1")
+        (pin "A7")
+        (pintype "BIDIRECTIONAL"))
+      (node
+        (ref "J1")
+        (pin "B7")
+        (pintype "BIDIRECTIONAL"))
+      (node
+        (ref "U4")
+        (pin "3")
+        (pintype "PASSIVE")))
+    (net
+      (code 33)
+      (name "USB_DP")
+      (class "Default")
+      (node
+        (ref "U1")
+        (pin "35")
+        (pintype "BIDIRECTIONAL"))
+      (node
+        (ref "U4")
+        (pin "6")
+        (pintype "PASSIVE")))
+    (net
+      (code 34)
+      (name "USB_DP_CONN")
+      (class "Default")
+      (node
+        (ref "J1")
+        (pin "A6")
+        (pintype "BIDIRECTIONAL"))
+      (node
+        (ref "J1")
+        (pin "B6")
+        (pintype "BIDIRECTIONAL"))
+      (node
+        (ref "U4")
+        (pin "1")
+        (pintype "PASSIVE")))
+    (net
+      (code 35)
+      (name "VBAT")
+      (class "Default")
+      (node
+        (ref "C1")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "J3")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U2")
+        (pin "19")
+        (pintype "POWER-IN")))
+    (net
+      (code 36)
+      (name "VBUS_OUT")
+      (class "Default")
+      (node
+        (ref "C15")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C6")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U1")
+        (pin "32")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U2")
+        (pin "22")
+        (pintype "POWER-OUT")))
+    (net
+      (code 37)
+      (name "VBUS_USB")
+      (class "Default")
+      (node
+        (ref "C5")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "J1")
+        (pin "A4")
+        (pintype "POWER-IN"))
+      (node
+        (ref "J1")
+        (pin "A9")
+        (pintype "POWER-IN"))
+      (node
+        (ref "J1")
+        (pin "B4")
+        (pintype "POWER-IN"))
+      (node
+        (ref "J1")
+        (pin "B9")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U2")
+        (pin "21")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U4")
+        (pin "5")
+        (pintype "POWER-IN")))
+    (net
+      (code 38)
+      (name "VDD_DISP")
+      (class "Default")
+      (node
+        (ref "C20")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C21")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C22")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C23")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C9")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "J2")
+        (pin "6")
+        (pintype "POWER-IN"))
+      (node
+        (ref "J2")
+        (pin "7")
+        (pintype "POWER-IN"))
+      (node
+        (ref "J2")
+        (pin "8")
+        (pintype "INPUT"))
+      (node
+        (ref "U2")
+        (pin "29")
+        (pintype "POWER-OUT")))
+    (net
+      (code 39)
+      (name "VDD_IMU")
+      (class "Default")
+      (node
+        (ref "C10")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C18")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U2")
+        (pin "31")
+        (pintype "POWER-OUT"))
+      (node
+        (ref "U3")
+        (pin "8")
+        (pintype "POWER-IN")))
+    (net
+      (code 40)
+      (name "VSYS")
+      (class "Default")
+      (node
+        (ref "C2")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C3")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "C4")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U2")
+        (pin "20")
+        (pintype "POWER-OUT"))
+      (node
+        (ref "U2")
+        (pin "4")
+        (pintype "POWER-IN")))
+    (net
+      (code 41)
+      (name "XL1")
+      (class "Default")
+      (node
+        (ref "C16")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U1")
+        (pin "17")
+        (pintype "BIDIRECTIONAL"))
+      (node
+        (ref "Y1")
+        (pin "1")
+        (pintype "PASSIVE")))
+    (net
+      (code 42)
+      (name "XL2")
+      (class "Default")
+      (node
+        (ref "C17")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U1")
+        (pin "18")
+        (pintype "BIDIRECTIONAL"))
+      (node
+        (ref "Y1")
+        (pin "2")
+        (pintype "PASSIVE")))
+    (net
+      (code 43)
+      (name "nRESET")
+      (class "Default")
+      (node
+        (ref "J4")
+        (pin "3")
+        (pintype "BIDIRECTIONAL"))
+      (node
+        (ref "U1")
+        (pin "40")
+        (pintype "BIDIRECTIONAL")))))

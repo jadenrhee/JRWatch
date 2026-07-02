@@ -1,0 +1,1539 @@
+{
+ "parts": [
+  {
+   "ref": "C1",
+   "value": "10uF",
+   "name": "C_0603",
+   "footprint": "Capacitor_SMD:C_0603_1608Metric",
+   "fields": {
+    "LCSC": "C19702",
+    "MPN": "CL10A106KP8NNNC",
+    "Mfr": "Samsung",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "C10",
+   "value": "1uF",
+   "name": "C_0402",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "LCSC": "C52923",
+    "MPN": "CL05A105KA5NQNC",
+    "Mfr": "Samsung",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "C11",
+   "value": "100nF",
+   "name": "C_0402",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "LCSC": "C1525",
+    "MPN": "CL05B104KO5NNNC",
+    "Mfr": "Samsung",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "C12",
+   "value": "10uF",
+   "name": "C_0603",
+   "footprint": "Capacitor_SMD:C_0603_1608Metric",
+   "fields": {
+    "LCSC": "C19702",
+    "MPN": "CL10A106KP8NNNC",
+    "Mfr": "Samsung",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "C13",
+   "value": "100nF",
+   "name": "C_0402",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "LCSC": "C1525",
+    "MPN": "CL05B104KO5NNNC",
+    "Mfr": "Samsung",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "C14",
+   "value": "100nF",
+   "name": "C_0402",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "LCSC": "C1525",
+    "MPN": "CL05B104KO5NNNC",
+    "Mfr": "Samsung",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "C15",
+   "value": "100nF",
+   "name": "C_0402",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "LCSC": "C1525",
+    "MPN": "CL05B104KO5NNNC",
+    "Mfr": "Samsung",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "C16",
+   "value": "12pF",
+   "name": "C_0402",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "LCSC": "C1546",
+    "MPN": "CL05C120JB5NNNC",
+    "Mfr": "Samsung",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "C17",
+   "value": "12pF",
+   "name": "C_0402",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "LCSC": "C1546",
+    "MPN": "CL05C120JB5NNNC",
+    "Mfr": "Samsung",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "C18",
+   "value": "100nF",
+   "name": "C_0402",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "LCSC": "C1525",
+    "MPN": "CL05B104KO5NNNC",
+    "Mfr": "Samsung",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "C19",
+   "value": "100nF",
+   "name": "C_0402",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "LCSC": "C1525",
+    "MPN": "CL05B104KO5NNNC",
+    "Mfr": "Samsung",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "C2",
+   "value": "10uF",
+   "name": "C_0603",
+   "footprint": "Capacitor_SMD:C_0603_1608Metric",
+   "fields": {
+    "LCSC": "C19702",
+    "MPN": "CL10A106KP8NNNC",
+    "Mfr": "Samsung",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "C20",
+   "value": "1uF",
+   "name": "C_0402",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "LCSC": "C52923",
+    "MPN": "CL05A105KA5NQNC",
+    "Mfr": "Samsung",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "C21",
+   "value": "100nF",
+   "name": "C_0402",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "LCSC": "C1525",
+    "MPN": "CL05B104KO5NNNC",
+    "Mfr": "Samsung",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "C22",
+   "value": "1uF",
+   "name": "C_0402",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "LCSC": "C52923",
+    "MPN": "CL05A105KA5NQNC",
+    "Mfr": "Samsung",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "C23",
+   "value": "100nF",
+   "name": "C_0402",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "LCSC": "C1525",
+    "MPN": "CL05B104KO5NNNC",
+    "Mfr": "Samsung",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "C3",
+   "value": "2.2uF",
+   "name": "C_0603",
+   "footprint": "Capacitor_SMD:C_0603_1608Metric",
+   "fields": {
+    "LCSC": "C23630",
+    "MPN": "CL10B225KO8NNNC",
+    "Mfr": "Samsung",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "C4",
+   "value": "100nF",
+   "name": "C_0402",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "LCSC": "C1525",
+    "MPN": "CL05B104KO5NNNC",
+    "Mfr": "Samsung",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "C5",
+   "value": "10uF",
+   "name": "C_0603",
+   "footprint": "Capacitor_SMD:C_0603_1608Metric",
+   "fields": {
+    "LCSC": "C19702",
+    "MPN": "CL10A106KP8NNNC",
+    "Mfr": "Samsung",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "C6",
+   "value": "1uF",
+   "name": "C_0402",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "LCSC": "C52923",
+    "MPN": "CL05A105KA5NQNC",
+    "Mfr": "Samsung",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "C7",
+   "value": "10uF",
+   "name": "C_0603",
+   "footprint": "Capacitor_SMD:C_0603_1608Metric",
+   "fields": {
+    "LCSC": "C19702",
+    "MPN": "CL10A106KP8NNNC",
+    "Mfr": "Samsung",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "C8",
+   "value": "10uF",
+   "name": "C_0603",
+   "footprint": "Capacitor_SMD:C_0603_1608Metric",
+   "fields": {
+    "LCSC": "C19702",
+    "MPN": "CL10A106KP8NNNC",
+    "Mfr": "Samsung",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "C9",
+   "value": "1uF",
+   "name": "C_0402",
+   "footprint": "Capacitor_SMD:C_0402_1005Metric",
+   "fields": {
+    "LCSC": "C52923",
+    "MPN": "CL05A105KA5NQNC",
+    "Mfr": "Samsung",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "D1",
+   "value": "ESD9B5.0",
+   "name": "ESD9B5.0ST5G",
+   "footprint": "Diode_SMD:D_SOD-923",
+   "fields": {
+    "LCSC": "C3008065",
+    "MPN": "ESD9B5.0ST5G",
+    "Mfr": "MSKSEMI",
+    "Sourcing": "jlc",
+    "Note": "onsemi original acceptable substitute"
+   }
+  },
+  {
+   "ref": "D2",
+   "value": "ESD9B3.3",
+   "name": "ESD9B3.3ST5G",
+   "footprint": "Diode_SMD:D_SOD-923",
+   "fields": {
+    "LCSC": "C96512",
+    "MPN": "ESD9B3.3ST5G",
+    "Mfr": "onsemi",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "J1",
+   "value": "TYPE-C-31-M-12",
+   "name": "TYPE-C-31-M-12",
+   "footprint": "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12",
+   "fields": {
+    "LCSC": "C165948",
+    "MPN": "TYPE-C-31-M-12",
+    "Mfr": "Korean Hroparts",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "J2",
+   "value": "FH12A-10S-0.5SH",
+   "name": "FH12A-10S-0.5SH",
+   "footprint": "Connector_FFC-FPC:Hirose_FH12-10S-0.5SH_1x10-1MP_P0.50mm_Horizontal",
+   "fields": {
+    "LCSC": "C5139870",
+    "MPN": "FH12A-10S-0.5SH(55)",
+    "Mfr": "Hirose",
+    "Sourcing": "hand",
+    "Note": "display LS013B7DH03 attaches here; panel from DigiKey/Adafruit"
+   }
+  },
+  {
+   "ref": "J3",
+   "value": "SM02B-SRSS-TB",
+   "name": "SM02B-SRSS-TB",
+   "footprint": "Connector_JST:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal",
+   "fields": {
+    "LCSC": "C160402",
+    "MPN": "SM02B-SRSS-TB(LF)(SN)",
+    "Mfr": "JST",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "J4",
+   "value": "TC2030-IDC-NL",
+   "name": "TC2030-IDC-NL",
+   "footprint": "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical",
+   "fields": {
+    "MPN": "TC2030-IDC-NL",
+    "Mfr": "Tag-Connect",
+    "Sourcing": "none",
+    "DNP": "footprint only"
+   }
+  },
+  {
+   "ref": "L1",
+   "value": "2.2uH",
+   "name": "DFE201612E-2R2M",
+   "footprint": "JRWatch:L_Murata_DFE201612E_2016",
+   "fields": {
+    "LCSC": "C337893",
+    "MPN": "DFE201612E-2R2M=P2",
+    "Mfr": "Murata",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "L2",
+   "value": "2.2uH",
+   "name": "DFE201612E-2R2M",
+   "footprint": "JRWatch:L_Murata_DFE201612E_2016",
+   "fields": {
+    "LCSC": "C337893",
+    "MPN": "DFE201612E-2R2M=P2",
+    "Mfr": "Murata",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "R1",
+   "value": "47k",
+   "name": "R_0402",
+   "footprint": "Resistor_SMD:R_0402_1005Metric",
+   "fields": {
+    "LCSC": "C25563",
+    "MPN": "0402WGF4702TCE",
+    "Mfr": "UNI-ROYAL",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "R2",
+   "value": "150k",
+   "name": "R_0402",
+   "footprint": "Resistor_SMD:R_0402_1005Metric",
+   "fields": {
+    "LCSC": "C25867",
+    "MPN": "0402WGF1503TCE",
+    "Mfr": "UNI-ROYAL",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "R3",
+   "value": "4.7k",
+   "name": "R_0402",
+   "footprint": "Resistor_SMD:R_0402_1005Metric",
+   "fields": {
+    "LCSC": "C25900",
+    "MPN": "0402WGF4701TCE",
+    "Mfr": "UNI-ROYAL",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "R4",
+   "value": "4.7k",
+   "name": "R_0402",
+   "footprint": "Resistor_SMD:R_0402_1005Metric",
+   "fields": {
+    "LCSC": "C25900",
+    "MPN": "0402WGF4701TCE",
+    "Mfr": "UNI-ROYAL",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "R5",
+   "value": "100k",
+   "name": "R_0402",
+   "footprint": "Resistor_SMD:R_0402_1005Metric",
+   "fields": {
+    "LCSC": "C25741",
+    "MPN": "0402WGF1003TCE",
+    "Mfr": "UNI-ROYAL",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "R6",
+   "value": "100k",
+   "name": "R_0402",
+   "footprint": "Resistor_SMD:R_0402_1005Metric",
+   "fields": {
+    "LCSC": "C25741",
+    "MPN": "0402WGF1003TCE",
+    "Mfr": "UNI-ROYAL",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "R7",
+   "value": "100R",
+   "name": "R_0402",
+   "footprint": "Resistor_SMD:R_0402_1005Metric",
+   "fields": {
+    "LCSC": "C25076",
+    "MPN": "0402WGF1000TCE",
+    "Mfr": "UNI-ROYAL",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "R8",
+   "value": "100R",
+   "name": "R_0402",
+   "footprint": "Resistor_SMD:R_0402_1005Metric",
+   "fields": {
+    "LCSC": "C25076",
+    "MPN": "0402WGF1000TCE",
+    "Mfr": "UNI-ROYAL",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "RT1",
+   "value": "10k NTC",
+   "name": "NCP15XH103F03RC",
+   "footprint": "Resistor_SMD:R_0402_1005Metric",
+   "fields": {
+    "LCSC": "C77131",
+    "MPN": "NCP15XH103F03RC",
+    "Mfr": "Murata",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "SW1",
+   "value": "PWR/SHIP",
+   "name": "SKRTLAE010",
+   "footprint": "Button_Switch_SMD:SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010",
+   "fields": {
+    "LCSC": "C110293",
+    "MPN": "SKRTLAE010",
+    "Mfr": "Alps Alpine",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "SW2",
+   "value": "USER",
+   "name": "SKRTLAE010",
+   "footprint": "Button_Switch_SMD:SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010",
+   "fields": {
+    "LCSC": "C110293",
+    "MPN": "SKRTLAE010",
+    "Mfr": "Alps Alpine",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "U1",
+   "value": "MDBT50Q-1MV2",
+   "name": "MDBT50Q-1MV2",
+   "footprint": "RF_Module:Raytac_MDBT50Q",
+   "fields": {
+    "LCSC": "C5118826",
+    "MPN": "MDBT50Q-1MV2",
+    "Mfr": "Raytac",
+    "Sourcing": "hand/DigiKey"
+   }
+  },
+  {
+   "ref": "U2",
+   "value": "nPM1300-QEAA-R7",
+   "name": "nPM1300-QEAA",
+   "footprint": "Package_DFN_QFN:VQFN-32-1EP_5x5mm_P0.5mm_EP3.5x3.5mm_ThermalVias",
+   "fields": {
+    "LCSC": "C7501206",
+    "MPN": "nPM1300-QEAA-R7",
+    "Mfr": "Nordic",
+    "Sourcing": "hand/DigiKey"
+   }
+  },
+  {
+   "ref": "U3",
+   "value": "BMI270",
+   "name": "BMI270",
+   "footprint": "JRWatch:Bosch_LGA-14_3x2.5mm_P0.5mm_BMI270",
+   "fields": {
+    "LCSC": "C2836813",
+    "MPN": "BMI270",
+    "Mfr": "Bosch Sensortec",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "U4",
+   "value": "USBLC6-2SC6",
+   "name": "USBLC6-2SC6",
+   "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+   "fields": {
+    "LCSC": "C7519",
+    "MPN": "USBLC6-2SC6",
+    "Mfr": "ST",
+    "Sourcing": "jlc"
+   }
+  },
+  {
+   "ref": "Y1",
+   "value": "32.768kHz",
+   "name": "Q13FC13500004",
+   "footprint": "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm",
+   "fields": {
+    "LCSC": "C32346",
+    "MPN": "Q13FC13500004",
+    "Mfr": "Epson",
+    "Sourcing": "jlc"
+   }
+  }
+ ],
+ "nets": [
+  {
+   "name": "1V8_AUX",
+   "pins": [
+    [
+     "C7",
+     "1"
+    ],
+    [
+     "L1",
+     "2"
+    ],
+    [
+     "U2",
+     "1"
+    ]
+   ]
+  },
+  {
+   "name": "3V0",
+   "pins": [
+    [
+     "C11",
+     "1"
+    ],
+    [
+     "C12",
+     "1"
+    ],
+    [
+     "C13",
+     "1"
+    ],
+    [
+     "C14",
+     "1"
+    ],
+    [
+     "C19",
+     "1"
+    ],
+    [
+     "C8",
+     "1"
+    ],
+    [
+     "J4",
+     "1"
+    ],
+    [
+     "L2",
+     "2"
+    ],
+    [
+     "R3",
+     "2"
+    ],
+    [
+     "R4",
+     "2"
+    ],
+    [
+     "R5",
+     "2"
+    ],
+    [
+     "U1",
+     "28"
+    ],
+    [
+     "U1",
+     "30"
+    ],
+    [
+     "U2",
+     "12"
+    ],
+    [
+     "U2",
+     "28"
+    ],
+    [
+     "U2",
+     "30"
+    ],
+    [
+     "U2",
+     "32"
+    ],
+    [
+     "U3",
+     "2"
+    ],
+    [
+     "U3",
+     "3"
+    ],
+    [
+     "U3",
+     "5"
+    ]
+   ]
+  },
+  {
+   "name": "BTN1_PAD",
+   "pins": [
+    [
+     "D1",
+     "1"
+    ],
+    [
+     "R7",
+     "2"
+    ],
+    [
+     "SW1",
+     "1"
+    ]
+   ]
+  },
+  {
+   "name": "BTN2",
+   "pins": [
+    [
+     "R8",
+     "1"
+    ],
+    [
+     "U1",
+     "6"
+    ]
+   ]
+  },
+  {
+   "name": "BTN2_PAD",
+   "pins": [
+    [
+     "D2",
+     "1"
+    ],
+    [
+     "R8",
+     "2"
+    ],
+    [
+     "SW2",
+     "1"
+    ]
+   ]
+  },
+  {
+   "name": "CC1",
+   "pins": [
+    [
+     "J1",
+     "A5"
+    ],
+    [
+     "U2",
+     "23"
+    ]
+   ]
+  },
+  {
+   "name": "CC2",
+   "pins": [
+    [
+     "J1",
+     "B5"
+    ],
+    [
+     "U2",
+     "24"
+    ]
+   ]
+  },
+  {
+   "name": "DISP_CS",
+   "pins": [
+    [
+     "J2",
+     "3"
+    ],
+    [
+     "R6",
+     "1"
+    ],
+    [
+     "U1",
+     "39"
+    ]
+   ]
+  },
+  {
+   "name": "DISP_MOSI",
+   "pins": [
+    [
+     "J2",
+     "2"
+    ],
+    [
+     "U1",
+     "44"
+    ]
+   ]
+  },
+  {
+   "name": "DISP_ON",
+   "pins": [
+    [
+     "J2",
+     "5"
+    ],
+    [
+     "U1",
+     "38"
+    ]
+   ]
+  },
+  {
+   "name": "DISP_SCK",
+   "pins": [
+    [
+     "J2",
+     "1"
+    ],
+    [
+     "U1",
+     "41"
+    ]
+   ]
+  },
+  {
+   "name": "EXTCOMIN",
+   "pins": [
+    [
+     "J2",
+     "4"
+    ],
+    [
+     "U1",
+     "50"
+    ]
+   ]
+  },
+  {
+   "name": "GND",
+   "pins": [
+    [
+     "C1",
+     "2"
+    ],
+    [
+     "C10",
+     "2"
+    ],
+    [
+     "C11",
+     "2"
+    ],
+    [
+     "C12",
+     "2"
+    ],
+    [
+     "C13",
+     "2"
+    ],
+    [
+     "C14",
+     "2"
+    ],
+    [
+     "C15",
+     "2"
+    ],
+    [
+     "C16",
+     "2"
+    ],
+    [
+     "C17",
+     "2"
+    ],
+    [
+     "C18",
+     "2"
+    ],
+    [
+     "C19",
+     "2"
+    ],
+    [
+     "C2",
+     "2"
+    ],
+    [
+     "C20",
+     "2"
+    ],
+    [
+     "C21",
+     "2"
+    ],
+    [
+     "C22",
+     "2"
+    ],
+    [
+     "C23",
+     "2"
+    ],
+    [
+     "C3",
+     "2"
+    ],
+    [
+     "C4",
+     "2"
+    ],
+    [
+     "C5",
+     "2"
+    ],
+    [
+     "C6",
+     "2"
+    ],
+    [
+     "C7",
+     "2"
+    ],
+    [
+     "C8",
+     "2"
+    ],
+    [
+     "C9",
+     "2"
+    ],
+    [
+     "D1",
+     "2"
+    ],
+    [
+     "D2",
+     "2"
+    ],
+    [
+     "J1",
+     "A1"
+    ],
+    [
+     "J1",
+     "A12"
+    ],
+    [
+     "J1",
+     "B1"
+    ],
+    [
+     "J1",
+     "B12"
+    ],
+    [
+     "J1",
+     "SH"
+    ],
+    [
+     "J2",
+     "10"
+    ],
+    [
+     "J2",
+     "9"
+    ],
+    [
+     "J2",
+     "MP"
+    ],
+    [
+     "J3",
+     "2"
+    ],
+    [
+     "J3",
+     "MP"
+    ],
+    [
+     "J4",
+     "5"
+    ],
+    [
+     "R1",
+     "2"
+    ],
+    [
+     "R2",
+     "2"
+    ],
+    [
+     "R6",
+     "2"
+    ],
+    [
+     "RT1",
+     "2"
+    ],
+    [
+     "SW1",
+     "2"
+    ],
+    [
+     "SW1",
+     "MP"
+    ],
+    [
+     "SW2",
+     "2"
+    ],
+    [
+     "SW2",
+     "MP"
+    ],
+    [
+     "U1",
+     "1"
+    ],
+    [
+     "U1",
+     "15"
+    ],
+    [
+     "U1",
+     "2"
+    ],
+    [
+     "U1",
+     "33"
+    ],
+    [
+     "U1",
+     "55"
+    ],
+    [
+     "U2",
+     "2"
+    ],
+    [
+     "U2",
+     "33"
+    ],
+    [
+     "U2",
+     "6"
+    ],
+    [
+     "U3",
+     "6"
+    ],
+    [
+     "U3",
+     "7"
+    ],
+    [
+     "U4",
+     "2"
+    ]
+   ]
+  },
+  {
+   "name": "I2C_SCL",
+   "pins": [
+    [
+     "R4",
+     "1"
+    ],
+    [
+     "U1",
+     "37"
+    ],
+    [
+     "U2",
+     "14"
+    ]
+   ]
+  },
+  {
+   "name": "I2C_SDA",
+   "pins": [
+    [
+     "R3",
+     "1"
+    ],
+    [
+     "U1",
+     "36"
+    ],
+    [
+     "U2",
+     "13"
+    ]
+   ]
+  },
+  {
+   "name": "IMU_CS",
+   "pins": [
+    [
+     "R5",
+     "1"
+    ],
+    [
+     "U1",
+     "46"
+    ],
+    [
+     "U3",
+     "12"
+    ]
+   ]
+  },
+  {
+   "name": "IMU_INT1",
+   "pins": [
+    [
+     "U1",
+     "49"
+    ],
+    [
+     "U3",
+     "4"
+    ]
+   ]
+  },
+  {
+   "name": "IMU_MISO",
+   "pins": [
+    [
+     "U1",
+     "45"
+    ],
+    [
+     "U3",
+     "1"
+    ]
+   ]
+  },
+  {
+   "name": "IMU_MOSI",
+   "pins": [
+    [
+     "U1",
+     "43"
+    ],
+    [
+     "U3",
+     "14"
+    ]
+   ]
+  },
+  {
+   "name": "IMU_SCK",
+   "pins": [
+    [
+     "U1",
+     "42"
+    ],
+    [
+     "U3",
+     "13"
+    ]
+   ]
+  },
+  {
+   "name": "N$1",
+   "pins": [
+    [
+     "L1",
+     "1"
+    ],
+    [
+     "U2",
+     "3"
+    ]
+   ]
+  },
+  {
+   "name": "N$2",
+   "pins": [
+    [
+     "R1",
+     "1"
+    ],
+    [
+     "U2",
+     "17"
+    ]
+   ]
+  },
+  {
+   "name": "N$3",
+   "pins": [
+    [
+     "L2",
+     "1"
+    ],
+    [
+     "U2",
+     "5"
+    ]
+   ]
+  },
+  {
+   "name": "N$4",
+   "pins": [
+    [
+     "R2",
+     "1"
+    ],
+    [
+     "U2",
+     "16"
+    ]
+   ]
+  },
+  {
+   "name": "NTC",
+   "pins": [
+    [
+     "RT1",
+     "1"
+    ],
+    [
+     "U2",
+     "18"
+    ]
+   ]
+  },
+  {
+   "name": "PMIC_INT",
+   "pins": [
+    [
+     "U1",
+     "29"
+    ],
+    [
+     "U2",
+     "7"
+    ]
+   ]
+  },
+  {
+   "name": "SHPHLD",
+   "pins": [
+    [
+     "R7",
+     "1"
+    ],
+    [
+     "U2",
+     "15"
+    ]
+   ]
+  },
+  {
+   "name": "SWDCLK",
+   "pins": [
+    [
+     "J4",
+     "4"
+    ],
+    [
+     "U1",
+     "53"
+    ]
+   ]
+  },
+  {
+   "name": "SWDIO",
+   "pins": [
+    [
+     "J4",
+     "2"
+    ],
+    [
+     "U1",
+     "51"
+    ]
+   ]
+  },
+  {
+   "name": "SWO",
+   "pins": [
+    [
+     "J4",
+     "6"
+    ],
+    [
+     "U1",
+     "47"
+    ]
+   ]
+  },
+  {
+   "name": "USB_DM",
+   "pins": [
+    [
+     "U1",
+     "34"
+    ],
+    [
+     "U4",
+     "4"
+    ]
+   ]
+  },
+  {
+   "name": "USB_DM_CONN",
+   "pins": [
+    [
+     "J1",
+     "A7"
+    ],
+    [
+     "J1",
+     "B7"
+    ],
+    [
+     "U4",
+     "3"
+    ]
+   ]
+  },
+  {
+   "name": "USB_DP",
+   "pins": [
+    [
+     "U1",
+     "35"
+    ],
+    [
+     "U4",
+     "6"
+    ]
+   ]
+  },
+  {
+   "name": "USB_DP_CONN",
+   "pins": [
+    [
+     "J1",
+     "A6"
+    ],
+    [
+     "J1",
+     "B6"
+    ],
+    [
+     "U4",
+     "1"
+    ]
+   ]
+  },
+  {
+   "name": "VBAT",
+   "pins": [
+    [
+     "C1",
+     "1"
+    ],
+    [
+     "J3",
+     "1"
+    ],
+    [
+     "U2",
+     "19"
+    ]
+   ]
+  },
+  {
+   "name": "VBUS_OUT",
+   "pins": [
+    [
+     "C15",
+     "1"
+    ],
+    [
+     "C6",
+     "1"
+    ],
+    [
+     "U1",
+     "32"
+    ],
+    [
+     "U2",
+     "22"
+    ]
+   ]
+  },
+  {
+   "name": "VBUS_USB",
+   "pins": [
+    [
+     "C5",
+     "1"
+    ],
+    [
+     "J1",
+     "A4"
+    ],
+    [
+     "J1",
+     "A9"
+    ],
+    [
+     "J1",
+     "B4"
+    ],
+    [
+     "J1",
+     "B9"
+    ],
+    [
+     "U2",
+     "21"
+    ],
+    [
+     "U4",
+     "5"
+    ]
+   ]
+  },
+  {
+   "name": "VDD_DISP",
+   "pins": [
+    [
+     "C20",
+     "1"
+    ],
+    [
+     "C21",
+     "1"
+    ],
+    [
+     "C22",
+     "1"
+    ],
+    [
+     "C23",
+     "1"
+    ],
+    [
+     "C9",
+     "1"
+    ],
+    [
+     "J2",
+     "6"
+    ],
+    [
+     "J2",
+     "7"
+    ],
+    [
+     "J2",
+     "8"
+    ],
+    [
+     "U2",
+     "29"
+    ]
+   ]
+  },
+  {
+   "name": "VDD_IMU",
+   "pins": [
+    [
+     "C10",
+     "1"
+    ],
+    [
+     "C18",
+     "1"
+    ],
+    [
+     "U2",
+     "31"
+    ],
+    [
+     "U3",
+     "8"
+    ]
+   ]
+  },
+  {
+   "name": "VSYS",
+   "pins": [
+    [
+     "C2",
+     "1"
+    ],
+    [
+     "C3",
+     "1"
+    ],
+    [
+     "C4",
+     "1"
+    ],
+    [
+     "U2",
+     "20"
+    ],
+    [
+     "U2",
+     "4"
+    ]
+   ]
+  },
+  {
+   "name": "XL1",
+   "pins": [
+    [
+     "C16",
+     "1"
+    ],
+    [
+     "U1",
+     "17"
+    ],
+    [
+     "Y1",
+     "1"
+    ]
+   ]
+  },
+  {
+   "name": "XL2",
+   "pins": [
+    [
+     "C17",
+     "1"
+    ],
+    [
+     "U1",
+     "18"
+    ],
+    [
+     "Y1",
+     "2"
+    ]
+   ]
+  },
+  {
+   "name": "nRESET",
+   "pins": [
+    [
+     "J4",
+     "3"
+    ],
+    [
+     "U1",
+     "40"
+    ]
+   ]
+  }
+ ]
+}

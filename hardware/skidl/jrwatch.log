@@ -1,0 +1,107 @@
+WARNING: KICAD8_SYMBOL_DIR environment variable is missing, so the default KiCad symbol libraries won't be searched. @ [/Users/jadenrhee/JRWatch/hardware/skidl/<frozen importlib._bootstrap_external>:1026=>/Users/jadenrhee/JRWatch/hardware/skidl/<frozen importlib._bootstrap>:488]
+WARNING: KICAD6_SYMBOL_DIR environment variable is missing, so the default KiCad symbol libraries won't be searched. @ [/Users/jadenrhee/JRWatch/hardware/skidl/<frozen importlib._bootstrap_external>:1026=>/Users/jadenrhee/JRWatch/hardware/skidl/<frozen importlib._bootstrap>:488]
+WARNING: KICAD7_SYMBOL_DIR environment variable is missing, so the default KiCad symbol libraries won't be searched. @ [/Users/jadenrhee/JRWatch/hardware/skidl/<frozen importlib._bootstrap_external>:1026=>/Users/jadenrhee/JRWatch/hardware/skidl/<frozen importlib._bootstrap>:488]
+WARNING: KICAD9_SYMBOL_DIR environment variable is missing, so the default KiCad symbol libraries won't be searched. @ [/Users/jadenrhee/JRWatch/hardware/skidl/<frozen importlib._bootstrap_external>:1026=>/Users/jadenrhee/JRWatch/hardware/skidl/<frozen importlib._bootstrap>:488]
+WARNING: KICAD_SYMBOL_DIR environment variable is missing, so the default KiCad symbol libraries won't be searched. @ [/Users/jadenrhee/JRWatch/hardware/skidl/<frozen importlib._bootstrap_external>:1026=>/Users/jadenrhee/JRWatch/hardware/skidl/<frozen importlib._bootstrap>:488]
+WARNING: fp-lib-table file was not found. Component footprints are not available.
+WARNING: fp-lib-table file was not found. Component footprints are not available.
+WARNING: fp-lib-table file was not found. Component footprints are not available.
+WARNING: fp-lib-table file was not found. Component footprints are not available.
+WARNING: Missing tag on nPM1300-QEAA instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:87.
+WARNING: Random tag vQ87ttiqXp generated for nPM1300-QEAA.
+WARNING: Missing tag on C_0603 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:72.
+WARNING: Random tag gd4h9mdo09 generated for C_0603.
+WARNING: Missing tag on C_0603 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:72.
+WARNING: Random tag BJz0nzFc8N generated for C_0603.
+WARNING: Missing tag on C_0603 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:72.
+WARNING: Random tag E_3pnJkOXP generated for C_0603.
+WARNING: Missing tag on C_0402 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:72.
+WARNING: Random tag HI69QjUTPD generated for C_0402.
+WARNING: Missing tag on C_0603 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:72.
+WARNING: Random tag pgvM5EEQHH generated for C_0603.
+WARNING: Missing tag on C_0402 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:72.
+WARNING: Random tag fFnv4iqAs8 generated for C_0402.
+WARNING: Missing tag on DFE201612E-2R2M instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:108.
+WARNING: Random tag zl7lk9faoo generated for DFE201612E-2R2M.
+WARNING: Missing tag on C_0603 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:72.
+WARNING: Random tag nqS7bFUOgx generated for C_0603.
+WARNING: Missing tag on R_0402 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:76.
+WARNING: Random tag QN_IhpoHKz generated for R_0402.
+WARNING: Missing tag on DFE201612E-2R2M instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:118.
+WARNING: Random tag 8BfCMcY3Kt generated for DFE201612E-2R2M.
+WARNING: Missing tag on C_0603 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:72.
+WARNING: Random tag bqsSMomAX2 generated for C_0603.
+WARNING: Missing tag on R_0402 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:76.
+WARNING: Random tag nXgeSXFqjA generated for R_0402.
+WARNING: Missing tag on C_0402 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:72.
+WARNING: Random tag tYav0keNcd generated for C_0402.
+WARNING: Missing tag on C_0402 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:72.
+WARNING: Random tag aA5u_lr5Hm generated for C_0402.
+WARNING: Missing tag on C_0402 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:72.
+WARNING: Random tag bVpu04chSc generated for C_0402.
+WARNING: Missing tag on R_0402 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:76.
+WARNING: Random tag S62qCbUNkj generated for R_0402.
+WARNING: Missing tag on R_0402 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:76.
+WARNING: Random tag aZbP5t8u1K generated for R_0402.
+WARNING: Missing tag on NCP15XH103F03RC instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:150.
+WARNING: Random tag 0_KBmZrYld generated for NCP15XH103F03RC.
+WARNING: Missing tag on SM02B-SRSS-TB instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:156.
+WARNING: Random tag kbq18_8bXF generated for SM02B-SRSS-TB.
+WARNING: Missing tag on MDBT50Q-1MV2 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:162.
+WARNING: Random tag L9G7zCTNod generated for MDBT50Q-1MV2.
+WARNING: Missing tag on C_0603 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:72.
+WARNING: Random tag 8lzt4K7jCC generated for C_0603.
+WARNING: Missing tag on C_0402 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:72.
+WARNING: Random tag 1BZnDW5W0Z generated for C_0402.
+WARNING: Missing tag on C_0402 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:72.
+WARNING: Random tag dId56Qwgmf generated for C_0402.
+WARNING: Missing tag on C_0402 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:72.
+WARNING: Random tag VAMcW0Kg7C generated for C_0402.
+WARNING: Missing tag on Q13FC13500004 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:174.
+WARNING: Random tag evZSzWfjGy generated for Q13FC13500004.
+WARNING: Missing tag on C_0402 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:72.
+WARNING: Random tag SMSmyyeeLt generated for C_0402.
+WARNING: Missing tag on C_0402 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:72.
+WARNING: Random tag 6D8zH4zn20 generated for C_0402.
+WARNING: Missing tag on TC2030-IDC-NL instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:185.
+WARNING: Random tag 3MqMAUFkPy generated for TC2030-IDC-NL.
+WARNING: Missing tag on TYPE-C-31-M-12 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:216.
+WARNING: Random tag hwuOifFdoT generated for TYPE-C-31-M-12.
+WARNING: Missing tag on USBLC6-2SC6 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:217.
+WARNING: Random tag ahmLpgkc0R generated for USBLC6-2SC6.
+WARNING: Missing tag on BMI270 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:241.
+WARNING: Random tag yzeS3nv6xb generated for BMI270.
+WARNING: Missing tag on C_0402 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:72.
+WARNING: Random tag vAy5fKbr_Y generated for C_0402.
+WARNING: Missing tag on C_0402 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:72.
+WARNING: Random tag Mt9cJpcTOx generated for C_0402.
+WARNING: Missing tag on R_0402 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:76.
+WARNING: Random tag Dlnzl1J9OW generated for R_0402.
+WARNING: Missing tag on FH12A-10S-0.5SH instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:262.
+WARNING: Random tag bte8cgzdZ0 generated for FH12A-10S-0.5SH.
+WARNING: Missing tag on R_0402 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:76.
+WARNING: Random tag 5E5ZvTdFWF generated for R_0402.
+WARNING: Missing tag on C_0402 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:72.
+WARNING: Random tag EB2wDXiP2V generated for C_0402.
+WARNING: Missing tag on C_0402 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:72.
+WARNING: Random tag Q3ST3iYRNt generated for C_0402.
+WARNING: Missing tag on C_0402 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:72.
+WARNING: Random tag dz2ODehbPj generated for C_0402.
+WARNING: Missing tag on C_0402 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:72.
+WARNING: Random tag aGM7I5bOBp generated for C_0402.
+WARNING: Missing tag on SKRTLAE010 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:281.
+WARNING: Random tag dFUfPHaqux generated for SKRTLAE010.
+WARNING: Missing tag on ESD9B5.0ST5G instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:282.
+WARNING: Random tag IxP8RTGTpo generated for ESD9B5.0ST5G.
+WARNING: Missing tag on R_0402 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:76.
+WARNING: Random tag AAQbbAxw5_ generated for R_0402.
+WARNING: Missing tag on SKRTLAE010 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:294.
+WARNING: Random tag u3QwXyxi3q generated for SKRTLAE010.
+WARNING: Missing tag on ESD9B3.3ST5G instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:295.
+WARNING: Random tag 4C04D_mBWU generated for ESD9B3.3ST5G.
+WARNING: Missing tag on R_0402 instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/jrwatch.py:76.
+WARNING: Random tag zJIEhv5F3A generated for R_0402.
+WARNING: Missing tag on  instantiated at /Users/jadenrhee/JRWatch/hardware/skidl/<frozen importlib._bootstrap>:488.
+INFO: 99 warnings found while generating netlist.
+INFO: 0 errors found while generating netlist.
+
