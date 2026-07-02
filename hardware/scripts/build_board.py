@@ -309,6 +309,74 @@ class Builder:
             self.add_silk_text(sym, px + 1.6, py, pcbnew.B_SilkS, 0.9)
         self.add_silk_text('JRWatch r1', 100.0, 87.6, pcbnew.F_SilkS, 1.0)
 
+    def edge_ring(self):
+        """Track/via keep-out ring hugging the outline: keeps the autorouter
+        honestly inside the copper-to-edge margin (pads and pours exempt)."""
+        W = 0.45
+        lo, hi = CX - SIZE / 2, CX + SIZE / 2
+        strips = [
+            (lo - 1, lo - 1, hi + 1, lo + W),      # N
+            (lo - 1, hi - W, hi + 1, hi + 1),      # S
+            (lo - 1, lo - 1, lo + W, hi + 1),      # W
+            (hi - W, lo - 1, hi + 1, hi + 1),      # E
+        ]
+        # corner squares cover the arc regions (R6 corners)
+        r = RAD
+        for cx, cy in ((lo + r, lo + r), (hi - r, lo + r),
+                       (lo + r, hi - r), (hi - r, hi - r)):
+            sx = lo - 1 if cx < CX else hi - r
+            sy = lo - 1 if cy < CY else hi - r
+            ex = lo + r if cx < CX else hi + 1
+            ey = lo + r if cy < CY else hi + 1
+            strips.append((sx, sy, ex, ey))
+        for i, (x0, y0, x1, y1) in enumerate(strips):
+            z = pcbnew.ZONE(self.board)
+            z.SetIsRuleArea(True)
+            z.SetDoNotAllowZoneFills(False)
+            z.SetDoNotAllowTracks(True)
+            z.SetDoNotAllowVias(True)
+            z.SetDoNotAllowPads(False)
+            z.SetLayerSet(z.GetLayerSet().AddLayer(pcbnew.F_Cu)
+                          .AddLayer(pcbnew.In1_Cu).AddLayer(pcbnew.In2_Cu)
+                          .AddLayer(pcbnew.B_Cu))
+            ol = z.Outline(); ol.NewOutline()
+            if i >= 4:
+                # corner: square minus the inscribed arc region -> keep the
+                # square only outside radius r-W from the corner center
+                pts = self._corner_ring_poly(x0, y0, x1, y1)
+            else:
+                pts = [(x0, y0), (x1, y0), (x1, y1), (x0, y1)]
+            for x, y in pts:
+                ol.Append(FromMM(x), FromMM(y))
+            z.SetZoneName(f'EDGE_RING_{i}')
+            self.board.Add(z)
+
+    def _corner_ring_poly(self, x0, y0, x1, y1):
+        """Corner band: region of the corner square outside the R-0.45 arc.
+        Polygon = inner-arc samples + the outer board corner."""
+        import math
+        lim = RAD - 0.45
+        # arc center = the corner-square vertex facing the board interior
+        cx = x1 if x0 < CX else x0
+        cy = y1 if y0 < CY else y0
+        sx = -1 if cx > CX - SIZE / 2 + RAD + 0.1 and cx < CX else 1
+        # direction from arc center toward the outer corner
+        dx = -1 if cx > (CX - SIZE / 2 + RAD) and x0 < CX else (1 if x0 > CX else -1)
+        dx = -1 if x0 < CX else 1
+        dy = -1 if y0 < CY else 1
+        pts = []
+        for k in range(9):
+            ang = math.radians(90 * k / 8)
+            pts.append((cx + dx * lim * math.cos(ang),
+                        cy + dy * lim * math.sin(ang)))
+        # outer corner of the board
+        ox = CX - SIZE / 2 - 0.5 if dx < 0 else CX + SIZE / 2 + 0.5
+        oy = CY - SIZE / 2 - 0.5 if dy < 0 else CY + SIZE / 2 + 0.5
+        pts.append((cx + dx * lim, oy))
+        pts.append((ox, oy))
+        pts.append((ox, cy + dy * lim))
+        return pts
+
     # ------------------------------------------------- antenna keep-out
     def antenna_keepout(self):
         """Board-level rule area: extend the module's keep-out to the board
@@ -365,6 +433,7 @@ def main():
     b.make_nets()
     b.outline()
     b.place_all()
+    b.edge_ring()
     b.antenna_keepout()
     b.save()
     b.plot_review()

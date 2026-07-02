@@ -27,10 +27,20 @@ if STAGE in ('export', 'all'):
     b = pcbnew.LoadBoard(BOARD_PATH)
     ok = pcbnew.ExportSpecctraDSN(b, DSN)
     # KiCad 10 exports locked tracks/vias with (type fix) natively — verified;
-    # Freerouting honors them as fixed wiring.
+    # Freerouting honors them as fixed wiring. Mark the plane layers as
+    # power so the autorouter cannot lay signal spaghetti on them.
     with open(DSN) as f:
-        nfix = f.read().count('(type fix)')
-    print(f'DSN export: {ok} {DSN} ({nfix} fixed items)')
+        txt = f.read()
+    for lyr in ('In1.Cu', 'In2.Cu'):
+        txt = txt.replace(f'(layer {lyr}\n      (type signal)',
+                          f'(layer {lyr}\n      (type power)')
+        txt = txt.replace(f'(layer {lyr} (type signal)',
+                          f'(layer {lyr} (type power)')
+    with open(DSN, 'w') as f:
+        f.write(txt)
+    nfix = txt.count('(type fix)')
+    npow = txt.count('(type power)')
+    print(f'DSN export: {ok} {DSN} ({nfix} fixed items, {npow} power layers)')
 
 if STAGE in ('route', 'all'):
     cmd = ['java', '-jar', JAR, '-de', DSN, '-do', SES, '-mp', '100',
