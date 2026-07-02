@@ -1,0 +1,26 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# KiCad intermediates
+*-bak
+*.kicad_pcb-bak
+_autosave-*
+fp-info-cache
+*.lck
+*.dsn
+*.ses
+*.rules
+
+# Downloaded tools & datasheets (large binaries, not design sources)
+tools/
+datasheets/
+
+# Firmware build output
+firmware/build/
+firmware/.west/
+twister-out*/
+
+# macOS
+.DS_Store
