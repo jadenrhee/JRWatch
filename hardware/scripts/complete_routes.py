@@ -131,6 +131,9 @@ class Completer:
                             self.blocked[l][j * NX + i] = 1
 
     def via_ok(self, x, y):
+        # keep via copper inside the edge keep-out ring with margin
+        if not (83.1 <= x <= 116.9 and 83.1 <= y <= 116.9):
+            return False
         for hx, hy in self.hole_pts:
             if math.hypot(hx - x, hy - y) < 0.85:
                 return False
