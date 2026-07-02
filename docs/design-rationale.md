@@ -15,15 +15,15 @@ USB-C ──► nPM1300 PMIC ──► BUCK2 3.0V (always-on) ──► nRF52840
 ```
 
 One always-on rail, two hardware-gated domains, everything else dead in
-sleep. That topology **is** the low-power story: nothing that can leak is
-left electrically attached when idle.
+sleep. Nothing that can leak stays electrically attached when the watch is
+idle, which is what makes the sleep-current budget hold.
 
 ## BLE SoC — Raytac MDBT50Q-1MV2 (D-001, D-010)
 
 nRF52840 with the antenna already tuned and certified (FCC/CE/TELEC).
 A bare chip + meandered-F antenna needs VNA matching this project can't do;
 an untuned antenna costs link budget → retransmissions → battery, silently.
-The module keeps the layout discipline honest anyway: 61 castellations, a
+The module still demands real layout discipline: 61 castellations, a
 hard 12.4 × 3.8 mm all-layer keep-out, and radio-adjacent pins that are
 restricted to low-frequency signals (datasheet §2.6) — respected in the pin
 map (buttons/EXTCOMIN only on those pins). Datasheet: Raytac spec Ver.K.
@@ -43,7 +43,7 @@ pack.
 
 ## IMU — Bosch BMI270 (D-003)
 
-The wearable-industry default. The whole point is its 5.9 µA low-power
+The common choice in shipping wearables, picked for its 5.9 µA low-power
 accel mode with a hardware any-motion interrupt: the SoC sleeps and the
 wrist wakes it. SPI (not I2C) keeps active-mode transactions short; VDDIO
 rides the always-on rail so the interface stays defined while VDD is gated
@@ -52,10 +52,9 @@ Table 22.
 
 ## Display — Sharp Memory-in-Pixel LS013B7DH03 (D-004, D-013)
 
-Power decided it and it wasn't close: the panel *retains its image* at
-12 µW typical — the watch face costs ~4 µA while the system sleeps — no
-backlight, sunlight-readable. A GC9A01 TFT would burn three orders of
-magnitude more. The costs: 10-pin FPC assembly, a 1 Hz EXTCOMIN toggle
+Chosen on power: the panel retains its image at 12 µW typical, so the watch
+face costs ~4 µA while the system sleeps — no backlight, sunlight-readable.
+A GC9A01-class TFT draws three orders of magnitude more. The costs: 10-pin FPC assembly, a 1 Hz EXTCOMIN toggle
 (driven by a timer, not the CPU; EXTMODE strapped high), and 128×128 mono
 aesthetics. Firmware only redraws when content changes.
 
@@ -101,7 +100,7 @@ mode); rails gated through the regulator API; display treated as
 write-only-on-change. Console over RTT because the design spends no pins on
 UART.
 
-## Deliberately not included
+## Not included (and why)
 
 - Charge LED (D-016) — invisible in a case, ruinous to the µA budget.
 - PPG heart rate (stretch in the brief) — omitted to protect the core
