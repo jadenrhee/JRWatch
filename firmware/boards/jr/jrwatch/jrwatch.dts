@@ -112,6 +112,8 @@
 			/* board NTC: Murata NCP15XH103F03RC 10k B=3380 (D-017) */
 			thermistor-ohms = <10000>;
 			thermistor-beta = <3380>;
+			/* discharge limiter: 200 mA >> worst-case system peak */
+			dischg-limit-microamp = <200000>;
 			charging-enable;
 			vbus-limit-microamp = <500000>;
 		};
