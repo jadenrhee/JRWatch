@@ -37,6 +37,9 @@ PPK2 measurements at bring-up.
   the hardware ship-mode pin), 32.768 kHz crystal
 - 36 × 36 mm, 4-layer 0.8 mm (JLCPCB JLC04081H-3313); every BOM line
   identity-checked against LCSC with stock state recorded
+- **3D-printable enclosure** ([hardware/enclosure/](hardware/enclosure/)):
+  two-piece parametric OpenSCAD case with strap lugs, dimensioned from the
+  board file — order the STLs from any print service
 
 | Top | Bottom |
 |---|---|
@@ -67,6 +70,7 @@ console (no UART pins spent). Built in CI with `west`.
 | `hardware/skidl/` | Schematic as code (source of record) + ERC report |
 | `hardware/scripts/` | Board build, placement, routing, review and fab pipeline |
 | `hardware/jrwatch.kicad_pcb` | The board (KiCad 10) |
+| `hardware/enclosure/` | OpenSCAD case source + printable STLs + assembly notes |
 | `fab/` | Gerbers, drill, BOM+CPL (JLC format), renders, order notes |
 | `firmware/` | Zephyr app + custom board + CI |
 | `docs/` | [Decision log](docs/decision-log.md) · [design rationale](docs/design-rationale.md) · [verification report](docs/verification-report.md) · [review checklist](docs/human-review-checklist.md) · [BLE protocol](docs/protocol.md) |
