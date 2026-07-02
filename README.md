@@ -1,5 +1,7 @@
 # JRWatch — Low-Power BLE Wearable
 
+[![firmware build](https://github.com/jadenrhee/JRWatch/actions/workflows/firmware.yml/badge.svg)](https://github.com/jadenrhee/JRWatch/actions/workflows/firmware.yml)
+
 A 36 mm, 4-layer, wrist-wearable smartwatch board built end-to-end with a
 **computer-aided automated design workflow**: schematic as code (SKiDL),
 programmatic placement and routing (pcbnew scripting + autorouter +
@@ -43,7 +45,8 @@ firmware whose power states map 1:1 to the hardware's gated power domains.
 Zephyr (pinned v4.1.0), custom board definition pin-mapped from the SKiDL
 source. Event-driven ACTIVE / armed-sleep / ship-mode tiers; display redrawn
 only on content change; IMU interrupt wake; BLE Battery Service + custom
-step-count GATT; RTT console (no UART pins spent). Built in CI with `west`.
+step-count GATT; RTT console (no UART pins spent). Builds green in CI with
+`west`: 231 KiB flash / 40 KiB RAM (23 % / 16 % of the nRF52840).
 
 ## Repository
 

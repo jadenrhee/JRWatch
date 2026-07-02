@@ -151,3 +151,11 @@ Worst case is the 500 mA USB input limit (charging + system), ΔT = 10 °C:
 SKiDL ERC: **0 errors, 0 warnings** (`hardware/netlist/erc-report.txt`),
 47 parts / 43 nets, pin types assigned from datasheets, netlist → board pad
 mapping by name verified during placement.
+
+## 10. Firmware build — **PASS**
+
+`west build -b jrwatch` green in CI (GitHub Actions, Zephyr CI image
+v0.27.4, Zephyr pinned v4.1.0): **flash 236 840 B (22.6 % of 1 MB), RAM
+40 752 B (15.6 % of 256 KB)** — MCUboot partition layout already reserved
+in the devicetree fits with margin. Build is configuration-verified only;
+on-target behavior (BLE, IMU wake, display, PMIC) is a bring-up item.
