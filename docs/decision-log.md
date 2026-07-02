@@ -252,7 +252,46 @@ Three power tiers, each with a projected budget to be computed part-by-part in
 - All strapping resistors chosen so that **every pull is toward its net's idle state**
   → 0 µA standing current across the board (verified line-by-line in the report).
 
+## D-019: USB-C VBUS wired at one merged pad pair
+
+- **Finding:** on the HRO 16-pin footprint each *physical* VBUS pad is already
+  the merged A/B pair (A4/B9 on one pad, A9/B4 on the other), so a single pad
+  delivers VBUS in both plug orientations; the second pad only adds current
+  capacity. The west pad is boxed in by an NPTH shell post, the CC2 pad and
+  the shield pad — connecting it forced clearance violations in every variant
+  tried.
+- **Decision:** wire the east pad only (0.3 mm entry + via into the In1 VBUS
+  plane). At the 500 mA input limit this is a comfortable margin (IPC-2221
+  calc in the verification report); the unwired pad is noted here rather than
+  silently left.
+
+## D-020: Copper clearance rule 0.15 → 0.13 mm
+
+- Mid-routing the default clearance was lowered to 0.13 mm (all net classes).
+  JLCPCB's 4-layer capability floor is 0.09 mm, so 0.13 keeps ≈ 45 % margin
+  over fab limits while opening the QFN escape lanes that made the PMIC
+  fan-out routable (the 0.5 mm-pitch pad gaps admit 0.48/0.2 mm vias at 0.13,
+  not at 0.15). All pre-existing routing was done at 0.15 and passes trivially.
+
+## D-021: Solid zone connections (no thermal reliefs)
+
+- Starved-thermal DRC violations on dense 0402 ground pads were eliminated by
+  switching all pours to solid connection. Tradeoff: hand-iron rework of
+  ground pads needs more heat; JLC reflow and hot-air work are unaffected.
+  Chosen because the alternative (per-pad spoke tuning) added no electrical
+  value on a board with a dedicated In2 ground plane.
+
+## D-022: Seven links left unrouted, deliberately
+
+- After three autoroute rounds and a raster-verified completion pass, seven
+  links in the congested U2 south-west quadrant still could not be closed
+  without clearance violations (each attempt collided with other nets'
+  copper). Per the project's honesty rule, they are documented with exact
+  endpoints and fix recipes in `docs/human-review-checklist.md` §1 instead of
+  being forced. The board is otherwise DRC-clean (zero violations), and the
+  fab README gates ordering on closing them (~30 min interactive work).
+
 ---
 
-*Next decisions (placement, routing constraints, stackup specifics) are appended as
-D-019+ during the layout phase.*
+*Layout-phase constraint decisions (stackup, keep-outs, netclasses) live in the
+build scripts and the verification report; this log records the choices.*
