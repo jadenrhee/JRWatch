@@ -1,0 +1,48 @@
+/* JRWatch pin control — matches the schematic pin table exactly. */
+
+&pinctrl {
+	i2c0_default: i2c0_default {
+		group1 {
+			psels = <NRF_PSEL(TWIM_SDA, 0, 14)>,
+				<NRF_PSEL(TWIM_SCL, 0, 13)>;
+			bias-pull-up;
+		};
+	};
+	i2c0_sleep: i2c0_sleep {
+		group1 {
+			psels = <NRF_PSEL(TWIM_SDA, 0, 14)>,
+				<NRF_PSEL(TWIM_SCL, 0, 13)>;
+			low-power-enable;
+		};
+	};
+
+	spi1_default: spi1_default {
+		group1 {
+			psels = <NRF_PSEL(SPIM_SCK, 0, 19)>,
+				<NRF_PSEL(SPIM_MOSI, 0, 21)>,
+				<NRF_PSEL(SPIM_MISO, 0, 23)>;
+		};
+	};
+	spi1_sleep: spi1_sleep {
+		group1 {
+			psels = <NRF_PSEL(SPIM_SCK, 0, 19)>,
+				<NRF_PSEL(SPIM_MOSI, 0, 21)>,
+				<NRF_PSEL(SPIM_MISO, 0, 23)>;
+			low-power-enable;
+		};
+	};
+
+	spi2_default: spi2_default {
+		group1 {
+			psels = <NRF_PSEL(SPIM_SCK, 0, 17)>,
+				<NRF_PSEL(SPIM_MOSI, 0, 20)>;
+		};
+	};
+	spi2_sleep: spi2_sleep {
+		group1 {
+			psels = <NRF_PSEL(SPIM_SCK, 0, 17)>,
+				<NRF_PSEL(SPIM_MOSI, 0, 20)>;
+			low-power-enable;
+		};
+	};
+};

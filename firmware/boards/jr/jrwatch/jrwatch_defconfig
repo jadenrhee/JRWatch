@@ -1,0 +1,13 @@
+# JRWatch board defaults
+CONFIG_ARM_MPU=y
+CONFIG_HW_STACK_PROTECTION=y
+
+# 32.768 kHz crystal is fitted (Y1, FC-135R class) — LFXO, not RC
+CONFIG_CLOCK_CONTROL_NRF_K32SRC_XTAL=y
+CONFIG_CLOCK_CONTROL_NRF_K32SRC_20PPM=y
+
+CONFIG_GPIO=y
+
+# no UART pins on this design: console over SEGGER RTT via SWD
+CONFIG_SERIAL=n
+CONFIG_UART_CONSOLE=n

@@ -1,0 +1,42 @@
+name: firmware
+
+on:
+  push:
+    paths:
+      - 'firmware/**'
+      - '.github/workflows/firmware.yml'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    container: ghcr.io/zephyrproject-rtos/ci:v0.27.4
+    env:
+      CMAKE_PREFIX_PATH: /opt/toolchains
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+        with:
+          path: jrwatch
+
+      - name: west workspace
+        run: |
+          west init -l --mf firmware/west.yml jrwatch
+          west update --narrow -o=--depth=1
+
+      - name: build
+        run: |
+          west build -b jrwatch jrwatch/firmware -p always
+
+      - name: size report
+        run: |
+          west build -t rom_report -d build | tail -30 || true
+          ls -la build/zephyr/zephyr.hex build/zephyr/zephyr.elf
+
+      - name: artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: jrwatch-firmware
+          path: |
+            build/zephyr/zephyr.hex
+            build/zephyr/zephyr.elf

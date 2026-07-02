@@ -1,0 +1,182 @@
+/*
+ * JRWatch r1 — Raytac MDBT50Q-1MV2 (nRF52840) wearable.
+ * Pin map is the schematic of record (hardware/skidl/jrwatch.py):
+ *   I2C0  SDA P0.14  SCL P0.13   -> nPM1300 PMIC (addr 0x6B)
+ *   SPI1  SCK P0.19 MOSI P0.21 MISO P0.23 CS P0.22, INT1 P0.25 -> BMI270
+ *   SPI2  SCK P0.17 MOSI P0.20 SCS P0.15 (active HIGH)          -> LS013B7DH03
+ *         EXTCOMIN P1.02, DISP P0.16
+ *   Button SW2 P1.13 (to GND, internal pull-up), SW1 -> PMIC SHPHLD only
+ *   PMIC host interrupt: nPM1300 GPIO0 -> P0.12
+ */
+
+/dts-v1/;
+#include <nordic/nrf52840_qiaa.dtsi>
+#include <dt-bindings/regulator/npm1300.h>
+#include <dt-bindings/regulator/nrf5x.h>
+#include "jrwatch-pinctrl.dtsi"
+
+/ {
+	model = "JRWatch r1";
+	compatible = "jr,jrwatch";
+
+	chosen {
+		zephyr,sram = &sram0;
+		zephyr,flash = &flash0;
+		zephyr,code-partition = &slot0_partition;
+		zephyr,display = &mip_display;
+	};
+
+	buttons {
+		compatible = "gpio-keys";
+		button_user: button_0 {
+			gpios = <&gpio1 13 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+			label = "User button (SW2)";
+			zephyr,code = <INPUT_KEY_0>;
+		};
+	};
+
+	aliases {
+		sw0 = &button_user;
+		watchdog0 = &wdt0;
+	};
+};
+
+/* REG1 DC/DC: the buck inductor is inside the Raytac module (datasheet §2.6) */
+&reg1 {
+	regulator-initial-mode = <NRF5X_REG_MODE_DCDC>;
+};
+
+&gpio0 { status = "okay"; };
+&gpio1 { status = "okay"; };
+&gpiote { status = "okay"; };
+
+&i2c0 {
+	compatible = "nordic,nrf-twim";
+	status = "okay";
+	pinctrl-0 = <&i2c0_default>;
+	pinctrl-1 = <&i2c0_sleep>;
+	pinctrl-names = "default", "sleep";
+	clock-frequency = <I2C_BITRATE_FAST>;
+
+	npm1300: pmic@6b {
+		compatible = "nordic,npm1300";
+		reg = <0x6b>;
+		host-int-gpios = <&gpio0 12 GPIO_ACTIVE_HIGH>;
+		pmic-int-pin = <0>;
+
+		npm1300_gpio: gpio-controller {
+			compatible = "nordic,npm1300-gpio";
+			gpio-controller;
+			#gpio-cells = <2>;
+			ngpios = <5>;
+		};
+
+		regulators {
+			compatible = "nordic,npm1300-regulator";
+
+			/* BUCK1: populated per reference config, held OFF by
+			 * firmware (D-012) — 1.8 V experiment rail only. */
+			npm1300_buck1: BUCK1 {
+				regulator-min-microvolt = <1800000>;
+				regulator-max-microvolt = <1800000>;
+				regulator-boot-off;
+			};
+
+			/* BUCK2: 3.0 V always-on system rail (VSET2 strap =
+			 * 150k -> 3.0 V, correct by hardware at power-on). */
+			npm1300_buck2: BUCK2 {
+				regulator-min-microvolt = <3000000>;
+				regulator-max-microvolt = <3000000>;
+				regulator-always-on;
+			};
+
+			/* LDO1 as load switch: display domain (VDD_DISP) */
+			npm1300_lsw_disp: LDO1 {
+				regulator-initial-mode = <NPM1300_LDSW_MODE_LDSW>;
+				regulator-boot-off;
+			};
+
+			/* LDO2 as load switch: IMU VDD domain (VDD_IMU) */
+			npm1300_lsw_imu: LDO2 {
+				regulator-initial-mode = <NPM1300_LDSW_MODE_LDSW>;
+				regulator-boot-off;
+			};
+		};
+
+		npm1300_charger: charger {
+			compatible = "nordic,npm1300-charger";
+			/* 150 mAh pouch: 0.5C charge, 4.2 V termination */
+			term-microvolt = <4200000>;
+			term-warm-microvolt = <4000000>;
+			current-microamp = <76000>;
+			/* board NTC: Murata NCP15XH103F03RC 10k B=3380 (D-017) */
+			thermistor-ohms = <10000>;
+			thermistor-beta = <3380>;
+			charging-enable;
+			vbus-limit-microamp = <500000>;
+		};
+	};
+};
+
+&spi1 {
+	compatible = "nordic,nrf-spim";
+	status = "okay";
+	pinctrl-0 = <&spi1_default>;
+	pinctrl-1 = <&spi1_sleep>;
+	pinctrl-names = "default", "sleep";
+	cs-gpios = <&gpio0 22 GPIO_ACTIVE_LOW>;
+
+	imu: bmi270@0 {
+		compatible = "bosch,bmi270";
+		reg = <0>;
+		spi-max-frequency = <8000000>;
+		irq-gpios = <&gpio0 25 GPIO_ACTIVE_HIGH>;
+	};
+};
+
+&spi2 {
+	compatible = "nordic,nrf-spim";
+	status = "okay";
+	pinctrl-0 = <&spi2_default>;
+	pinctrl-1 = <&spi2_sleep>;
+	pinctrl-names = "default", "sleep";
+	/* Sharp SCS is ACTIVE HIGH */
+	cs-gpios = <&gpio0 15 GPIO_ACTIVE_HIGH>;
+
+	mip_display: ls013b7dh03@0 {
+		compatible = "sharp,ls0xx";
+		reg = <0>;
+		spi-max-frequency = <1000000>;
+		width = <128>;
+		height = <128>;
+		/* EXTMODE is strapped HIGH: COM inversion via EXTCOMIN pin */
+		extcomin-gpios = <&gpio1 2 GPIO_ACTIVE_HIGH>;
+		extcomin-frequency = <1>;
+		disp-en-gpios = <&gpio0 16 GPIO_ACTIVE_HIGH>;
+	};
+};
+
+&flash0 {
+	partitions {
+		compatible = "fixed-partitions";
+		#address-cells = <1>;
+		#size-cells = <1>;
+
+		boot_partition: partition@0 {
+			label = "mcuboot";
+			reg = <0x0 0xc000>;
+		};
+		slot0_partition: partition@c000 {
+			label = "image-0";
+			reg = <0xc000 0x72000>;
+		};
+		slot1_partition: partition@7e000 {
+			label = "image-1";
+			reg = <0x7e000 0x72000>;
+		};
+		storage_partition: partition@f0000 {
+			label = "storage";
+			reg = <0xf0000 0x10000>;
+		};
+	};
+};

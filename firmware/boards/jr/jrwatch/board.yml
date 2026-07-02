@@ -1,0 +1,6 @@
+board:
+  name: jrwatch
+  full_name: JRWatch r1
+  vendor: jr
+  socs:
+    - name: nrf52840
