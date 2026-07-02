@@ -81,6 +81,11 @@ priority bring-up measurement).
   (D-017) matching the devicetree charger config. PASS.
 - Load-switch gating: display and IMU rails are LDO1/LDO2 in LDSW mode fed
   from BUCK2 — deep sleep can cut both domains to zero. PASS.
+- Ground return integrity: review found 16 outer-layer ground islands whose
+  component pads had no via to the In2 plane (initially mis-assessed as
+  cosmetic). 13 stitch vias added, covering the IMU ground pins, ESD array,
+  buttons and most decoupling returns; 3 capacitor islands remain
+  (checklist §1). PASS after checklist item closes.
 
 ## 4. Sneak-leakage review — **PASS (design), verify at bring-up**
 
@@ -115,8 +120,8 @@ Worst case is the 500 mA USB input limit (charging + system), ΔT = 10 °C:
   strap (the 16-pin connector interleaves the pair; one crossover is
   topologically required — D-log). Total length D+ 30.0 mm vs D− 23.0 mm:
   **skew 7.0 mm ≈ 46 ps = 0.06 %** of a Full-Speed bit (83 ns). Full-Speed
-  USB has no intra-pair skew requirement at this scale; no serpentine added
-  (documented instead of decorative). PASS.
+  USB has no intra-pair skew requirement at this scale, so no serpentine was
+  added; the skew is recorded here instead. PASS.
 - Controlled impedance: not required at FS over ~25 mm; pair reference is the
   In2 ground plane. PASS (rationale documented).
 - ESD: USBLC6-2SC6 in the data path between connector and module, VBUS pin
@@ -142,7 +147,7 @@ Worst case is the 500 mA USB input limit (charging + system), ΔT = 10 °C:
 | Copper-to-edge | 0.2 mm | 0.3 mm + 0.45 ring | PASS |
 | Board | 4-layer 0.8 mm | JLC04081H-3313 | PASS |
 | DRC | zero violations | **zero violations** | PASS |
-| Connectivity | complete | **7 links open — documented** (D-022, checklist §1) | **NEEDS REVIEW** |
+| Connectivity | complete | **4 links + 3 ground islands open — documented** (D-022..D-024, checklist §1); power tree complete | **NEEDS REVIEW** |
 | BOM stock | all lines LCSC | all verified 2026-07-02; U1/U2 DigiKey hand-place; J2 low stock | PASS with notes |
 | Hand-solderability | — | castellated module + QFN/LGA via hot air; 0402 minimum; solid pours noted (D-021) | PASS |
 

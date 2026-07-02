@@ -34,11 +34,12 @@ Everything needed to order the JRWatch r1 board from JLCPCB.
 
 ## Before ordering — blocking items
 
-**The board has 7 unrouted links** deliberately left for interactive
-completion (zero DRC violations otherwise). See
-`docs/human-review-checklist.md` §1 for the exact endpoints and suggested
-fixes — about 30 minutes in the KiCad router. Do not order before closing
-them and re-running `kicad-cli pcb drc`.
+**The board has 4 unrouted links and 3 unstitched capacitor ground islands**
+left for interactive completion (zero DRC violations otherwise; the power
+tree is complete). See `docs/human-review-checklist.md` §1 for exact
+endpoints, what blocks each one, and suggested fixes — about 20 minutes in
+the KiCad router. Do not order before closing them and re-running
+`kicad-cli pcb drc`.
 
 Also confirm the display FPC fold reach and battery pigtail polarity
 (checklist §3).

@@ -53,7 +53,7 @@ Mechanisms:
   channels) + an OCV table. Nordic's `nrf_fuel_gauge` (NCS) is the
   higher-accuracy drop-in when building under nRF Connect SDK.
 
-Known follow-ups (honest list): on-chip BMI270 step counter (Zephyr driver
+Known follow-ups: on-chip BMI270 step counter (Zephyr driver
 doesn't expose it; host-side estimator in `motion.c` meanwhile), BLE
 Current Time Service for real wall-clock, MCUboot + USB DFU enablement.
 

@@ -105,7 +105,7 @@ Three power tiers, each with a projected budget to be computed part-by-part in
 
 - **Why this structure:** it maps 1:1 to what wearable teams actually ship (off / wrist-
   down / wrist-up), and every number in it is measurable at bring-up with a µCurrent or
-  PPK2 — the resume claim stays honest.
+  PPK2, so the headline figure can be replaced by a measurement before anyone quotes it.
 
 ## D-007: Board format — 4-layer, ~36 mm rounded square, 0.8 mm thick
 
@@ -281,15 +281,46 @@ Three power tiers, each with a projected budget to be computed part-by-part in
   Chosen because the alternative (per-pad spoke tuning) added no electrical
   value on a board with a dedicated In2 ground plane.
 
-## D-022: Seven links left unrouted, deliberately
+## D-022: Seven links left unrouted at the autoroute stage
 
 - After three autoroute rounds and a raster-verified completion pass, seven
   links in the congested U2 south-west quadrant still could not be closed
   without clearance violations (each attempt collided with other nets'
-  copper). Per the project's honesty rule, they are documented with exact
+  copper). Rather than force them in, they are documented with exact
   endpoints and fix recipes in `docs/human-review-checklist.md` §1 instead of
   being forced. The board is otherwise DRC-clean (zero violations), and the
   fab README gates ordering on closing them (~30 min interactive work).
+
+## D-023: Review pass closed the three power-critical links
+
+- A dedicated layout review re-attacked the seven open links with a full
+  survey of local copper (hardware/scripts/survey.py) instead of the earlier
+  incomplete obstacle model. Result: VBAT (pin 19), VSYS pin 20 and VSYS
+  pin 4 (PVDD) are now routed and DRC-clean. This took relocating the NTC
+  trace out of the south-west slot, one drill resize on a cluster via, a
+  via at the VBAT pour edge, a via-less B.Cu path for pin 20 onto existing
+  VSYS copper, and an In1 connection lane under the PMIC exposed pad.
+  These three links were mandatory: pin 20 is the PMIC's VSYS output, so the
+  board was electrically dead without them.
+- The remaining four (DISP_SCK, 3V0 to pin 12, SHPHLD, CC2) were also
+  attempted: two further Freerouting rounds with 13 corridor nets ripped
+  closed SHPHLD but broke I2C_SCL in exchange, so that state was reverted.
+  Manual analysis shows each survivor is blocked by locked routing (the
+  USB_DP via sits 0.45 mm under pin 12's pad mouth) or requires multi-net
+  shoves beyond safe scripted reach. They stay documented in the review
+  checklist with the updated analysis; closing them interactively is the
+  remaining pre-order work.
+
+## D-024: Ground-island stitching (correction to earlier assessment)
+
+- The 16 zone-island ratsnest entries were previously described as cosmetic.
+  Review showed the opposite: every island carries real component ground
+  pads (IMU ground pins, decoupling-cap returns, the USB ESD ground, both
+  buttons), which floated without a via to the In2 plane. A clearance-checked
+  stitching pass (hardware/scripts/stitch_islands.py) added 13 vias; three
+  islands (C1.2, C9.2, C21.2/C22.2 — four capacitor ground pads) have no
+  legal via site without moving adjacent routing and are listed in the
+  checklist for the same interactive session.
 
 ---
 
