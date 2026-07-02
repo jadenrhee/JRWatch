@@ -144,5 +144,115 @@ Three power tiers, each with a projected budget to be computed part-by-part in
 
 ---
 
-*Part-number-level decisions (exact LCSC numbers, stock status, packages) are appended
-as D-010+ after the sourcing-verification pass — see below.*
+## D-010: Module sourcing — LCSC listed but out of stock; keep MDBT50Q-1MV2 via DigiKey
+
+- **Finding (2026-07-02):** LCSC lists every Raytac variant — MDBT50Q-1MV2 = C5118826
+  ($6.83), P1MV2 = C5119772, U1MV2 = C2688382 — but all show **zero stock**. DigiKey has
+  MDBT50Q-1MV2 in stock, ships today.
+- **Options:** (a) keep 1MV2, source DigiKey, hand-place; (b) swap to an LCSC-stocked
+  non-Raytac module (e.g. Ebyte E73-2G4M08S1C); (c) wait for restock.
+- **Decision: (a).** The module's castellated pads are the single most iron-friendly
+  package on the board — hand-placing it costs nothing in practice (priority #2 intact),
+  and Raytac + nRF52840 is the wearable-industry-standard combination the project story
+  depends on (priorities #1/#4). The KiCad footprint accepts 1MV2 and P1MV2
+  interchangeably (identical pads per datasheet §2.1), so a future JLC-assembled run can
+  use whichever variant LCSC restocks — C-numbers recorded in `hardware/parts.yaml`.
+- **Verified datasheet rules to carry into layout:** antenna keep-out **12.4 mm wide ×
+  3.8 mm deep, all layers, no copper**, extending ~1 mm beyond both module sides; plus a
+  1.6 × 1.2 mm top-layer-only keep-out notch 2.95 mm from the module's left edge;
+  module placed with antenna at the board edge (DS §2.2–2.3, Ver.K).
+
+## D-011: nPM1300 sourcing — same situation, same call
+
+- **Finding:** nPM1300-QEAA-R7 = LCSC C7501206, listed, **zero stock**; WLCSP variant
+  (CAAA) in stock but not hand-solderable — rejected. DigiKey: $2.95, ships today.
+- **Options:** (a) keep nPM1300, DigiKey, hand hot-air reflow; (b) invoke the discrete
+  fallback (MCP73831 + MAX17048 + LDO + 2× load switch, all LCSC basic).
+- **Decision: (a).** The fallback would cost the design its ship mode, hardware
+  power-gating, coulomb-counting-class fuel gauge, and USB-C detection — i.e. the
+  measurable low-power architecture that is priority #1 — in exchange for fixing a
+  sourcing gap that DigiKey already fills. QFN32 @ 0.5 mm pitch with a 3.5 mm EP
+  (PS mech spec) reflows fine with paste + hot plate. The two hand-place lines (U1, U2)
+  are exactly the two parts a JLC economic-assembly order can't place today; everything
+  else on the BOM is LCSC-stocked, so the board still assembles as
+  "JLC does the fiddly passives, builder places two ICs."
+
+## D-012: Rail strapping — BUCK2 is the system rail (3.0 V at power-on, no firmware needed)
+
+- **Finding:** nPM1300 buck startup voltages are strapped by VSET resistors, and the two
+  tables are asymmetric: VSET1 tops out at 2.7 V (250–500 kΩ), while **VSET2 = 150 kΩ
+  gives exactly 3.0 V** (PS BUCK chapter).
+- **Decision:** System 3V0 rail = **BUCK2, VSET2 = 150 kΩ 1%** → correct-by-hardware at
+  first power, no I2C bootstrap dependency for the SoC supply. BUCK1 is populated per
+  Nordic reference configuration 1 (L + caps + VSET1 = 47 kΩ → 1.8 V) but **disabled by
+  firmware at init** — it exists as a validated-by-datasheet 1.8 V experiment rail
+  without inventing an un-datasheet-ed "unused buck" strapping. Its disable is a checked
+  item in the verification report's leakage review.
+- **Load switches:** LSW1 ← 3V0 → display VDD/VDDA; LSW2 ← 3V0 → IMU VDD.
+  (LSIN1/LSIN2 wired from BUCK2 output, load-switch mode, so deep sleep can cut both
+  domains completely.)
+
+## D-013: Display connector — Hirose FH12A, low stock flagged
+
+- FH12A-10S-0.5SH(55) = C5139870, **91 units** in stock (genuine FH12 = C506791, 38).
+  Kept: it's the proven connector for this panel family (Adafruit breakout uses FH12),
+  KiCad ships the exact footprint, and the build needs 1–2 units — but flagged in
+  `parts.yaml` to order early. Display module itself (LS013B7DH03, VDD 2.7–3.3 V
+  verified from Sharp spec §6-1, 12 µW static typ §6-4) ships from DigiKey/Adafruit and
+  is hand-attached — never JLC-assembled, so LCSC stock is not required for it.
+
+## D-014: Button architecture — power button on SHPHLD, user button on GPIO
+
+- **Constraint found in PS:** SHPHLD has an internal 50 kΩ pull-up to the battery
+  domain — the node swings to VBAT (up to 4.2 V), which exceeds the nRF52840 GPIO
+  absolute max (VDD + 0.3 V). The two nets must not share a button naively.
+- **Decision:** SW1 = power button → nPM1300 SHPHLD only (ship-mode exit ≥ 96 ms press,
+  also readable as a PMIC event over I2C/GPIO interrupt). SW2 = user button → nRF
+  P1.13 with internal pull-up (uses a radio-adjacent "low-frequency-only" module pin,
+  which buttons are perfect for) — GPIO SENSE wakes the SoC from System OFF.
+  Both lines get 100 Ω series + ESD9B3.3ST5G TVS at the switch (user-touchable nets).
+  No external pull-ups → zero standing current either way (priority #1).
+
+## D-015: No discrete USB-C CC pull-downs — nPM1300 does Type-C detection
+
+- The task brief specified 5.1 kΩ CC pull-downs; the nPM1300 PS reference circuit
+  connects CC1/CC2 straight to the receptacle because the PMIC implements USB Type-C
+  sink detection (100/500/1500 mA input-limit negotiation) internally. **Datasheet wins;
+  resistors deleted.** Logged as a deliberate deviation from the brief, per its own
+  "follow the datasheet, document why" escape hatch.
+
+## D-016: No charge LED
+
+- nPM1300 offers 3 LED drivers; a charge LED at ~2 mA would dwarf the entire sleep
+  budget if left on and is invisible inside a watch case anyway. Charge status is
+  reported via the fuel-gauge/charger registers → BLE Battery Service and the
+  watch face. PMIC GPIO0 is wired to nRF P0.12 as the charger/fuel-gauge interrupt
+  line instead. (Priority #1 over blinkenlights.)
+
+## D-017: On-board NTC (10 kΩ, populated)
+
+- Small hobby LiPo packs frequently omit the thermistor lead; the nPM1300 requires NTC
+  or an explicit register disable. Populating a board NTC (Murata NCP15XH103F03RC,
+  10 k B3380 1%, placed at the battery connector) keeps hardware charge-temperature
+  protection real (JEITA windows in the charger) instead of software-disabled — a
+  safety-credibility point for a wearable strapped to a wrist. If a pack with its own
+  NTC is chosen later, the board part is depopulated and the pack lead lands on the
+  same net (noted in human-review checklist).
+
+## D-018: Bus strapping and idle-current hygiene
+
+- I2C (PMIC, 400 kHz): 4.7 kΩ pulls to the always-on 3V0 rail — idle-high bus burns
+  zero standing current; PMIC must stay reachable in every sleep state, so its bus
+  cannot live on a gated rail.
+- BMI270 CSB: 100 kΩ pull-up to the *gated* IMU rail (deselected during nRF reset when
+  GPIOs float; pull-up to its own domain can't back-feed the rail when gated).
+- Display SCS: 100 kΩ pull-down (Sharp SCS is active-high; float-low keeps it
+  deselected; a pull-down holding an idle-low node costs zero current).
+- ASDx/ASCx (BMI270 aux bus, unused): tied to VDDIO per DS Table 22; OCSB/OSDO: DNC.
+- All strapping resistors chosen so that **every pull is toward its net's idle state**
+  → 0 µA standing current across the board (verified line-by-line in the report).
+
+---
+
+*Next decisions (placement, routing constraints, stackup specifics) are appended as
+D-019+ during the layout phase.*
