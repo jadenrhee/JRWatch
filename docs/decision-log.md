@@ -322,6 +322,29 @@ Three power tiers, each with a projected budget to be computed part-by-part in
   legal via site without moving adjacent routing and are listed in the
   checklist for the same interactive session.
 
+## D-025: Display connector placement and pin order are wrong — found at pre-order review
+
+- Sharp's outline drawing (LS013B7DH03 spec fig 8-1) shows the FPC tail
+  **centered** on the panel (13.3 mm from the panel edge) with terminal 1 on
+  the **right** in the front view, contacts on the tail's back side, and a
+  mandatory fold away from the polarizer. Consequences for this board:
+  1. J2 at x=89.3 is unreachable — with the panel on the board, the tail
+     center can only fall between x=95.3 and x=104.7. J2 must move to x=100.
+  2. After the 180-degree fold the contact face flips up and left-right
+     reverses as seen by the connector: pad k must carry panel terminal
+     (11-k). The schematic and netlist are corrected (this commit); ERC 0/0.
+     The FH12A (top-contact) is the right part for this mounting.
+  3. The active area is 1.85 mm north of panel center — enclosure aperture
+     offset corrected to 4.2 mm in a follow-up.
+- Layout consequences (verified by trial re-route, then reverted to keep the
+  board in a known-good state): J2 belongs at pads y≈109.8 so its body sits
+  between the USB-C shell-leg pairs at (95.7/104.3, 114.65) and the tail
+  folds between them; the J2 MP pads need trimming (custom footprint) to
+  clear the leg holes; the USB_DM_CONN crossover descent at x=99.85 crosses
+  the new pad row and must be redesigned north of y≈109; the display fan
+  re-routes south from the module (trial run closed it plus SHPHLD and
+  I2C_SCL cleanly). Ordering is blocked until this lands.
+
 ---
 
 *Layout-phase constraint decisions (stackup, keep-outs, netclasses) live in the
