@@ -2272,3 +2272,1183 @@
 2026-07-03 12:57:16.136 [Thread-0] INFO  Route optimization was completed in 0.27 seconds.
 2026-07-03 12:57:16.153 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()' was performed in 3 minute(s) 58.65 seconds.
 2026-07-03 12:57:16.153 [Thread-0] INFO  Saving '/Users/jadenrhee/JRWatch/hardware/jrwatch.ses'...
+2026-07-03 13:01:23.048 [main] INFO  Freerouting v1.5.0 (build-date: 2022-01-27)
+2026-07-03 13:01:23.065 [main] INFO  Opening '/Users/jadenrhee/JRWatch/hardware/jrwatch.dsn'...
+2026-07-03 13:01:24.512 [main] INFO  Opening 'jrwatch.rules'...
+2026-07-03 13:01:24.513 [main] ERROR File 'jrwatch.rules' was not found.
+2026-07-03 13:01:24.717 [Thread-0] INFO  Starting auto-routing...
+2026-07-03 13:01:24.721 [main] TRACE Method 'MainApplication.main()' was performed in 1.89 seconds.
+2026-07-03 13:01:24.856 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:01:28.506 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #1 on board 'b4eba2875ab18c26d1e762015e6057cd' making 73 changes' was performed in 3.70 seconds.
+2026-07-03 13:01:28.750 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:01:31.529 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #2 on board 'a86e62fc81168330a111a8ee9877c254' making 32 changes' was performed in 3.00 seconds.
+2026-07-03 13:01:31.557 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:01:33.982 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #3 on board '28a473c9bbbacfd10e46257c17611015' making 36 changes' was performed in 2.43 seconds.
+2026-07-03 13:01:34.215 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:01:36.621 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #4 on board '0d3ff95b296e9f3444a1d71ef3695ff0' making 43 changes' was performed in 2.62 seconds.
+2026-07-03 13:01:36.726 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:01:39.011 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #5 on board '4f8c09890798d04f84226d6db6351def' making 33 changes' was performed in 2.38 seconds.
+2026-07-03 13:01:39.141 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:01:40.977 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #6 on board 'c06eb0bc5fae35ed67c5be87d7fe69dd' making 25 changes' was performed in 1.95 seconds.
+2026-07-03 13:01:40.996 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:01:42.929 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #7 on board '3328d33943f0f4de16c998b77b1e014d' making 27 changes' was performed in 1.94 seconds.
+2026-07-03 13:01:43.009 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:01:45.295 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #8 on board 'c008135bfb5a779ad6b6929638f79ee8' making 21 changes' was performed in 2.35 seconds.
+2026-07-03 13:01:45.311 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:01:47.121 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #9 on board '846af229af6c37d0fdb9b5faa86c179c' making 22 changes' was performed in 1.82 seconds.
+2026-07-03 13:01:47.136 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:01:48.949 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #10 on board '8d479dfcd18f793b51f2b3add3291926' making 17 changes' was performed in 1.82 seconds.
+2026-07-03 13:01:48.965 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:01:50.629 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #11 on board '5d11985c9173460972fe8eb5e53753ae' making 23 changes' was performed in 1.67 seconds.
+2026-07-03 13:01:50.644 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:01:52.310 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #12 on board '069c5bc2b0d6eec5cb3b239563d8ed6d' making 10 changes' was performed in 1.67 seconds.
+2026-07-03 13:01:52.326 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:01:54.521 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #13 on board '033c197201fd7b2a1c354751065da08e' making 17 changes' was performed in 2.20 seconds.
+2026-07-03 13:01:54.537 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:01:56.202 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #14 on board '9b585362d18ac9bb2473fce87e4d4d74' making 20 changes' was performed in 1.67 seconds.
+2026-07-03 13:01:56.217 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:01:58.273 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #15 on board '29f22e3f43df7179bec3aca4123e3d07' making 11 changes' was performed in 2.06 seconds.
+2026-07-03 13:01:58.293 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:01:59.987 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #16 on board '3f962014bc24f5885aafd988aad9029f' making 9 changes' was performed in 1.70 seconds.
+2026-07-03 13:02:00.002 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:02:02.000 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #17 on board '3c2968185e934ac756120efe0ad1f287' making 11 changes' was performed in 2.00 seconds.
+2026-07-03 13:02:02.015 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:02:03.702 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #18 on board 'd63adaa935e09b22f1cbf3e4873c532e' making 9 changes' was performed in 1.69 seconds.
+2026-07-03 13:02:03.718 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:02:05.698 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #19 on board '2857a4350602c8d821cc4465fbc6cd11' making 11 changes' was performed in 1.99 seconds.
+2026-07-03 13:02:05.713 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:02:07.325 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #20 on board '7c03f0aab87c4788f6408dd31f8da504' making 9 changes' was performed in 1.62 seconds.
+2026-07-03 13:02:07.339 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:02:09.352 [Thread-0] WARN  There were only 19.85 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:02:09.353 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #21 on board '0f0158569e906be8342fc5e2868a208d' making 11 changes' was performed in 2.02 seconds.
+2026-07-03 13:02:09.367 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:02:11.003 [Thread-0] WARN  There were only 18.7 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:02:11.004 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #22 on board '83b97e466813c804bd00f55d73be7e63' making 9 changes' was performed in 1.64 seconds.
+2026-07-03 13:02:11.018 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:02:13.089 [Thread-0] WARN  There were only 17.45 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:02:13.090 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #23 on board '00c705d5db5b412f4252f4e3157ccf2a' making 11 changes' was performed in 2.08 seconds.
+2026-07-03 13:02:13.104 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:02:14.875 [Thread-0] WARN  There were only 15.75 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:02:14.876 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #24 on board 'a4e0b2333a12d44c4cc9026287f1f442' making 9 changes' was performed in 1.78 seconds.
+2026-07-03 13:02:14.889 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:02:16.932 [Thread-0] WARN  There were only 14.65 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:02:16.933 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #25 on board '26b3876c5a0eeda33cc8c37c8895056a' making 11 changes' was performed in 2.05 seconds.
+2026-07-03 13:02:16.947 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:02:18.577 [Thread-0] WARN  There were only 13.85 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:02:18.577 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #26 on board '33e01bc6ef6e3a1f8c64b071fb2b5504' making 9 changes' was performed in 1.64 seconds.
+2026-07-03 13:02:18.591 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:02:20.560 [Thread-0] WARN  There were only 13.05 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:02:20.561 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #27 on board 'd08633a2799a9a817a4c3fce2277cb6d' making 11 changes' was performed in 1.98 seconds.
+2026-07-03 13:02:20.575 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:02:22.166 [Thread-0] WARN  There were only 12.45 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:02:22.167 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #28 on board '964cbf5835083c0ff3fafa077206c0ce' making 9 changes' was performed in 1.60 seconds.
+2026-07-03 13:02:22.181 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:02:24.192 [Thread-0] WARN  There were only 11.9 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:02:24.192 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #29 on board 'a86c5a3695d068f257044071445c1475' making 11 changes' was performed in 2.02 seconds.
+2026-07-03 13:02:24.206 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:02:25.813 [Thread-0] WARN  There were only 11.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:02:25.814 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #30 on board 'b24f368feb7ffcb1db63ebc26bc02172' making 9 changes' was performed in 1.61 seconds.
+2026-07-03 13:02:25.827 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:02:27.817 [Thread-0] WARN  There were only 10.9 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:02:27.818 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #31 on board 'e6ee5735fbb20c39967801d25c2f9410' making 11 changes' was performed in 2.00 seconds.
+2026-07-03 13:02:27.832 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:02:29.439 [Thread-0] WARN  There were only 10.85 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:02:29.440 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #32 on board '61b84987913104b801f6d423f4c116be' making 9 changes' was performed in 1.61 seconds.
+2026-07-03 13:02:29.454 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:02:31.445 [Thread-0] WARN  There were only 10.55 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:02:31.446 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #33 on board '194165d27934b7099aa461dfcda25966' making 11 changes' was performed in 2.00 seconds.
+2026-07-03 13:02:31.460 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:02:33.056 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:02:33.057 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #34 on board '593e71115356679c46068d7e6410493b' making 9 changes' was performed in 1.60 seconds.
+2026-07-03 13:02:33.071 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:02:35.134 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:02:35.135 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #35 on board 'd03c9aa99530531d928becaf04fc2089' making 11 changes' was performed in 2.07 seconds.
+2026-07-03 13:02:35.149 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:02:36.744 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:02:36.744 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #36 on board '86e60f0388bf29c4b4dd1eb23fd876fe' making 9 changes' was performed in 1.60 seconds.
+2026-07-03 13:02:36.758 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:02:38.786 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:02:38.786 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #37 on board 'be29db8a897ecb7db6c08d7a0a5cb029' making 11 changes' was performed in 2.03 seconds.
+2026-07-03 13:02:38.801 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:02:40.502 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:02:40.503 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #38 on board 'e334306e92b9b8774f3bbcc32689ed75' making 9 changes' was performed in 1.71 seconds.
+2026-07-03 13:02:40.517 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:02:42.668 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:02:42.669 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #39 on board '3c58d63dd8d5d6e9416c87f0a68a42ed' making 11 changes' was performed in 2.16 seconds.
+2026-07-03 13:02:42.699 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:02:44.520 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:02:44.521 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #40 on board '74e736c3846cb8879c523bb595eca1ff' making 9 changes' was performed in 1.84 seconds.
+2026-07-03 13:02:44.534 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:02:46.875 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:02:46.877 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #41 on board '8465fa4f7ee9289c0b60020fc6d4e956' making 11 changes' was performed in 2.35 seconds.
+2026-07-03 13:02:46.893 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:02:48.690 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:02:48.690 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #42 on board 'e818baf116e13207c667643692f793e1' making 9 changes' was performed in 1.80 seconds.
+2026-07-03 13:02:48.704 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:02:50.803 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:02:50.805 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #43 on board '6f3b68f01217add4a03d6b06229951f2' making 11 changes' was performed in 2.11 seconds.
+2026-07-03 13:02:50.821 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:02:52.527 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:02:52.527 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #44 on board '6d42693657eb6c8ce8b46afacc01122d' making 9 changes' was performed in 1.71 seconds.
+2026-07-03 13:02:52.541 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:02:54.566 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:02:54.567 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #45 on board '9b1239610a79348f0a9471c00d72a995' making 11 changes' was performed in 2.03 seconds.
+2026-07-03 13:02:54.581 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:02:56.216 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:02:56.216 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #46 on board '64c329826e66e07c72f9d09843639898' making 9 changes' was performed in 1.64 seconds.
+2026-07-03 13:02:56.230 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:02:58.237 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:02:58.237 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #47 on board '5d5fdce6fbc77526c42a93f2f247fe46' making 11 changes' was performed in 2.01 seconds.
+2026-07-03 13:02:58.251 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:02:59.871 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:02:59.872 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #48 on board 'a5aa142527b901ee717709b2adc490f6' making 9 changes' was performed in 1.63 seconds.
+2026-07-03 13:02:59.885 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:03:01.916 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:03:01.917 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #49 on board '411427c635d66aabbf421f60bd484797' making 11 changes' was performed in 2.04 seconds.
+2026-07-03 13:03:01.931 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:03:03.560 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:03:03.561 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #50 on board 'c9a7d0712fa54abb5e6bc9e48ea5be4c' making 9 changes' was performed in 1.64 seconds.
+2026-07-03 13:03:03.575 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:03:05.605 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:03:05.606 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #51 on board 'a716ad6aca71bebcdf15b2bc9d23689a' making 11 changes' was performed in 2.04 seconds.
+2026-07-03 13:03:05.620 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:03:07.232 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:03:07.233 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #52 on board 'efc22e49ebea72faef43daa3b8164996' making 9 changes' was performed in 1.62 seconds.
+2026-07-03 13:03:07.246 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:03:09.309 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:03:09.310 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #53 on board 'e03aba6e04a27345e429d74326884bf6' making 11 changes' was performed in 2.07 seconds.
+2026-07-03 13:03:09.323 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:03:10.952 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:03:10.953 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #54 on board 'd684399078bf19f749a4617f23b31117' making 9 changes' was performed in 1.64 seconds.
+2026-07-03 13:03:10.967 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:03:13.079 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:03:13.080 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #55 on board 'c1240d309cfa79ab5e858f35997f5f74' making 11 changes' was performed in 2.12 seconds.
+2026-07-03 13:03:13.093 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:03:14.722 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:03:14.723 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #56 on board 'daaab35f42885e2ddb11bfdef3a79a00' making 9 changes' was performed in 1.64 seconds.
+2026-07-03 13:03:14.736 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:03:16.769 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:03:16.770 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #57 on board 'd79c1899eec59779e9ce2d89cdc1e256' making 11 changes' was performed in 2.04 seconds.
+2026-07-03 13:03:16.783 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:03:18.413 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:03:18.413 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #58 on board '33289ef6b5fe4dd8a0538bda96213fd4' making 9 changes' was performed in 1.64 seconds.
+2026-07-03 13:03:18.426 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:03:20.442 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:03:20.442 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #59 on board '30b03f855bc39e84e917b8793ad27727' making 11 changes' was performed in 2.02 seconds.
+2026-07-03 13:03:20.456 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:03:22.076 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:03:22.077 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #60 on board 'c405e4c39eb49dff21e6a4a1148414df' making 9 changes' was performed in 1.63 seconds.
+2026-07-03 13:03:22.092 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:03:24.114 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:03:24.115 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #61 on board '2a32944a40adf9e11cd1ba1b36a3373c' making 11 changes' was performed in 2.03 seconds.
+2026-07-03 13:03:24.128 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:03:25.792 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:03:25.793 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #62 on board '4d9b1f9858852dbbfb3a116c68e3f32e' making 9 changes' was performed in 1.67 seconds.
+2026-07-03 13:03:25.809 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:03:27.844 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:03:27.845 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #63 on board '726ef2b0e660ea45329687d148119528' making 11 changes' was performed in 2.04 seconds.
+2026-07-03 13:03:27.858 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:03:29.491 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:03:29.492 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #64 on board '4091f38b16466e41aed1bd6d4d30376b' making 9 changes' was performed in 1.64 seconds.
+2026-07-03 13:03:29.507 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:03:31.529 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:03:31.530 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #65 on board 'f9440d571bf698f5e10bb2cf7f3b6925' making 11 changes' was performed in 2.03 seconds.
+2026-07-03 13:03:31.543 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:03:33.174 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:03:33.174 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #66 on board 'cbb6f768cb60971e1fc12e124959868f' making 9 changes' was performed in 1.64 seconds.
+2026-07-03 13:03:33.189 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:03:35.208 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:03:35.209 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #67 on board '6ea161c0428b5267529a480d9c1afdb2' making 11 changes' was performed in 2.02 seconds.
+2026-07-03 13:03:35.222 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:03:36.850 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:03:36.851 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #68 on board '53902bf2b48a9023646f86db39cbf324' making 9 changes' was performed in 1.64 seconds.
+2026-07-03 13:03:36.866 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:03:38.894 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:03:38.895 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #69 on board 'f2a2bd8d31e8315d14c1435ab55ac423' making 11 changes' was performed in 2.04 seconds.
+2026-07-03 13:03:38.909 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:03:40.541 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:03:40.542 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #70 on board '4e1c3f7ed0111d1c0a8476c5a008feb5' making 9 changes' was performed in 1.64 seconds.
+2026-07-03 13:03:40.555 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:03:42.571 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:03:42.572 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #71 on board '8c123649d3f0f503f461a25ea4088aad' making 11 changes' was performed in 2.02 seconds.
+2026-07-03 13:03:42.585 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:03:44.246 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:03:44.247 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #72 on board '331cc33107ac13e98cafe7e6c46b1515' making 9 changes' was performed in 1.67 seconds.
+2026-07-03 13:03:44.260 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:03:46.287 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:03:46.287 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #73 on board '1f5ba3d3f816708b73a38911c4621d1a' making 11 changes' was performed in 2.03 seconds.
+2026-07-03 13:03:46.301 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:03:47.940 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:03:47.941 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #74 on board '7cbb5578fa5cddd04c3ee7069f431ff6' making 9 changes' was performed in 1.65 seconds.
+2026-07-03 13:03:47.954 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:03:49.980 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:03:49.981 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #75 on board '0283b1d03d6eee0e503644c21e36f08a' making 11 changes' was performed in 2.03 seconds.
+2026-07-03 13:03:49.994 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:03:51.654 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:03:51.655 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #76 on board '12865b7ac3e7b51769832804f8bf14db' making 9 changes' was performed in 1.67 seconds.
+2026-07-03 13:03:51.668 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:03:53.699 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:03:53.700 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #77 on board '878198e24ba6c8d772795e4ec1b8fc5c' making 11 changes' was performed in 2.04 seconds.
+2026-07-03 13:03:53.713 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:03:55.422 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:03:55.423 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #78 on board '9e522dbb5f3d52968d7fe276a9147deb' making 9 changes' was performed in 1.72 seconds.
+2026-07-03 13:03:55.436 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:03:57.472 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:03:57.472 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #79 on board 'd6d2ee3932bdedb6346f2ba6d52110c4' making 11 changes' was performed in 2.04 seconds.
+2026-07-03 13:03:57.486 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:03:59.117 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:03:59.118 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #80 on board '47caccd3a2c18cc9046e2ef7c67cdc3a' making 9 changes' was performed in 1.64 seconds.
+2026-07-03 13:03:59.131 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:04:01.174 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:04:01.174 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #81 on board '0c9ad39ec4bdab5638290c8c8ce06d8e' making 11 changes' was performed in 2.05 seconds.
+2026-07-03 13:04:01.188 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:04:02.823 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:04:02.824 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #82 on board '93c4c0c631af178df7e9ea8a0ca9cc9a' making 9 changes' was performed in 1.64 seconds.
+2026-07-03 13:04:02.837 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:04:04.956 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:04:04.957 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #83 on board 'e55ba9bf4e5301ea7d82e09307b8484a' making 11 changes' was performed in 2.12 seconds.
+2026-07-03 13:04:04.970 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:04:06.618 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:04:06.619 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #84 on board '5b871739d252ad1f5f2f31a48fe9daac' making 9 changes' was performed in 1.65 seconds.
+2026-07-03 13:04:06.632 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:04:08.709 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:04:08.710 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #85 on board '6419cee666c2f014b6bffac1cdaa2382' making 11 changes' was performed in 2.08 seconds.
+2026-07-03 13:04:08.723 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:04:10.360 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:04:10.361 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #86 on board 'ffdb005462f73bca50dda0df43353ecb' making 9 changes' was performed in 1.64 seconds.
+2026-07-03 13:04:10.374 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:04:12.509 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:04:12.510 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #87 on board '38ef1519fa775363b07e24333086977b' making 11 changes' was performed in 2.14 seconds.
+2026-07-03 13:04:12.523 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:04:14.191 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:04:14.192 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #88 on board '52bcc319456c7e145be725ecbabf8581' making 9 changes' was performed in 1.67 seconds.
+2026-07-03 13:04:14.205 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:04:16.301 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:04:16.301 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #89 on board '4432eefa1f1e1bb02bf0f316da9e4282' making 11 changes' was performed in 2.10 seconds.
+2026-07-03 13:04:16.315 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:04:18.045 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:04:18.046 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #90 on board '10db0c3c7aed0d0231631318dcfe4b5a' making 9 changes' was performed in 1.74 seconds.
+2026-07-03 13:04:18.060 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:04:20.178 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:04:20.179 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #91 on board '56ede7cf67ff149dfd2b9f03f44b40c5' making 11 changes' was performed in 2.12 seconds.
+2026-07-03 13:04:20.192 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:04:21.887 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:04:21.888 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #92 on board '7f1a9f4f1f76ca90c597dab3c01df405' making 9 changes' was performed in 1.70 seconds.
+2026-07-03 13:04:21.901 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:04:24.121 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:04:24.121 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #93 on board 'ca45a0af18f4ae5f6e9aeaf928ca94c5' making 11 changes' was performed in 2.23 seconds.
+2026-07-03 13:04:24.134 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:04:25.836 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:04:25.837 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #94 on board '9e8065c857ba2006e9c10fafac26f993' making 9 changes' was performed in 1.71 seconds.
+2026-07-03 13:04:25.850 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:04:28.011 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:04:28.015 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #95 on board 'b2269375e5378f9f6d243016e0d54ecd' making 11 changes' was performed in 2.17 seconds.
+2026-07-03 13:04:28.032 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:04:29.730 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:04:29.731 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #96 on board 'c9ab3080a61875be4352391749a94ae6' making 9 changes' was performed in 1.70 seconds.
+2026-07-03 13:04:29.744 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:04:31.816 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:04:31.817 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #97 on board 'be02c1050b35611761540b8646cfe527' making 11 changes' was performed in 2.08 seconds.
+2026-07-03 13:04:31.830 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:04:33.550 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:04:33.550 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #98 on board '1decef9544aaba1653b3da3ffd34d2a2' making 9 changes' was performed in 1.73 seconds.
+2026-07-03 13:04:33.564 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:04:35.626 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:04:35.627 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #99 on board '2e6e5fc2979037f7263d19fd1111d402' making 11 changes' was performed in 2.07 seconds.
+2026-07-03 13:04:35.640 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:04:37.642 [Thread-0] WARN  There were only 10.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:04:37.643 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #100 on board '2d0228f76e16d2504ce0197c985c991f' making 9 changes' was performed in 2.01 seconds.
+2026-07-03 13:04:37.648 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()-autorouting' was performed in 3 minute(s) 12.93 seconds.
+2026-07-03 13:04:37.649 [Thread-0] INFO  Auto-routing was completed in 3 minute(s) 12.93 seconds.
+2026-07-03 13:04:37.649 [Thread-0] INFO  Starting route optimization on 11 threads...
+2026-07-03 13:04:37.906 [Thread-0] TRACE Method 'BatchOptRouteMT.opt_route_pass #1 with 0 items, 162 vias and 776,838.77 trace length running on 11 threads.' was performed in 0.25 seconds.
+2026-07-03 13:04:38.125 [Thread-0] TRACE Method 'BatchOptRouteMT.opt_route_pass #2 with 39 items, 162 vias and 776,838.77 trace length running on 11 threads.' was performed in 0.22 seconds.
+2026-07-03 13:04:38.125 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()-routeoptimization' was performed in 0.47 seconds.
+2026-07-03 13:04:38.127 [Thread-0] INFO  Route optimization was completed in 0.47 seconds.
+2026-07-03 13:04:38.139 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()' was performed in 3 minute(s) 13.42 seconds.
+2026-07-03 13:04:38.139 [Thread-0] INFO  Saving '/Users/jadenrhee/JRWatch/hardware/jrwatch.ses'...
+2026-07-03 13:06:08.536 [main] INFO  Freerouting v1.5.0 (build-date: 2022-01-27)
+2026-07-03 13:06:08.565 [main] INFO  Opening '/Users/jadenrhee/JRWatch/hardware/jrwatch.dsn'...
+2026-07-03 13:06:10.109 [main] INFO  Opening 'jrwatch.rules'...
+2026-07-03 13:06:10.110 [main] ERROR File 'jrwatch.rules' was not found.
+2026-07-03 13:06:10.304 [Thread-0] INFO  Starting auto-routing...
+2026-07-03 13:06:10.309 [main] TRACE Method 'MainApplication.main()' was performed in 2.06 seconds.
+2026-07-03 13:06:10.765 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:11.610 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #1 on board 'fc2f94a0c8ab5c6d3020c9fc097101fc' making 30 changes' was performed in 1.23 seconds.
+2026-07-03 13:06:11.638 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:12.156 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #2 on board '8468cbcc97a29140a86f6b759035a02f' making 8 changes' was performed in 0.53 seconds.
+2026-07-03 13:06:12.181 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:13.140 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #3 on board '7e48eee9875a73956be31dcd7110f062' making 10 changes' was performed in 0.97 seconds.
+2026-07-03 13:06:13.159 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:13.642 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #4 on board '13b170758a48f259a0ae0d00c0f17a2c' making 2 changes' was performed in 0.49 seconds.
+2026-07-03 13:06:13.658 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:14.139 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #5 on board '9765faae5157f718ce68ef80f488184d' making 2 changes' was performed in 0.49 seconds.
+2026-07-03 13:06:14.155 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:14.665 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #6 on board 'bb942745e3cc6b71e2c66a71484a4c86' making 2 changes' was performed in 0.52 seconds.
+2026-07-03 13:06:14.682 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:15.218 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #7 on board '13c1c6707a68841a10daddd1aa8862f4' making 2 changes' was performed in 0.54 seconds.
+2026-07-03 13:06:15.234 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:15.755 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #8 on board 'aa2c40ba6c4dfbeb2c1b20f5ad644e1a' making 2 changes' was performed in 0.53 seconds.
+2026-07-03 13:06:15.771 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:16.326 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #9 on board 'b37e9703b7f65e03461ed8c128c221bc' making 2 changes' was performed in 0.56 seconds.
+2026-07-03 13:06:16.342 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:16.864 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #10 on board '57fd2805cd702e67635b2067c6b09561' making 2 changes' was performed in 0.53 seconds.
+2026-07-03 13:06:16.880 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:17.434 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #11 on board '16d34d8beae054538bb784767095189e' making 2 changes' was performed in 0.56 seconds.
+2026-07-03 13:06:17.449 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:17.986 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #12 on board 'c5315ccdfe57623e845ae9226220640f' making 2 changes' was performed in 0.54 seconds.
+2026-07-03 13:06:18.002 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:18.581 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #13 on board '0645da7e4778f56304dd8092e8fb98c2' making 2 changes' was performed in 0.58 seconds.
+2026-07-03 13:06:18.596 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:19.130 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #14 on board 'fc7e30be101752b8efd72605613b75af' making 2 changes' was performed in 0.54 seconds.
+2026-07-03 13:06:19.145 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:19.715 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #15 on board '9f96f118be0decf67f32b1c000817178' making 2 changes' was performed in 0.58 seconds.
+2026-07-03 13:06:19.730 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:20.269 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #16 on board '2c0e298c1c2a9743bd87537141ebb36d' making 2 changes' was performed in 0.55 seconds.
+2026-07-03 13:06:20.284 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:20.866 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #17 on board '87dbdb5db6726267b1196b648764d0ba' making 2 changes' was performed in 0.59 seconds.
+2026-07-03 13:06:20.881 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:21.447 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #18 on board '056d89aca355d0259beeaf0d2d3f873d' making 2 changes' was performed in 0.57 seconds.
+2026-07-03 13:06:21.462 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:22.179 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #19 on board 'e83c6c276f21d6de0dae1ea3b7207f3d' making 2 changes' was performed in 0.72 seconds.
+2026-07-03 13:06:22.196 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:22.783 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #20 on board 'd9b32f587e4e02cb130509b7e493c370' making 2 changes' was performed in 0.59 seconds.
+2026-07-03 13:06:22.799 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:23.358 [Thread-0] WARN  There were only 2.7 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:23.359 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #21 on board 'd01b1d23362e8b24d9161220b46533de' making 2 changes' was performed in 0.57 seconds.
+2026-07-03 13:06:23.374 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:24.066 [Thread-0] WARN  There were only 2.4 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:24.067 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #22 on board 'b6842ae031476c5063303c94e9e6d8a1' making 2 changes' was performed in 0.70 seconds.
+2026-07-03 13:06:24.086 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:24.726 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:24.727 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #23 on board 'ba6c5e09c70b587a6c137d61534cb818' making 2 changes' was performed in 0.65 seconds.
+2026-07-03 13:06:24.743 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:25.372 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:25.372 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #24 on board '30a2432ba36a4b3f4251d41cda23b007' making 2 changes' was performed in 0.64 seconds.
+2026-07-03 13:06:25.389 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:25.982 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:25.983 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #25 on board '8a64ca8dd7afd17ff498985013e2593d' making 2 changes' was performed in 0.60 seconds.
+2026-07-03 13:06:25.999 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:26.611 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:26.612 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #26 on board '8912ee75a62d2ef8253ed1e74b7d6946' making 2 changes' was performed in 0.62 seconds.
+2026-07-03 13:06:26.627 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:27.253 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:27.254 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #27 on board 'ec818d76c4c15495030f3636abd8bdcb' making 2 changes' was performed in 0.63 seconds.
+2026-07-03 13:06:27.269 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:27.878 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:27.879 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #28 on board 'ebe1560a9df600a3c05406514ac60f7c' making 2 changes' was performed in 0.62 seconds.
+2026-07-03 13:06:27.895 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:28.524 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:28.525 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #29 on board 'f9cfab46a6e58015bf778e6cdca3ccca' making 2 changes' was performed in 0.64 seconds.
+2026-07-03 13:06:28.540 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:29.176 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:29.177 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #30 on board '717161a6d898c5f7391d09962486c2f2' making 2 changes' was performed in 0.64 seconds.
+2026-07-03 13:06:29.192 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:29.790 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:29.790 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #31 on board 'b362f71322b37ceec68244804c8e4cae' making 2 changes' was performed in 0.60 seconds.
+2026-07-03 13:06:29.805 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:30.408 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:30.409 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #32 on board 'fe779b59b240f1a621491348e72495fa' making 2 changes' was performed in 0.61 seconds.
+2026-07-03 13:06:30.423 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:31.143 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:31.144 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #33 on board '729ea942d4b52445d3eb4d958f53ccb2' making 2 changes' was performed in 0.73 seconds.
+2026-07-03 13:06:31.159 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:31.757 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:31.758 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #34 on board '178300fa36cca9a288e35b104fdc0257' making 2 changes' was performed in 0.60 seconds.
+2026-07-03 13:06:31.773 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:32.380 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:32.381 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #35 on board 'a3250bbfc7b0bbdded3b4b2fed868b57' making 2 changes' was performed in 0.61 seconds.
+2026-07-03 13:06:32.395 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:33.026 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:33.027 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #36 on board 'aad2057ae2e47d461cbc26901c527c50' making 2 changes' was performed in 0.64 seconds.
+2026-07-03 13:06:33.041 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:33.669 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:33.669 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #37 on board '23e2b54795b08dfc5194134518916a43' making 2 changes' was performed in 0.63 seconds.
+2026-07-03 13:06:33.684 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:34.286 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:34.287 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #38 on board '539f35ded26d756cd39e8ea6340b14b9' making 2 changes' was performed in 0.61 seconds.
+2026-07-03 13:06:34.301 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:34.918 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:34.919 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #39 on board 'f636ac0132b03fb7237618f581c8b729' making 2 changes' was performed in 0.62 seconds.
+2026-07-03 13:06:34.934 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:35.565 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:35.566 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #40 on board 'c3b67b7ca71c10e379a512c857207079' making 2 changes' was performed in 0.64 seconds.
+2026-07-03 13:06:35.582 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:36.216 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:36.217 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #41 on board '2111fab99679cd8006fb295710b3185b' making 2 changes' was performed in 0.64 seconds.
+2026-07-03 13:06:36.231 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:36.986 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:36.988 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #42 on board '1a6145fa8e03484596f3b52f452ae9e0' making 2 changes' was performed in 0.76 seconds.
+2026-07-03 13:06:37.003 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:37.628 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:37.629 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #43 on board '206bb7f6c8d6f1e6bad7cedae7a7bece' making 2 changes' was performed in 0.63 seconds.
+2026-07-03 13:06:37.643 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:38.268 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:38.268 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #44 on board 'ed51bff2e664e3b2452150aa0ada902a' making 2 changes' was performed in 0.63 seconds.
+2026-07-03 13:06:38.283 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:38.960 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:38.962 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #45 on board 'de6091be9764a1f1e7b85148b89c810c' making 2 changes' was performed in 0.69 seconds.
+2026-07-03 13:06:38.976 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:39.605 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:39.606 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #46 on board 'e7491f1cc98323a3bddbf2020d944797' making 2 changes' was performed in 0.64 seconds.
+2026-07-03 13:06:39.622 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:40.256 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:40.256 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #47 on board 'eaafa5cbd31d8af839462068e4d1d877' making 2 changes' was performed in 0.64 seconds.
+2026-07-03 13:06:40.270 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:40.910 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:40.911 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #48 on board '9c1b1c4198ac93c48d85d533be52e680' making 2 changes' was performed in 0.65 seconds.
+2026-07-03 13:06:40.925 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:41.557 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:41.557 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #49 on board 'fd76ec3e65498cc306d9c1ef4105badb' making 2 changes' was performed in 0.64 seconds.
+2026-07-03 13:06:41.571 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:42.147 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:42.148 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #50 on board '57ab9249fc22ee5845d1f329c3198b04' making 2 changes' was performed in 0.58 seconds.
+2026-07-03 13:06:42.162 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:42.783 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:42.783 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #51 on board '98f4bf7cef266af83999bb56dcca0e89' making 2 changes' was performed in 0.63 seconds.
+2026-07-03 13:06:42.798 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:43.441 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:43.442 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #52 on board 'c23f037b719c6d464c6cf7681d5d51ba' making 2 changes' was performed in 0.65 seconds.
+2026-07-03 13:06:43.456 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:44.028 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:44.029 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #53 on board '9a2a658e1eb8ba283abb2c9e3ff96ead' making 2 changes' was performed in 0.58 seconds.
+2026-07-03 13:06:44.043 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:44.655 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:44.655 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #54 on board '66a7c3071159199399e1a98485c5ff21' making 2 changes' was performed in 0.62 seconds.
+2026-07-03 13:06:44.671 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:45.268 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:45.269 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #55 on board '28260ecfaf9f89e3de4df6a61c6b7a16' making 2 changes' was performed in 0.60 seconds.
+2026-07-03 13:06:45.283 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:45.863 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:45.864 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #56 on board '9a31fc6b03248664b4ddd6fcab52e2aa' making 2 changes' was performed in 0.59 seconds.
+2026-07-03 13:06:45.878 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:46.490 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:46.491 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #57 on board '89598768b1330e46eba2ef9e3f652766' making 2 changes' was performed in 0.62 seconds.
+2026-07-03 13:06:46.505 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:47.113 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:47.114 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #58 on board '79c59f9d18ee7bf6c0f35fb96950a2f7' making 2 changes' was performed in 0.61 seconds.
+2026-07-03 13:06:47.128 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:47.713 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:47.714 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #59 on board '0e2d0a581794ebd2f2980a1959f80ac0' making 2 changes' was performed in 0.59 seconds.
+2026-07-03 13:06:47.727 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:48.317 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:48.318 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #60 on board '34d1255a245e8884e3a9ea3518dbd36c' making 2 changes' was performed in 0.60 seconds.
+2026-07-03 13:06:48.332 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:48.960 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:48.961 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #61 on board '7d2d246d2f2bb56061c078f6d0beef72' making 2 changes' was performed in 0.64 seconds.
+2026-07-03 13:06:48.974 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:49.582 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:49.582 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #62 on board 'd1323d5f8ee49bd804035802b31a2620' making 2 changes' was performed in 0.61 seconds.
+2026-07-03 13:06:49.596 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:50.196 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:50.199 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #63 on board '5c793427c84f5e299ea2f4a4cce52d95' making 2 changes' was performed in 0.61 seconds.
+2026-07-03 13:06:50.213 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:50.857 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:50.858 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #64 on board '6aaab858096050dd4acb518cea11451a' making 2 changes' was performed in 0.65 seconds.
+2026-07-03 13:06:50.871 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:51.547 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:51.548 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #65 on board 'd2f4784aadf7a0355ee8712ee2382408' making 2 changes' was performed in 0.68 seconds.
+2026-07-03 13:06:51.562 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:52.162 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:52.163 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #66 on board '4d9f949efdd88a945d0a1d3cc13985bb' making 2 changes' was performed in 0.61 seconds.
+2026-07-03 13:06:52.176 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:52.790 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:52.790 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #67 on board 'fef216f62710d5c12901946f77d9b015' making 2 changes' was performed in 0.62 seconds.
+2026-07-03 13:06:52.804 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:53.398 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:53.399 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #68 on board '4aed6cb76073c6b3dc6d8c53e61d2fb1' making 2 changes' was performed in 0.60 seconds.
+2026-07-03 13:06:53.413 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:53.994 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:53.995 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #69 on board 'd7713a9d7dff9b1b0cf3689f25c9e3df' making 2 changes' was performed in 0.59 seconds.
+2026-07-03 13:06:54.009 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:54.637 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:54.637 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #70 on board '4fad5e55cc26034c76ed0be38a1692d9' making 2 changes' was performed in 0.63 seconds.
+2026-07-03 13:06:54.651 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:55.249 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:55.250 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #71 on board '1fa1670d9a4a656166f9aeae773c66c0' making 2 changes' was performed in 0.60 seconds.
+2026-07-03 13:06:55.264 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:55.873 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:55.874 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #72 on board 'c693c3941fd101dce4889be5a4c93696' making 2 changes' was performed in 0.62 seconds.
+2026-07-03 13:06:55.888 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:56.509 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:56.509 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #73 on board '6e058eaba26c0705262147bbb9c8f12f' making 2 changes' was performed in 0.63 seconds.
+2026-07-03 13:06:56.523 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:57.124 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:57.125 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #74 on board 'b51bb9161704aa325dd9decbb1865980' making 2 changes' was performed in 0.61 seconds.
+2026-07-03 13:06:57.138 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:57.712 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:57.713 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #75 on board '7699a836a9130092974217e78df02788' making 2 changes' was performed in 0.58 seconds.
+2026-07-03 13:06:57.727 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:58.339 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:58.340 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #76 on board 'f66e34872b2311ba22f754f1165de6be' making 2 changes' was performed in 0.62 seconds.
+2026-07-03 13:06:58.355 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:58.949 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:58.949 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #77 on board '7f1af82e23eef5a16f0fdcdaeb902b8b' making 2 changes' was performed in 0.60 seconds.
+2026-07-03 13:06:58.963 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:06:59.535 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:06:59.536 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #78 on board '49736fce9df8e43d09f1daa4b49fface' making 2 changes' was performed in 0.58 seconds.
+2026-07-03 13:06:59.550 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:07:00.156 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:07:00.157 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #79 on board 'bce2901a6b29c297bbca3b04fc4009f1' making 2 changes' was performed in 0.61 seconds.
+2026-07-03 13:07:00.171 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:07:00.774 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:07:00.775 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #80 on board 'd80e982bd193c888f54f1560ff8496ec' making 2 changes' was performed in 0.61 seconds.
+2026-07-03 13:07:00.788 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:07:01.363 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:07:01.364 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #81 on board '04952175cb36fa03b732c4027367253f' making 2 changes' was performed in 0.58 seconds.
+2026-07-03 13:07:01.377 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:07:01.977 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:07:01.977 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #82 on board '1fd00d7a3b739c9a5fb7d7d2bc5466f6' making 2 changes' was performed in 0.61 seconds.
+2026-07-03 13:07:01.991 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:07:02.593 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:07:02.594 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #83 on board '66063b12793a04d97dfd97c014131f8f' making 2 changes' was performed in 0.61 seconds.
+2026-07-03 13:07:02.608 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:07:03.190 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:07:03.191 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #84 on board 'c75a2395cd03d06e46ccb340f359dc1e' making 2 changes' was performed in 0.59 seconds.
+2026-07-03 13:07:03.204 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:07:03.795 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:07:03.795 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #85 on board 'a252c6e69286591d9af001e51586389a' making 2 changes' was performed in 0.60 seconds.
+2026-07-03 13:07:03.809 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:07:04.413 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:07:04.414 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #86 on board 'e7e78fa51e054d17b87672175c4f91c2' making 2 changes' was performed in 0.61 seconds.
+2026-07-03 13:07:04.428 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:07:05.018 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:07:05.018 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #87 on board 'dfe1137fcaeadb5b1ecd31f9b0e225f2' making 2 changes' was performed in 0.60 seconds.
+2026-07-03 13:07:05.036 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:07:05.623 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:07:05.623 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #88 on board '5dadee0fe0554b38563c95793c5c6eb6' making 2 changes' was performed in 0.59 seconds.
+2026-07-03 13:07:05.637 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:07:06.252 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:07:06.252 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #89 on board '0a07cca04f7b34bf5c8fe4c839aec1aa' making 2 changes' was performed in 0.62 seconds.
+2026-07-03 13:07:06.266 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:07:06.851 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:07:06.852 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #90 on board '5a7dabfc8389562790c1c7226057ce75' making 2 changes' was performed in 0.59 seconds.
+2026-07-03 13:07:06.866 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:07:07.449 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:07:07.450 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #91 on board 'f2bb764a73ed3655b05fe231643a77d3' making 2 changes' was performed in 0.59 seconds.
+2026-07-03 13:07:07.464 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:07:08.074 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:07:08.075 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #92 on board 'd9279929cdf3e02e0ea006d36373a4ac' making 2 changes' was performed in 0.62 seconds.
+2026-07-03 13:07:08.088 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:07:08.677 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:07:08.678 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #93 on board '8095cb7370dc358a1253297839f82a24' making 2 changes' was performed in 0.59 seconds.
+2026-07-03 13:07:08.692 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:07:09.276 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:07:09.276 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #94 on board '0b85287fb34a1edfc5f08f35de6b872e' making 2 changes' was performed in 0.59 seconds.
+2026-07-03 13:07:09.290 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:07:09.913 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:07:09.916 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #95 on board '1912e2b359853949cc02f05aef4da997' making 2 changes' was performed in 0.63 seconds.
+2026-07-03 13:07:09.929 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:07:10.532 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:07:10.533 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #96 on board '252c5e946fd1fa70a9b7cb43fb6d96ae' making 2 changes' was performed in 0.61 seconds.
+2026-07-03 13:07:10.546 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:07:11.124 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:07:11.124 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #97 on board '0811efbdd1301889f38cd8a2c8e24148' making 2 changes' was performed in 0.58 seconds.
+2026-07-03 13:07:11.138 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:07:11.777 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:07:11.778 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #98 on board 'fec647b9de3ad02bc3af9bc2c0013acb' making 2 changes' was performed in 0.65 seconds.
+2026-07-03 13:07:11.792 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:07:12.421 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:07:12.422 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #99 on board '555f23ecdfbd75be85a5a7cb2c1fcd8b' making 2 changes' was performed in 0.64 seconds.
+2026-07-03 13:07:12.437 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:07:13.020 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:07:13.021 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #100 on board '090d571b95e5cf8b7d0048e94f9f6440' making 2 changes' was performed in 0.59 seconds.
+2026-07-03 13:07:13.024 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()-autorouting' was performed in 1 minute(s) 2.72 seconds.
+2026-07-03 13:07:13.024 [Thread-0] INFO  Auto-routing was completed in 1 minute(s) 2.72 seconds.
+2026-07-03 13:07:13.025 [Thread-0] INFO  Starting route optimization on 11 threads...
+2026-07-03 13:07:13.117 [Thread-0] TRACE Method 'BatchOptRouteMT.opt_route_pass #1 with 0 items, 165 vias and 830,259.45 trace length running on 11 threads.' was performed in 0.09 seconds.
+2026-07-03 13:07:13.187 [Thread-0] TRACE Method 'BatchOptRouteMT.opt_route_pass #2 with 9 items, 165 vias and 830,259.45 trace length running on 11 threads.' was performed in 0.07 seconds.
+2026-07-03 13:07:13.188 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()-routeoptimization' was performed in 0.16 seconds.
+2026-07-03 13:07:13.189 [Thread-0] INFO  Route optimization was completed in 0.16 seconds.
+2026-07-03 13:07:13.199 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()' was performed in 1 minute(s) 2.90 seconds.
+2026-07-03 13:07:13.200 [Thread-0] INFO  Saving '/Users/jadenrhee/JRWatch/hardware/jrwatch.ses'...
+2026-07-03 13:08:58.282 [main] INFO  Freerouting v1.5.0 (build-date: 2022-01-27)
+2026-07-03 13:08:58.300 [main] INFO  Opening '/Users/jadenrhee/JRWatch/hardware/jrwatch.dsn'...
+2026-07-03 13:08:59.637 [main] INFO  Opening 'jrwatch.rules'...
+2026-07-03 13:08:59.638 [main] ERROR File 'jrwatch.rules' was not found.
+2026-07-03 13:08:59.814 [Thread-0] INFO  Starting auto-routing...
+2026-07-03 13:08:59.818 [main] TRACE Method 'MainApplication.main()' was performed in 1.77 seconds.
+2026-07-03 13:08:59.944 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:00.895 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #1 on board '6f45cfd74a9c700a86051622bb6a1208' making 26 changes' was performed in 0.99 seconds.
+2026-07-03 13:09:00.926 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:01.314 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #2 on board '55480fec64f0d96eb831470011d6761b' making 8 changes' was performed in 0.40 seconds.
+2026-07-03 13:09:01.343 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:01.804 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #3 on board '8a11bb0bbb7a527dea8f8c193c05cf51' making 8 changes' was performed in 0.47 seconds.
+2026-07-03 13:09:01.833 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:02.165 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #4 on board '41a2a63707247b1d0797a5149e356541' making 8 changes' was performed in 0.34 seconds.
+2026-07-03 13:09:02.194 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:02.625 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #5 on board '7306fb043aa4c75369901fa89f53668c' making 5 changes' was performed in 0.44 seconds.
+2026-07-03 13:09:02.654 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:03.329 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #6 on board 'dde9020214d2f7e49859a248d2fe62bd' making 2 changes' was performed in 0.68 seconds.
+2026-07-03 13:09:03.358 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:04.018 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #7 on board '8b71b6218664ac0d5d0d0157ffd9bd10' making 2 changes' was performed in 0.67 seconds.
+2026-07-03 13:09:04.045 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:04.701 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #8 on board 'ae7a56da03cf303f3236246633f71475' making 2 changes' was performed in 0.67 seconds.
+2026-07-03 13:09:04.725 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:05.360 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #9 on board '477b467c5acf5ed1bb8a7606564857e6' making 2 changes' was performed in 0.64 seconds.
+2026-07-03 13:09:05.385 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:06.012 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #10 on board '6b353e6891533cba3528b9b9ccff14cb' making 2 changes' was performed in 0.64 seconds.
+2026-07-03 13:09:06.035 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:06.639 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #11 on board '3943f9b33cd7c25f2d14ebaec795337d' making 2 changes' was performed in 0.61 seconds.
+2026-07-03 13:09:06.660 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:07.268 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #12 on board 'fd1ebe4c2d5824321ccc18113b548346' making 2 changes' was performed in 0.62 seconds.
+2026-07-03 13:09:07.286 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:07.878 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #13 on board 'cebbbbc0222317c5925604f0436f24b4' making 2 changes' was performed in 0.60 seconds.
+2026-07-03 13:09:07.896 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:08.490 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #14 on board 'd53b7c15ce6853adca7e2a808b95b772' making 2 changes' was performed in 0.60 seconds.
+2026-07-03 13:09:08.506 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:09.120 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #15 on board '9cc42a685e17a842a2a8b6d7cdbfdcd0' making 2 changes' was performed in 0.62 seconds.
+2026-07-03 13:09:09.137 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:09.787 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #16 on board '7b82b33fa440f99b98be591c3547ea33' making 2 changes' was performed in 0.66 seconds.
+2026-07-03 13:09:09.802 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:10.429 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #17 on board 'f2f2e7b8babd3862a741e0f0a1355760' making 2 changes' was performed in 0.63 seconds.
+2026-07-03 13:09:10.444 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:11.038 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #18 on board '6f4aaa6924baddcd965c5b17dd167c68' making 2 changes' was performed in 0.60 seconds.
+2026-07-03 13:09:11.053 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:11.633 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #19 on board 'a7e7a26cf038c3c8bc97ee6079ed4fca' making 2 changes' was performed in 0.59 seconds.
+2026-07-03 13:09:11.647 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:12.229 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #20 on board '229545c28832adb3ee7965ba52b8f84c' making 2 changes' was performed in 0.59 seconds.
+2026-07-03 13:09:12.245 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:12.907 [Thread-0] WARN  There were only 3.05 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:12.908 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #21 on board 'f65b7d1419309a8be93ef20d77d2c076' making 2 changes' was performed in 0.67 seconds.
+2026-07-03 13:09:12.923 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:13.513 [Thread-0] WARN  There were only 2.75 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:13.514 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #22 on board 'bd2d14af8bed607999c19b06b7454217' making 2 changes' was performed in 0.60 seconds.
+2026-07-03 13:09:13.528 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:14.120 [Thread-0] WARN  There were only 2.45 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:14.120 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #23 on board 'd4c52262c5d363830b45629c5cd051ec' making 2 changes' was performed in 0.60 seconds.
+2026-07-03 13:09:14.135 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:14.739 [Thread-0] WARN  There were only 2.15 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:14.739 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #24 on board 'f9d2c2ffe422e0d94011d40a473d803e' making 2 changes' was performed in 0.61 seconds.
+2026-07-03 13:09:14.754 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:15.378 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:15.379 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #25 on board 'eef161a515e50bb29ff4293c842143bf' making 2 changes' was performed in 0.63 seconds.
+2026-07-03 13:09:15.394 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:16.005 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:16.006 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #26 on board 'de63994b52b459084eea90021d156649' making 2 changes' was performed in 0.62 seconds.
+2026-07-03 13:09:16.021 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:16.604 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:16.605 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #27 on board '30b787140d8e4ad1e797b072d6961aac' making 2 changes' was performed in 0.59 seconds.
+2026-07-03 13:09:16.619 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:17.209 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:17.210 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #28 on board '78e259aea38b49c1a7281069a3882060' making 2 changes' was performed in 0.60 seconds.
+2026-07-03 13:09:17.224 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:17.813 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:17.814 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #29 on board '159f9a476b837f1ddea79fd4f3bd2ef5' making 2 changes' was performed in 0.60 seconds.
+2026-07-03 13:09:17.829 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:18.418 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:18.419 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #30 on board 'a2b5c8dadc9ab821f2308d0a9cdfcb07' making 2 changes' was performed in 0.60 seconds.
+2026-07-03 13:09:18.433 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:19.053 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:19.054 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #31 on board '9c9d590ceac4d856f123f090c99b28f0' making 2 changes' was performed in 0.63 seconds.
+2026-07-03 13:09:19.069 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:19.672 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:19.673 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #32 on board '755ee61ee70e4c3cb7ac05c2d2e6561f' making 2 changes' was performed in 0.61 seconds.
+2026-07-03 13:09:19.688 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:20.302 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:20.302 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #33 on board '0396bd96574ee125c12f88276c2f5611' making 2 changes' was performed in 0.62 seconds.
+2026-07-03 13:09:20.317 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:20.938 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:20.939 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #34 on board '47f60f4d951b0bab38ae8adf65a2fc11' making 2 changes' was performed in 0.63 seconds.
+2026-07-03 13:09:20.954 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:21.546 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:21.547 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #35 on board '95988c35f496aab5200edd5170ba3e25' making 2 changes' was performed in 0.60 seconds.
+2026-07-03 13:09:21.561 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:22.142 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:22.143 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #36 on board '01240bdd1cf3f7ae9a14548d91fbbff3' making 2 changes' was performed in 0.59 seconds.
+2026-07-03 13:09:22.158 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:22.734 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:22.734 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #37 on board 'fb2b729ba62bf3bd1836e7f702027cd5' making 2 changes' was performed in 0.58 seconds.
+2026-07-03 13:09:22.749 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:23.330 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:23.330 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #38 on board '6020d4527a22f2e045024574623302f7' making 2 changes' was performed in 0.59 seconds.
+2026-07-03 13:09:23.344 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:23.934 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:23.935 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #39 on board '8b241c2641425a1617bb8595c178f3ae' making 2 changes' was performed in 0.60 seconds.
+2026-07-03 13:09:23.949 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:24.536 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:24.537 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #40 on board '636f302ece5dca99f82e6ef0de8b226b' making 2 changes' was performed in 0.59 seconds.
+2026-07-03 13:09:24.551 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:25.159 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:25.160 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #41 on board '85294e5eb3eda14ea7529340f9a5f421' making 2 changes' was performed in 0.61 seconds.
+2026-07-03 13:09:25.174 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:25.799 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:25.800 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #42 on board '3b67880c73d85d36ee30b92fc4e2d635' making 2 changes' was performed in 0.63 seconds.
+2026-07-03 13:09:25.815 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:26.445 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:26.446 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #43 on board '5b74ceb31dd7b30d6bef766ce388de12' making 2 changes' was performed in 0.64 seconds.
+2026-07-03 13:09:26.460 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:27.052 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:27.052 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #44 on board '18ab44e05b9f0a428e5096d021211130' making 2 changes' was performed in 0.60 seconds.
+2026-07-03 13:09:27.066 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:27.649 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:27.651 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #45 on board '1c1ceb1544e80a8cc1192d32ff4b1672' making 2 changes' was performed in 0.59 seconds.
+2026-07-03 13:09:27.665 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:28.244 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:28.245 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #46 on board 'e96c2e64cfad1c6ed916df196f9562e5' making 2 changes' was performed in 0.59 seconds.
+2026-07-03 13:09:28.258 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:28.886 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:28.887 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #47 on board '61aa747e7358534a6526346a4b9fbd29' making 2 changes' was performed in 0.63 seconds.
+2026-07-03 13:09:28.901 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:29.487 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:29.487 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #48 on board 'b24f59280d0d5147d2e71b8298ce8f06' making 2 changes' was performed in 0.59 seconds.
+2026-07-03 13:09:29.501 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:30.097 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:30.098 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #49 on board '9ea3b301c545c4565a88f890ee99d8a5' making 2 changes' was performed in 0.60 seconds.
+2026-07-03 13:09:30.112 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:30.719 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:30.720 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #50 on board '63a2dfff221e91f50d612e8094c14f70' making 2 changes' was performed in 0.61 seconds.
+2026-07-03 13:09:30.734 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:31.355 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:31.355 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #51 on board 'f1073d2356f5519f0c1d039f9c21bd6d' making 2 changes' was performed in 0.63 seconds.
+2026-07-03 13:09:31.371 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:31.986 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:31.987 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #52 on board 'b8603d190244b867993c13ab814a32f4' making 2 changes' was performed in 0.62 seconds.
+2026-07-03 13:09:32.001 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:32.594 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:32.595 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #53 on board '2be795074071ad8dfe71c95422627199' making 2 changes' was performed in 0.60 seconds.
+2026-07-03 13:09:32.609 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:33.191 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:33.192 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #54 on board '80da9f866c36db9ec8b434b638623cb2' making 2 changes' was performed in 0.59 seconds.
+2026-07-03 13:09:33.206 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:33.787 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:33.788 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #55 on board '05c6de9df3a954234fa527e73bf1b806' making 2 changes' was performed in 0.59 seconds.
+2026-07-03 13:09:33.802 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:34.383 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:34.383 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #56 on board '057658442b36f388983572ffba0e92fe' making 2 changes' was performed in 0.59 seconds.
+2026-07-03 13:09:34.397 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:34.987 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:34.987 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #57 on board '119f49747fb7a9ceb7d44d4a84e3c758' making 2 changes' was performed in 0.60 seconds.
+2026-07-03 13:09:35.001 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:35.620 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:35.620 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #58 on board '659904bf8f287dfdea9b197a122fafe1' making 2 changes' was performed in 0.62 seconds.
+2026-07-03 13:09:35.635 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:36.302 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:36.303 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #59 on board '53914344a0ed619f3af795507bb78613' making 2 changes' was performed in 0.67 seconds.
+2026-07-03 13:09:36.324 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:36.967 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:36.968 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #60 on board 'f552b4a174bc03a04acb57c8ecf620ca' making 2 changes' was performed in 0.65 seconds.
+2026-07-03 13:09:36.982 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:37.650 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:37.651 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #61 on board '48d17b58bd85bf04d24af0c5ec95239a' making 2 changes' was performed in 0.68 seconds.
+2026-07-03 13:09:37.669 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:38.305 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:38.306 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #62 on board 'a9bbfefd37c3c6113090e157ead17a5c' making 2 changes' was performed in 0.64 seconds.
+2026-07-03 13:09:38.320 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:38.910 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:38.911 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #63 on board '9d3ddec0bf4a4b5446cf3ec561af1efa' making 2 changes' was performed in 0.60 seconds.
+2026-07-03 13:09:38.925 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:39.526 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:39.526 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #64 on board '6e1efa0921fcc0ced4c145a6d4029bf4' making 2 changes' was performed in 0.61 seconds.
+2026-07-03 13:09:39.541 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:40.139 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:40.139 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #65 on board 'e8348d6b1bc22d20d5dbe19cbd7740ac' making 2 changes' was performed in 0.60 seconds.
+2026-07-03 13:09:40.154 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:40.750 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:40.751 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #66 on board 'e4cb6ae24e58387da0cc83acef821ec2' making 2 changes' was performed in 0.60 seconds.
+2026-07-03 13:09:40.765 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:41.357 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:41.358 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #67 on board '7196d4e15dca46751dd4450c36c6caa2' making 2 changes' was performed in 0.60 seconds.
+2026-07-03 13:09:41.372 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:41.981 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:41.981 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #68 on board '48c90b21dc9034a1771274053a7b8bd5' making 2 changes' was performed in 0.62 seconds.
+2026-07-03 13:09:41.996 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:42.634 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:42.635 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #69 on board '974209bcf14c044cf93b755f79039eaa' making 2 changes' was performed in 0.65 seconds.
+2026-07-03 13:09:42.650 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:43.264 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:43.265 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #70 on board '47f9f633c1daa97142a877cf755ad5aa' making 2 changes' was performed in 0.62 seconds.
+2026-07-03 13:09:43.279 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:43.867 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:43.868 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #71 on board '29016063b16e0327eb059ae10cf1ebf0' making 2 changes' was performed in 0.59 seconds.
+2026-07-03 13:09:43.882 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:44.460 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:44.461 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #72 on board '0a13c082c70791deed47ccffc48a1920' making 2 changes' was performed in 0.58 seconds.
+2026-07-03 13:09:44.474 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:45.065 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:45.066 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #73 on board 'a0dcc5cb5f002659be1052bee028018c' making 2 changes' was performed in 0.60 seconds.
+2026-07-03 13:09:45.080 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:45.662 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:45.663 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #74 on board '7fbfeb4e6d3b8a9cc0b982282868193b' making 2 changes' was performed in 0.59 seconds.
+2026-07-03 13:09:45.677 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:46.279 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:46.279 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #75 on board '17633d806d78b129721fa7af710a9f99' making 2 changes' was performed in 0.61 seconds.
+2026-07-03 13:09:46.293 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:46.884 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:46.885 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #76 on board '247bb3772f73a0e4a2ecd03465cf71f4' making 2 changes' was performed in 0.60 seconds.
+2026-07-03 13:09:46.900 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:47.524 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:47.524 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #77 on board '98909a7a885d4b84d53d52a1e3d58a1f' making 2 changes' was performed in 0.63 seconds.
+2026-07-03 13:09:47.539 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:48.165 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:48.166 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #78 on board '25a03e5d2339cb4e82b046e05aa34511' making 2 changes' was performed in 0.63 seconds.
+2026-07-03 13:09:48.180 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:48.794 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:48.794 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #79 on board 'cef791fdb64164303330c0427ba6037d' making 2 changes' was performed in 0.62 seconds.
+2026-07-03 13:09:48.808 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:49.400 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:49.400 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #80 on board 'f8a355ca5b5a6f16cbc04361f1fb116a' making 2 changes' was performed in 0.60 seconds.
+2026-07-03 13:09:49.415 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:50.044 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:50.045 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #81 on board 'f1d498d65784e53f89057d8bdccbb823' making 2 changes' was performed in 0.64 seconds.
+2026-07-03 13:09:50.059 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:50.673 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:50.674 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #82 on board 'a2a26d85a79051ed75b518d1fa09d87e' making 2 changes' was performed in 0.62 seconds.
+2026-07-03 13:09:50.688 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:51.442 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:51.444 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #83 on board 'f2f0915b12b213d41113f8bfd5f93d2e' making 2 changes' was performed in 0.76 seconds.
+2026-07-03 13:09:51.460 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:52.105 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:52.105 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #84 on board 'a13325e2074c950c32168536450b895a' making 2 changes' was performed in 0.65 seconds.
+2026-07-03 13:09:52.121 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:52.755 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:52.756 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #85 on board 'f44949b49afbfbd06f09ee315271e6ac' making 2 changes' was performed in 0.64 seconds.
+2026-07-03 13:09:52.771 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:53.399 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:53.400 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #86 on board '6bb16c2ede1875a33e0d0c9616223d75' making 2 changes' was performed in 0.64 seconds.
+2026-07-03 13:09:53.415 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:54.048 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:54.049 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #87 on board 'f6fe1715a274e856887377f093ad75dc' making 2 changes' was performed in 0.64 seconds.
+2026-07-03 13:09:54.063 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:54.744 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:54.744 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #88 on board '1002b872b9d6c32315521dea890daa22' making 2 changes' was performed in 0.69 seconds.
+2026-07-03 13:09:54.758 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:55.371 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:55.372 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #89 on board '96d6f20c418fe623b8427d408d62f623' making 2 changes' was performed in 0.62 seconds.
+2026-07-03 13:09:55.386 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:55.969 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:55.970 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #90 on board '718350ad1a7262684c733c23bf692504' making 2 changes' was performed in 0.59 seconds.
+2026-07-03 13:09:55.984 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:56.573 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:56.574 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #91 on board '782442aa61bf84d6b20ed6304e1fa181' making 2 changes' was performed in 0.60 seconds.
+2026-07-03 13:09:56.588 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:57.157 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:57.158 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #92 on board '8f89de9261ce5663c825c9a6056e3070' making 2 changes' was performed in 0.57 seconds.
+2026-07-03 13:09:57.171 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:57.747 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:57.747 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #93 on board '0ac1bb72b6c49e66ab9acc1f2088afed' making 2 changes' was performed in 0.58 seconds.
+2026-07-03 13:09:57.761 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:58.365 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:58.365 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #94 on board '45a62c037b0d2c0b79f11b571ce878f6' making 2 changes' was performed in 0.61 seconds.
+2026-07-03 13:09:58.380 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:58.988 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:58.989 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #95 on board '61d5009db8a2b65d80ef566f5085c206' making 2 changes' was performed in 0.61 seconds.
+2026-07-03 13:09:59.004 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:09:59.664 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:09:59.665 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #96 on board 'cd1c57927c737ee8d8ddc5dbafba83e7' making 2 changes' was performed in 0.67 seconds.
+2026-07-03 13:09:59.680 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:10:00.337 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:10:00.338 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #97 on board '1e63bec8095100d8cb69d091170cccd2' making 2 changes' was performed in 0.66 seconds.
+2026-07-03 13:10:00.353 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:10:00.987 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:10:00.988 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #98 on board '6a7704e64580500048ae533ebed3a8ef' making 2 changes' was performed in 0.64 seconds.
+2026-07-03 13:10:01.001 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:10:01.580 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:10:01.581 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #99 on board '712e358bfb2b59cbc3d2d6e4e301c2aa' making 2 changes' was performed in 0.58 seconds.
+2026-07-03 13:10:01.595 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:10:02.169 [Thread-0] WARN  There were only 2.0 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:10:02.170 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #100 on board '587d049c7f39446d835b52a11cbf42db' making 2 changes' was performed in 0.58 seconds.
+2026-07-03 13:10:02.174 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()-autorouting' was performed in 1 minute(s) 2.36 seconds.
+2026-07-03 13:10:02.174 [Thread-0] INFO  Auto-routing was completed in 1 minute(s) 2.36 seconds.
+2026-07-03 13:10:02.174 [Thread-0] INFO  Starting route optimization on 11 threads...
+2026-07-03 13:10:02.247 [Thread-0] TRACE Method 'BatchOptRouteMT.opt_route_pass #1 with 0 items, 163 vias and 821,046.92 trace length running on 11 threads.' was performed in 0.07 seconds.
+2026-07-03 13:10:02.296 [Thread-0] TRACE Method 'BatchOptRouteMT.opt_route_pass #2 with 6 items, 163 vias and 821,046.92 trace length running on 11 threads.' was performed in 0.05 seconds.
+2026-07-03 13:10:02.297 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()-routeoptimization' was performed in 0.12 seconds.
+2026-07-03 13:10:02.298 [Thread-0] INFO  Route optimization was completed in 0.12 seconds.
+2026-07-03 13:10:02.312 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()' was performed in 1 minute(s) 2.50 seconds.
+2026-07-03 13:10:02.312 [Thread-0] INFO  Saving '/Users/jadenrhee/JRWatch/hardware/jrwatch.ses'...
+2026-07-03 13:23:39.438 [main] INFO  Freerouting v1.5.0 (build-date: 2022-01-27)
+2026-07-03 13:23:39.462 [main] INFO  Opening '/Users/jadenrhee/JRWatch/hardware/jrwatch.dsn'...
+2026-07-03 13:23:41.001 [main] INFO  Opening 'jrwatch.rules'...
+2026-07-03 13:23:41.002 [main] ERROR File 'jrwatch.rules' was not found.
+2026-07-03 13:23:41.260 [Thread-0] INFO  Starting auto-routing...
+2026-07-03 13:23:41.270 [main] TRACE Method 'MainApplication.main()' was performed in 2.18 seconds.
+2026-07-03 13:23:41.406 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:43.234 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #1 on board 'ffa9f6cec1f647af77f41de378186e70' making 96 changes' was performed in 1.87 seconds.
+2026-07-03 13:23:43.265 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:44.429 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #2 on board '4a37e7445aa1241cc0f5320a4d42c453' making 29 changes' was performed in 1.18 seconds.
+2026-07-03 13:23:44.457 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:45.221 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #3 on board 'e59c0b0b140df4eb9fc0d7ccabcb2932' making 22 changes' was performed in 0.77 seconds.
+2026-07-03 13:23:45.248 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:46.727 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #4 on board '1b8c7b1661d378091c9473474b9740fb' making 30 changes' was performed in 1.49 seconds.
+2026-07-03 13:23:46.751 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:48.166 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #5 on board '6fac7d6749512145b2978e3689064952' making 27 changes' was performed in 1.42 seconds.
+2026-07-03 13:23:48.188 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:48.616 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #6 on board 'a824bb240079830f0fe9b605ad1ece2a' making 16 changes' was performed in 0.43 seconds.
+2026-07-03 13:23:48.639 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:48.813 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #7 on board 'a83e1c291479abcd09d9f4119da3222e' making 17 changes' was performed in 0.18 seconds.
+2026-07-03 13:23:48.837 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:49.370 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #8 on board '8290f505aca62d280487e29febf7ec04' making 19 changes' was performed in 0.54 seconds.
+2026-07-03 13:23:49.392 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:49.615 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #9 on board '05a0f7d5ad69c83040ef8cc38b2c87a2' making 18 changes' was performed in 0.23 seconds.
+2026-07-03 13:23:49.632 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:50.145 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #10 on board 'fd7a6973b580299e1713013e31b16840' making 18 changes' was performed in 0.52 seconds.
+2026-07-03 13:23:50.162 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:50.454 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #11 on board '220f8027e914e792afadb141b6d284b2' making 16 changes' was performed in 0.30 seconds.
+2026-07-03 13:23:50.470 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:50.833 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #12 on board 'ca15a81951d9de9f480f74e8ec762125' making 9 changes' was performed in 0.37 seconds.
+2026-07-03 13:23:50.849 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:50.998 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #13 on board 'd9ff60dce47754aa909587469f5f27d2' making 10 changes' was performed in 0.15 seconds.
+2026-07-03 13:23:51.015 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:51.736 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #14 on board '61fa2a5281eb8aba76b8b639523a8634' making 10 changes' was performed in 0.73 seconds.
+2026-07-03 13:23:51.753 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:51.913 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #15 on board '4cb2c50b76a398416ab11ab7305e9148' making 9 changes' was performed in 0.17 seconds.
+2026-07-03 13:23:51.928 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:52.355 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #16 on board '1630eeabc2e4ab03bacb338db0d9fd11' making 9 changes' was performed in 0.43 seconds.
+2026-07-03 13:23:52.370 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:52.526 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #17 on board 'a94d0a00e8683403b4a6fbdc7d30f4fd' making 10 changes' was performed in 0.16 seconds.
+2026-07-03 13:23:52.541 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:53.218 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #18 on board '691293a44d71b5f704e82cdf5aa41a99' making 10 changes' was performed in 0.68 seconds.
+2026-07-03 13:23:53.234 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:53.394 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #19 on board '774cd15977a020373994f7608d696b9a' making 9 changes' was performed in 0.17 seconds.
+2026-07-03 13:23:53.410 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:53.831 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #20 on board '926f5fd8583d4e91e92abb978e75d8a9' making 9 changes' was performed in 0.43 seconds.
+2026-07-03 13:23:53.845 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:54.027 [Thread-0] WARN  There were only 15.35 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:23:54.028 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #21 on board 'ba66f857a1c64fedca021b9de3306428' making 10 changes' was performed in 0.19 seconds.
+2026-07-03 13:23:54.043 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:54.765 [Thread-0] WARN  There were only 14.4 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:23:54.766 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #22 on board '7e2a6b05bcdc1bc23f307f32c4473960' making 10 changes' was performed in 0.73 seconds.
+2026-07-03 13:23:54.781 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:54.957 [Thread-0] WARN  There were only 13.75 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:23:54.958 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #23 on board 'c8b956aed6ba5802b8cbba5af9964621' making 9 changes' was performed in 0.18 seconds.
+2026-07-03 13:23:54.973 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:55.399 [Thread-0] WARN  There were only 12.7 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:23:55.400 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #24 on board 'fa83d47b071c70a76f656389115a3f1e' making 9 changes' was performed in 0.43 seconds.
+2026-07-03 13:23:55.414 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:55.598 [Thread-0] WARN  There were only 11.85 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:23:55.599 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #25 on board '4dbf6b8bf81331e3b40fdcca61ea46da' making 10 changes' was performed in 0.19 seconds.
+2026-07-03 13:23:55.614 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:56.366 [Thread-0] WARN  There were only 11.55 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:23:56.367 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #26 on board 'b1724753de3262c1f7f79957d671790a' making 10 changes' was performed in 0.76 seconds.
+2026-07-03 13:23:56.381 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:56.584 [Thread-0] WARN  There were only 11.15 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:23:56.585 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #27 on board 'cece0daadee372addc058386e455d151' making 9 changes' was performed in 0.21 seconds.
+2026-07-03 13:23:56.599 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:57.045 [Thread-0] WARN  There were only 10.65 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:23:57.046 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #28 on board 'e9e7ef6555ef3aa7ad437bd40769ad4d' making 9 changes' was performed in 0.45 seconds.
+2026-07-03 13:23:57.060 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:57.255 [Thread-0] WARN  There were only 10.25 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:23:57.256 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #29 on board '45beca692ff022ee3a790ca7e62156f1' making 10 changes' was performed in 0.20 seconds.
+2026-07-03 13:23:57.271 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:58.052 [Thread-0] WARN  There were only 9.85 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:23:58.053 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #30 on board '43e4ca15d97239a62638ad5064eabe30' making 10 changes' was performed in 0.79 seconds.
+2026-07-03 13:23:58.068 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:58.270 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:23:58.271 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #31 on board '13479ac971a4d818b3a90c03c26d0d88' making 9 changes' was performed in 0.21 seconds.
+2026-07-03 13:23:58.286 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:58.716 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:23:58.716 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #32 on board 'ab9c93631b46c913e33f9b0814cb5e19' making 9 changes' was performed in 0.44 seconds.
+2026-07-03 13:23:58.732 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:58.962 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:23:58.962 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #33 on board '6cb003a98bc67f8714d2454ddfdb3f6e' making 10 changes' was performed in 0.24 seconds.
+2026-07-03 13:23:58.977 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:23:59.787 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:23:59.788 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #34 on board '50245fbd379229987e448b934443e7de' making 10 changes' was performed in 0.82 seconds.
+2026-07-03 13:23:59.803 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:00.031 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:00.031 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #35 on board 'ea83ee3fb5f29a9b4957138ab294792f' making 9 changes' was performed in 0.23 seconds.
+2026-07-03 13:24:00.047 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:00.489 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:00.490 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #36 on board '54bae0f874e9490bc8eae9ceaca63494' making 9 changes' was performed in 0.45 seconds.
+2026-07-03 13:24:00.504 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:00.734 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:00.735 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #37 on board 'f194bbddcbb4c1ad9639fb52c8a2510e' making 10 changes' was performed in 0.24 seconds.
+2026-07-03 13:24:00.750 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:01.567 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:01.568 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #38 on board '148699a5a4a7ac9c6efc34f993365a9b' making 10 changes' was performed in 0.82 seconds.
+2026-07-03 13:24:01.582 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:01.822 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:01.823 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #39 on board '644b93e8da83deb5bd14122609d551a1' making 9 changes' was performed in 0.25 seconds.
+2026-07-03 13:24:01.838 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:02.280 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:02.281 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #40 on board '9c0bcb2c05c3d31f2b41d34e86012b91' making 9 changes' was performed in 0.45 seconds.
+2026-07-03 13:24:02.295 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:02.556 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:02.556 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #41 on board 'fed751111794c3d9ef05e86075bb7108' making 10 changes' was performed in 0.27 seconds.
+2026-07-03 13:24:02.571 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:03.408 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:03.409 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #42 on board 'afd7df8363c7d73c037a52c04b092950' making 10 changes' was performed in 0.84 seconds.
+2026-07-03 13:24:03.424 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:03.687 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:03.687 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #43 on board 'c1d6b34537159988a44a1c756d4b332a' making 9 changes' was performed in 0.27 seconds.
+2026-07-03 13:24:03.702 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:04.169 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:04.170 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #44 on board 'fb71d07bcc44e7ea880257b7c09d8f35' making 9 changes' was performed in 0.47 seconds.
+2026-07-03 13:24:04.184 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:04.434 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:04.435 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #45 on board 'ad3a1e1b1641b5d3d2cf9f39642d1726' making 10 changes' was performed in 0.26 seconds.
+2026-07-03 13:24:04.449 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:05.258 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:05.258 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #46 on board 'd1ddc149edd262a5331ab1ad0690dcbb' making 10 changes' was performed in 0.81 seconds.
+2026-07-03 13:24:05.273 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:05.520 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:05.521 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #47 on board '1c5f0453e0ff6eb34488b7e76d98ad9d' making 9 changes' was performed in 0.25 seconds.
+2026-07-03 13:24:05.535 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:05.975 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:05.976 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #48 on board 'f9db6494e47dc50b328b074e969501bf' making 9 changes' was performed in 0.45 seconds.
+2026-07-03 13:24:05.990 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:06.248 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:06.248 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #49 on board '72ccc8460291f3432224a89c6384a3c8' making 10 changes' was performed in 0.27 seconds.
+2026-07-03 13:24:06.263 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:07.058 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:07.058 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #50 on board '56328ea9a289b3b9830174ff2dff25dd' making 10 changes' was performed in 0.80 seconds.
+2026-07-03 13:24:07.072 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:07.331 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:07.332 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #51 on board '9f5b59ec9d805a3df71c211390a42325' making 9 changes' was performed in 0.27 seconds.
+2026-07-03 13:24:07.346 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:07.773 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:07.773 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #52 on board '5d019ab02e5b535283a2d3ac31be6e98' making 9 changes' was performed in 0.43 seconds.
+2026-07-03 13:24:07.787 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:08.063 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:08.064 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #53 on board '8003453640b75ab1009c0f2fb115eff8' making 10 changes' was performed in 0.28 seconds.
+2026-07-03 13:24:08.078 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:08.869 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:08.869 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #54 on board '239da2a1d32866c10cdb40c88f6b8733' making 10 changes' was performed in 0.80 seconds.
+2026-07-03 13:24:08.884 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:09.155 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:09.156 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #55 on board 'a88f01d392381d47d8a5c9ca5f520380' making 9 changes' was performed in 0.28 seconds.
+2026-07-03 13:24:09.170 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:09.594 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:09.595 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #56 on board '088a7356a7384fcc72f1b8681a159da3' making 9 changes' was performed in 0.43 seconds.
+2026-07-03 13:24:09.608 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:09.889 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:09.890 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #57 on board '67404efd8e08fe233d4db0590203ffe4' making 10 changes' was performed in 0.29 seconds.
+2026-07-03 13:24:09.904 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:10.702 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:10.703 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #58 on board '4a3938dc7e077a7fa1caaf76ef710866' making 10 changes' was performed in 0.81 seconds.
+2026-07-03 13:24:10.717 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:10.993 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:10.994 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #59 on board '8a78af862e4a1cb7d07701e87c6d218f' making 9 changes' was performed in 0.28 seconds.
+2026-07-03 13:24:11.008 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:11.437 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:11.437 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #60 on board '2551fe71fc351b116f45c37461ffbf4b' making 9 changes' was performed in 0.43 seconds.
+2026-07-03 13:24:11.451 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:11.742 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:11.743 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #61 on board 'ed49ca632d1a0641d5ab881c68e88af9' making 10 changes' was performed in 0.30 seconds.
+2026-07-03 13:24:11.756 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:12.565 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:12.566 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #62 on board 'f5a899915271be072530b1b8bf97e275' making 10 changes' was performed in 0.81 seconds.
+2026-07-03 13:24:12.580 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:12.864 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:12.865 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #63 on board '7171481f74b19fc559a68fc710576e7a' making 9 changes' was performed in 0.29 seconds.
+2026-07-03 13:24:12.879 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:13.312 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:13.313 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #64 on board '67921f25b4fdc1264338f3bc3278d784' making 9 changes' was performed in 0.44 seconds.
+2026-07-03 13:24:13.327 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:13.627 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:13.628 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #65 on board 'f36c78fe14e853e64cf2eda15a7f40c9' making 10 changes' was performed in 0.31 seconds.
+2026-07-03 13:24:13.642 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:14.433 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:14.433 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #66 on board '118fc739c6725520a9c4bd44d02615c1' making 10 changes' was performed in 0.80 seconds.
+2026-07-03 13:24:14.448 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:14.756 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:14.757 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #67 on board '6ea0293f4725e8a8943ef6a4e0b04477' making 9 changes' was performed in 0.32 seconds.
+2026-07-03 13:24:14.771 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:15.214 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:15.215 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #68 on board 'd1afc540021536425f5476a3954bdea6' making 9 changes' was performed in 0.45 seconds.
+2026-07-03 13:24:15.228 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:15.520 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:15.521 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #69 on board 'ca67e60f93fcaa28c5b52b82eb478f1d' making 10 changes' was performed in 0.30 seconds.
+2026-07-03 13:24:15.535 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:16.342 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:16.343 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #70 on board '8a0e622270ba42ca9e7a72f8d7eed9e4' making 10 changes' was performed in 0.81 seconds.
+2026-07-03 13:24:16.357 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:16.665 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:16.665 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #71 on board '61bf76d23c95feacb9cc9b3187f84a28' making 9 changes' was performed in 0.31 seconds.
+2026-07-03 13:24:16.679 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:17.151 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:17.152 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #72 on board '61b8441425b64d5c58a04284208cd8c5' making 9 changes' was performed in 0.48 seconds.
+2026-07-03 13:24:17.165 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:17.493 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:17.494 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #73 on board 'f77c292c539422eddc312cfcac73cc5c' making 10 changes' was performed in 0.33 seconds.
+2026-07-03 13:24:17.508 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:18.344 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:18.345 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #74 on board 'c220b149aa7b23850abcddc7a1648312' making 10 changes' was performed in 0.84 seconds.
+2026-07-03 13:24:18.359 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:18.710 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:18.710 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #75 on board '2f745a4a231217b70b331395fcc53be7' making 9 changes' was performed in 0.36 seconds.
+2026-07-03 13:24:18.724 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:19.154 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:19.154 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #76 on board '5f0f465cac549425a31c3d6f69804437' making 9 changes' was performed in 0.44 seconds.
+2026-07-03 13:24:19.168 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:19.522 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:19.522 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #77 on board 'd138b5338a65423c38a3b671193b5448' making 10 changes' was performed in 0.36 seconds.
+2026-07-03 13:24:19.536 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:20.330 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:20.330 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #78 on board '87c62b87d07556a38a5547d666ab8cbd' making 10 changes' was performed in 0.80 seconds.
+2026-07-03 13:24:20.345 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:20.683 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:20.684 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #79 on board '99cde7d431d431a49ee8b2da265da173' making 9 changes' was performed in 0.34 seconds.
+2026-07-03 13:24:20.697 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:21.176 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:21.177 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #80 on board 'acfe646d4640eef976e2953fb0f8368e' making 9 changes' was performed in 0.49 seconds.
+2026-07-03 13:24:21.191 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:21.535 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:21.536 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #81 on board '889ff7a8de35b26ee86ba3e2e4345978' making 10 changes' was performed in 0.35 seconds.
+2026-07-03 13:24:21.550 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:22.383 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:22.384 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #82 on board '9b67f78a71fed3bc043b04e99a7336e4' making 10 changes' was performed in 0.84 seconds.
+2026-07-03 13:24:22.398 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:22.771 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:22.771 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #83 on board '21245c48f0c426ac4e738c66fefc4a7f' making 9 changes' was performed in 0.38 seconds.
+2026-07-03 13:24:22.786 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:23.220 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:23.221 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #84 on board '9b2da78607236536c51cad3a45bfb729' making 9 changes' was performed in 0.44 seconds.
+2026-07-03 13:24:23.234 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:23.608 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:23.608 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #85 on board '08814623658a4efb803e7cd4dda8b6fd' making 10 changes' was performed in 0.38 seconds.
+2026-07-03 13:24:23.623 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:24.419 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:24.419 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #86 on board 'e055d08e29a2912bcec7a134544053bc' making 10 changes' was performed in 0.80 seconds.
+2026-07-03 13:24:24.433 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:24.792 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:24.792 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #87 on board 'a47fb8f27a57cfd8bd6eec9ecba36ccb' making 9 changes' was performed in 0.36 seconds.
+2026-07-03 13:24:24.806 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:25.264 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:25.265 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #88 on board 'ea8d9ea7184d3a71cc1429fdcc4728b9' making 9 changes' was performed in 0.47 seconds.
+2026-07-03 13:24:25.279 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:25.638 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:25.638 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #89 on board 'bac6bb49f311d7f3767589fd573dc192' making 10 changes' was performed in 0.36 seconds.
+2026-07-03 13:24:25.652 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:26.493 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:26.493 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #90 on board 'e8f7696d529ef42eef58824997d62feb' making 10 changes' was performed in 0.85 seconds.
+2026-07-03 13:24:26.507 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:26.888 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:26.889 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #91 on board '635a13d9306d0c552e7be36ebe89eb7f' making 9 changes' was performed in 0.39 seconds.
+2026-07-03 13:24:26.902 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:27.328 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:27.329 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #92 on board 'bb1918134ac73a63f1377c5dea4d95e5' making 9 changes' was performed in 0.43 seconds.
+2026-07-03 13:24:27.343 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:27.721 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:27.722 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #93 on board '9bb97235de01aa2c1d67d1fb00780fa3' making 10 changes' was performed in 0.39 seconds.
+2026-07-03 13:24:27.736 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:28.534 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:28.535 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #94 on board '556e38bf231d5e7b247cdbf5ba400a69' making 10 changes' was performed in 0.81 seconds.
+2026-07-03 13:24:28.549 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:28.916 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:28.917 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #95 on board '2de325e0c90e28351a05259823172a7b' making 9 changes' was performed in 0.37 seconds.
+2026-07-03 13:24:28.931 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:29.400 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:29.401 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #96 on board 'a680b53b0d27e69a30e4135c05d5d042' making 9 changes' was performed in 0.47 seconds.
+2026-07-03 13:24:29.414 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:29.795 [Thread-0] WARN  There were only 9.5 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:29.796 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #97 on board '50bf6fa1ee1c7a2b335c5389f0228781' making 10 changes' was performed in 0.39 seconds.
+2026-07-03 13:24:29.810 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:30.650 [Thread-0] WARN  There were only 10.1 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:30.651 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #98 on board 'ef1e9c925a70d1031aa4e7d9330f157a' making 22 changes' was performed in 0.85 seconds.
+2026-07-03 13:24:30.665 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:30.937 [Thread-0] WARN  There were only 10.55 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:30.938 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #99 on board '257bde18c271ea37a529920c7563b8b3' making 18 changes' was performed in 0.28 seconds.
+2026-07-03 13:24:30.952 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 13:24:31.409 [Thread-0] WARN  There were only 10.6 changes in the last 20 passes, so it's very likely that autorouter can't improve the result much further. It is recommended to stop it and finish the board manually.
+2026-07-03 13:24:31.410 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #100 on board '8525003d7d0b8bb0914d6ca21d93b197' making 10 changes' was performed in 0.46 seconds.
+2026-07-03 13:24:31.412 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()-autorouting' was performed in 50.15 seconds.
+2026-07-03 13:24:31.412 [Thread-0] INFO  Auto-routing was completed in 50.15 seconds.
+2026-07-03 13:24:31.413 [Thread-0] INFO  Starting route optimization on 11 threads...
+2026-07-03 13:24:31.751 [Thread-0] TRACE Method 'BatchOptRouteMT.opt_route_pass #1 with 0 items, 160 vias and 839,274.06 trace length running on 11 threads.' was performed in 0.34 seconds.
+2026-07-03 13:24:32.074 [Thread-0] TRACE Method 'BatchOptRouteMT.opt_route_pass #2 with 55 items, 160 vias and 839,274.06 trace length running on 11 threads.' was performed in 0.32 seconds.
+2026-07-03 13:24:32.074 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()-routeoptimization' was performed in 0.66 seconds.
+2026-07-03 13:24:32.076 [Thread-0] INFO  Route optimization was completed in 0.66 seconds.
+2026-07-03 13:24:32.087 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()' was performed in 50.83 seconds.
+2026-07-03 13:24:32.087 [Thread-0] INFO  Saving '/Users/jadenrhee/JRWatch/hardware/jrwatch.ses'...
