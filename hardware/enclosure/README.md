@@ -3,19 +3,30 @@
 Two-piece 3D-printable watch case for the JRWatch board, written as
 parametric OpenSCAD (`jrwatch_case.scad`) — same source-as-code approach as
 the rest of the project. Every cutout is dimensioned from the actual board
-file: USB-C slot at x 95–105 (board coords), button bores at y 95/106 on the
+file: USB-C slot at x 95–105 (board coords), pusher bores at y 95/106 on the
 east wall, display aperture over the LS013B7DH03 active area, and the board
 is clamped at its four component-free corner arcs.
 
-![exploded view](enclosure-preview.png)
+| Exploded | Assembled |
+|---|---|
+| ![exploded](enclosure-preview.png) | ![closed](enclosure-closed.png) |
+| **Section through the USB slot** | **Case back** |
+| ![cutaway](enclosure-cutaway.png) | ![back](enclosure-back.png) |
+
+Design details: tapered, edge-filleted body; curved lug horns drilled for
+22 mm spring bars; raised pusher-guard pods with knurled sliding pushers
+(retained by an internal flange in a stepped bore); crowned bezel with a
+chamfered aperture, engraved 12-o'clock index and wordmark; engraved case
+back; alignment nubs between the halves; recessed USB-C port with a plug
+chamfer.
 
 ## Printed parts (`stl/`)
 
 | File | Qty | What it is |
 |---|---|---|
-| `case-shell.stl` | 1 | Bottom shell: battery bay, component headroom, USB slot, button bores, strap lugs |
-| `case-bezel.stl` | 1 | Top ring: display pocket, FPC relief, chamfered aperture |
-| `case-button.stl` | 2 | Side button pins (flange retained inside the wall) |
+| `case-shell.stl` | 1 | Bottom shell: battery bay, component headroom, USB port, pusher pods, lug horns, engraved back |
+| `case-bezel.stl` | 1 | Top ring: display pocket, FPC relief, chamfered aperture, index + wordmark |
+| `case-button.stl` | 2 | Knurled sliding pushers (drop into the east-wall bores from the inside) |
 
 Overall 41.4 × 41.4 × 13.6 mm plus lugs. Fits a 22 mm spring-bar strap.
 
