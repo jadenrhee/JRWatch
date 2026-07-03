@@ -1843,3 +1843,432 @@
 2026-07-03 12:17:27.160 [Thread-0] INFO  Route optimization was completed in 0.15 seconds.
 2026-07-03 12:17:27.173 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()' was performed in 1 minute(s) 54.18 seconds.
 2026-07-03 12:17:27.173 [Thread-0] INFO  Saving '/Users/jadenrhee/JRWatch/hardware/jrwatch.ses'...
+2026-07-03 12:46:16.683 [main] INFO  Freerouting v1.5.0 (build-date: 2022-01-27)
+2026-07-03 12:46:16.702 [main] INFO  Opening '/Users/jadenrhee/JRWatch/hardware/jrwatch.dsn'...
+2026-07-03 12:46:18.430 [main] INFO  Opening 'jrwatch.rules'...
+2026-07-03 12:46:18.430 [main] ERROR File 'jrwatch.rules' was not found.
+2026-07-03 12:46:18.637 [Thread-0] INFO  Starting auto-routing...
+2026-07-03 12:46:18.642 [main] TRACE Method 'MainApplication.main()' was performed in 2.25 seconds.
+2026-07-03 12:46:22.272 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #1 on board 'a67d9438284e1ba8b26f2de5fb29c3ee' making 61 changes' was performed in 3.56 seconds.
+2026-07-03 12:46:22.307 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:46:25.453 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #2 on board '1fc547b9af72fde30840ef80d5b6aff7' making 35 changes' was performed in 3.16 seconds.
+2026-07-03 12:46:25.513 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:46:28.583 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #3 on board '19b4659586372d7e2222de63d69f4ec7' making 43 changes' was performed in 3.11 seconds.
+2026-07-03 12:46:28.613 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:46:31.747 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #4 on board '378f56a52375e980ab1d823e1bac0d73' making 42 changes' was performed in 3.15 seconds.
+2026-07-03 12:46:31.824 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:46:34.465 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #5 on board '2518f46da647f61fa9a6fbfa0cad3c08' making 47 changes' was performed in 2.71 seconds.
+2026-07-03 12:46:34.621 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:46:37.676 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #6 on board '54d78dd7d274c0a82e141c6c94d05a8b' making 35 changes' was performed in 3.20 seconds.
+2026-07-03 12:46:37.730 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:46:40.474 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #7 on board '9a855849038835e6a292253a249363d2' making 48 changes' was performed in 2.79 seconds.
+2026-07-03 12:46:40.529 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:46:42.821 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #8 on board '9f58cfd75b92188719253a96e4ae102a' making 38 changes' was performed in 2.34 seconds.
+2026-07-03 12:46:43.170 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:46:44.847 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #9 on board '27e01b1e73fc6bc03e2f3e6feb0b626e' making 41 changes' was performed in 2.02 seconds.
+2026-07-03 12:46:44.861 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:46:46.424 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #10 on board '855cc1e17a1ab61b9ecb987c56aefc1f' making 51 changes' was performed in 1.57 seconds.
+2026-07-03 12:46:46.530 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:46:49.223 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #11 on board '3544a447dc8f6904d75c5032687daaa0' making 46 changes' was performed in 2.79 seconds.
+2026-07-03 12:46:49.434 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:46:50.970 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #12 on board '699ef43b7467f733360853f39a3eb6ab' making 31 changes' was performed in 1.74 seconds.
+2026-07-03 12:46:51.021 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:46:52.597 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #13 on board 'bc09ed9e61f2083a9c76a93c5e3b8751' making 36 changes' was performed in 1.62 seconds.
+2026-07-03 12:46:52.612 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:46:55.097 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #14 on board '967453bc02e422df3415247cd161f122' making 46 changes' was performed in 2.49 seconds.
+2026-07-03 12:46:55.486 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:46:56.776 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #15 on board 'e49a07b36962bb0417b4c32c635fb0f5' making 41 changes' was performed in 1.67 seconds.
+2026-07-03 12:46:56.791 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:46:58.270 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #16 on board '263a7e1c582485b54ba67ab83b14acc7' making 52 changes' was performed in 1.48 seconds.
+2026-07-03 12:46:58.285 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:47:00.192 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #17 on board 'dd3bb51951bbe6fb45b9dce5ccc342b8' making 57 changes' was performed in 1.91 seconds.
+2026-07-03 12:47:00.318 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:47:04.891 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #18 on board '2f20f69861db57aa442d55d81da9caac' making 54 changes' was performed in 4.69 seconds.
+2026-07-03 12:47:04.906 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:47:09.035 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #19 on board '63e15727f29981253aab1c162a6491f6' making 50 changes' was performed in 4.13 seconds.
+2026-07-03 12:47:09.050 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:47:12.004 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #20 on board '635c7ecb17bb4119bea87756f8a1e52f' making 43 changes' was performed in 2.96 seconds.
+2026-07-03 12:47:12.151 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:47:15.780 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #21 on board 'd689c9e17ef099224e53fb23b98eab90' making 46 changes' was performed in 3.77 seconds.
+2026-07-03 12:47:15.794 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:47:18.390 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #22 on board '7107b92d37227e9c9713a63241187d7b' making 40 changes' was performed in 2.60 seconds.
+2026-07-03 12:47:18.672 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:47:22.983 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #23 on board 'aab91c90429fb4f1549194efe310c3b7' making 48 changes' was performed in 4.58 seconds.
+2026-07-03 12:47:22.997 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:47:27.386 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #24 on board '461022d0e97fe77ccfa64fd7d57abcbe' making 47 changes' was performed in 4.39 seconds.
+2026-07-03 12:47:27.630 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:47:31.077 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #25 on board '7308bfba22d50de262896b6e74accbdc' making 56 changes' was performed in 3.68 seconds.
+2026-07-03 12:47:31.091 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:47:34.786 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #26 on board 'abddd996a0d46e254b0c4979047667a9' making 62 changes' was performed in 3.70 seconds.
+2026-07-03 12:47:34.834 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:47:37.837 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #27 on board '77638d43d1e5bb885b1e9833d1bc00b9' making 37 changes' was performed in 3.04 seconds.
+2026-07-03 12:47:37.852 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:47:41.311 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #28 on board 'e98934486734eb7d83c550017742f980' making 36 changes' was performed in 3.46 seconds.
+2026-07-03 12:47:41.329 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:47:43.731 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #29 on board 'f68d3eb894477ccba4628ffa0bd6733b' making 56 changes' was performed in 2.41 seconds.
+2026-07-03 12:47:43.786 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:47:45.756 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #30 on board 'b74c4962a447fe419a3e8945793e2fc4' making 51 changes' was performed in 2.02 seconds.
+2026-07-03 12:47:45.769 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:47:49.038 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #31 on board '0d2dc7ec41d3b9cee4bd0892569dd23d' making 58 changes' was performed in 3.27 seconds.
+2026-07-03 12:47:49.052 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:47:52.260 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #32 on board '99d8a8af241911980aa0a4c9fcb0da77' making 54 changes' was performed in 3.21 seconds.
+2026-07-03 12:47:52.275 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:47:54.687 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #33 on board '80e18ea607ffc73c1a2304d159835fba' making 66 changes' was performed in 2.42 seconds.
+2026-07-03 12:47:54.703 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:47:57.077 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #34 on board 'e6907cf4a17355710b096c976f8ff6b3' making 58 changes' was performed in 2.38 seconds.
+2026-07-03 12:47:57.092 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:47:59.068 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #35 on board '61bdd0cbf74f85d8c3019396c3e8e219' making 52 changes' was performed in 1.98 seconds.
+2026-07-03 12:47:59.082 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:48:02.076 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #36 on board '484e60d0f54994e714c79549f881822f' making 42 changes' was performed in 3.00 seconds.
+2026-07-03 12:48:02.278 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:48:06.838 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #37 on board 'f2f74a3baaa4b9a24a9e38fcdf1fb26a' making 33 changes' was performed in 4.75 seconds.
+2026-07-03 12:48:07.022 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:48:08.900 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #38 on board '010487e547d2454a48e796f09e5bee74' making 44 changes' was performed in 2.05 seconds.
+2026-07-03 12:48:08.914 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:48:11.138 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #39 on board 'a8ebf5313f88b6c2e0d85138101a07bb' making 53 changes' was performed in 2.23 seconds.
+2026-07-03 12:48:11.275 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:48:14.271 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #40 on board 'f6afbc27113805b742cfb3a0b72626bb' making 51 changes' was performed in 3.12 seconds.
+2026-07-03 12:48:14.485 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:48:16.467 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #41 on board '7fc323a1ac75699af73a078898569b7a' making 43 changes' was performed in 2.19 seconds.
+2026-07-03 12:48:16.510 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:48:19.237 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #42 on board '2a2b5f43791007ce1f03dc12f75e6138' making 35 changes' was performed in 2.76 seconds.
+2026-07-03 12:48:19.470 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:48:21.425 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #43 on board 'b8f53928d064eb34bf9d4c4668680b50' making 43 changes' was performed in 2.18 seconds.
+2026-07-03 12:48:21.467 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:48:24.839 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #44 on board '569fb84420edb9d3cdaead0d56b9de25' making 43 changes' was performed in 3.41 seconds.
+2026-07-03 12:48:25.128 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:48:27.588 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #45 on board 'da162a3219f0f5177ce2b4ef9127a2ff' making 69 changes' was performed in 2.74 seconds.
+2026-07-03 12:48:27.602 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:48:29.949 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #46 on board 'd659cdf87db01b8dd851761e1aa3ab53' making 52 changes' was performed in 2.35 seconds.
+2026-07-03 12:48:29.964 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:48:31.547 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #47 on board 'fa5a736ebdf388bcc2e0299da8a26b3e' making 56 changes' was performed in 1.59 seconds.
+2026-07-03 12:48:31.562 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:48:34.858 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #48 on board '47e26013bc042a960210d76eb3e4fac3' making 44 changes' was performed in 3.30 seconds.
+2026-07-03 12:48:35.292 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:48:38.211 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #49 on board '751c7371eb410fbb03eb9b3754433be0' making 44 changes' was performed in 3.34 seconds.
+2026-07-03 12:48:38.329 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:48:41.435 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #50 on board '0df8f3f7b9f8c5af40ccd3e9198918c1' making 41 changes' was performed in 3.21 seconds.
+2026-07-03 12:48:41.687 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:48:45.074 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #51 on board '78c7fbb028ded05ed26e78be2bce2718' making 38 changes' was performed in 3.62 seconds.
+2026-07-03 12:48:45.088 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:48:47.700 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #52 on board '64457b1c3900f3ee8d1bf60dc19fdfbb' making 52 changes' was performed in 2.62 seconds.
+2026-07-03 12:48:47.955 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:48:50.075 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #53 on board '60223a51516920c91136a1e6f9832ea7' making 58 changes' was performed in 2.37 seconds.
+2026-07-03 12:48:50.091 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:48:52.292 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #54 on board '2082ad700b8c389eed32feef7373a1e0' making 38 changes' was performed in 2.21 seconds.
+2026-07-03 12:48:52.768 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:48:53.819 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #55 on board '967e651be1926b6723d94bb4e313f755' making 43 changes' was performed in 1.52 seconds.
+2026-07-03 12:48:53.833 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:48:56.667 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #56 on board 'db213e51fc124259ab850c1313c315ed' making 56 changes' was performed in 2.84 seconds.
+2026-07-03 12:48:56.966 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:49:00.023 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #57 on board '9db63433cf7182f7106249cd2ded734b' making 58 changes' was performed in 3.35 seconds.
+2026-07-03 12:49:00.104 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:49:03.599 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #58 on board 'c965cf842fd495d61d878e9498297f89' making 54 changes' was performed in 3.57 seconds.
+2026-07-03 12:49:03.807 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:49:06.117 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #59 on board 'b09c4f737767e2352ffae7c93f0158ec' making 38 changes' was performed in 2.51 seconds.
+2026-07-03 12:49:06.191 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:49:08.973 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #60 on board 'd7ab6f920a01318594796ead51c40830' making 51 changes' was performed in 2.85 seconds.
+2026-07-03 12:49:09.117 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:49:11.510 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #61 on board 'e4f03ab8776312327c1d3cb39bf05358' making 44 changes' was performed in 2.53 seconds.
+2026-07-03 12:49:11.524 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:49:14.329 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #62 on board '4182814db00443a261d03ae948857d24' making 62 changes' was performed in 2.81 seconds.
+2026-07-03 12:49:14.621 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:49:16.756 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #63 on board 'ec236d1f79354263fe512c2ec46e51b4' making 58 changes' was performed in 2.42 seconds.
+2026-07-03 12:49:16.771 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:49:18.868 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #64 on board 'cf45fca16303ab0e3106f62883ceef9c' making 52 changes' was performed in 2.10 seconds.
+2026-07-03 12:49:18.920 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:49:22.184 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #65 on board 'bf04eea023784fa89017c27c52a2c99b' making 62 changes' was performed in 3.31 seconds.
+2026-07-03 12:49:22.199 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:49:26.059 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #66 on board '95f038143b0f87f22ff34c35b7c77f2e' making 76 changes' was performed in 3.87 seconds.
+2026-07-03 12:49:26.072 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:49:29.714 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #67 on board 'b19f1fb2358930b771ca0625daafc311' making 81 changes' was performed in 3.65 seconds.
+2026-07-03 12:49:29.731 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:49:31.108 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #68 on board '0a69813d38cce872046b30ae332676c7' making 39 changes' was performed in 1.39 seconds.
+2026-07-03 12:49:31.233 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:49:34.272 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #69 on board '131c02ded20072bffea4d1ce21c30759' making 55 changes' was performed in 3.16 seconds.
+2026-07-03 12:49:34.448 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:49:36.463 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #70 on board '46fb80f8e157bbdae370c1b2d75937c6' making 44 changes' was performed in 2.18 seconds.
+2026-07-03 12:49:36.638 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:49:37.928 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #71 on board '3ca138beabf3676756b8347af69c8764' making 57 changes' was performed in 1.46 seconds.
+2026-07-03 12:49:37.942 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:49:40.130 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #72 on board 'cf4de436658cb49bd447636cf87e426c' making 48 changes' was performed in 2.19 seconds.
+2026-07-03 12:49:40.438 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:49:41.978 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #73 on board 'a6ea155e5d4ed68d918210aca467bcc9' making 62 changes' was performed in 1.84 seconds.
+2026-07-03 12:49:41.991 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:49:43.426 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #74 on board '904f846f48a5d5c7cb1bfd0ba8f615c4' making 51 changes' was performed in 1.44 seconds.
+2026-07-03 12:49:43.473 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:49:45.127 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #75 on board '49a75f32f4828af8f57998db66d6e320' making 43 changes' was performed in 1.69 seconds.
+2026-07-03 12:49:45.149 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:49:45.726 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #76 on board '84bd0ed19a90a90c04cbb1a085cf53c1' making 26 changes' was performed in 0.58 seconds.
+2026-07-03 12:49:45.743 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:49:46.155 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #77 on board '3bd703e8705a53997dd219f915b9d0d9' making 30 changes' was performed in 0.42 seconds.
+2026-07-03 12:49:46.169 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:49:48.440 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #78 on board '288b3ccf6711082197ee43e8259c9207' making 57 changes' was performed in 2.28 seconds.
+2026-07-03 12:49:48.453 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:49:51.021 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #79 on board '882439c6df2fd48b35940dee71ac0c9a' making 37 changes' was performed in 2.57 seconds.
+2026-07-03 12:49:51.077 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:49:53.228 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #80 on board 'd2247d648605a98bdc26a08e9d920053' making 44 changes' was performed in 2.20 seconds.
+2026-07-03 12:49:53.242 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:49:55.861 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #81 on board '1c0229f240aab7ba52d79ff7f63bd4ef' making 48 changes' was performed in 2.62 seconds.
+2026-07-03 12:49:56.080 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:49:59.207 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #82 on board '01b80b4235fcb9d9367cbd27909d713c' making 47 changes' was performed in 3.33 seconds.
+2026-07-03 12:49:59.221 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:50:01.118 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #83 on board '0361d36d408ee315fd22e2e3ae57b4a5' making 45 changes' was performed in 1.90 seconds.
+2026-07-03 12:50:01.131 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:50:04.189 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #84 on board '14757781f2c3efe8b27fc71d655d2601' making 63 changes' was performed in 3.06 seconds.
+2026-07-03 12:50:04.204 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:50:05.946 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #85 on board 'a9ffa81913e54abad62ec4d35a7a1bd9' making 61 changes' was performed in 1.75 seconds.
+2026-07-03 12:50:05.960 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:50:09.543 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #86 on board '2e6007028c328eb88d6e5ffe225fad37' making 64 changes' was performed in 3.59 seconds.
+2026-07-03 12:50:09.664 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:50:13.603 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #87 on board '636455e1512db656de40dca87fe22a51' making 54 changes' was performed in 4.05 seconds.
+2026-07-03 12:50:13.617 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:50:17.285 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #88 on board '085719f67b5e504a8e5df17c2d7d17df' making 39 changes' was performed in 3.67 seconds.
+2026-07-03 12:50:17.342 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:50:20.979 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #89 on board '56a113720c8ac18771f7c8a8ea4e92ba' making 52 changes' was performed in 3.69 seconds.
+2026-07-03 12:50:20.997 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:50:23.241 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #90 on board '1811a002a3008b734cbdda971af3c282' making 57 changes' was performed in 2.25 seconds.
+2026-07-03 12:50:23.255 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:50:25.208 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #91 on board 'e88f8c77d591fdd01c09ec2593364076' making 41 changes' was performed in 1.96 seconds.
+2026-07-03 12:50:25.222 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:50:27.843 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #92 on board 'f32edf3d480b73d2dae4c5c1ad20ee88' making 49 changes' was performed in 2.63 seconds.
+2026-07-03 12:50:27.857 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:50:29.669 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #93 on board 'a20c2be6d20eed3dbc0af1da643659b1' making 59 changes' was performed in 1.82 seconds.
+2026-07-03 12:50:29.683 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:50:31.601 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #94 on board 'ba837ea62ee57663dc365ec2a8ea62a1' making 57 changes' was performed in 1.92 seconds.
+2026-07-03 12:50:31.615 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:50:34.337 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #95 on board 'b1cd73795ccb7b8f6334ec8fb026d3b0' making 53 changes' was performed in 2.73 seconds.
+2026-07-03 12:50:34.350 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:50:37.971 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #96 on board '30702b20e4581ca4b1a733ee36ab0b7d' making 49 changes' was performed in 3.63 seconds.
+2026-07-03 12:50:38.034 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:50:41.203 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #97 on board '6dbd3ec766c38063e6cf1bdc04d5d444' making 27 changes' was performed in 3.22 seconds.
+2026-07-03 12:50:41.417 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:50:43.306 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #98 on board '9bc8e4c23ba649f9cd00986e78cffbc9' making 44 changes' was performed in 2.10 seconds.
+2026-07-03 12:50:43.323 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:50:44.838 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #99 on board '5c6576c6b5c5dc910baef7f04588c0e4' making 28 changes' was performed in 1.52 seconds.
+2026-07-03 12:50:45.022 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:50:47.412 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #100 on board 'cc497936e72f3a40bcab232c0fa8f290' making 27 changes' was performed in 2.56 seconds.
+2026-07-03 12:50:47.416 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()-autorouting' was performed in 4 minute(s) 28.77 seconds.
+2026-07-03 12:50:47.416 [Thread-0] INFO  Auto-routing was completed in 4 minute(s) 28.77 seconds.
+2026-07-03 12:50:47.417 [Thread-0] INFO  Starting route optimization on 11 threads...
+2026-07-03 12:50:47.725 [Thread-0] TRACE Method 'BatchOptRouteMT.opt_route_pass #1 with 0 items, 178 vias and 823,936.68 trace length running on 11 threads.' was performed in 0.30 seconds.
+2026-07-03 12:50:48.002 [Thread-0] TRACE Method 'BatchOptRouteMT.opt_route_pass #2 with 49 items, 178 vias and 823,936.68 trace length running on 11 threads.' was performed in 0.28 seconds.
+2026-07-03 12:50:48.002 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()-routeoptimization' was performed in 0.58 seconds.
+2026-07-03 12:50:48.003 [Thread-0] INFO  Route optimization was completed in 0.58 seconds.
+2026-07-03 12:50:48.015 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()' was performed in 4 minute(s) 29.38 seconds.
+2026-07-03 12:50:48.016 [Thread-0] INFO  Saving '/Users/jadenrhee/JRWatch/hardware/jrwatch.ses'...
+2026-07-03 12:53:16.045 [main] INFO  Freerouting v1.5.0 (build-date: 2022-01-27)
+2026-07-03 12:53:16.063 [main] INFO  Opening '/Users/jadenrhee/JRWatch/hardware/jrwatch.dsn'...
+2026-07-03 12:53:17.278 [main] INFO  Opening 'jrwatch.rules'...
+2026-07-03 12:53:17.279 [main] ERROR File 'jrwatch.rules' was not found.
+2026-07-03 12:53:17.504 [Thread-0] INFO  Starting auto-routing...
+2026-07-03 12:53:17.507 [main] TRACE Method 'MainApplication.main()' was performed in 1.65 seconds.
+2026-07-03 12:53:18.058 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:53:20.560 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #1 on board '2952f68a5b05b52220522f98a00c3521' making 34 changes' was performed in 2.98 seconds.
+2026-07-03 12:53:20.918 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:53:23.134 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #2 on board 'e6a551eb1f0d523fe21454814cec685b' making 33 changes' was performed in 2.55 seconds.
+2026-07-03 12:53:23.453 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:53:25.999 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #3 on board '3e1cef14ba752c1709275823c086208e' making 27 changes' was performed in 2.85 seconds.
+2026-07-03 12:53:26.453 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:53:28.557 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #4 on board 'e63e55d0d5054b048f2d1377fe65f179' making 26 changes' was performed in 2.54 seconds.
+2026-07-03 12:53:28.749 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:53:31.435 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #5 on board 'bfd2586c71b17c66124176438cbeede2' making 25 changes' was performed in 2.87 seconds.
+2026-07-03 12:53:31.894 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:53:34.003 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #6 on board '003fdb3576762725589c1b47c1b04273' making 27 changes' was performed in 2.56 seconds.
+2026-07-03 12:53:34.205 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:53:37.138 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #7 on board 'de458f47ed341b6d3d47e334cc336d83' making 31 changes' was performed in 3.12 seconds.
+2026-07-03 12:53:37.564 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:53:39.253 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #8 on board 'f575e4276c04dce021a7f38fa7f26db2' making 35 changes' was performed in 2.10 seconds.
+2026-07-03 12:53:39.268 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:53:40.765 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #9 on board '257d69a71b98b551e9a0d1885b0731fb' making 17 changes' was performed in 1.50 seconds.
+2026-07-03 12:53:40.780 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:53:42.328 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #10 on board 'fbef003b960bb4b730e41b53a071f2f5' making 27 changes' was performed in 1.55 seconds.
+2026-07-03 12:53:42.432 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:53:44.463 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #11 on board 'a2f38253b75830f57a7d85e03331b151' making 17 changes' was performed in 2.12 seconds.
+2026-07-03 12:53:44.478 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:53:46.546 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #12 on board 'f71355af646dfea957a4e868287f8e75' making 23 changes' was performed in 2.08 seconds.
+2026-07-03 12:53:46.883 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:53:48.731 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #13 on board 'dfca3f8090e56d8228bf890e20db915e' making 28 changes' was performed in 2.18 seconds.
+2026-07-03 12:53:48.969 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:53:50.868 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #14 on board '9c310b63614df2e348809225d4bb201b' making 13 changes' was performed in 2.13 seconds.
+2026-07-03 12:53:51.196 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:53:53.452 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #15 on board '7792f84ecd9a0a7cf40d83b7254b8e3e' making 26 changes' was performed in 2.58 seconds.
+2026-07-03 12:53:53.776 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:53:56.163 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #16 on board 'a641d70018419c972e16bd193adf6f5f' making 28 changes' was performed in 2.70 seconds.
+2026-07-03 12:53:56.397 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:53:58.158 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #17 on board 'a2cbb8426e98bfbc82f3204dae4df62d' making 21 changes' was performed in 1.99 seconds.
+2026-07-03 12:53:58.267 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:54:01.194 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #18 on board '203950cbf51454f3d55858f9839d5b3b' making 15 changes' was performed in 3.03 seconds.
+2026-07-03 12:54:01.635 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:54:03.760 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #19 on board 'f66c4917bfc7b100a489dee97df42b65' making 18 changes' was performed in 2.56 seconds.
+2026-07-03 12:54:03.775 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:54:06.674 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #20 on board '2a2c7da87064cbec9dd89bc28fef6ef4' making 22 changes' was performed in 2.90 seconds.
+2026-07-03 12:54:07.286 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:54:09.392 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #21 on board 'f9ad23ae40ffc2bc7b6fb87dad726a79' making 24 changes' was performed in 2.71 seconds.
+2026-07-03 12:54:09.497 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:54:11.787 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #22 on board '629972b09bd22d5f77a6510f502890da' making 23 changes' was performed in 2.39 seconds.
+2026-07-03 12:54:12.246 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:54:14.000 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #23 on board '8e0cf8d59ca16ebe0de5fc0dc5f90bfe' making 11 changes' was performed in 2.21 seconds.
+2026-07-03 12:54:14.014 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:54:16.456 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #24 on board 'e05241c1476818f97c96e37080dd7289' making 21 changes' was performed in 2.45 seconds.
+2026-07-03 12:54:16.848 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:54:19.000 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #25 on board 'cf0a661905867450f9c1443c6fc0fe5f' making 22 changes' was performed in 2.53 seconds.
+2026-07-03 12:54:19.015 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:54:20.764 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #26 on board 'aabb9900c1d737663bd06d87ceb8ddc7' making 19 changes' was performed in 1.75 seconds.
+2026-07-03 12:54:21.036 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:54:22.895 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #27 on board 'a1f7c2fe5b97290d0f267c5901ff8668' making 24 changes' was performed in 2.12 seconds.
+2026-07-03 12:54:23.046 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:54:25.909 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #28 on board 'cadedfecef6fbae3f1cc6ede70fd4a8c' making 26 changes' was performed in 3.00 seconds.
+2026-07-03 12:54:26.537 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:54:28.004 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #29 on board 'ba12c0a097281b17fba377d598fa3ff4' making 21 changes' was performed in 2.09 seconds.
+2026-07-03 12:54:28.018 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:54:30.263 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #30 on board 'ba013254ffdd75334c406b5c79c50e94' making 23 changes' was performed in 2.25 seconds.
+2026-07-03 12:54:30.591 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:54:32.130 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #31 on board 'cb7cfc4bde6d9541e329b8c1ee8e6b73' making 18 changes' was performed in 1.86 seconds.
+2026-07-03 12:54:32.145 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:54:34.522 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #32 on board 'a2618b6f8930171dc40ab5d2663a8df5' making 29 changes' was performed in 2.38 seconds.
+2026-07-03 12:54:34.917 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:54:37.460 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #33 on board 'b430dacfa120a7fc3210d369383fa428' making 29 changes' was performed in 2.93 seconds.
+2026-07-03 12:54:37.608 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:54:39.822 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #34 on board 'b23268b6efead3e3315895d578b00071' making 22 changes' was performed in 2.35 seconds.
+2026-07-03 12:54:40.279 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:54:42.351 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #35 on board '456bcb8895603f8134b058391c155775' making 29 changes' was performed in 2.52 seconds.
+2026-07-03 12:54:42.365 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:54:43.953 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #36 on board 'e6e46349aa04c33adb3b5f92b6d2a6f6' making 19 changes' was performed in 1.59 seconds.
+2026-07-03 12:54:44.224 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:54:46.016 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #37 on board 'c778bc164911972cd4c5afd337cf291f' making 26 changes' was performed in 2.05 seconds.
+2026-07-03 12:54:46.194 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:54:49.093 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #38 on board 'be85f48b556a9f9f7988938efb8016be' making 21 changes' was performed in 3.07 seconds.
+2026-07-03 12:54:49.522 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:54:51.454 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #39 on board '4e3fe35813fb3d07ef12fc4f56fdf890' making 18 changes' was performed in 2.35 seconds.
+2026-07-03 12:54:51.607 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:54:54.780 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #40 on board 'c4b95cfd1768404414d60f2309cfc26a' making 31 changes' was performed in 3.32 seconds.
+2026-07-03 12:54:55.370 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:54:56.664 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #41 on board 'df5b8f74bd9f236fac7ff1a43d03728d' making 26 changes' was performed in 1.87 seconds.
+2026-07-03 12:54:56.694 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:54:58.386 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #42 on board '5f4254a49e0c92684b4d378b5575b327' making 21 changes' was performed in 1.70 seconds.
+2026-07-03 12:54:58.571 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:55:00.623 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #43 on board '4699f95cf19fbcc1c0c4051357a15561' making 32 changes' was performed in 2.23 seconds.
+2026-07-03 12:55:00.716 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:55:01.836 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #44 on board '1ee27b12b9314b4fd1bfdddf23cd104f' making 31 changes' was performed in 1.20 seconds.
+2026-07-03 12:55:01.854 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:55:04.181 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #45 on board '3fbfc55e98a2393ca082338d6f02b5d1' making 31 changes' was performed in 2.33 seconds.
+2026-07-03 12:55:04.253 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:55:05.365 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #46 on board '3d512dd6869fd6582a233e7b2bedc79e' making 30 changes' was performed in 1.18 seconds.
+2026-07-03 12:55:05.380 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:55:07.134 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #47 on board '824baebcf02ab20c02063b1a648aa6d2' making 29 changes' was performed in 1.76 seconds.
+2026-07-03 12:55:07.149 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:55:08.882 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #48 on board '7d04e6d1d1d50fbdc216e1067acf51de' making 28 changes' was performed in 1.74 seconds.
+2026-07-03 12:55:09.087 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:55:11.780 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #49 on board '78187095c237435f763cd9b1438fda6b' making 23 changes' was performed in 2.89 seconds.
+2026-07-03 12:55:12.310 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:55:14.028 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #50 on board '150335fd2bc91b844424d852b3928deb' making 37 changes' was performed in 2.24 seconds.
+2026-07-03 12:55:14.042 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:55:15.961 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #51 on board 'de67a378596a62536ee235a6cc1a2bd5' making 28 changes' was performed in 1.93 seconds.
+2026-07-03 12:55:16.297 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:55:18.292 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #52 on board '9dc2a549690db1270c514e74ada5fa18' making 19 changes' was performed in 2.32 seconds.
+2026-07-03 12:55:18.439 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:55:20.664 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #53 on board '41c944e1de0793eb317d11619dec774c' making 26 changes' was performed in 2.36 seconds.
+2026-07-03 12:55:21.027 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:55:22.919 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #54 on board 'aafbf2b81a14669e2eea975ed966018c' making 29 changes' was performed in 2.25 seconds.
+2026-07-03 12:55:23.065 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:55:25.145 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #55 on board '80d8a2086c2607bd9309fe1dbbd123df' making 24 changes' was performed in 2.22 seconds.
+2026-07-03 12:55:25.474 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:55:27.194 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #56 on board '7e7434599ce92d0e61b8a84e8b2fca73' making 23 changes' was performed in 2.04 seconds.
+2026-07-03 12:55:27.207 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:55:29.629 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #57 on board '714b62fa816c5f6203314b92fe502460' making 33 changes' was performed in 2.43 seconds.
+2026-07-03 12:55:30.133 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:55:31.971 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #58 on board 'baa6ada3188c59b5d80ccd0f22699387' making 30 changes' was performed in 2.33 seconds.
+2026-07-03 12:55:31.985 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:55:34.431 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #59 on board 'ee17d41de794551b77cd5b67de45b23a' making 30 changes' was performed in 2.45 seconds.
+2026-07-03 12:55:34.825 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:55:37.139 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #60 on board '7e03c411b3e4098bdbc2a14072777b49' making 31 changes' was performed in 2.70 seconds.
+2026-07-03 12:55:37.280 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:55:39.336 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #61 on board 'f102fa456afbbfee9054c460f541c428' making 16 changes' was performed in 2.19 seconds.
+2026-07-03 12:55:39.584 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:55:41.250 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #62 on board 'a4bf8d1a411c6b2708e6ab24315d073c' making 17 changes' was performed in 1.91 seconds.
+2026-07-03 12:55:41.402 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:55:43.376 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #63 on board 'b2cff9b2c644b446c225630f09ccdac4' making 23 changes' was performed in 2.12 seconds.
+2026-07-03 12:55:43.707 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:55:45.051 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #64 on board '6cbd44688e5384e29abf53cfe9eb8d62' making 19 changes' was performed in 1.67 seconds.
+2026-07-03 12:55:45.066 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:55:47.593 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #65 on board '9c1a31558895fe36f0b1133877b85399' making 25 changes' was performed in 2.53 seconds.
+2026-07-03 12:55:47.969 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:55:50.050 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #66 on board '3ed66037a861f3f6a8f159e6482d36b1' making 22 changes' was performed in 2.45 seconds.
+2026-07-03 12:55:50.063 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:55:52.565 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #67 on board '84a544814de0b981caae0b75e6ceec14' making 24 changes' was performed in 2.51 seconds.
+2026-07-03 12:55:52.992 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:55:55.062 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #68 on board '01944f7073da67cd54e723087828fb21' making 22 changes' was performed in 2.49 seconds.
+2026-07-03 12:55:55.075 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:55:57.488 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #69 on board '5c7b83434958584607b0987abc0b252f' making 24 changes' was performed in 2.42 seconds.
+2026-07-03 12:55:57.905 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:55:59.953 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #70 on board '9afaa9ea0ffa8260daf0358a1fd9f968' making 22 changes' was performed in 2.46 seconds.
+2026-07-03 12:55:59.967 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:56:02.360 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #71 on board '9a952ca190ab5761149a22779f506d4b' making 24 changes' was performed in 2.40 seconds.
+2026-07-03 12:56:02.737 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:56:04.815 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #72 on board '42dfad91760b3e8b8375034ef9aad6cd' making 22 changes' was performed in 2.45 seconds.
+2026-07-03 12:56:04.828 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:56:07.183 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #73 on board '2820062732ec00c17f7f418e1028de43' making 24 changes' was performed in 2.36 seconds.
+2026-07-03 12:56:07.562 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:56:09.657 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #74 on board '88deafaa3c4da9c98731dfa144e662ba' making 22 changes' was performed in 2.47 seconds.
+2026-07-03 12:56:09.670 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:56:12.417 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #75 on board '812a95c42b9bb3856a7ddb734fd03393' making 24 changes' was performed in 2.75 seconds.
+2026-07-03 12:56:12.785 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:56:14.887 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #76 on board '0405af6a86584830f0eff8ef3c7c4d4a' making 22 changes' was performed in 2.46 seconds.
+2026-07-03 12:56:14.901 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:56:17.341 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #77 on board 'cb914a0a84ca11683aa2f528869edf13' making 24 changes' was performed in 2.45 seconds.
+2026-07-03 12:56:17.775 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:56:19.878 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #78 on board '06de6bc96839dc36ce7bdfb647648174' making 22 changes' was performed in 2.53 seconds.
+2026-07-03 12:56:19.892 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:56:22.402 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #79 on board '635571254b69133d4746f53916d9d2e6' making 24 changes' was performed in 2.52 seconds.
+2026-07-03 12:56:22.805 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:56:25.009 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #80 on board '70c76b5233d06d971982142730c66e12' making 22 changes' was performed in 2.60 seconds.
+2026-07-03 12:56:25.023 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:56:27.492 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #81 on board '1e441f8cb2a3df42158cf3c2ead8a76c' making 24 changes' was performed in 2.48 seconds.
+2026-07-03 12:56:27.880 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:56:29.972 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #82 on board 'e77988f5b96bf81b0d14f926152e6b0b' making 22 changes' was performed in 2.47 seconds.
+2026-07-03 12:56:29.986 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:56:32.467 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #83 on board '9ade60e17d6dc2ec4e993e699f10751a' making 24 changes' was performed in 2.49 seconds.
+2026-07-03 12:56:32.880 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:56:34.953 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #84 on board 'd244f8de670249d525503074245ebdff' making 22 changes' was performed in 2.48 seconds.
+2026-07-03 12:56:34.968 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:56:37.371 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #85 on board 'a5343a117f097ce503b87babac63c757' making 24 changes' was performed in 2.41 seconds.
+2026-07-03 12:56:37.757 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:56:39.956 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #86 on board '5ccc78f5c3a2eca479a74176742253d2' making 22 changes' was performed in 2.58 seconds.
+2026-07-03 12:56:39.970 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:56:42.357 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #87 on board '5634b9e00e9f8033f4e0bb8ab8625000' making 24 changes' was performed in 2.39 seconds.
+2026-07-03 12:56:42.734 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:56:44.825 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #88 on board '937d6d691d47452c017e4ba7a6213011' making 22 changes' was performed in 2.46 seconds.
+2026-07-03 12:56:44.838 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:56:47.247 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #89 on board '706703fd329e741b30ed2749c0dcf8f5' making 24 changes' was performed in 2.42 seconds.
+2026-07-03 12:56:47.637 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:56:50.177 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #90 on board '18a1ff84d2868042b00c0dd80f951305' making 22 changes' was performed in 2.92 seconds.
+2026-07-03 12:56:50.191 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:56:52.673 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #91 on board 'a2c3789ebaaa5fb9cb8f0d4c3a6fe091' making 24 changes' was performed in 2.49 seconds.
+2026-07-03 12:56:53.052 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:56:55.192 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #92 on board '992037fd90810562f816decae49fd1a1' making 22 changes' was performed in 2.51 seconds.
+2026-07-03 12:56:55.205 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:56:57.661 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #93 on board '4c9b9cece615e5d1f5e27b978b91672c' making 24 changes' was performed in 2.46 seconds.
+2026-07-03 12:56:58.048 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:57:00.146 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #94 on board '86948837e5996c65d931616ae1e99be8' making 22 changes' was performed in 2.48 seconds.
+2026-07-03 12:57:00.160 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:57:02.639 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #95 on board 'f202ad8db520a14dafa0f3bb405da686' making 24 changes' was performed in 2.48 seconds.
+2026-07-03 12:57:03.026 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:57:05.336 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #96 on board '2be5d2d5e134337a40d9ec8b50b362ce' making 22 changes' was performed in 2.69 seconds.
+2026-07-03 12:57:05.350 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:57:08.001 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #97 on board 'fac4dbd26a49edc371f8ba81bc04ea3e' making 24 changes' was performed in 2.66 seconds.
+2026-07-03 12:57:08.465 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:57:10.606 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #98 on board '8386a24a6743602e8f78397b1d97aaf0' making 22 changes' was performed in 2.60 seconds.
+2026-07-03 12:57:10.621 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:57:13.077 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #99 on board '3d9eb2aa8e380612e007fc5bb2305a75' making 24 changes' was performed in 2.46 seconds.
+2026-07-03 12:57:13.472 [Thread-0] WARN  FloatLine: Parameter is null
+2026-07-03 12:57:15.860 [Thread-0] TRACE Method 'BatchAutorouter.autoroute_pass #100 on board 'd55c162b83f43329ebb38c38f632859e' making 22 changes' was performed in 2.77 seconds.
+2026-07-03 12:57:15.865 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()-autorouting' was performed in 3 minute(s) 58.36 seconds.
+2026-07-03 12:57:15.866 [Thread-0] INFO  Auto-routing was completed in 3 minute(s) 58.36 seconds.
+2026-07-03 12:57:15.867 [Thread-0] INFO  Starting route optimization on 11 threads...
+2026-07-03 12:57:16.019 [Thread-0] TRACE Method 'BatchOptRouteMT.opt_route_pass #1 with 0 items, 172 vias and 837,256.99 trace length running on 11 threads.' was performed in 0.14 seconds.
+2026-07-03 12:57:16.133 [Thread-0] TRACE Method 'BatchOptRouteMT.opt_route_pass #2 with 14 items, 172 vias and 837,256.99 trace length running on 11 threads.' was performed in 0.11 seconds.
+2026-07-03 12:57:16.134 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()-routeoptimization' was performed in 0.27 seconds.
+2026-07-03 12:57:16.136 [Thread-0] INFO  Route optimization was completed in 0.27 seconds.
+2026-07-03 12:57:16.153 [Thread-0] TRACE Method 'BatchAutorouterThread.thread_action()' was performed in 3 minute(s) 58.65 seconds.
+2026-07-03 12:57:16.153 [Thread-0] INFO  Saving '/Users/jadenrhee/JRWatch/hardware/jrwatch.ses'...
