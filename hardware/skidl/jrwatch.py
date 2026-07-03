@@ -263,20 +263,25 @@ for p in ('INT2', 'OCSB', 'OSDO'):
     u3[p] += NC
 
 # ================================================================== DISPLAY
+# Pin order is MIRRORED vs the panel terminal numbers: the tail folds 180
+# degrees under the panel (Sharp Rmk 8-1 forbids bending toward the
+# polarizer), which flips the contact face up and reverses left-right as
+# seen by the top-contact FH12A. Connector pad k mates panel terminal 11-k
+# (Sharp fig 8-1: terminal 1 is on the right in the front view).
 j2 = FPC10(ref='J2', value='FH12A-10S-0.5SH')
-j2[1] += disp_sck
-j2[2] += disp_mosi
-j2[3] += disp_cs
+j2[10] += disp_sck                       # SCLK
+j2[9] += disp_mosi                       # SI
+j2[8] += disp_cs                         # SCS
 r_scs = res('100k')                      # SCS is active-high: pull-down = deselected
 disp_cs += r_scs[1]
 gnd += r_scs[2]
-j2[4] += extcomin
-j2[5] += disp_on
-j2[6] += vdd_disp                        # VDDA
-j2[7] += vdd_disp                        # VDD
-j2[8] += vdd_disp                        # EXTMODE=H -> EXTCOMIN pin mode (Sharp Rmk 4-1)
-j2[9] += gnd                             # VSS
-j2[10] += gnd                            # VSSA
+j2[7] += extcomin
+j2[6] += disp_on                         # DISP
+j2[5] += vdd_disp                        # VDDA
+j2[4] += vdd_disp                        # VDD
+j2[3] += vdd_disp                        # EXTMODE=H -> EXTCOMIN pin mode (Sharp Rmk 4-1)
+j2[2] += gnd                             # VSS
+j2[1] += gnd                             # VSSA
 j2['MP'] += gnd
 decouple(vdd_disp, '1uF', '100nF', '1uF', '100nF')   # VDD + VDDA pairs
 
