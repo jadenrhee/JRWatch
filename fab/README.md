@@ -34,7 +34,11 @@ Everything needed to order the JRWatch r1 board from JLCPCB.
 
 ## Before ordering — blocking items
 
-**The board has 4 unrouted links and 3 unstitched capacitor ground islands**
+**DO NOT ORDER THIS REVISION.** Pre-order review (D-025) found the display
+connector placed out of the panel tail's reach and with un-mirrored pin
+order; the schematic is corrected but the layout rework has not landed.
+Additionally the board has 4 unrouted links and 3 unstitched capacitor
+ground islands
 left for interactive completion (zero DRC violations otherwise; the power
 tree is complete). See `docs/human-review-checklist.md` §1 for exact
 endpoints, what blocks each one, and suggested fixes — about 20 minutes in
