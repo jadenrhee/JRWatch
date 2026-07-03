@@ -344,6 +344,20 @@ Three power tiers, each with a projected budget to be computed part-by-part in
   the new pad row and must be redesigned north of y≈109; the display fan
   re-routes south from the module (trial run closed it plus SHPHLD and
   I2C_SCL cleanly). Ordering is blocked until this lands.
+- Second review session findings (branch `d025-layout-wip` holds the work in
+  progress): the USB-C shell has four top-protruding solder slots at
+  (95.68/104.32, 110.47 and 114.65) that bracket the whole south strip, so
+  the connector cannot sit south of the panel at all. Final verified
+  position: J2 at (100, 107.75) — pads y=105.9, body fully under the panel
+  (which mounts on 1.2 mm foam so its terminal ledge clears the 1.0 mm body),
+  tail folding at the board edge between the leg columns. Proven on the
+  branch: J2 placement + mirrored nets, USB CONN highways re-laid at
+  y=107.95/108.35, the DM crossover loop, CC2 landing directly on J1.B5 via
+  a (98.24, 108.87) via, CC1 landing from the north-east, and a
+  zero-violation checkpoint with the display fan, I2C, SHPHLD and CC pair
+  routed. Remaining: the south-quadrant fabric (strap highways, DISP_SCK
+  east path, 3V0 pin 12, pin 28/29 pocket) needs one interactive-router
+  session; scripted attempts oscillate against the autorouter's re-lays.
 
 ---
 
