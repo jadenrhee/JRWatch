@@ -26,7 +26,7 @@ STAGE = sys.argv[1] if len(sys.argv) > 1 else 'all'
 if STAGE in ('export', 'all'):
     b = pcbnew.LoadBoard(BOARD_PATH)
     ok = pcbnew.ExportSpecctraDSN(b, DSN)
-    # KiCad 10 exports locked tracks/vias with (type fix) natively — verified;
+    # KiCad 10 exports locked tracks/vias with (type fix) natively - verified;
     # Freerouting honors them as fixed wiring. Mark the plane layers as
     # power so the autorouter cannot lay signal spaghetti on them.
     with open(DSN) as f:

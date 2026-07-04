@@ -1,5 +1,5 @@
 """
-JRWatch part library — every part defined pin-by-pin from its datasheet.
+JRWatch part library - every part defined pin-by-pin from its datasheet.
 
 Pin numbering matches the KiCad footprint pad names exactly (netlist import
 maps by pad name). Sources:
@@ -26,7 +26,7 @@ def _mk(name, ref_prefix, footprint, description, pins, **fields):
 
 # --------------------------------------------------------------------------
 # Raytac MDBT50Q-1MV2 (nRF52840). Pins marked LF in the datasheet are
-# "standard drive, low frequency I/O only" (radio-adjacent) — the schematic
+# "standard drive, low frequency I/O only" (radio-adjacent) - the schematic
 # uses them only for buttons / EXTCOMIN / interrupts, never SPI/I2C.
 # --------------------------------------------------------------------------
 MDBT50Q = _mk(
@@ -63,7 +63,7 @@ MDBT50Q = _mk(
         (28, 'VDD',        _t.PWRIN),
         (29, 'P0.12',      _t.BIDIR),
         (30, 'VDDH',       _t.PWRIN),
-        (31, 'DCCH',       _t.NOCONNECT),  # REG0 DC/DC out — unused in normal-voltage mode
+        (31, 'DCCH',       _t.NOCONNECT),  # REG0 DC/DC out - unused in normal-voltage mode
         (32, 'VBUS',       _t.PWRIN),      # 5 V input for internal USB regulator
         (33, 'GND',        _t.PWRIN),
         (34, 'D-',         _t.BIDIR),
@@ -187,7 +187,7 @@ USB_C = _mk(
 FPC10 = _mk(
     'FH12A-10S-0.5SH', 'J',
     'Connector_FFC-FPC:Hirose_FH12-10S-0.5SH_1x10-1MP_P0.50mm_Horizontal',
-    'Display FPC connector — mates LS013B7DH03 tail terminal (11-k) on pad k:'
+    'Display FPC connector - mates LS013B7DH03 tail terminal (11-k) on pad k:'
     ' the 180-degree fold under the panel flips the contact face, so the'
     ' top-contact FH12A sees the terminal order reversed (Sharp fig 8-1)',
     [

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-JRWatch — schematic as code.
+JRWatch - schematic as code.
 
 Builds the complete netlist, runs ERC, and emits:
   hardware/netlist/jrwatch.net            KiCad netlist
@@ -8,12 +8,12 @@ Builds the complete netlist, runs ERC, and emits:
   hardware/netlist/erc-report.txt         ERC output
 
 Block structure mirrors docs/design-rationale.md:
-  power   — nPM1300: USB-C in, LiPo charge path, BUCK1/BUCK2, load switches
-  mcu     — MDBT50Q-1MV2 module, 32k crystal, decoupling, Tag-Connect SWD
-  usb     — USB-C data pairs through USBLC6 ESD to the module
-  imu     — BMI270 on its own SPI, INT1 motion wake
-  display — Sharp MIP LCD via 10-pin FPC, gated rail
-  controls— SW1 power (SHPHLD), SW2 user (GPIO wake), both ESD-protected
+  power   - nPM1300: USB-C in, LiPo charge path, BUCK1/BUCK2, load switches
+  mcu     - MDBT50Q-1MV2 module, 32k crystal, decoupling, Tag-Connect SWD
+  usb     - USB-C data pairs through USBLC6 ESD to the module
+  imu     - BMI270 on its own SPI, INT1 motion wake
+  display - Sharp MIP LCD via 10-pin FPC, gated rail
+  controls- SW1 power (SHPHLD), SW2 user (GPIO wake), both ESD-protected
 """
 import json
 import os
@@ -35,8 +35,8 @@ gnd      = Net('GND');       gnd.drive = POWER
 vbat     = Net('VBAT');      vbat.drive = POWER      # battery + (J3.1)
 vbus_usb = Net('VBUS_USB');  vbus_usb.drive = POWER  # USB-C VBUS -> PMIC
 vsys     = Net('VSYS')                               # PMIC power path output
-v3v0     = Net('3V0')                                # BUCK2 — always-on system rail
-v1v8     = Net('1V8_AUX')                            # BUCK1 — populated, fw-disabled
+v3v0     = Net('3V0')                                # BUCK2 - always-on system rail
+v1v8     = Net('1V8_AUX')                            # BUCK1 - populated, fw-disabled
 vbus_out = Net('VBUS_OUT')                           # PMIC VBUSOUT -> module VBUS (5V)
 vdd_disp = Net('VDD_DISP')                           # LSW1-gated display rail
 vdd_imu  = Net('VDD_IMU')                            # LSW2-gated sensor rail
@@ -100,7 +100,7 @@ decouple(vsys, ('10uF', '0603'), ('2.2uF', '0603'), '100nF')
 decouple(vbus_usb, ('10uF', '0603'))
 decouple(vbus_out, '1uF')
 
-# USB-C CC lines — nPM1300 implements Type-C sink detection internally (D-015)
+# USB-C CC lines - nPM1300 implements Type-C sink detection internally (D-015)
 u2['CC1'] += cc1
 u2['CC2'] += cc2
 
@@ -114,7 +114,7 @@ r_vset1 = res('47k')                     # VSET1 47k -> 1.8 V startup
 u2['VSET1'] += r_vset1[1]
 gnd += r_vset1[2]
 
-# BUCK2: 3.0 V system rail — correct at power-on by VSET2 strap (D-012)
+# BUCK2: 3.0 V system rail - correct at power-on by VSET2 strap (D-012)
 l2 = BUCK_L(ref='L2', value='2.2uH')
 u2['SW2'] += l2[1]
 l2[2] += v3v0
@@ -152,7 +152,7 @@ u2['NTC'] += ntc
 ntc += rt1[1]
 gnd += rt1[2]
 
-# battery connector — PIN 1 = BAT+
+# battery connector - PIN 1 = BAT+
 j3 = JST_SH2(ref='J3', value='SM02B-SRSS-TB')
 j3[1] += vbat
 j3[2] += gnd
@@ -162,14 +162,14 @@ j3['MP'] += gnd
 u1 = MDBT50Q(ref='U1', value='MDBT50Q-1MV2')
 
 u1[28] += v3v0                           # VDD
-u1[30] += v3v0                           # VDDH tied to VDD — normal voltage mode
+u1[30] += v3v0                           # VDDH tied to VDD - normal voltage mode
 u1[32] += vbus_out                       # VBUS from PMIC VBUSOUT
 for gpin in (1, 2, 15, 33, 55):
     u1[gpin] += gnd
 decouple(v3v0, ('10uF', '0603'), '100nF', '100nF')   # module VDD + VDDH
 decouple(vbus_out, '100nF')
 
-# 32.768 kHz crystal (D-009). Load caps 12 pF placeholder — final value from
+# 32.768 kHz crystal (D-009). Load caps 12 pF placeholder - final value from
 # the LFXO budget calc in docs/verification-report.md (CL=12.5 pF crystal).
 y1 = XTAL32K(ref='Y1', value='32.768kHz')
 u1[17] += xl1
@@ -205,11 +205,11 @@ u1[41] += disp_sck                       # P0.17
 u1[44] += disp_mosi                      # P0.20
 u1[39] += disp_cs                        # P0.15
 u1[38] += disp_on                        # P0.16
-u1[50] += extcomin                       # P1.02 (LF pin, 1 Hz signal — allowed)
-u1[6]  += btn2                           # P1.13 (LF pin, button — allowed)
+u1[50] += extcomin                       # P1.02 (LF pin, 1 Hz signal - allowed)
+u1[6]  += btn2                           # P1.13 (LF pin, button - allowed)
 
 # unused module pins
-u1[31] += NC                             # DCCH — REG0 unused in normal-voltage mode
+u1[31] += NC                             # DCCH - REG0 unused in normal-voltage mode
 for spare in (3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 16, 19, 20, 21, 22, 23,
               24, 25, 26, 27, 48, 52, 54, 56, 57, 58, 59, 60, 61):
     u1[spare] += NC
@@ -286,7 +286,7 @@ j2['MP'] += gnd
 decouple(vdd_disp, '1uF', '100nF', '1uF', '100nF')   # VDD + VDDA pairs
 
 # ================================================================= CONTROLS
-# SW1: power button -> SHPHLD only (node swings to VBAT — never to an nRF pin, D-014)
+# SW1: power button -> SHPHLD only (node swings to VBAT - never to an nRF pin, D-014)
 sw1 = TACT_SIDE(ref='SW1', value='PWR/SHIP')
 d1 = ESD_5V0(ref='D1', value='ESD9B5.0')
 r_sw1 = res('100R')

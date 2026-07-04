@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Stage 4: finish — fill zones, add the GND stitching lattice, report what
+Stage 4: finish - fill zones, add the GND stitching lattice, report what
 remains unconnected per net (so nothing hides behind the fills).
 """
 import os

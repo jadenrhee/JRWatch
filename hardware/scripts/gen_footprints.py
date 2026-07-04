@@ -2,7 +2,7 @@
 """
 Generate JRWatch.pretty custom footprints.
 
-Only one custom footprint is needed — the Murata DFE201612E 2016-metric power
+Only one custom footprint is needed - the Murata DFE201612E 2016-metric power
 inductor. Murata's official land pattern was not retrievable programmatically,
 so the land is derived per IPC-7351B nominal density from the body drawing
 (L 2.0 +/-0.2, W 1.6 +/-0.2, bottom terminals ~0.5 mm):
@@ -10,7 +10,7 @@ so the land is derived per IPC-7351B nominal density from the body drawing
     pads 0.95 x 1.70 mm at x = +/-0.85  (toe ~0.35, generous heel, gap 0.75)
 
 Flagged NEEDS REVIEW in docs/human-review-checklist.md: cross-check against
-the Murata land pattern before ordering assembly. Oversize is safe here — the
+the Murata land pattern before ordering assembly. Oversize is safe here - the
 part has no fine-pitch neighbors and both nets are power.
 """
 import os

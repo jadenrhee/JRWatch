@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-JRWatch board builder — runs under KiCad's bundled python3.
+JRWatch board builder - runs under KiCad's bundled python3.
 
 Creates hardware/jrwatch.kicad_pcb from the SKiDL netlist JSON:
   * 4-layer stack (F.Cu routing/GND, In1.Cu power pours, In2.Cu GND, B.Cu components)
@@ -147,7 +147,7 @@ class Builder:
         fp.SetPosition(P(x, y))
         # Rotation FIRST, then flip. Flip() encodes left-right as mirror+180deg
         # internally, so a later SetOrientationDegrees() would silently turn it
-        # into a top-bottom flip (bug found the hard way — pads landed y-mirrored).
+        # into a top-bottom flip (bug found the hard way - pads landed y-mirrored).
         fp.SetOrientationDegrees(rot)
         if side == 'B':
             fp.Flip(P(x, y), pcbnew.FLIP_DIRECTION_LEFT_RIGHT)
@@ -198,11 +198,11 @@ class Builder:
         self.add_part('U1', CX, 90.55, 0, 'B')        # module, antenna north
         self.add_part('J1', CX, 113.60, 0, 'B')       # USB-C, opening south
         self.add_part('U2', 91.0, 104.2, 0, 'B')      # PMIC
-        self.add_part('U3', 91.0, 92.0, 0, 'B')       # IMU — at module W col SPI pads
-        self.add_part('Y1', 103.4, 100.3, 0, 'B')     # 32k crystal — XL pads land E
+        self.add_part('U3', 91.0, 92.0, 0, 'B')       # IMU - at module W col SPI pads
+        self.add_part('Y1', 103.4, 100.3, 0, 'B')     # 32k crystal - XL pads land E
         self.add_part('U4', 92.2, 109.6, 90, 'B')     # USB ESD, in pair corridor
         self.add_part('J3', 85.4, 97.0, 90, 'B')      # battery conn, entry west
-        self.add_part('J4', 86.9, 89.0, 90, 'B')      # TC2030 — SWD pads land W
+        self.add_part('J4', 86.9, 89.0, 90, 'B')      # TC2030 - SWD pads land W
         self.add_part('J2', 89.3, 112.5, 0, 'F')      # display FPC, TOP side (W of USB SH pads)
         self.add_part('SW1', 115.9, 95.0, 90, 'B')    # power button, east edge
         self.add_part('SW2', 115.9, 106.0, 90, 'B')   # user button, east edge
@@ -217,7 +217,7 @@ class Builder:
         def sat(value, net, x, y, rot=0, side='B', idx=0):
             sats.append((value, net, x, y, rot, side, idx))
 
-        # PMIC decoupling — U2 flipped: pins 1-8 east col (top->bot),
+        # PMIC decoupling - U2 flipped: pins 1-8 east col (top->bot),
         # 9-16 south row (E->W), 17-24 west col (bot->top), 25-32 north (W->E)
         # Courtyard envelopes (KiCad lib): 0402 = 1.92 x 1.12 mm, 0603 =
         # 2.96 x 1.52 mm, custom L = 3.16 x 2.2. Pitches below respect them.
@@ -237,17 +237,17 @@ class Builder:
         sat('10uF', '3V0',       100.6, 106.2, 90, idx=0)   # BUCK2 output bulk
         sat('10uF', '1V8_AUX',   95.4, 100.9, 90)           # BUCK1 output bulk
 
-        # module decoupling — VDD pad28 (98.4, 97.7), VDDH pad30 (100.0, 97.7),
+        # module decoupling - VDD pad28 (98.4, 97.7), VDDH pad30 (100.0, 97.7),
         # VBUS pad32 (101.6, 97.7); module courtyard ends ~y=98.6
         sat('100nF', '3V0',      97.6, 99.9, 90, idx=1)     # VDD
         sat('100nF', '3V0',      99.0, 99.9, 90, idx=2)     # VDDH
         sat('10uF', '3V0',       100.55, 100.45, 90, idx=1)   # module bulk
         sat('100nF', 'VBUS_OUT', 93.2, 98.6, 0)             # module VBUS pin32 (96.0,97.7)
-        # crystal load caps — row south of Y1 (XL pads at 103.2/102.4, 97.7);
+        # crystal load caps - row south of Y1 (XL pads at 103.2/102.4, 97.7);
         # XL2 stack west, XL1 stack east (matches crystal pin swap, no crossover)
         sat('12pF', 'XL2',       102.1, 102.65, 270)
         sat('12pF', 'XL1',       104.5, 102.65, 270)
-        # IMU — U3 at (91.0, 92.0): caps south of U3, clear of J3/J4
+        # IMU - U3 at (91.0, 92.0): caps south of U3, clear of J3/J4
         sat('100nF', 'VDD_IMU',  89.8, 94.35, 0)
         sat('100nF', '3V0',      91.9, 94.35, 0, idx=3)     # VDDIO
         # display connector caps (TOP side, row north of J2, pitch 2.05)
@@ -303,7 +303,7 @@ class Builder:
             print('!! UNPLACED:', missing)
 
         # functional silkscreen: battery polarity beside the actual J3 pads
-        # (safety: pigtail polarity varies by vendor — see review checklist)
+        # (safety: pigtail polarity varies by vendor - see review checklist)
         for pad, sym in (('1', '+'), ('2', '-')):
             px, py = self.pad_xy('J3', pad)
             self.add_silk_text(sym, px + 1.6, py, pcbnew.B_SilkS, 0.9)

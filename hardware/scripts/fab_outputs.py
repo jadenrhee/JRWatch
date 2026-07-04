@@ -2,10 +2,10 @@
 """
 BOM (JLCPCB CSV) + CPL (pick-and-place) from the live board and netlist JSON.
 
-BOM: Comment,Designator,Footprint,LCSC  — grouped by (value, footprint, LCSC),
+BOM: Comment,Designator,Footprint,LCSC  - grouped by (value, footprint, LCSC),
 DNP/hand-place lines flagged in Comment. CPL: Designator,Val,Package,
 Mid X,Mid Y,Rotation,Layer (JLC convention; rotations may need the usual
-per-part tweak in JLC's viewer — noted in fab/README).
+per-part tweak in JLC's viewer - noted in fab/README).
 """
 import csv
 import json

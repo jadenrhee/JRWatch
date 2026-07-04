@@ -7,7 +7,7 @@ congested two-layer paths).
 A small grid A* router over F.Cu/B.Cu with an obstacle raster built from the
 live board. Plane nets additionally get "drop a via into the pour" moves.
 Everything it adds is checked against the raster before commit, and the full
-DRC gate runs afterwards — this is a completion pass, not a free-for-all.
+DRC gate runs afterwards - this is a completion pass, not a free-for-all.
 
 Also: hole-to-hole auto-nudge for autorouter via pairs, dangling-stub trim,
 solid-fill refill, and GND island unification vias.
@@ -261,7 +261,7 @@ class Completer:
 
     # ------------------------------------------------------------- passes
     def plane_taps(self, jobs):
-        """jobs: (netname, pad_x, pad_y, region) — stub from pad to nearest
+        """jobs: (netname, pad_x, pad_y, region) - stub from pad to nearest
         via_ok spot inside region, via to the In1 plane."""
         for netname, px, py, (rx0, ry0, rx1, ry1) in jobs:
             self.build_raster(netname)

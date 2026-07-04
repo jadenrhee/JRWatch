@@ -5,19 +5,19 @@ Runs under KiCad python AFTER build_board.py. Everything added here is LOCKED
 so the autorouter (stage 3) treats it as fixed.
 
 Hand-routed (and why):
-  * USB D+/D- — coupled pair on B.Cu. The 16-pin USB-C pinout interleaves the
+  * USB D+/D- - coupled pair on B.Cu. The 16-pin USB-C pinout interleaves the
     pair, so exactly one crossover is topologically required: A6 hops over the
-    D- bridge on a short F.Cu strap. FS USB (12 Mbps) — inter-pair skew budget
+    D- bridge on a short F.Cu strap. FS USB (12 Mbps) - inter-pair skew budget
     is enormous; measured lengths are printed and go in the verification report.
-  * nPM1300 buck switch nodes SW1/SW2 — shortest practical loops to L1/L2 and
+  * nPM1300 buck switch nodes SW1/SW2 - shortest practical loops to L1/L2 and
     output caps per the PS layout guidance (minimize switch-node area).
-  * 32.768 kHz crystal — short direct pair with inline load caps and local
+  * 32.768 kHz crystal - short direct pair with inline load caps and local
     ground-return vias.
-  * VBUS entry — wide bridge across both connector VBUS pad stacks routed
+  * VBUS entry - wide bridge across both connector VBUS pad stacks routed
     between the NPTH posts, via into the In1 VBUS plane.
-  * Module VDD/VDDH — escapes onto a 3V0 rail stub tying the decoupling row,
+  * Module VDD/VDDH - escapes onto a 3V0 rail stub tying the decoupling row,
     with two plane vias.
-  * Module GND castellations — explicit stitching vias.
+  * Module GND castellations - explicit stitching vias.
 Left for the autorouter: DC housekeeping (VBAT/VSYS distribution, I2C, SPI,
 buttons, straps). The In1/In2 planes are in the DSN so it can via into them.
 
@@ -175,7 +175,7 @@ class Router:
         # A/B pair (A4/B9 on one pad, A9/B4 on the other), so ONE pad powers
         # the board in both plug orientations. The west pad is boxed in by the
         # NPTH post + CC2 + shield pad; the east pad connects cleanly. West pad
-        # left on the plane-connected net via the In1 pour if reachable —
+        # left on the plane-connected net via the In1 pour if reachable -
         # otherwise it is redundant current capacity only (documented, D-019).
         pa = self.pad('J1', 'A4')   # east stack (102.45, 109.56)
         self.seg('VBUS_USB', pcbnew.B_Cu, 0.3, [
@@ -232,7 +232,7 @@ class Router:
         self.seg('3V0', pcbnew.B_Cu, 0.45, [(96.9, 98.45), (100.0, 98.45)])
         self.via('3V0', 99.0, 98.45)         # two plane vias
         self.via('3V0', 100.0, 98.45)
-        # cap 3V0 pads are the FAR (south) pads — stubs detour around the
+        # cap 3V0 pads are the FAR (south) pads - stubs detour around the
         # GND pads in the free lanes between the cap columns
         self.seg('3V0', pcbnew.B_Cu, 0.35, [        # C14 via west lane
             (96.9, 98.45), (96.9, 100.38), (97.32, 100.38)])
