@@ -20,8 +20,8 @@ channels + OCV table; NCS `nrf_fuel_gauge` is the drop-in upgrade).
 
 | Characteristic | UUID (short) | Access | Format |
 |---|---|---|---|
-| Step count | `6a570001-…` | read / notify | uint32 little-endian, steps since boot |
-| Activity state | `6a570002-…` | read | uint8: 0 = idle (armed sleep), 1 = active |
+| Step count | `6a570001-...` | read / notify | uint32 little-endian, steps since boot |
+| Activity state | `6a570002-...` | read | uint8: 0 = idle (armed sleep), 1 = active |
 
 Step notifications are emitted only when the value changes and only while a
 client has subscribed - no periodic radio traffic otherwise.
