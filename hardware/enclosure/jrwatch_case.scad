@@ -1,4 +1,4 @@
-// JRWatch enclosure — two-piece 3D-printable watch case
+// JRWatch enclosure - two-piece 3D-printable watch case
 // ------------------------------------------------------
 // Dimensions come from the actual board (hardware/jrwatch.kicad_pcb):
 //   * board 36 x 36 mm, corner radius 6, thickness 0.8
@@ -104,7 +104,7 @@ module corner_posts(h) {
       }
 }
 
-// annular wedge reaching under (or over) the board's corner arc — the board
+// annular wedge reaching under (or over) the board's corner arc - the board
 // is clamped only here; the corner zones are component-free on both sides
 module corner_pads(h) {
   for (sx = [-1, 1], sy = [-1, 1])
@@ -165,7 +165,7 @@ module back_engraving() {
       text("JRWATCH", size = 3.4, font = "Helvetica:style=Bold",
            halign = "center", valign = "center", spacing = 1.15);
     translate([0, -2.6, -eps]) linear_extrude(0.45)
-      text("r1  ·  nRF52840  ·  BLE", size = 1.7, font = "Helvetica",
+      text("r1  /  nRF52840  /  BLE", size = 1.7, font = "Helvetica",
            halign = "center", valign = "center", spacing = 1.1);
   }
   // decorative recessed rings

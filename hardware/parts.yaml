@@ -1,4 +1,4 @@
-# JRWatch master parts database — single source of truth for SKiDL, BOM, and CPL.
+# JRWatch master parts database - single source of truth for SKiDL, BOM, and CPL.
 # stock figures checked on LCSC 2026-07-02 (design time). basic/extended per JLCPCB
 # at order time. sourcing: "jlc" = economic SMT assembly, "hand" = hand-place
 # (reflow/hot air), module castellations iron-solderable.
@@ -18,7 +18,7 @@ parts:
   U2:
     mpn: nPM1300-QEAA-R7
     mfr: Nordic Semiconductor
-    desc: PMIC — linear LiPo charger, 2x buck, 2x LDO/loadswitch, fuel gauge, USB-C CC, ship mode
+    desc: PMIC - linear LiPo charger, 2x buck, 2x LDO/loadswitch, fuel gauge, USB-C CC, ship mode
     lcsc: C7501206
     lcsc_stock: 0            # listed, out of stock 2026-07-02
     alt_source: DigiKey NPM1300-QEAA-R7 $2.95 (ships today)
@@ -58,7 +58,7 @@ parts:
     mfr: Hirose
     desc: FPC connector 10P 0.5mm, horizontal, bottom-contact (display)
     lcsc: C5139870
-    lcsc_stock: 91           # low — order early; alt FH12-10S-0.5SH(55) C506791 (38)
+    lcsc_stock: 91           # low - order early; alt FH12-10S-0.5SH(55) C506791 (38)
     footprint: Connector_FFC-FPC:Hirose_FH12-10S-0.5SH_1x10-1MP_P0.50mm_Horizontal
     sourcing: hand
 
@@ -89,7 +89,7 @@ parts:
   SW1:
     mpn: SKRTLAE010
     mfr: Alps Alpine
-    desc: side-actuated tact, 4.5x3.4x3.3mm, 1.6N — power/ship-exit button (SHPHLD)
+    desc: side-actuated tact, 4.5x3.4x3.3mm, 1.6N - power/ship-exit button (SHPHLD)
     lcsc: C110293
     lcsc_stock: 30265
     footprint: Button_Switch_SMD:SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010
@@ -97,7 +97,7 @@ parts:
   SW2:
     mpn: SKRTLAE010
     mfr: Alps Alpine
-    desc: side-actuated tact — user button (nRF GPIO wake)
+    desc: side-actuated tact - user button (nRF GPIO wake)
     lcsc: C110293
     lcsc_stock: 30265
     footprint: Button_Switch_SMD:SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010
@@ -115,7 +115,7 @@ parts:
   L1:
     mpn: DFE201612E-2R2M=P2
     mfr: Murata
-    desc: 2.2uH 0806(2016) power inductor, 116mOhm DCR, Isat 2.4A — BUCK1
+    desc: 2.2uH 0806(2016) power inductor, 116mOhm DCR, Isat 2.4A - BUCK1
     lcsc: C337893
     lcsc_stock: 14800
     footprint: JRWatch:L_Murata_DFE201612E_2016   # custom 2016 metric
@@ -123,7 +123,7 @@ parts:
   L2:
     mpn: DFE201612E-2R2M=P2
     mfr: Murata
-    desc: 2.2uH — BUCK2 (system 3V0 rail)
+    desc: 2.2uH - BUCK2 (system 3V0 rail)
     lcsc: C337893
     lcsc_stock: 14800
     footprint: JRWatch:L_Murata_DFE201612E_2016
@@ -131,7 +131,7 @@ parts:
   D1:
     mpn: ESD9B3.3ST5G
     mfr: onsemi
-    desc: bidirectional ESD TVS 3.3V SOD-923 — button SW1 line
+    desc: bidirectional ESD TVS 3.3V SOD-923 - button SW1 line
     lcsc: C96512
     lcsc_stock: in_stock     # multiple sellers; onsemi line C96512
     footprint: Diode_SMD:D_SOD-923
@@ -139,7 +139,7 @@ parts:
   D2:
     mpn: ESD9B3.3ST5G
     mfr: onsemi
-    desc: bidirectional ESD TVS 3.3V SOD-923 — button SW2 line
+    desc: bidirectional ESD TVS 3.3V SOD-923 - button SW2 line
     lcsc: C96512
     lcsc_stock: in_stock
     footprint: Diode_SMD:D_SOD-923
@@ -147,26 +147,26 @@ parts:
   RT1:
     mpn: NCP15XH103F03RC
     mfr: Murata
-    desc: NTC 10k 1% B3380 0402 — battery temperature (nPM1300 NTC pin)
+    desc: NTC 10k 1% B3380 0402 - battery temperature (nPM1300 NTC pin)
     lcsc: C77131
     lcsc_stock: in_stock
     footprint: Resistor_SMD:R_0402_1005Metric
     sourcing: jlc
 
   # ---- Passives (JLCPCB basic-catalog candidates; each C# re-verified when the
-  #      final BOM CSV is cut — flagged verify_at_bom) --------------------------
+  #      final BOM CSV is cut - flagged verify_at_bom) --------------------------
   # capacitors
   C_100n_0402: {mpn: CL05B104KO5NNNC, mfr: Samsung, lcsc: C1525,  desc: 100nF X7R 16V 0402, footprint: Capacitor_SMD:C_0402_1005Metric, verify_at_bom: true}
   C_1u_0402:   {mpn: CL05A105KA5NQNC, mfr: Samsung, lcsc: C52923, desc: 1uF X5R 25V 0402,  footprint: Capacitor_SMD:C_0402_1005Metric, verify_at_bom: true}
   C_2u2_0603:  {mpn: CL10B225KO8NNNC, mfr: Samsung, lcsc: C23630, desc: 2.2uF X7R 16V 0603, footprint: Capacitor_SMD:C_0603_1608Metric, verify_at_bom: true}
   C_10u_0603:  {mpn: CL10A106KP8NNNC, mfr: Samsung, lcsc: C19702, desc: 10uF X5R 10V 0603,  footprint: Capacitor_SMD:C_0603_1608Metric, verify_at_bom: true}
-  C_12p_0402:  {mpn: 0402CG120J500NT, mfr: FH, lcsc: C1547,  desc: 12pF C0G 50V 0402 (LFXO load — value finalized in verification calc), footprint: Capacitor_SMD:C_0402_1005Metric, verify_at_bom: true}
+  C_12p_0402:  {mpn: 0402CG120J500NT, mfr: FH, lcsc: C1547,  desc: 12pF C0G 50V 0402 (LFXO load - value finalized in verification calc), footprint: Capacitor_SMD:C_0402_1005Metric, verify_at_bom: true}
   # resistors (0402, 1% except noted)
-  R_150k_1pct: {lcsc: C25755, desc: 150k 1% 0402 — VSET2 -> BUCK2 3.0V (verified 2026-07-02), footprint: Resistor_SMD:R_0402_1005Metric}
-  R_47k_1pct:  {lcsc: C25792, desc: 47k 1% 0402 — VSET1 -> BUCK1 1.8V (verified 2026-07-02), footprint: Resistor_SMD:R_0402_1005Metric}
-  R_4k7:       {lcsc: C25900, desc: 4.7k 0402 — I2C pullups,            verify_at_bom: true, footprint: Resistor_SMD:R_0402_1005Metric}
-  R_100k:      {lcsc: C25741, desc: 100k 0402 — CSB pullup / SCS pulldown strapping, verify_at_bom: true, footprint: Resistor_SMD:R_0402_1005Metric}
-  R_100R:      {lcsc: C25076, desc: 100R 0402 — button series ESD/debounce, verify_at_bom: true, footprint: Resistor_SMD:R_0402_1005Metric}
+  R_150k_1pct: {lcsc: C25755, desc: 150k 1% 0402 - VSET2 -> BUCK2 3.0V (verified 2026-07-02), footprint: Resistor_SMD:R_0402_1005Metric}
+  R_47k_1pct:  {lcsc: C25792, desc: 47k 1% 0402 - VSET1 -> BUCK1 1.8V (verified 2026-07-02), footprint: Resistor_SMD:R_0402_1005Metric}
+  R_4k7:       {lcsc: C25900, desc: 4.7k 0402 - I2C pullups,            verify_at_bom: true, footprint: Resistor_SMD:R_0402_1005Metric}
+  R_100k:      {lcsc: C25741, desc: 100k 0402 - CSB pullup / SCS pulldown strapping, verify_at_bom: true, footprint: Resistor_SMD:R_0402_1005Metric}
+  R_100R:      {lcsc: C25076, desc: 100R 0402 - button series ESD/debounce, verify_at_bom: true, footprint: Resistor_SMD:R_0402_1005Metric}
 
 recommended_battery:
   type: LiPo pouch 502030, 150 mAh, with protection PCM and JST-SH 2-pin pigtail

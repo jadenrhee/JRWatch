@@ -171,7 +171,7 @@ jrwatch = SchLib(tool=SKIDL).add_parts(*[
             Pin(num='12',name='CSB',func=pin_types.INPUT),
             Pin(num='13',name='SCX',func=pin_types.INPUT),
             Pin(num='14',name='SDX',func=pin_types.INPUT)] }),
-        Part(**{ 'name':'FH12A-10S-0.5SH', 'dest':TEMPLATE, 'tool':SKIDL, 'aliases':Alias({'FH12A-10S-0.5SH'}), 'ref_prefix':'J', 'fplist':None, 'footprint':'Connector_FFC-FPC:Hirose_FH12-10S-0.5SH_1x10-1MP_P0.50mm_Horizontal', 'keywords':None, 'description':'Display FPC connector — mates LS013B7DH03 tail terminal (11-k) on pad k: the 180-degree fold under the panel flips the contact face, so the top-contact FH12A sees the terminal order reversed (Sharp fig 8-1)', 'datasheet':None, 'pins':[
+        Part(**{ 'name':'FH12A-10S-0.5SH', 'dest':TEMPLATE, 'tool':SKIDL, 'aliases':Alias({'FH12A-10S-0.5SH'}), 'ref_prefix':'J', 'fplist':None, 'footprint':'Connector_FFC-FPC:Hirose_FH12-10S-0.5SH_1x10-1MP_P0.50mm_Horizontal', 'keywords':None, 'description':'Display FPC connector - mates LS013B7DH03 tail terminal (11-k) on pad k: the 180-degree fold under the panel flips the contact face, so the top-contact FH12A sees the terminal order reversed (Sharp fig 8-1)', 'datasheet':None, 'pins':[
             Pin(num='1',name='VSSA',func=pin_types.PWRIN),
             Pin(num='2',name='VSS',func=pin_types.PWRIN),
             Pin(num='3',name='EXTMODE',func=pin_types.INPUT),

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """List zones and test points against filled areas. Read-only.
-Usage: zoneprobe.py [x y] — with a point, reports which filled zones cover it.
+Usage: zoneprobe.py [x y] - with a point, reports which filled zones cover it.
 Without, lists all zones with layer/net/bbox/fill state.
 """
 import sys
