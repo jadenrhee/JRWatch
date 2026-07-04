@@ -1,7 +1,7 @@
-# Design Rationale — block by block
+# Design rationale, block by block
 
-Why each block is what it is. Decisions with real alternatives are
-cross-referenced to `decision-log.md` (D-nnn); sourcing facts live in
+Why I picked what I picked. Where there was a real alternative I wrote it
+up in `decision-log.md` (the D-numbers below); part sourcing details are in
 `hardware/parts.yaml`.
 
 ## System architecture
@@ -15,8 +15,9 @@ USB-C ──► nPM1300 PMIC ──► BUCK2 3.0V (always-on) ──► nRF52840
 ```
 
 One always-on rail, two hardware-gated domains, everything else dead in
-sleep. Nothing that can leak stays electrically attached when the watch is
-idle, which is what makes the sleep-current budget hold.
+sleep. The idea is simple: if a part can leak current, don't leave it
+electrically attached while the watch is idle. That's the entire trick
+behind the sleep numbers.
 
 ## BLE SoC — Raytac MDBT50Q-1MV2 (D-001, D-010)
 

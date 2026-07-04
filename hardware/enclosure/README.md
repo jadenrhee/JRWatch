@@ -1,11 +1,11 @@
 # Enclosure
 
-Two-piece 3D-printable watch case for the JRWatch board, written as
-parametric OpenSCAD (`jrwatch_case.scad`) — same source-as-code approach as
-the rest of the project. Every cutout is dimensioned from the actual board
-file: USB-C slot at x 95–105 (board coords), pusher bores at y 95/106 on the
-east wall, display aperture over the LS013B7DH03 active area, and the board
-is clamped at its four component-free corner arcs.
+Two-piece 3D-printable watch case, written as parametric OpenSCAD
+(`jrwatch_case.scad`), same code-first approach as the rest of the project.
+Every cutout is measured from the actual board file: the USB-C slot, the two
+side-button bores, and the display aperture. The board has no mounting
+holes, so the case clamps it at the four corner arcs, which I verified are
+component-free on both sides.
 
 | Exploded | Assembled |
 |---|---|

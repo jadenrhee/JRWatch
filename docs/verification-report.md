@@ -1,8 +1,10 @@
 # Verification Report
 
-Every design rule cross-checked against theory or a datasheet, with the value
-and the source. **PROJECTED** figures are datasheet-typical calculations, not
-measurements — bring-up replaces them (PPK2, item 3 in `NEEDS-INPUT.md`).
+This is where I check my own work: every design rule against theory or a
+datasheet, with the value and where it came from. Anything marked
+**PROJECTED** is calculated from datasheet typicals, not measured. I'll
+replace those with real PPK2 measurements at bring-up (item 3 in
+`NEEDS-INPUT.md`).
 
 ## 1. Headline: power budget and projected battery life
 
