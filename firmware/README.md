@@ -66,7 +66,7 @@ Preferred connection parameters 50-100 ms interval, latency 4.
 |---|---|---|---|---|
 | Battery Service (0x180F) | Battery Level (0x2A19) | standard | read/notify | uint8 % |
 | Motion (custom) | - | `6a570000-8f9d-4a7c-9b31-24d1c30f51aa` | - | - |
-| | Step count | `6a570001-…` | read/notify | uint32 LE |
-| | Activity state | `6a570002-…` | read | uint8 (0 idle / 1 active) |
+| | Step count | `6a570001-...` | read/notify | uint32 LE |
+| | Activity state | `6a570002-...` | read | uint8 (0 idle / 1 active) |
 
 Console/logs are on SEGGER RTT (no UART pins on the board).
