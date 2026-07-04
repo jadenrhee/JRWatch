@@ -1,8 +1,9 @@
-# Review Checklist
+# Review checklist
 
-Items to finish or eyeball in KiCad before ordering boards. The board passes
-DRC with zero violations; the open items below are connectivity gaps that
-were documented rather than routed badly (D-022..D-024 in the decision log).
+Things I still need to finish or eyeball in KiCad before spending money on
+boards. The board passes DRC with zero violations; the items below are gaps
+I documented instead of routing badly (D-022..D-025 in the decision log).
+The big one right now is the display-connector rework (D-025).
 
 ## 1. Open links — interactive routing required (~20 min)
 
