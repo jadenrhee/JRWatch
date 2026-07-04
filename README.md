@@ -90,14 +90,3 @@ power domains. The display only redraws when content changes, the IMU wakes
 the SoC on motion, and the console is RTT so no pins are wasted on UART.
 BLE exposes the standard battery service plus a small custom step-count
 service ([protocol](docs/protocol.md)).
-
-## Next steps
-
-1. Finish the display-connector re-route (D-025), re-run DRC
-2. Order from JLCPCB (parameters in [fab/README.md](fab/README.md)),
-   hand-solder the module and PMIC from DigiKey
-3. Bring-up: SWD flash, RTT logs, then BLE / display / charging
-4. Measure the real sleep current and replace every projection above
-
-Built with a scripted, automated design workflow end to end; the decision
-log records each choice and the reasoning behind it.
