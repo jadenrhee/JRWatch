@@ -36,7 +36,7 @@ at bring-up.
   370 nA ship mode. The load switches are the trick for the sleep numbers:
   the display and IMU rails get physically cut, so nothing leaks.
 - **Bosch BMI270**: 5.9 µA low-power accel mode with a hardware any-motion
-  interrupt. The SoC sleeps and your wrist wakes it up.
+  interrupt. The SoC sleeps and a wrist-raise wakes it up.
 - **Sharp LS013B7DH03** memory-in-pixel LCD: it holds a static image at
   about 4 µA with no backlight. A normal TFT would blow the entire power
   budget on its own.
