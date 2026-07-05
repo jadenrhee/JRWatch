@@ -73,7 +73,7 @@ edge and the case must stay RF-transparent there.
   drawing, fig. 8-1 of the
   [datasheet](https://cdn.sparkfun.com/assets/d/e/8/9/7/LS013B7DH03_datasheet.pdf) -
   the active area is offset from the panel center toward the north edge and
-  the model uses 3.2 mm; adjust and re-render if your drawing disagrees.
+  the model uses 3.2 mm; adjust and re-render if the panel drawing disagrees.
 - Print one shell first and test-fit the bare board + a USB-C cable before
   ordering the full set in nicer material.
 
