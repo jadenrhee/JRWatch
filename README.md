@@ -58,7 +58,7 @@ at bring-up.
 
 ## Current status (honest version)
 
-**Not ordered yet.** During a final review before ordering I read the Sharp
+I HAVE NOT ORDERED THIS YET :/ During a final review before ordering I read that the Sharp
 panel's mechanical drawing closely and found the display FPC connector was
 placed where the panel's tail physically can't reach, and the pin order was
 mirrored for the fold-under mounting (the fold flips the contact face, which
@@ -67,8 +67,8 @@ fixed and re-verified; the connector's correct position is worked out and
 checked against every mechanical obstacle (see D-025 in the
 [decision log](docs/decision-log.md)). The re-route of that corner lives on
 the `d025-layout-wip` branch and needs one more routing session before the
-fab gate opens. Catching this before spending money is the whole reason the
-review checklist exists.
+fab gate opens. Catching this before spending money is the whole reason I
+did the review checklist, because I don't have money to throw around.
 
 ## Repo layout
 
@@ -90,14 +90,3 @@ power domains. The display only redraws when content changes, the IMU wakes
 the SoC on motion, and the console is RTT so no pins are wasted on UART.
 BLE exposes the standard battery service plus a small custom step-count
 service ([protocol](docs/protocol.md)).
-
-## Next steps
-
-1. Finish the display-connector re-route (D-025), re-run DRC
-2. Order from JLCPCB (parameters in [fab/README.md](fab/README.md)),
-   hand-solder the module and PMIC from DigiKey
-3. Bring-up: SWD flash, RTT logs, then BLE / display / charging
-4. Measure the real sleep current and replace every projection above
-
-Built with a scripted, automated design workflow end to end; the decision
-log records each choice and the reasoning behind it.
