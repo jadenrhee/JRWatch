@@ -310,8 +310,8 @@ class Builder:
         self.add_silk_text('JRWatch r1', 100.0, 87.6, pcbnew.F_SilkS, 1.0)
 
     def edge_ring(self):
-        """Track/via keep-out ring hugging the outline: keeps the autorouter
-        honestly inside the copper-to-edge margin (pads and pours exempt)."""
+        """Track/via keep-out ring hugging the outline: keeps routing honestly
+        inside the copper-to-edge margin (pads and pours exempt)."""
         W = 0.45
         lo, hi = CX - SIZE / 2, CX + SIZE / 2
         strips = [

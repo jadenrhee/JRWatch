@@ -55,8 +55,8 @@ priority bring-up measurement).
   1.6 × 1.2 mm top-layer notch. Implemented three ways and geometrically
   verified from the live board: the module's own two keep-out zones, a
   board-level rule area extending to the edge, and the edge ring. Copper on
-  F/In1/In2/B inside the region: **none** (DRC rule areas active during both
-  autorouting and fills).
+  F/In1/In2/B inside the region: **none** (the DRC rule areas stay active
+  through routing and fills).
 - Module placed with the antenna at the board's north edge (Raytac: "place
   the module towards the edge of PCB"). PASS.
 - Caveat (checklist §3): keep display tail metal and enclosure screws out of

@@ -5,10 +5,11 @@
 A smartwatch I'm building from scratch: 36 mm 4-layer board with an nRF52840
 BLE module, Nordic nPM1300 PMIC, Bosch BMI270 IMU, and a Sharp memory-in-pixel
 display, plus Zephyr firmware. The goal was to see how low I could get the
-sleep current on a real wearable, and to do the whole design flow as code
-instead of clicking through an editor. The schematic is Python (SKiDL),
-placement and most routing are scripted against the KiCad API, and the docs
-record why every part and rule is what it is.
+sleep current on a real wearable, and to drive the schematic and placement
+from code rather than a GUI. The schematic is Python (SKiDL), the placement is
+scripted against the KiCad API, and the board is routed in KiCad - the
+constraint-critical nets first and locked, everything else worked in around
+them. The docs record why every part and rule is what it is.
 
 <p align="center">
   <img src="fab/renders/board-iso.png" width="420" alt="board render"/>
@@ -75,7 +76,7 @@ did the review checklist, because I don't have money to throw around.
 | Path | What's in it |
 |---|---|
 | `hardware/skidl/` | The schematic, as Python. This is the source of record |
-| `hardware/scripts/` | Board build, placement, routing, and review scripts |
+| `hardware/scripts/` | Board build/placement, footprint, and fab-output generators |
 | `hardware/jrwatch.kicad_pcb` | The board (KiCad 10) |
 | `hardware/enclosure/` | Printable case (OpenSCAD + STLs) |
 | `fab/` | Gerbers, BOM/CPL in JLCPCB format, renders, order notes |

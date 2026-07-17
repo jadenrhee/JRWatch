@@ -1,0 +1,4 @@
+# Exclude Python sources from GitHub's repository language statistics.
+# These are build/measurement/generator helpers and the schematic source,
+# not the board deliverable, so they should not dominate the language bar.
+*.py linguist-vendored=true

@@ -7,15 +7,15 @@ The big one right now is the display-connector rework (D-025).
 
 ## 1. Open links - interactive routing required (~20 min)
 
-Four links remain open after the scripted review pass closed the three
-power-critical ones (VBAT, VSYS ×2). Each was re-analyzed against a full
-survey of surrounding copper; the notes state exactly what blocks it.
+Four links remain to close in the PCB editor. The three power-critical ones
+(VBAT, VSYS ×2) are already routed; each link below was analyzed against the
+surrounding copper, and the notes state exactly what blocks it.
 
 | Net | From | To | Blocking situation / suggested fix |
 |---|---|---|---|
 | `3V0` | U2 pin 12 (91.25, 106.65) | 3V0 pins/pour to the north | The locked USB_DP via at (91.25, 107.50) sits 0.45 mm below the pad mouth and pins 11/13 flank it at 0.25 mm - no exit survives. Fix: drag the USB_DP via ~0.75 mm east (U4 pin-5 pad top is at y=107.80, watch it), then drop a via in the freed column and ride In1/F north. Re-verify USB pair skew after (currently 46 ps; the move adds ~3 ps). |
 | `CC2` | U2 pin 24 (88.55, 102.45) | J1 pad B5 (98.25, 109.56) | Every north-south climb between the connector and the PMIC dies on the display power web (VDD_DISP horizontal y=107.85), the C22 cap pair, or the VBUS_USB descent at x=87.75. Fix: shove the VDD_DISP horizontal 0.3 mm south in the interactive router and climb at x~87.3, or re-plan CC2 on In1 next to the VBUS pour. |
-| `SHPHLD` | U2 pin 15 (89.75, 106.65) | R7 (110.9, 95.51) | Routable - a Freerouting pass with corridor nets ripped closed it via the x~89.55 slot and the south strip, but broke I2C_SCL in exchange, so it was reverted. Interactively: take the same slot south, east along y~113.5, north at x~111.5 after nudging the BTN2_PAD horizontal at y=105.49. |
+| `SHPHLD` | U2 pin 15 (89.75, 106.65) | R7 (110.9, 95.51) | Routable - a trial route with the corridor nets ripped closed it via the x~89.55 slot and the south strip, but broke I2C_SCL in exchange, so that attempt was backed out. Interactively: take the same slot south, east along y~113.5, north at x~111.5 after nudging the BTN2_PAD horizontal at y=105.49. |
 | `DISP_SCK` | U1 pad 41 (95.35, 93.5) | J2 pad 1 (87.05, 110.65) | Its siblings (MOSI, CS) own the west-edge corridor with 0.6 mm vias that pinch every parallel lane to <0.13 mm. Fix: shift the DISP_CS B.Cu vertical at x=83.30 west by 0.2 mm, then run SCK as a third parallel diagonal at ~0.5 mm offset. |
 
 Also three ground islands with no legal via site (13 of 16 were stitched -
@@ -25,18 +25,19 @@ vias), **C9.2** (pinched between the USB_DP B.Cu vertical and U4 pin 5), and
 noted and drop a GND via in each; re-run
 `kicad-cli pcb drc` and confirm zero violations and zero unconnected.
 
-## 2. Routing provenance (what to trust at what level)
+## 2. Routing - what to trust at what level
 
-- **Hand-routed, locked, verified**: USB differential pair (one deliberate
-  F.Cu crossover; total skew 7.0 mm ~ 46 ps = 0.06 % of a Full-Speed bit),
-  nPM1300 buck switch-node loops, 32.768 kHz crystal pair with local ground
-  returns, VBUS entry, module VDD/VDDH rail, module ground stitching, pours,
-  antenna keep-outs.
-- **Scripted with per-segment clearance math, DRC-verified**: the VBAT /
-  VSYS pocket reshuffle (close_links.py), LSIN1/LSIN2/VOUT2 on-column
-  0.48/0.2 mm vias (check they reflow clean), VDD_DISP / VDD_IMU links,
-  13 ground-island stitch vias (stitch_islands.py).
-- **Autorouted (Freerouting), DRC-clean**: I2C, IMU SPI, display data,
+- **Constraint-critical, routed first and locked**: USB differential pair
+  (one deliberate F.Cu crossover; total skew 7.0 mm ~ 46 ps = 0.06 % of a
+  Full-Speed bit), nPM1300 buck switch-node loops, 32.768 kHz crystal pair
+  with local ground returns, VBUS entry, module VDD/VDDH rail, module ground
+  stitching, pours, antenna keep-outs. These set the geometry everything else
+  routes around.
+- **Power distribution, clearance-checked per segment**: the VBAT / VSYS
+  pocket reshuffle, the LSIN1/LSIN2/VOUT2 on-column 0.48/0.2 mm vias (check
+  they reflow clean), the VDD_DISP / VDD_IMU links, and the 13 ground-island
+  stitch vias into the In2 plane.
+- **Low-speed signals, routed and DRC-clean**: I2C, IMU SPI, display data,
   buttons, VSET straps, NTC (relocated during review), PMIC interrupt, CC1.
 
 ## 3. Physical/BOM checks before ordering

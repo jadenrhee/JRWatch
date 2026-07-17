@@ -281,21 +281,21 @@ Three power tiers, each with a projected budget to be computed part-by-part in
   Chosen because the alternative (per-pad spoke tuning) added no electrical
   value on a board with a dedicated In2 ground plane.
 
-## D-022: Seven links left unrouted at the autoroute stage
+## D-022: Seven links left to close after the first routing pass
 
-- After three autoroute rounds and a raster-verified completion pass, seven
-  links in the congested U2 south-west quadrant still could not be closed
-  without clearance violations (each attempt collided with other nets'
-  copper). Rather than force them in, they are documented with exact
-  endpoints and fix recipes in `docs/human-review-checklist.md` §1 instead of
-  being forced. The board is otherwise DRC-clean (zero violations), and the
-  fab README gates ordering on closing them (~30 min interactive work).
+- After the first routing pass, seven links in the congested U2 south-west
+  quadrant still could not be closed without clearance violations (each
+  attempt collided with other nets' copper). Rather than force them in, they
+  are documented with exact endpoints and fix recipes in
+  `docs/human-review-checklist.md` §1. The board is otherwise DRC-clean (zero
+  violations), and the fab README gates ordering on closing them (~30 min
+  interactive work).
 
 ## D-023: Review pass closed the three power-critical links
 
 - A dedicated layout review re-attacked the seven open links with a full
-  survey of local copper (hardware/scripts/survey.py) instead of the earlier
-  incomplete obstacle model. Result: VBAT (pin 19), VSYS pin 20 and VSYS
+  survey of the local copper instead of the earlier incomplete obstacle
+  model. Result: VBAT (pin 19), VSYS pin 20 and VSYS
   pin 4 (PVDD) are now routed and DRC-clean. This took relocating the NTC
   trace out of the south-west slot, one drill resize on a cluster via, a
   via at the VBAT pour edge, a via-less B.Cu path for pin 20 onto existing
@@ -303,13 +303,13 @@ Three power tiers, each with a projected budget to be computed part-by-part in
   These three links were mandatory: pin 20 is the PMIC's VSYS output, so the
   board was electrically dead without them.
 - The remaining four (DISP_SCK, 3V0 to pin 12, SHPHLD, CC2) were also
-  attempted: two further Freerouting rounds with 13 corridor nets ripped
-  closed SHPHLD but broke I2C_SCL in exchange, so that state was reverted.
-  Manual analysis shows each survivor is blocked by locked routing (the
-  USB_DP via sits 0.45 mm under pin 12's pad mouth) or requires multi-net
-  shoves beyond safe scripted reach. They stay documented in the review
-  checklist with the updated analysis; closing them interactively is the
-  remaining pre-order work.
+  attempted: two further trial routes with 13 corridor nets ripped closed
+  SHPHLD but broke I2C_SCL in exchange, so that state was backed out.
+  Analysis of the copper shows each survivor is blocked by locked routing (the
+  USB_DP via sits 0.45 mm under pin 12's pad mouth) or needs multi-net shoves
+  that are cleaner to make in the interactive router. They stay documented in
+  the review checklist with the updated analysis; closing them interactively
+  is the remaining pre-order work.
 
 ## D-024: Ground-island stitching (correction to earlier assessment)
 
@@ -317,7 +317,7 @@ Three power tiers, each with a projected budget to be computed part-by-part in
   Review showed the opposite: every island carries real component ground
   pads (IMU ground pins, decoupling-cap returns, the USB ESD ground, both
   buttons), which floated without a via to the In2 plane. A clearance-checked
-  stitching pass (hardware/scripts/stitch_islands.py) added 13 vias; three
+  stitching pass added 13 vias; three
   islands (C1.2, C9.2, C21.2/C22.2 - four capacitor ground pads) have no
   legal via site without moving adjacent routing and are listed in the
   checklist for the same interactive session.
@@ -357,7 +357,8 @@ Three power tiers, each with a projected budget to be computed part-by-part in
   zero-violation checkpoint with the display fan, I2C, SHPHLD and CC pair
   routed. Remaining: the south-quadrant fabric (strap highways, DISP_SCK
   east path, 3V0 pin 12, pin 28/29 pocket) needs one interactive-router
-  session; scripted attempts oscillate against the autorouter's re-lays.
+  session to settle cleanly - the nets are tightly interleaved and want to be
+  pushed by hand rather than re-solved from scratch each pass.
 
 ---
 
