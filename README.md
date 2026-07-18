@@ -7,8 +7,10 @@ nPM1300 PMIC, BMI270 IMU, and a Sharp memory-in-pixel display, running Zephyr.
 Built around low sleep current.
 
 <p align="center">
-  <img src="fab/renders/board-iso.png" width="420" alt="board render"/>
+  <img src="fab/renders/layers-top.svg" width="330" alt="front copper"/>
+  <img src="fab/renders/layers-bottom.svg" width="330" alt="back copper"/>
 </p>
+<p align="center"><sub>F.Cu + front silk (left), B.Cu + back silk (right). 36 × 36 mm, 4 layers.</sub></p>
 
 | | |
 |---|---|
@@ -20,9 +22,9 @@ Projected from datasheet typicals, not measured. Itemized with sources in the
 [verification report](docs/verification-report.md); part choices in the
 [design rationale](docs/design-rationale.md).
 
-| Top | Bottom | Case |
-|---|---|---|
-| ![top](fab/renders/board-top.png) | ![bottom](fab/renders/board-bottom.png) | ![case](hardware/enclosure/enclosure-closed.png) |
+<p align="center">
+  <img src="hardware/enclosure/enclosure-closed.png" width="300" alt="case"/>
+</p>
 
 ## Status
 
