@@ -20,6 +20,10 @@ Projected from datasheet typicals, not measured. Itemized with sources in the
 [verification report](docs/verification-report.md); part choices in the
 [design rationale](docs/design-rationale.md).
 
+| Top | Bottom | Case |
+|---|---|---|
+| ![top](fab/renders/board-top.png) | ![bottom](fab/renders/board-bottom.png) | ![case](hardware/enclosure/enclosure-closed.png) |
+
 ## Status
 
 Not yet fabricated. A pre-order review caught the display FPC connector in a

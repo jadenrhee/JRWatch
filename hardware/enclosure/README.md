@@ -13,12 +13,9 @@ component-free on both sides.
 | **Section through the USB slot** | **Case back** |
 | ![cutaway](enclosure-cutaway.png) | ![back](enclosure-back.png) |
 
-Design details: tapered, edge-filleted body; curved lug horns drilled for
-22 mm spring bars; raised pusher-guard pods with knurled sliding pushers
-(retained by an internal flange in a stepped bore); crowned bezel with a
-chamfered aperture, engraved 12-o'clock index and wordmark; engraved case
-back; alignment nubs between the halves; recessed USB-C port with a plug
-chamfer.
+Tapered body with filleted edges, curved lugs drilled for 22 mm spring bars,
+knurled sliding pushers in guarded pods, recessed USB-C port. Engraved
+12-o'clock index, wordmark, and case back.
 
 ## Printed parts (`stl/`)
 
