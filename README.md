@@ -22,6 +22,32 @@ Projected from datasheet typicals, not measured. Itemized with sources in the
 [verification report](docs/verification-report.md); part choices in the
 [design rationale](docs/design-rationale.md).
 
+## Architecture
+
+```mermaid
+flowchart LR
+  USB["USB-C"]
+  BAT["LiPo 150 mAh<br/>+ 10k NTC"]
+  PMIC["nPM1300<br/>charger, 2 bucks,<br/>2 load switches"]
+  MCU["nRF52840<br/>MDBT50Q-1MV2"]
+  DISP["Sharp LS013B7DH03<br/>128 x 128 MIP"]
+  IMU["Bosch BMI270"]
+
+  USB -->|VBUS| PMIC
+  BAT -->|VBAT| PMIC
+  PMIC -->|3V0 always-on| MCU
+  PMIC -->|VDD_DISP via LSW1| DISP
+  PMIC -->|VDD_IMU via LSW2| IMU
+
+  MCU -.->|I2C 0x6b| PMIC
+  MCU -.->|SPI2| DISP
+  MCU -.->|SPI1| IMU
+```
+
+Solid lines are power rails, dashed are data. The display and IMU sit behind
+load switches, so both rails drop out entirely in sleep. Full net list is
+[`hardware/skidl/jrwatch.py`](hardware/skidl/jrwatch.py).
+
 <p align="center">
   <img src="hardware/enclosure/enclosure-closed.png" width="300" alt="case"/>
 </p>
