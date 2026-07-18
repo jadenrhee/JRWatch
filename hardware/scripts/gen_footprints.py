@@ -9,8 +9,9 @@ so the land is derived per IPC-7351B nominal density from the body drawing
 
     pads 0.95 x 1.70 mm at x = +/-0.85  (toe ~0.35, generous heel, gap 0.75)
 
-Flagged NEEDS REVIEW in docs/human-review-checklist.md: cross-check against
-the Murata land pattern before ordering assembly. Oversize is safe here - the
+Cross-check against the Murata land pattern before ordering assembly, since
+this was derived per IPC-7351B rather than taken from Murata's own published
+pattern, which was not retrievable. Oversize is safe here - the
 part has no fine-pitch neighbors and both nets are power.
 """
 import os

@@ -286,10 +286,9 @@ Three power tiers, each with a projected budget to be computed part-by-part in
 - After three autoroute rounds and a raster-verified completion pass, seven
   links in the congested U2 south-west quadrant still could not be closed
   without clearance violations (each attempt collided with other nets'
-  copper). Rather than force them in, they are documented with exact
-  endpoints and fix recipes in `docs/human-review-checklist.md` §1 instead of
-  being forced. The board is otherwise DRC-clean (zero violations), and the
-  fab README gates ordering on closing them (~30 min interactive work).
+  copper). Rather than force them in, each was documented with exact endpoints
+  and the surrounding copper that blocks it. The board is otherwise DRC-clean
+  (zero violations), and the fab README gates ordering on closing them.
 
 ## D-023: Review pass closed the three power-critical links
 

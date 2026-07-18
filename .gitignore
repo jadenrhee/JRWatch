@@ -3,6 +3,14 @@
 __pycache__/
 *.pyc
 
+# Working notes, not part of the published design record
+private/
+
+# Tool logs and REPL scratch output
+*.log
+*.erc
+logs/
+
 # KiCad intermediates
 *-bak
 *.kicad_pcb-bak

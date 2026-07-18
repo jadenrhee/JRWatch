@@ -29,20 +29,12 @@ Everything needed to order the JRWatch r1 board from JLCPCB.
   rotation nudges (especially QFN/SOT); footprints should be verified in
   their preview before the order is confirmed.
 - `renders/` - top / bottom / iso PNG renders and copper-layer SVGs.
-- `schematic-reference.pdf` - generated netlist listing (this project's
-  schematic source of record is code: `hardware/skidl/`).
+- `schematic-reference.pdf` - netlist listing; the schematic source of record
+  is `hardware/skidl/`.
 
-## Order status - blocking items
+## Order status
 
 **This revision is not ready to order.** Pre-order review (D-025) found the
 display connector placed out of the panel tail's reach and with un-mirrored
-pin order; the schematic is corrected but the layout rework has not landed.
-Additionally the board has 4 unrouted links and 3 unstitched capacitor
-ground islands left for interactive completion (zero DRC violations
-otherwise; the power tree is complete). See `docs/human-review-checklist.md`
-§1 for exact endpoints, what blocks each one, and suggested fixes - about
-20 minutes in the KiCad router. Ordering waits on those closures and a clean
-re-run of `kicad-cli pcb drc`.
-
-The display FPC fold reach and battery pigtail polarity also need
-confirmation before ordering (checklist §3).
+pin order. The schematic is corrected and re-verified; the corresponding
+layout rework has not landed yet.

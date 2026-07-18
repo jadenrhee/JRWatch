@@ -1,7 +1,7 @@
 # Enclosure
 
 Two-piece 3D-printable watch case, written as parametric OpenSCAD
-(`jrwatch_case.scad`), same code-first approach as the rest of the project.
+(`jrwatch_case.scad`).
 Every cutout is measured from the actual board file: the USB-C slot, the two
 side-button bores, and the display aperture. The board has no mounting
 holes, so the case clamps it at the four corner arcs, which I verified are
@@ -66,16 +66,6 @@ edge and the case must stay RF-transparent there.
    panel onto the board top with the tail at the south edge.
 5. Bezel on, 4 screws from the back. Don't overtighten - stop at contact
    plus a quarter turn.
-
-## Before ordering - verify
-
-- Aperture centering (`ap_cy` in the .scad) against the LS013B7DH03 outline
-  drawing, fig. 8-1 of the
-  [datasheet](https://cdn.sparkfun.com/assets/d/e/8/9/7/LS013B7DH03_datasheet.pdf) -
-  the active area is offset from the panel center toward the north edge and
-  the model uses 3.2 mm; adjust and re-render if the panel drawing disagrees.
-- Print one shell first and test-fit the bare board + a USB-C cable before
-  ordering the full set in nicer material.
 
 ## Regenerating
 

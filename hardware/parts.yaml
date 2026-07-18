@@ -170,4 +170,4 @@ parts:
 
 recommended_battery:
   type: LiPo pouch 502030, 150 mAh, with protection PCM and JST-SH 2-pin pigtail
-  note: not a PCB BOM line; see docs/NEEDS-INPUT.md item 2
+  note: not a PCB BOM line; confirm cell dimensions against the enclosure before ordering
