@@ -16,7 +16,7 @@ Built around low sleep current.
 |---|---|
 | Sleep current | ~15 µA projected, ~26 µA still advertising |
 | Battery life | ~4–8 months on a 150 mAh cell |
-| Firmware | Zephyr v4.1.0, 231 KiB flash / 40 KiB RAM |
+| Firmware | Zephyr v4.1.0, 232 KiB flash / 40 KiB RAM |
 
 Projected from datasheet typicals, not measured. Itemized with sources in the
 [verification report](docs/verification-report.md); part choices in the
