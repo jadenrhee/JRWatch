@@ -3,10 +3,16 @@
  *
  * Power design: in IDLE the IMU runs its low-power accel mode with the
  * any-motion interrupt armed (INT1 -> P0.25) at ~6 µA and the SoC sleeps.
- * In ACTIVE we sample at 50 Hz and run a lightweight peak-detector for
- * steps. The BMI270's hardware step counter is not exposed by the Zephyr
+ * In ACTIVE a 20 ms work item samples at the accel's 50 Hz ODR and runs a
+ * lightweight peak-detector for steps; the work is cancelled on the drop
+ * to IDLE. The BMI270's hardware step counter is not exposed by the Zephyr
  * driver; moving counting on-chip is a documented follow-up that will cut
  * ACTIVE-state SoC wakeups further (see firmware/README.md).
+ *
+ * Init order: VDD_IMU is a boot-off load switch, so the chip is dark while
+ * Zephyr's POST_KERNEL init runs. The devicetree node is zephyr,deferred-init
+ * and jr_motion_init() (called by main() after the rail is up) runs the
+ * driver's init by hand.
  */
 #include <zephyr/kernel.h>
 #include <zephyr/logging/log.h>
@@ -18,6 +24,9 @@
 LOG_MODULE_REGISTER(motion, CONFIG_LOG_DEFAULT_LEVEL);
 
 static const struct device *const imu = DEVICE_DT_GET_ONE(bosch_bmi270);
+
+/* ACTIVE-state step sampling cadence — matches the 50 Hz accel ODR */
+#define STEP_SAMPLE_MS   20
 
 static void motion_trigger(const struct device *dev,
 			   const struct sensor_trigger *trig)
@@ -42,8 +51,13 @@ static int set_accel(uint16_t hz, const char *why)
 int jr_motion_init(void)
 {
 	if (!device_is_ready(imu)) {
-		LOG_ERR("BMI270 not ready");
-		return -ENODEV;
+		/* deferred init (see dts): the rail is up now, probe the chip */
+		int err = device_init(imu);
+
+		if (err) {
+			LOG_ERR("BMI270 init: %d", err);
+			return err;
+		}
 	}
 
 	/* +/-4g range */
@@ -65,15 +79,23 @@ int jr_motion_init(void)
 	return 0;
 }
 
+static void step_work_handler(struct k_work *work);
+static K_WORK_DELAYABLE_DEFINE(step_work, step_work_handler);
+
 int jr_motion_arm_wake(void)
 {
 	/* low ODR + any-motion interrupt armed = IMU low-power mode */
+	(void)k_work_cancel_delayable(&step_work);
 	return set_accel(25, "idle/any-motion");
 }
 
 int jr_motion_active(void)
 {
-	return set_accel(50, "active");
+	int err = set_accel(50, "active");
+
+	/* sample at the ODR; no-op if the work is already scheduled */
+	(void)k_work_schedule(&step_work, K_MSEC(STEP_SAMPLE_MS));
+	return err;
 }
 
 /* --- tiny step estimator: magnitude peak detection with hysteresis ------ */
@@ -81,7 +103,7 @@ int jr_motion_active(void)
 #define STEP_RESET_MG    1050   /* and drop below this before the next step */
 #define STEP_MIN_MS      280    /* max ~3.5 steps/s */
 
-void jr_motion_poll_steps(void)
+static void sample_step(void)
 {
 	static bool above;
 	static int64_t last_step_ms;
@@ -118,4 +140,11 @@ void jr_motion_poll_steps(void)
 	} else if (above && mag2 < th_lo) {
 		above = false;
 	}
+}
+
+static void step_work_handler(struct k_work *work)
+{
+	ARG_UNUSED(work);
+	sample_step();
+	(void)k_work_schedule(&step_work, K_MSEC(STEP_SAMPLE_MS));
 }

@@ -92,15 +92,35 @@ static void connected(struct bt_conn *conn, uint8_t err)
 	k_event_post(&jr_events, JR_EVT_TICK);
 }
 
+static void adv_work_handler(struct k_work *work)
+{
+	ARG_UNUSED(work);
+	int err = bt_le_adv_start(&adv_slow, ad, ARRAY_SIZE(ad), NULL, 0);
+
+	if (err && err != -EALREADY) {
+		LOG_WRN("adv restart: %d", err);
+	}
+}
+static K_WORK_DEFINE(adv_work, adv_work_handler);
+
 static void disconnected(struct bt_conn *conn, uint8_t reason)
 {
 	LOG_INF("BLE disconnected (0x%02x)", reason);
-	(void)bt_le_adv_start(&adv_slow, ad, ARRAY_SIZE(ad), NULL, 0);
+	/* Do NOT restart advertising here: with BT_MAX_CONN=1 the dying conn
+	 * object is still referenced during this callback, so a connectable
+	 * adv start would return -ENOMEM every time (documented in conn.h).
+	 * The recycled callback fires once the slot is actually free. */
+}
+
+static void recycled(void)
+{
+	k_work_submit(&adv_work);
 }
 
 BT_CONN_CB_DEFINE(conn_cbs) = {
 	.connected = connected,
 	.disconnected = disconnected,
+	.recycled = recycled,
 };
 
 int jr_ble_init(void)

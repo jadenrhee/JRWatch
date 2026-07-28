@@ -50,6 +50,12 @@
 &gpio1 { status = "okay"; };
 &gpiote { status = "okay"; };
 
+/* Tag-Connect pad J4.3 routes to P0.18/nRESET (schematic); without this UICR
+ * setting the pin is just a GPIO and the debug pod cannot hard-reset. */
+&uicr {
+	gpio-as-nreset;
+};
+
 &i2c0 {
 	compatible = "nordic,nrf-twim";
 	status = "okay";
@@ -133,6 +139,10 @@
 		reg = <0>;
 		spi-max-frequency = <8000000>;
 		irq-gpios = <&gpio0 25 GPIO_ACTIVE_HIGH>;
+		/* VDD_IMU is a boot-off load switch: the driver's chip-ID probe
+		 * must not run at POST_KERNEL against an unpowered chip. main()
+		 * powers the rail, then runs device_init() (jr_motion_init). */
+		zephyr,deferred-init;
 	};
 };
 
@@ -155,6 +165,10 @@
 		extcomin-gpios = <&gpio1 2 GPIO_ACTIVE_HIGH>;
 		extcomin-frequency = <1>;
 		disp-en-gpios = <&gpio0 16 GPIO_ACTIVE_HIGH>;
+		/* VDD_DISP is a boot-off load switch: don't drive DISP/EXTCOMIN
+		 * or clock SPI into an unpowered panel at POST_KERNEL. The
+		 * driver is inited by jr_ui_display_power() after rail-up. */
+		zephyr,deferred-init;
 	};
 };
 

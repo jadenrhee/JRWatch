@@ -35,9 +35,8 @@ int jr_ble_init(void);
 void jr_ble_notify_steps(uint32_t steps);
 
 int jr_motion_init(void);
-int jr_motion_arm_wake(void);      /* low-power any-motion mode */
-int jr_motion_active(void);        /* 50 Hz sampling for step counting */
-void jr_motion_poll_steps(void);
+int jr_motion_arm_wake(void);      /* low-power any-motion mode, stops step work */
+int jr_motion_active(void);        /* 50 Hz step-sampling work item */
 
 int jr_ui_init(void);
 void jr_ui_render(void);           /* redraws only when content changed */

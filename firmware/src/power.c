@@ -97,8 +97,9 @@ void jr_power_sample(void)
 	if (sensor_channel_get(charger,
 			       (enum sensor_channel)SENSOR_CHAN_NPM1300_CHARGER_STATUS,
 			       &v) == 0) {
-		/* any charging phase (trickle/CC/CV) counts as charging */
-		jr_status.charging = (v.val1 & 0x0E) != 0;
+		/* any charging phase counts as charging: TRICKLE (bit 2),
+		 * CC (bit 3), CV (bit 4) — COMPLETED (bit 1) is not charging */
+		jr_status.charging = (v.val1 & 0x1C) != 0;
 	}
 	(void)bt_bas_set_battery_level(jr_status.battery_pct);
 }

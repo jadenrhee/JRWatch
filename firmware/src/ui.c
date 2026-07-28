@@ -4,8 +4,9 @@
  * Power rules: the panel holds a static image at ~µW, so we redraw ONLY
  * when the visible content changes (minute, battery %, steps, charge
  * state). The display rail (VDD_DISP) is a PMIC load switch and can be cut
- * entirely; the ls0xx driver re-inits on power-up. EXTCOMIN's 1 Hz toggle
- * comes from the driver's timer (EXTMODE is strapped high in hardware).
+ * entirely; the panel node is zephyr,deferred-init and the driver is probed
+ * on first power-up (jr_ui_display_power). EXTCOMIN's 1 Hz toggle comes
+ * from the driver's timer (EXTMODE is strapped high in hardware).
  */
 #include <zephyr/kernel.h>
 #include <zephyr/logging/log.h>
@@ -34,8 +35,19 @@ int jr_ui_display_power(bool on)
 	}
 	if (on) {
 		err = regulator_enable(lsw_disp);
+		if (err == -EALREADY) {
+			err = 0;
+		}
 		if (err == 0) {
 			k_msleep(2);            /* panel VDD settle */
+			/* deferred init (see dts): the ls0xx driver must not
+			 * probe at boot while VDD_DISP is off; first power-up
+			 * runs it by hand */
+			if (!device_is_ready(disp)) {
+				err = device_init(disp);
+			}
+		}
+		if (err == 0) {
 			err = cfb_framebuffer_init(disp);
 			(void)display_blanking_off(disp);
 			last_frame[0] = '\0';   /* force a redraw */
@@ -56,10 +68,8 @@ int jr_ui_display_power(bool on)
 
 int jr_ui_init(void)
 {
-	if (!device_is_ready(disp)) {
-		LOG_ERR("display not ready");
-		return -ENODEV;
-	}
+	/* the panel itself is zephyr,deferred-init — it is probed on the
+	 * first jr_ui_display_power(true), after its rail is up */
 	if (!device_is_ready(lsw_disp)) {
 		LOG_ERR("display load switch not ready");
 		return -ENODEV;

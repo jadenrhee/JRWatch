@@ -75,6 +75,11 @@ int main(void)
 	LOG_INF("JRWatch r1 firmware boot");
 
 	(void)jr_power_init();
+	/* Both gated rails are boot-off and their peripherals' drivers are
+	 * deferred-init (jrwatch.dts): bring VDD_IMU up before probing the
+	 * BMI270; VDD_DISP comes up inside jr_ui_display_power(). */
+	jr_power_imu_rail(true);
+	k_msleep(2);            /* BMI270 POR after rail-up */
 	(void)jr_ui_init();
 	(void)jr_motion_init();
 	(void)jr_ble_init();
@@ -95,7 +100,7 @@ int main(void)
 		}
 
 		if (jr_status.state == JR_STATE_ACTIVE) {
-			jr_motion_poll_steps();
+			/* steps accumulate from motion.c's 50 Hz work item */
 			jr_power_sample();
 			jr_ui_render();
 			jr_ble_notify_steps(jr_status.steps);
@@ -104,6 +109,11 @@ int main(void)
 			    k_ticks_to_ms_floor64(ACTIVE_TIMEOUT.ticks)) {
 				enter_idle();
 			}
+		} else {
+			/* IDLE: the timeout wake is just the RTC — re-render so
+			 * the face's minute stays current (no-op unless the
+			 * frame content actually changed) */
+			jr_ui_render();
 		}
 	}
 	return 0;
