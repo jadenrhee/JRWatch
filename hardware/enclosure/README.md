@@ -7,6 +7,11 @@ side-button bores, and the display aperture. The board has no mounting
 holes, so the case clamps it at the four corner arcs, which I verified are
 component-free on both sides.
 
+**This revision tracks the pre-D-025 board.** The D-025 layout rework moves
+the display connector (and with it the FPC relief, the aperture offset, and
+the display mounting stack), so the case geometry and STLs get reworked with
+it — don't print or order a set until that lands.
+
 | Exploded | Assembled |
 |---|---|
 | ![exploded](enclosure-preview.png) | ![closed](enclosure-closed.png) |
@@ -59,7 +64,8 @@ edge and the case must stay RF-transparent there.
    to J3 - **check polarity with a meter first** (board silk marks + / −).
 3. Board in, components down, USB-C aligned to the south slot. It seats on
    the four corner pads.
-4. Fold the display FPC into J2 (contacts down, flip the latch), tape the
+4. Fold the display FPC into J2 (contact face up after the fold — J2 is
+   top-contact, D-025; flip the latch), tape the
    panel onto the board top with the tail at the south edge.
 5. Bezel on, 4 screws from the back. Don't overtighten - stop at contact
    plus a quarter turn.

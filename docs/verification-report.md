@@ -93,36 +93,48 @@ priority bring-up measurement).
 - Every strap pulls toward its net's idle state (D-018): I2C pulls to the
   always-on rail (idle high = 0 µA), CSB pull-up to always-on VDDIO
   (deselected = 0 µA), SCS pull-down (deselected = 0 µA). PASS.
-- Display rail off: `ui.c` blanks and quiesces the SPI lines before cutting
-  VDD_DISP - no back-feed through panel input clamps. PASS (code review).
+- Display rail off: the panel driver's init is deferred until VDD_DISP is up
+  (`zephyr,deferred-init` - at boot nothing drives an unpowered panel), and
+  `ui.c` blanks the panel before cutting the rail in the ship path - no
+  back-feed through panel input clamps. PASS (code review).
 - IMU: VDDIO stays on the always-on rail while VDD is gated - explicitly
   permitted ("no limitations with respect to the voltage level applied to the
   VDD and VDDIO pins", BMI270 DS §POR/supply); interface pins remain defined.
   PASS.
 - No LEDs anywhere (D-016). PASS.
 
-## 5. Charge path & IPC-2221 - **PASS**
+## 5. Charge path & IPC-2221 - **external PASS, one In1 neck flagged for the D-025 rework**
 
-Formula: I = k/ΔT^0.44/A^0.725 with k = 0.048 (external layers).
+Formula: I = k · ΔT^0.44 · A^0.725, k = 0.048 external / 0.024 internal layers.
 Worst case is the 500 mA USB input limit (charging + system), ΔT = 10 °C:
 
-- Required area A = (0.5 / (0.048 × 10^0.44))^(1/0.725) = **6.3 mil²**
-  -> at 1 oz (1.378 mil) = **4.6 mil ~ 0.12 mm** minimum width.
-- Implemented: 0.3 mm minimum on the VBUS entry (D-019 pinch), 0.5 mm
-  elsewhere, then In1 plane copper. **Margin ≥ 2.5×.** PASS.
+- **External sections (1 oz, k = 0.048):** required area
+  A = (0.5 / (0.048 × 10^0.44))^(1/0.725) = **6.3 mil²** -> at 1 oz (1.378 mil)
+  = **4.6 mil ~ 0.12 mm** minimum width. Implemented: 0.3 mm minimum at the VBUS
+  entry (D-019 pinch), 0.35 mm typical on the external runs. **Margin ≥ 2.5×
+  on width. PASS.**
+- **Internal sections (0.5 oz In1, k = 0.024):** the same formula requires
+  **0.60 mm** width for 500 mA at ΔT = 10 °C. The VBUS path's In1 link into the
+  PMIC pocket runs **0.35 mm** for ~2 mm outside the In1 pour - that section
+  supports ~340 mA at ΔT = 10 °C, and at the full 500 mA computes to ΔT ≈ 24 °C.
+  Not a safety issue at an intermittent charge load, but the neck misses the
+  10 °C design target: **widen it (or pull it into the pour) in the D-025
+  layout rework before ordering.**
 - Charge current itself is configured at 76 mA (0.5 C for 150 mAh; devicetree
-  `current-microamp = 76000`), where required width is < 0.03 mm. PASS.
+  `current-microamp = 76000`), where required width is < 0.03 mm - the 500 mA
+  case only occurs while USB feeds system + charger concurrently. PASS.
 - Battery polarity marked on silk; connector pin 1 = BAT+; PCM-protected pack
-  specified (checklist §3). PASS.
+  specified. PASS.
 
 ## 6. USB - **PASS**
 
 - D+/D− routed as a coupled pair (0.2 mm), one deliberate F.Cu crossover
   strap (the 16-pin connector interleaves the pair; one crossover is
-  topologically required - D-log). Total length D+ 30.0 mm vs D− 23.0 mm:
-  **skew 7.0 mm ~ 46 ps = 0.06 %** of a Full-Speed bit (83 ns). Full-Speed
-  USB has no intra-pair skew requirement at this scale, so no serpentine was
-  added; the skew is recorded here instead. PASS.
+  topologically required - D-log). Summed routed length (connector-side +
+  module-side nets, measured from the board file): D+ 33.2 mm vs D− 29.8 mm:
+  **skew 3.4 mm ~ 22 ps ≈ 0.03 %** of a Full-Speed bit (83 ns) at
+  v ≈ 1.52·10⁸ m/s. Full-Speed USB has no intra-pair skew requirement at this
+  scale, so no serpentine was added; the skew is recorded here instead. PASS.
 - Controlled impedance: not required at FS over ~25 mm; pair reference is the
   In2 ground plane. PASS (rationale documented).
 - ESD: USBLC6-2SC6 in the data path between connector and module, VBUS pin
@@ -130,20 +142,25 @@ Worst case is the 500 mA USB input limit (charging + system), ΔT = 10 °C:
 - CC1/CC2 direct to nPM1300 (internal Type-C sink detection, D-015);
   VBUS at one merged pad pair (D-019). PASS with note.
 
-## 7. Crystal (32.768 kHz) - **PASS, value check at bring-up**
+## 7. Crystal (32.768 kHz) - **runs slightly fast as fitted; confirm at bring-up**
 
-- CL = 12.5 pF crystal (Epson Q13FC13500004). C = 2(CL − Cstray): fitted
-  C16/C17 = 12 pF assumes Cstray ~ 6.5 pF/side (nRF XL pin ~ 4 pF + PCB
-  ~ 2.5 pF). Startup and ppm verified at bring-up; pads are 0402 so a value
-  swap is trivial. Short guarded pair, ground-return vias at the caps. PASS
-  (design), value confirmation flagged.
+- CL = 12.5 pF crystal (Epson Q13FC13500004). With per-side load caps C and
+  per-side stray Cs, the crystal sees CL_eff = (C + Cs) / 2. Fitted
+  C16/C17 = 12 pF with Cs ~ 6.5 pF/side (nRF XL pin ~ 4 pF + PCB ~ 2.5 pF)
+  gives **CL_eff ≈ 9.25 pF vs the 12.5 pF spec** - the oscillator will run a
+  little fast (tuning-fork pullability puts this in the tens-of-ppm class,
+  i.e. seconds/day). Hitting 12.5 pF with this stray estimate wants
+  C = 2·CL − Cs ≈ **18 pF**; the stray estimate itself is the softest number
+  here, so measure ppm at bring-up before changing the BOM - pads are 0402
+  and a value swap is trivial. Short guarded pair, ground-return vias at the
+  caps. Design PASS, **value expected to need a bump at bring-up**.
 
 ## 8. DFM vs JLCPCB 4-layer - **PASS except documented items**
 
 | Rule | JLC capability | This board | Verdict |
 |---|---|---|---|
-| Min track/space | 0.09 / 0.09 mm | 0.13 / 0.13 mm | PASS |
-| Min via | 0.15 mm drill / 0.25 pad | 0.2 drill / 0.4 pad (0.48 pad on-column) | PASS |
+| Min track/space | 0.09 / 0.09 mm | 0.15 mm track / 0.13 mm gap | PASS |
+| Min via | 0.15 mm drill / 0.25 pad | 0.2 drill / 0.45 pad (0.48 pad on-column) | PASS |
 | Hole-to-hole | 0.5 mm | ≥ 0.5 mm (drill-shrink fix) | PASS |
 | Copper-to-edge | 0.2 mm | 0.3 mm + 0.45 ring | PASS |
 | Board | 4-layer 0.8 mm | JLC04081H-3313 | PASS |

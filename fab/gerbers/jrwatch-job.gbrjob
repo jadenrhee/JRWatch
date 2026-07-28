@@ -18,7 +18,7 @@
       "Y": 36.1
     },
     "LayerNumber": 4,
-    "BoardThickness": 1.6,
+    "BoardThickness": 0.8,
     "Finish": "None"
   },
   "DesignRules": [

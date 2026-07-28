@@ -9,8 +9,8 @@ Everything needed to order the JRWatch r1 board from JLCPCB.
 | Layers | 4 |
 | Stackup | **JLC04081H-3313** (0.8 mm finished thickness) |
 | Dimensions | 36 × 36 mm, rounded corners R6 |
-| Min track/space used | 0.127 mm (design rule floor; smallest actual gap 0.13 mm) |
-| Min via | 0.4 mm / 0.2 mm drill (a few 0.48/0.2 vias between QFN pads) |
+| Min track/space used | 0.15 mm track / 0.13 mm gap (design rule floor 0.127 mm) |
+| Min via | 0.45 mm / 0.2 mm drill (a few 0.48/0.2 vias between QFN pads) |
 | Surface finish | **ENIG recommended** (0.5 mm QFN + 0.5 mm FPC pitch) |
 | Copper | 1 oz outer / 0.5 oz inner (default) |
 | Solder mask | any; silkscreen carries battery polarity + board ID only |
@@ -29,8 +29,10 @@ Everything needed to order the JRWatch r1 board from JLCPCB.
   rotation nudges (especially QFN/SOT); footprints should be verified in
   their preview before the order is confirmed.
 - `renders/` - top / bottom / iso PNG renders and copper-layer SVGs.
-- `schematic-reference.pdf` - netlist listing; the schematic source of record
-  is `hardware/skidl/`.
+- Connectivity reference for assembly/bring-up: `hardware/netlist/jrwatch.net`
+  (generated) - the schematic source of record is `hardware/skidl/`. The old
+  `schematic-reference.pdf` was removed: it predated the D-025 J2 pinout fix
+  and published the reversed display connector pin order.
 
 ## Order status
 

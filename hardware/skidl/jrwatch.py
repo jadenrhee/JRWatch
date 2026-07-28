@@ -192,7 +192,7 @@ j4[4] += swdclk; u1[53] += swdclk
 j4[5] += gnd
 j4[6] += swo;    u1[47] += swo
 
-# peripheral pin map (see docs/design-rationale.md pin table)
+# peripheral pin map (mirrored in firmware/boards/jr/jrwatch/jrwatch.dts header)
 u1[36] += i2c_sda                        # P0.14
 u1[37] += i2c_scl                        # P0.13
 u1[29] += pmic_int                       # P0.12

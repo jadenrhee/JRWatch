@@ -45,7 +45,8 @@ flowchart LR
 ```
 
 Solid lines are power rails, dashed are data. The display and IMU sit behind
-load switches, so both rails drop out entirely in sleep. Full net list is
+load switches: in armed sleep they idle at ~4 µA (static face) and ~6 µA
+(motion wake); ship mode cuts both rails to zero. Full net list is
 [`hardware/skidl/jrwatch.py`](hardware/skidl/jrwatch.py).
 
 <p align="center">
@@ -55,9 +56,10 @@ load switches, so both rails drop out entirely in sleep. Full net list is
 ## Status
 
 Not yet fabricated. A pre-order review caught the display FPC connector in a
-spot the panel's tail can't reach, with its pin order mirrored for fold-under
-mounting. Both fixed and re-verified — D-025 in the
-[decision log](docs/decision-log.md).
+spot the panel's tail can't reach, with a pin order that ignored the fold-under
+mounting (the fold flips the contact face and reverses the order). The
+schematic is fixed and re-verified; the layout rework hasn't landed yet —
+D-025 in the [decision log](docs/decision-log.md).
 
 ## Firmware
 

@@ -73,11 +73,11 @@ Priorities used to break ties, in order:
 - **Options considered:** (a) single 3.0 V always-on buck + load-switch-gated peripheral
   domains; (b) dual rails 1.8 V + 3.3 V both always-on; (c) 1.8 V logic rail + 3.0 V
   peripheral rail.
-- **Decision: (a)** BUCK1 = 3.0 V always-on feeding the MDBT50Q (VDD), pull-ups, and
-  bus IO; nPM1300 **LSW1 gates the display** 3.0 V domain and **LSW2 gates the
-  IMU (+ future PPG) domain**, both fed from BUCK1. BUCK2 is configured but unloaded by
-  default (available as a 1.8 V experiment rail; disabled in firmware for production
-  power figures).
+- **Decision: (a)** BUCK2 = 3.0 V always-on (VSET2 strap = 150k) feeding the MDBT50Q
+  (VDD), pull-ups, and bus IO; nPM1300 **LSW1 gates the display** 3.0 V domain and
+  **LSW2 gates the IMU (+ future PPG) domain**, both fed from the 3V0 rail. BUCK1 is
+  populated but unloaded by default (available as a 1.8 V experiment rail, VSET1 = 47k;
+  held off in firmware for production power figures - D-012).
 - **Why:** Every always-on rail costs quiescent current; one hysteretic-mode buck is the
   minimum viable always-on domain (priority #1). Full hardware gating of display+sensors
   removes their leakage entirely in ship/deep-sleep states and prevents sneak back-feed
@@ -109,13 +109,14 @@ Three power tiers, each with a projected budget to be computed part-by-part in
 
 ## D-007: Board format - 4-layer, ~36 mm rounded square, 0.8 mm thick
 
-- **Decision:** 36 × 36 mm rounded-square outline (R = 9 mm), JLCPCB 4-layer,
+- **Decision:** 36 × 36 mm rounded-square outline (R = 6 mm), JLCPCB 4-layer,
   **0.8 mm** finished thickness (JLC04081H-3313 stackup), layers:
-  L1 components/signal, L2 solid GND, L3 power pours, L4 signal/components.
+  L1 components/signal, L2 (In1) power pours, L3 (In2) solid GND, L4
+  signal/components.
 - **Why:** The Sharp 1.28" panel (~27 × 28 mm active module) sets the minimum face size;
   36 mm is small-watch territory and leaves a real antenna keep-out strip plus button /
-  USB edge room (priority #3). 4 layers with a dedicated unbroken GND plane directly
-  under L1 is what makes the PMIC switching loops and module grounding verifiable
+  USB edge room (priority #3). 4 layers with a dedicated unbroken GND plane (In2)
+  is what makes the PMIC switching loops and module grounding verifiable
   (priority #1); 0.8 mm halves stack height in a wearable and is a standard JLC 4-layer
   offering (priority #2). USB is FS-only (12 Mbps) over ~15 mm - controlled impedance
   is not required; the pair is still routed tightly coupled and length-matched as good
@@ -194,7 +195,8 @@ Three power tiers, each with a projected budget to be computed part-by-part in
 
 ## D-013: Display connector - Hirose FH12A, low stock flagged
 
-- FH12A-10S-0.5SH(55) = C5139870, **91 units** in stock (genuine FH12 = C506791, 38).
+- FH12A-10S-0.5SH(55) = C5139870, **91 units** in stock. No drop-in substitute: the
+  plain FH12 (C506791) is bottom-contact and cannot mate the folded-under tail (D-025).
   Kept: it's the proven connector for this panel family (Adafruit breakout uses FH12),
   KiCad ships the exact footprint, and the build needs 1-2 units - but flagged in
   `parts.yaml` to order early. Display module itself (LS013B7DH03, VDD 2.7-3.3 V
@@ -210,8 +212,11 @@ Three power tiers, each with a projected budget to be computed part-by-part in
   also readable as a PMIC event over I2C/GPIO interrupt). SW2 = user button -> nRF
   P1.13 with internal pull-up (uses a radio-adjacent "low-frequency-only" module pin,
   which buttons are perfect for) - GPIO SENSE wakes the SoC from System OFF.
-  Both lines get 100 Ω series + ESD9B3.3ST5G TVS at the switch (user-touchable nets).
-  No external pull-ups -> zero standing current either way (priority #1).
+  Both lines get 100 Ω series + a TVS at the switch (user-touchable nets): D2 =
+  ESD9B3.3 on the SW2/GPIO line (3V0 domain), D1 = **ESD9B5.0** on the SW1/SHPHLD
+  line - that node rides the battery domain (up to ~5 V), where a 3.3 V-working
+  part would sit in clamp. No external pull-ups -> zero standing current either
+  way (priority #1).
 
 ## D-015: No discrete USB-C CC pull-downs - nPM1300 does Type-C detection
 
@@ -244,8 +249,11 @@ Three power tiers, each with a projected budget to be computed part-by-part in
 - I2C (PMIC, 400 kHz): 4.7 kΩ pulls to the always-on 3V0 rail - idle-high bus burns
   zero standing current; PMIC must stay reachable in every sleep state, so its bus
   cannot live on a gated rail.
-- BMI270 CSB: 100 kΩ pull-up to the *gated* IMU rail (deselected during nRF reset when
-  GPIOs float; pull-up to its own domain can't back-feed the rail when gated).
+- BMI270 CSB: 100 kΩ pull-up to the always-on 3V0 rail (deselected during nRF reset
+  when GPIOs float). The pull is not on the gated rail because CSB must be held
+  deselected *before* VDD_IMU comes up; the only state with 3V0 up and VDD_IMU down
+  is the millisecond-scale boot window (ship mode kills 3V0 too), so there is no
+  steady-state back-feed path through the pull.
 - Display SCS: 100 kΩ pull-down (Sharp SCS is active-high; float-low keeps it
   deselected; a pull-down holding an idle-low node costs zero current).
 - ASDx/ASCx (BMI270 aux bus, unused): tied to VDDIO per DS Table 22; OCSB/OSDO: DNC.
@@ -260,10 +268,12 @@ Three power tiers, each with a projected budget to be computed part-by-part in
   capacity. The west pad is boxed in by an NPTH shell post, the CC2 pad and
   the shield pad - connecting it forced clearance violations in every variant
   tried.
-- **Decision:** wire the east pad only (0.3 mm entry + via into the In1 VBUS
-  plane). At the 500 mA input limit this is a comfortable margin (IPC-2221
-  calc in the verification report); the unwired pad is noted here rather than
-  silently left.
+- **Decision (as originally routed):** wire the east pad only (0.3 mm entry + via
+  into the In1 VBUS plane); the unwired pad noted here rather than silently left.
+- **Superseded during later routing:** a south exit was found for the west pair
+  (0.35 mm trace into a via at the connector's south edge), and both merged pad
+  pairs are now wired into the In1 plane. The 0.3 mm entry remains the narrowest
+  external section of the VBUS path (IPC-2221 calc in the verification report §5).
 
 ## D-020: Copper clearance rule 0.15 -> 0.13 mm
 
