@@ -30,6 +30,7 @@ extern struct k_event jr_events;
 #define JR_EVT_MOTION   BIT(0)
 #define JR_EVT_BUTTON   BIT(1)
 #define JR_EVT_TICK     BIT(2)
+#define JR_EVT_SHIP     BIT(3)
 
 int jr_ble_init(void);
 void jr_ble_notify_steps(uint32_t steps);

@@ -30,6 +30,8 @@ static const struct device *const buck1 =
 	DEVICE_DT_GET(DT_NODELABEL(npm1300_buck1));
 static const struct device *const lsw_imu =
 	DEVICE_DT_GET(DT_NODELABEL(npm1300_lsw_imu));
+static const struct device *const regulators =
+	DEVICE_DT_GET(DT_NODELABEL(npm1300_regulators));
 
 /* LiPo OCV -> % (coarse 10-point table, rest voltage) */
 static const struct { int16_t mv; uint8_t pct; } ocv[] = {
@@ -106,12 +108,26 @@ void jr_power_sample(void)
 
 void jr_power_ship_mode(void)
 {
+	int err;
+
 	LOG_INF("entering ship mode");
-	/* cut the gated rails first, then ask the PMIC to disconnect VBAT.
-	 * Exit: SW1 (SHPHLD low >= 96 ms) or VBUS. Does not return. */
-	jr_power_imu_rail(false);
+	/* Blank the panel so ship doesn't freeze a stale face on it. The
+	 * IMU rail stays up: on success the PMIC disconnects VBAT and it
+	 * dies with everything else; on refusal the BMI270 keeps its
+	 * loaded config (a power cycle would lose it with no re-init
+	 * path). */
 	(void)jr_ui_display_power(false);
 	k_msleep(10);
-	mfd_npm1300_hibernate(pmic, 0);
-	k_sleep(K_FOREVER);
+	/* TASKENTERSHIPMODE via the regulator parent — true ship mode
+	 * (IQSHIP), not hibernate's wake-timer variant. Exit: SW1 (SHPHLD
+	 * low >= 96 ms) or VBUS. On success this does not return. */
+	err = regulator_parent_ship_mode(regulators);
+	if (err == 0) {
+		/* VBUS present: the PMIC holds the request and we keep
+		 * running. Give the disconnect a beat, then treat still-
+		 * being-here as refusal. */
+		k_msleep(100);
+	}
+	LOG_WRN("ship mode refused (err %d) — on external power?", err);
+	(void)jr_ui_display_power(true);
 }

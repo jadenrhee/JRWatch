@@ -26,6 +26,7 @@ K_EVENT_DEFINE(jr_events);
 #define SHIP_HOLD_MS     5000
 
 static int64_t last_button_down;
+static bool button_pressed;
 
 static void button_cb(struct input_event *evt, void *user_data)
 {
@@ -36,11 +37,20 @@ static void button_cb(struct input_event *evt, void *user_data)
 	}
 	if (evt->value) {
 		last_button_down = k_uptime_get();
+		button_pressed = true;
 	} else {
-		if (k_uptime_get() - last_button_down >= SHIP_HOLD_MS) {
+		/* only honor a release whose press edge we saw — an unpaired
+		 * release would compare against a zero timestamp and request
+		 * ship mode spuriously */
+		if (button_pressed &&
+		    k_uptime_get() - last_button_down >= SHIP_HOLD_MS) {
 			LOG_INF("long press -> ship mode");
-			jr_power_ship_mode();   /* does not return */
+			/* runs on the main loop, not here: ship entry can
+			 * block ~100 ms probing for refusal, too long for
+			 * the input callback context */
+			k_event_post(&jr_events, JR_EVT_SHIP);
 		}
+		button_pressed = false;
 	}
 	k_event_post(&jr_events, JR_EVT_BUTTON);
 }
@@ -88,9 +98,17 @@ int main(void)
 
 	while (1) {
 		uint32_t ev = k_event_wait(&jr_events,
-					   JR_EVT_MOTION | JR_EVT_BUTTON | JR_EVT_TICK,
+					   JR_EVT_MOTION | JR_EVT_BUTTON |
+					   JR_EVT_TICK | JR_EVT_SHIP,
 					   false, ACTIVE_TICK);
 		k_event_clear(&jr_events, ev);
+
+		if (ev & JR_EVT_SHIP) {
+			/* does not return unless entry is refused (USB
+			 * power); on refusal fall through — the BUTTON bit
+			 * wakes the face back up */
+			jr_power_ship_mode();
+		}
 
 		if (ev & (JR_EVT_MOTION | JR_EVT_BUTTON)) {
 			last_activity = k_uptime_get();

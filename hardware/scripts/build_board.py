@@ -4,7 +4,7 @@ JRWatch board builder - runs under KiCad's bundled python3.
 
 Creates hardware/jrwatch.kicad_pcb from the SKiDL netlist JSON:
   * 4-layer stack (F.Cu routing/GND, In1.Cu power pours, In2.Cu GND, B.Cu components)
-  * 36 x 36 mm rounded-square outline (R9), board center at (100,100)
+  * 36 x 36 mm rounded-square outline (R6), board center at (100,100)
   * JLCPCB-4L-derived DRC minimums and net classes
   * placement: anchors at explicit coords, satellites anchored to real pad positions
   * antenna keep-out per Raytac DS (module's built-in zones + board-level extension)
@@ -245,8 +245,8 @@ class Builder:
         sat('100nF', 'VBUS_OUT', 93.2, 98.6, 0)             # module VBUS pin32 (96.0,97.7)
         # crystal load caps - row south of Y1 (XL pads at 103.2/102.4, 97.7);
         # XL2 stack west, XL1 stack east (matches crystal pin swap, no crossover)
-        sat('12pF', 'XL2',       102.1, 102.65, 270)
-        sat('12pF', 'XL1',       104.5, 102.65, 270)
+        sat('18pF', 'XL2',       102.1, 102.65, 270)
+        sat('18pF', 'XL1',       104.5, 102.65, 270)
         # IMU - U3 at (91.0, 92.0): caps south of U3, clear of J3/J4
         sat('100nF', 'VDD_IMU',  89.8, 94.35, 0)
         sat('100nF', '3V0',      91.9, 94.35, 0, idx=3)     # VDDIO

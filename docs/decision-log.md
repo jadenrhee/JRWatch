@@ -62,7 +62,7 @@ Priorities used to break ties, in order:
   static image at single-digit-µW (it only draws meaningful current while lines are
   being rewritten), needs no backlight, and is always readable in daylight - a watch
   face that costs ~µA average. A GC9A01 TFT draws tens of mA with backlight on and
-  ~mA-class even dimmed; it would destroy the deep-sleep budget that is the entire
+  ~mA-class even dimmed; it would destroy the armed-sleep budget that is the entire
   headline (priority #1). MIP sourcing is via Digi-Key/Mouser/Adafruit rather than LCSC -
   acceptable because the display is a hand-attached FPC module, never JLC-assembled;
   only its 10-pin FPC *connector* must be LCSC-stocked (priority #2).
@@ -99,8 +99,8 @@ Three power tiers, each with a projected budget to be computed part-by-part in
 2. **Watch idle (armed sleep)** - the headline number. nRF52840 in System ON idle with
    RTC + full RAM retention (BLE off or long-interval advertising), BMI270 in low-power
    any-motion mode (its INT1 wakes the SoC), display statically holding the watch face
-   (EXTCOMIN toggled at 1 Hz by nRF RTC/GPIOTE, zero CPU), display+IMU rails ON but
-   idle. Target: **≤ ~20 µA total** -> months on a 150 mAh cell.
+   (EXTCOMIN toggled at 1 Hz by the display driver - a periodic ~µs CPU wake), display+IMU
+   rails ON but idle. Target: **≤ ~20 µA total** -> months on a 150 mAh cell.
 3. **Active** - BLE connected, display refresh on change only, IMU at 50 Hz.
 
 - **Why this structure:** it maps 1:1 to what wearable teams actually ship (off / wrist-
@@ -140,8 +140,9 @@ Three power tiers, each with a projected budget to be computed part-by-part in
   it costs more current than the LFXO once calibration wakeups are counted
   (LFXO ~ 0.23 µA vs LFRC ~ 0.7 µA + periodic HFCLK calibration bursts on nRF52840).
   Crystal accuracy also tightens BLE sleep-clock windows -> shorter radio-on time per
-  connection event (priority #1). Cost: one 3215 crystal + 2 caps (12 pF class, set from
-  the FC-135 CL spec against nRF52840 pin capacitance - calc in verification report).
+  connection event (priority #1). Cost: one 3215 crystal + 2 caps (18 pF, set from
+  the FC-135 CL spec against nRF52840 pin capacitance - calc in verification report,
+  refit in D-026).
 
 ---
 
@@ -367,6 +368,24 @@ Three power tiers, each with a projected budget to be computed part-by-part in
   routed. Remaining: the south-quadrant fabric (strap highways, DISP_SCK
   east path, 3V0 pin 12, pin 28/29 pocket) needs one interactive-router
   session; scripted attempts oscillate against the autorouter's re-lays.
+
+## D-026: LFXO load caps refit 12 pF → 18 pF (calculation error found on review)
+
+- **What happened:** the original fit used C = 2·(CL − Cs) with Cs = 6.5 pF as a
+  *per-side* stray - a formula that only holds when Cs is the lumped parallel
+  stray. With per-side stray the crystal sees CL_eff = (C + Cs)/2, so the fitted
+  12 pF landed at ≈ 9.25 pF against the Q13FC13500004's 12.5 pF spec - tens of
+  ppm fast, seconds per day, on a design that rejected the LFRC over drift
+  (D-009).
+- **Fix:** C = 2·CL − Cs ≈ 18.5 → **18 pF** (C16/C17), giving CL_eff ≈ 12.25 pF
+  under the same stray estimate - and closer to spec than 12 pF for any
+  plausible stray, so the swap is safe even though the estimate is soft.
+  Changed in the schematic source and parts.yaml; the 18 pF LCSC number gets
+  picked and stock-verified at order time. Netlist/board/fab outputs still
+  carry 12 pF until they regenerate with the D-025 respin.
+- **Verify at bring-up:** measure actual ppm (GPS/NTP comparison over 24 h or a
+  counter on the LFCLK test point) before trusting the RTC spec; the pads are
+  0402 and a value swap is trivial.
 
 ---
 

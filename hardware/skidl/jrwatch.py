@@ -169,8 +169,8 @@ for gpin in (1, 2, 15, 33, 55):
 decouple(v3v0, ('10uF', '0603'), '100nF', '100nF')   # module VDD + VDDH
 decouple(vbus_out, '100nF')
 
-# 32.768 kHz crystal (D-009). Load caps 12 pF placeholder - final value from
-# the LFXO budget calc in docs/verification-report.md (CL=12.5 pF crystal).
+# 32.768 kHz crystal (D-009). Load caps 18 pF per the LFXO budget calc in
+# docs/verification-report.md (CL=12.5 pF crystal, ~6.5 pF/side stray; D-026).
 y1 = XTAL32K(ref='Y1', value='32.768kHz')
 u1[17] += xl1
 u1[18] += xl2
@@ -179,7 +179,7 @@ u1[18] += xl2
 y1[2] += xl1
 y1[1] += xl2
 for xnet in (xl1, xl2):
-    c = cap('12pF')
+    c = cap('18pF')
     xnet += c[1]
     gnd += c[2]
 

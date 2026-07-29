@@ -47,8 +47,10 @@ Mechanisms:
   with the driver toggling EXTCOMIN at 1 Hz.
 - **32.768 kHz crystal** (LFXO) for timekeeping and tight BLE sleep-clock
   accuracy - cheaper than LFRC + calibration (decision D-009).
-- **Ship mode**: 5 s long-press on SW2 gates both rails then calls
-  `mfd_npm1300_hibernate()`; the PMIC disconnects the battery.
+- **Ship mode**: 5 s long-press on SW2, executed from the main loop:
+  `regulator_parent_ship_mode()` (TASKENTERSHIPMODE) disconnects the
+  battery; a refusal (USB power present) is detected and recovered
+  instead of hanging.
 - **Battery %**: nPM1300 charger measurements (VBAT/status via sensor
   channels) + an OCV table. Nordic's `nrf_fuel_gauge` (NCS) is the
   higher-accuracy drop-in when building under nRF Connect SDK.

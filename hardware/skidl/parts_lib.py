@@ -299,7 +299,8 @@ PASSIVE_LCSC = {
     ('C', '1uF'):   ('C52923', 'CL05A105KA5NQNC', 'Samsung'),
     ('C', '2.2uF'): ('C23630', 'CL10B225KO8NNNC', 'Samsung'),
     ('C', '10uF'):  ('C19702', 'CL10A106KP8NNNC', 'Samsung'),
-    ('C', '12pF'):  ('C1547',  '0402CG120J500NT', 'FH'),
+    # 18 pF load caps (D-026): LCSC number to be confirmed at order time
+    # ('C', '18pF') intentionally absent - .get() lookup leaves it blank in the BOM
     ('R', '100R'):  ('C25076', '0402WGF1000TCE', 'UNI-ROYAL'),
     ('R', '4.7k'):  ('C25900', '0402WGF4701TCE', 'UNI-ROYAL'),
     ('R', '47k'):   ('C25792', '0402WGF4702TCE', 'UNI-ROYAL'),

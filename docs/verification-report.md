@@ -142,18 +142,20 @@ Worst case is the 500 mA USB input limit (charging + system), ΔT = 10 °C:
 - CC1/CC2 direct to nPM1300 (internal Type-C sink detection, D-015);
   VBUS at one merged pad pair (D-019). PASS with note.
 
-## 7. Crystal (32.768 kHz) - **runs slightly fast as fitted; confirm at bring-up**
+## 7. Crystal (32.768 kHz) - **refit to 18 pF (D-026); confirm ppm at bring-up**
 
 - CL = 12.5 pF crystal (Epson Q13FC13500004). With per-side load caps C and
-  per-side stray Cs, the crystal sees CL_eff = (C + Cs) / 2. Fitted
-  C16/C17 = 12 pF with Cs ~ 6.5 pF/side (nRF XL pin ~ 4 pF + PCB ~ 2.5 pF)
-  gives **CL_eff ≈ 9.25 pF vs the 12.5 pF spec** - the oscillator will run a
-  little fast (tuning-fork pullability puts this in the tens-of-ppm class,
-  i.e. seconds/day). Hitting 12.5 pF with this stray estimate wants
-  C = 2·CL − Cs ≈ **18 pF**; the stray estimate itself is the softest number
-  here, so measure ppm at bring-up before changing the BOM - pads are 0402
-  and a value swap is trivial. Short guarded pair, ground-return vias at the
-  caps. Design PASS, **value expected to need a bump at bring-up**.
+  per-side stray Cs, the crystal sees CL_eff = (C + Cs) / 2. The original
+  12 pF fit came from misapplying C = 2·(CL − Cs) with the per-side stray:
+  with Cs ~ 6.5 pF/side (nRF XL pin ~ 4 pF + PCB ~ 2.5 pF) it gave
+  CL_eff ≈ 9.25 pF vs the 12.5 pF spec - tens of ppm fast, i.e. seconds/day.
+  The correct fit is C = 2·CL − Cs ≈ 18.5 → **18 pF**, now in the schematic
+  source (C16/C17, D-026): CL_eff = (18 + 6.5)/2 ≈ **12.25 pF**, within a
+  few percent of spec for any plausible stray. The stray estimate is still
+  the softest number here, so measure ppm at bring-up - pads are 0402 and a
+  value swap is trivial. Short guarded pair, ground-return vias at the caps.
+  Note the checked-in netlist/board/fab outputs still carry 12 pF; they
+  regenerate with the D-025 respin (D-026).
 
 ## 8. DFM vs JLCPCB 4-layer - **PASS except documented items**
 
