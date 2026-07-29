@@ -164,7 +164,7 @@ Worst case is the 500 mA USB input limit (charging + system), ΔT = 10 °C:
 | Hole-to-hole | 0.5 mm | ≥ 0.5 mm (drill-shrink fix) | PASS |
 | Copper-to-edge | 0.2 mm | 0.3 mm + 0.45 ring | PASS |
 | Board | 4-layer 0.8 mm | JLC04081H-3313 | PASS |
-| DRC | zero violations | **zero violations** | PASS |
+| DRC | zero violations | **zero under KiCad 10.0.2**; 10.0.5 newly flags 8 hole-clearance pairs, all inside the stock Alps button footprint (its own NPTH locating posts vs its own pads - vendor land pattern) | PASS with note |
 | Connectivity | complete | **4 links + 3 ground islands open - documented** (D-022..D-024, checklist §1); power tree complete | **NEEDS REVIEW** |
 | BOM stock | all lines LCSC | all verified 2026-07-02; U1/U2 DigiKey hand-place; J2 low stock | PASS with notes |
 | Hand-solderability | - | castellated module + QFN/LGA via hot air; 0402 minimum; solid pours noted (D-021) | PASS |

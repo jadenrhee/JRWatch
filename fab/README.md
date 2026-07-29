@@ -17,8 +17,8 @@ Everything needed to order the JRWatch r1 board from JLCPCB.
 
 ## Files
 
-- `gerbers/` - RS-274X plots (`--no-x2`, mask-subtracted paste) + Excellon
-  drill + map. Zip this folder for the JLC order.
+- `gerbers/` - RS-274X plots (`--no-x2`, mask-subtracted silkscreen) +
+  Excellon drill + map. Zip this folder for the JLC order.
 - `bom-jlcpcb.csv` - JLC format (`Comment,Designator,Footprint,LCSC`).
   Lines tagged `[HAND-PLACE]` are not for SMT assembly:
   - **U1** MDBT50Q-1MV2 and **U2** nPM1300 - LCSC listed but out of stock at
