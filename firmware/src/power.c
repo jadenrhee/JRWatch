@@ -108,26 +108,36 @@ void jr_power_sample(void)
 
 void jr_power_ship_mode(void)
 {
+	struct sensor_value v;
 	int err;
+
+	/* PS: TASKENTERSHIPMODE must not be written while VBUS is present
+	 * (the request could latch and fire on unplug). Live register
+	 * check; refuse locally without issuing the task. */
+	err = sensor_attr_get(charger,
+			      (enum sensor_channel)SENSOR_CHAN_NPM1300_CHARGER_VBUS_STATUS,
+			      (enum sensor_attribute)SENSOR_ATTR_NPM1300_CHARGER_VBUS_PRESENT,
+			      &v);
+	if (err != 0 || v.val1 != 0) {
+		LOG_WRN("ship mode refused: on USB power (err %d)", err);
+		return;
+	}
 
 	LOG_INF("entering ship mode");
 	/* Blank the panel so ship doesn't freeze a stale face on it. The
 	 * IMU rail stays up: on success the PMIC disconnects VBAT and it
-	 * dies with everything else; on refusal the BMI270 keeps its
+	 * dies with everything else; on failure the BMI270 keeps its
 	 * loaded config (a power cycle would lose it with no re-init
 	 * path). */
 	(void)jr_ui_display_power(false);
 	k_msleep(10);
 	/* TASKENTERSHIPMODE via the regulator parent — true ship mode
 	 * (IQSHIP), not hibernate's wake-timer variant. Exit: SW1 (SHPHLD
-	 * low >= 96 ms) or VBUS. On success this does not return. */
+	 * low >= 96 ms) or VBUS. With VBUS absent, entry is immediate —
+	 * on success this does not return. */
 	err = regulator_parent_ship_mode(regulators);
-	if (err == 0) {
-		/* VBUS present: the PMIC holds the request and we keep
-		 * running. Give the disconnect a beat, then treat still-
-		 * being-here as refusal. */
-		k_msleep(100);
-	}
-	LOG_WRN("ship mode refused (err %d) — on external power?", err);
+	k_msleep(100);
+	/* still running: entry failed (bus error?) — recover the face */
+	LOG_WRN("ship mode failed (err %d)", err);
 	(void)jr_ui_display_power(true);
 }

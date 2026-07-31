@@ -34,8 +34,9 @@ Priorities used to break ties, in order:
 - **Why:** Power management *is* the project story. The nPM1300 gives coulomb-counting
   class fuel gauging (VBAT/IBAT/temp measurement feeding Nordic's fuel-gauge algorithm),
   hardware ship mode (~µA off-state), programmable charge current, and two load-switch
-  outputs used here to hard-gate the display and sensor rails in deep sleep - that gating
-  is what makes the µA sleep story real instead of rhetorical (priority #1). One QFN32
+  outputs used here to hard-gate the display and sensor rails in ship mode - hardware
+  gating with no sneak paths is what makes the off-state story real instead of
+  rhetorical (priority #1). One QFN32
   replaces 4+ packages (priority #3) and is a part Apple/Nordic-adjacent interviewers
   recognize (priority #4).
 - **Risk accepted:** QFN-32 0.4 mm... *(pitch verified against datasheet in D-010)*
@@ -80,7 +81,7 @@ Priorities used to break ties, in order:
   held off in firmware for production power figures - D-012).
 - **Why:** Every always-on rail costs quiescent current; one hysteretic-mode buck is the
   minimum viable always-on domain (priority #1). Full hardware gating of display+sensors
-  removes their leakage entirely in ship/deep-sleep states and prevents sneak back-feed
+  removes their leakage entirely in ship mode and prevents sneak back-feed
   paths through GPIO (verified in the leakage review). 3.0 V (not 3.3 V) is chosen
   because every load (nRF52840: 1.7-3.6 V, BMI270: 1.71-3.6 V, Sharp MIP: 2.7-3.3 V
   typ 3.0 V) is happy there, it maximizes usable LiPo discharge range through the buck,
@@ -191,7 +192,7 @@ Three power tiers, each with a projected budget to be computed part-by-part in
   without inventing an un-datasheet-ed "unused buck" strapping. Its disable is a checked
   item in the verification report's leakage review.
 - **Load switches:** LSW1 ← 3V0 -> display VDD/VDDA; LSW2 ← 3V0 -> IMU VDD.
-  (LSIN1/LSIN2 wired from BUCK2 output, load-switch mode, so deep sleep can cut both
+  (LSIN1/LSIN2 wired from BUCK2 output, load-switch mode, so ship mode can cut both
   domains completely.)
 
 ## D-013: Display connector - Hirose FH12A, low stock flagged

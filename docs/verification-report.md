@@ -36,7 +36,7 @@ priority bring-up measurement).
 | Tier | Projection | Notes |
 |---|---|---|
 | Ship mode | 0.37 µA (PMIC) - cell self-discharge (~2-3 %/month) dominates | nPM1300 PS Table 4: IQSHIP = 370 nA; battery fully disconnected from VSYS |
-| Hibernate | 0.5 µA | IQSHIPT = 500 nA (wake-timer running) |
+| Hibernate | 0.5 µA | IQSHIPT = 500 nA (wake-timer variant; PMIC capability only - the firmware's three tiers don't use it) |
 | ACTIVE (display refresh on change, IMU 50 Hz, BLE connected 100 ms/latency 4) | ~ 250-400 µA avg | dominated by IMU full-ODR (~ 200 µA) + BLE connection events; display redraw is event-driven, ~0 between changes |
 
 ### Life projections (150 mAh)
@@ -81,7 +81,7 @@ priority bring-up measurement).
 - **Charge-temperature protection is real hardware**: on-board 10 k B=3380 NTC
   (D-017) matching the devicetree charger config. PASS.
 - Load-switch gating: display and IMU rails are LDO1/LDO2 in LDSW mode fed
-  from BUCK2 - deep sleep can cut both domains to zero. PASS.
+  from BUCK2 - ship mode can cut both domains to zero. PASS.
 - Ground return integrity: review found 16 outer-layer ground islands whose
   component pads had no via to the In2 plane (initially mis-assessed as
   cosmetic). 13 stitch vias added, covering the IMU ground pins, ESD array,

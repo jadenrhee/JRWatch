@@ -260,8 +260,11 @@ class Builder:
         for value, net, x, y, rot, side, idx in sats:
             cands = [r for r in self.find_passives(value, net) if r not in used]
             if not cands:
-                print(f'!! no candidate for {value} on {net}')
-                continue
+                # fatal: a silently skipped part would save a board with
+                # copper missing (e.g. LFXO caps after the D-026 value
+                # change, if the netlist wasn't regenerated first)
+                sys.exit(f'!! no candidate for {value} on {net} - '
+                         'regenerate the netlist (skidl) before building')
             ref = cands[min(idx, 0) if idx < len(cands) else 0] \
                 if idx >= len(cands) else cands[idx]
             used.add(ref)
@@ -292,15 +295,16 @@ class Builder:
                 cands = [r for r in self.find_passives(value, net)
                          if r not in used]
             if not cands:
-                print(f'!! no candidate for R {value} on {net}')
-                continue
+                sys.exit(f'!! no candidate for R {value} on {net} - '
+                         'regenerate the netlist (skidl) before building')
             used.add(cands[0])
             self.add_part(cands[0], x, y, rot, side)
 
         placed = set(self.fps)
         missing = [p['ref'] for p in self.nl['parts'] if p['ref'] not in placed]
         if missing:
-            print('!! UNPLACED:', missing)
+            sys.exit(f'!! UNPLACED: {missing} - refusing to save a '
+                     'partial board')
 
         # functional silkscreen: battery polarity beside the actual J3 pads
         # (safety: pigtail polarity varies by vendor - see review checklist)

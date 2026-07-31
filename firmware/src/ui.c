@@ -24,46 +24,63 @@ static const struct device *const lsw_disp =
 	DEVICE_DT_GET(DT_NODELABEL(npm1300_lsw_disp));
 
 static bool disp_powered;
+static bool cfb_ready;
 static char last_frame[48];
 
 int jr_ui_display_power(bool on)
 {
-	int err = 0;
+	int err;
 
 	if (on == disp_powered) {
 		return 0;
 	}
-	if (on) {
-		err = regulator_enable(lsw_disp);
-		if (err == -EALREADY) {
-			err = 0;
-		}
-		if (err == 0) {
-			k_msleep(2);            /* panel VDD settle */
-			/* deferred init (see dts): the ls0xx driver must not
-			 * probe at boot while VDD_DISP is off; first power-up
-			 * runs it by hand */
-			if (!device_is_ready(disp)) {
-				err = device_init(disp);
-			}
-		}
-		if (err == 0) {
-			err = cfb_framebuffer_init(disp);
-			(void)display_blanking_off(disp);
-			last_frame[0] = '\0';   /* force a redraw */
-		}
-	} else {
+	if (!on) {
 		/* drive interface lines low before cutting the rail so the
 		 * unpowered panel is never back-fed through its inputs */
 		(void)display_blanking_on(disp);
 		err = regulator_disable(lsw_disp);
+		if (err == 0) {
+			disp_powered = false;
+		} else {
+			LOG_ERR("display power off: %d", err);
+		}
+		return err;
 	}
-	if (err == 0) {
-		disp_powered = on;
-	} else {
-		LOG_ERR("display power %d: %d", on, err);
+
+	err = regulator_enable(lsw_disp);
+	if (err == -EALREADY) {
+		err = 0;
 	}
-	return err;
+	if (err != 0) {
+		LOG_ERR("display rail enable: %d", err);
+		return err;
+	}
+	k_msleep(2);                    /* panel VDD settle */
+	/* deferred init (see dts): the ls0xx driver must not probe at
+	 * boot while VDD_DISP is off; first power-up runs it by hand */
+	if (!device_is_ready(disp)) {
+		err = device_init(disp);
+	}
+	/* CFB k_malloc's its frame buffer on every init and never frees
+	 * it - against the 4 KB heap a second init would fail. Init once
+	 * and reuse across rail cycles. */
+	if (err == 0 && !cfb_ready) {
+		err = cfb_framebuffer_init(disp);
+		cfb_ready = (err == 0);
+	}
+	if (err != 0) {
+		/* failed partway: don't leave the rail latched on */
+		(void)regulator_disable(lsw_disp);
+		LOG_ERR("display power on: %d", err);
+		return err;
+	}
+	/* repaint before unblanking: the rail cycle leaves random data in
+	 * panel RAM, and ls0xx only clears it at its one-time init */
+	disp_powered = true;
+	last_frame[0] = '\0';
+	jr_ui_render();
+	(void)display_blanking_off(disp);
+	return 0;
 }
 
 int jr_ui_init(void)

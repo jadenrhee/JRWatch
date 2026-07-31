@@ -49,7 +49,8 @@ Mechanisms:
   accuracy - cheaper than LFRC + calibration (decision D-009).
 - **Ship mode**: 5 s long-press on SW2, executed from the main loop:
   `regulator_parent_ship_mode()` (TASKENTERSHIPMODE) disconnects the
-  battery; a refusal (USB power present) is detected and recovered
+  battery. On USB power the request is refused up front (the PS forbids
+  writing the task with VBUS present); a failed entry recovers the face
   instead of hanging.
 - **Battery %**: nPM1300 charger measurements (VBAT/status via sensor
   channels) + an OCV table. Nordic's `nrf_fuel_gauge` (NCS) is the
