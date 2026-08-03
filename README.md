@@ -2,27 +2,33 @@
 
 [![firmware build](https://github.com/jadenrhee/JRWatch/actions/workflows/firmware.yml/badge.svg)](https://github.com/jadenrhee/JRWatch/actions/workflows/firmware.yml)
 
-A smartwatch built from scratch. 36 mm 4-layer board with an nRF52840 module,
-nPM1300 PMIC, BMI270 IMU, and a Sharp memory-in-pixel display, running Zephyr.
-Built around low sleep current.
+A smartwatch I designed from scratch, circuit board included. It's 36 mm
+across and 4 layers. An nRF52840 does the Bluetooth, an nPM1300 handles
+charging and the power rails, and a BMI270 handles motion. The screen is
+a Sharp memory-in-pixel LCD, which holds a static image on about 12 µW.
+The code runs on Zephyr.
+
+I spent most of this project chasing idle current, meaning how little it
+draws while it's just sitting on your wrist.
 
 <p align="center">
   <img src="fab/renders/layers-top.svg" width="330" alt="front copper"/>
   <img src="fab/renders/layers-bottom.svg" width="330" alt="back copper"/>
 </p>
-<p align="center"><sub>F.Cu + front silk (left), B.Cu + back silk (right). 36 × 36 mm, 4 layers.</sub></p>
+<p align="center"><sub>Front of the board on the left, back on the right. 36 x 36 mm, 4 layers.</sub></p>
 
 | | |
 |---|---|
-| Sleep current | ~15 µA projected, ~26 µA still advertising |
-| Battery life | ~4–8 months on a 150 mAh cell |
+| Sleep current | about 15 µA, or 26 µA while it's advertising over Bluetooth (1.5 s interval, not connected) |
+| Battery life | about 4 months if it's connected to a phone all day, 8 if it mostly just sits there, on a 150 mAh cell |
 | Firmware | Zephyr v4.1.0, 232 KiB flash / 40 KiB RAM |
 
-Projected from datasheet typicals, not measured. Itemized with sources in the
-[verification report](docs/verification-report.md); part choices in the
-[design rationale](docs/design-rationale.md).
+I worked these out from the datasheets, so they're estimates. I haven't
+measured a real board yet. The math is all in the
+[verification report](docs/verification-report.md). I wrote up the part
+choices in the [design rationale](docs/design-rationale.md).
 
-## Architecture
+## How it's put together
 
 ```mermaid
 flowchart LR
@@ -44,38 +50,39 @@ flowchart LR
   MCU -.->|SPI1| IMU
 ```
 
-Solid lines are power rails, dashed are data. The display and IMU sit behind
-load switches: in armed sleep they idle at ~4 µA (static face) and ~6 µA
-(motion wake); ship mode cuts both rails to zero. Full net list is
+Solid lines are power, dashed lines are data. The screen and the motion
+sensor each sit behind a switch inside the power chip. While the watch is
+idle they only pull about 4 µA and 6 µA. In ship mode the chip cuts the
+battery off completely and the whole watch drops to 370 nA, low enough
+that the cell's own self-discharge is what actually drains it. The full
+parts list lives in
 [`hardware/skidl/jrwatch.py`](hardware/skidl/jrwatch.py).
 
 <p align="center">
   <img src="hardware/enclosure/enclosure-closed.png" width="300" alt="case"/>
 </p>
 
-## Status
+## Where it's at
 
-Not yet fabricated. A pre-order review caught the display FPC connector in a
-spot the panel's tail can't reach, with a pin order that ignored the fold-under
-mounting (the fold flips the contact face and reverses the order). The
-schematic is fixed and re-verified; the layout rework hasn't landed yet —
-D-025 in the [decision log](docs/decision-log.md).
+I haven't had the board made yet. Before ordering I went back through
+everything and found a problem with the connector the screen plugs into.
+Both halves of it come from the same thing. The ribbon exits the middle
+of the panel and has to fold 180 degrees back on itself underneath, and
+that fold only leaves about a 9 mm window where the connector can go.
+Mine wasn't in it. The fold also flips the contacts over, which reverses
+the pin order, and I had them running straight through.
+
+The pin order is fixed in the schematic. Moving the connector is a
+layout change and that part isn't done, so ordering is on hold. It's
+written up as D-025 in the [decision log](docs/decision-log.md).
+
+I'd rather catch that on my screen than on a board I already paid for.
 
 ## Firmware
 
-Custom Zephyr board definition. Three power tiers (active, armed sleep, ship
-mode) mapped to the hardware power domains. Display redraws only on change,
-IMU wakes the SoC on motion, RTT console. BLE exposes battery plus a custom
-step-count service ([protocol](docs/protocol.md)).
-
-## Repo layout
-
-| Path | What's in it |
-|---|---|
-| `hardware/skidl/` | Schematic source of record |
-| `hardware/jrwatch.kicad_pcb` | The board (KiCad 10) |
-| `hardware/scripts/` | Board generation and verification tooling |
-| `hardware/enclosure/` | Printable case (OpenSCAD + STLs) |
-| `fab/` | Gerbers, BOM/CPL, renders, order notes |
-| `firmware/` | Zephyr app, board definition, CI |
-| `docs/` | [Decisions](docs/decision-log.md) · [Rationale](docs/design-rationale.md) · [Verification](docs/verification-report.md) · [Protocol](docs/protocol.md) |
+I wrote an out-of-tree Zephyr board port for it, devicetree and Kconfig
+and all. There are three power modes. Awake, asleep but still watching
+for motion, and fully off. The screen only redraws when something on it
+changes, and the motion sensor wakes the chip when you lift your wrist.
+Over Bluetooth it reports battery level and step count
+([protocol](docs/protocol.md)).
