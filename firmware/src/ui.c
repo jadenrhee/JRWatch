@@ -85,7 +85,7 @@ int jr_ui_display_power(bool on)
 
 int jr_ui_init(void)
 {
-	/* the panel itself is zephyr,deferred-init — it is probed on the
+	/* the panel itself is zephyr,deferred-init; it is probed on the
 	 * first jr_ui_display_power(true), after its rail is up */
 	if (!device_is_ready(lsw_disp)) {
 		LOG_ERR("display load switch not ready");

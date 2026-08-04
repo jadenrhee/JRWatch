@@ -1,5 +1,5 @@
 /*
- * JRWatch — main state machine.
+ * JRWatch main state machine.
  *
  * The whole application is event-driven: between events the SoC sits in
  * System ON idle (WFI via the Zephyr idle thread) and every peripheral is
@@ -39,7 +39,7 @@ static void button_cb(struct input_event *evt, void *user_data)
 		last_button_down = k_uptime_get();
 		button_pressed = true;
 	} else {
-		/* only honor a release whose press edge we saw — an unpaired
+		/* only honor a release whose press edge we saw; an unpaired
 		 * release would compare against a zero timestamp and request
 		 * ship mode spuriously */
 		if (button_pressed &&
@@ -105,8 +105,8 @@ int main(void)
 
 		if (ev & JR_EVT_SHIP) {
 			/* does not return unless entry is refused (USB
-			 * power); on refusal fall through — the BUTTON bit
-			 * wakes the face back up */
+			 * power); on refusal fall through and let the
+			 * BUTTON bit wake the face back up */
 			jr_power_ship_mode();
 		}
 
@@ -128,8 +128,8 @@ int main(void)
 				enter_idle();
 			}
 		} else {
-			/* IDLE: the timeout wake is just the RTC — re-render so
-			 * the face's minute stays current (no-op unless the
+			/* IDLE: the timeout wake is just the RTC, so re-render
+			 * to keep the face's minute current (no-op unless the
 			 * frame content actually changed) */
 			jr_ui_render();
 		}

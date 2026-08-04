@@ -1,13 +1,13 @@
-/* JRWatch firmware — shared state and module interfaces. */
+/* JRWatch firmware: shared state and module interfaces. */
 #ifndef JRWATCH_H_
 #define JRWATCH_H_
 
 #include <zephyr/kernel.h>
 
 /* Power tiers (documented in docs/verification-report.md):
- *  ACTIVE    — display on, BLE connectable, IMU 50 Hz
- *  IDLE      — "armed sleep": System ON idle, IMU any-motion wake armed,
- *              display holding a static face, BLE off or slow advertising
+ *  ACTIVE    display on, BLE connectable, IMU 50 Hz
+ *  IDLE      "armed sleep": System ON idle, IMU any-motion wake armed,
+ *            display holding a static face, BLE off or slow advertising
  *  (ship mode is entered via the PMIC and exits only by SW1/VBUS)
  */
 enum jr_state {

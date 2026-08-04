@@ -128,10 +128,10 @@ Worst case is the 500 mA USB input limit (charging + system), ΔT = 10 °C:
 
 ## 6. USB - **PASS**
 
-- D+/D− routed as a coupled pair (0.2 mm), one deliberate F.Cu crossover
+- D+/D- routed as a coupled pair (0.2 mm), one deliberate F.Cu crossover
   strap (the 16-pin connector interleaves the pair; one crossover is
   topologically required - D-log). Summed routed length (connector-side +
-  module-side nets, measured from the board file): D+ 33.2 mm vs D− 29.8 mm:
+  module-side nets, measured from the board file): D+ 33.2 mm vs D- 29.8 mm:
   **skew 3.4 mm ~ 22 ps ≈ 0.03 %** of a Full-Speed bit (83 ns) at
   v ≈ 1.52·10⁸ m/s. Full-Speed USB has no intra-pair skew requirement at this
   scale, so no serpentine was added; the skew is recorded here instead. PASS.
@@ -146,10 +146,10 @@ Worst case is the 500 mA USB input limit (charging + system), ΔT = 10 °C:
 
 - CL = 12.5 pF crystal (Epson Q13FC13500004). With per-side load caps C and
   per-side stray Cs, the crystal sees CL_eff = (C + Cs) / 2. The original
-  12 pF fit came from misapplying C = 2·(CL − Cs) with the per-side stray:
+  12 pF fit came from misapplying C = 2·(CL - Cs) with the per-side stray:
   with Cs ~ 6.5 pF/side (nRF XL pin ~ 4 pF + PCB ~ 2.5 pF) it gave
   CL_eff ≈ 9.25 pF vs the 12.5 pF spec - tens of ppm fast, i.e. seconds/day.
-  The correct fit is C = 2·CL − Cs ≈ 18.5 → **18 pF**, now in the schematic
+  The correct fit is C = 2·CL - Cs ≈ 18.5 → **18 pF**, now in the schematic
   source (C16/C17, D-026): CL_eff = (18 + 6.5)/2 ≈ **12.25 pF**, within a
   few percent of spec for any plausible stray. The stray estimate is still
   the softest number here, so measure ppm at bring-up - pads are 0402 and a

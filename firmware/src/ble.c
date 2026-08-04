@@ -6,7 +6,7 @@
  *   6a570001  step count      uint32 LE  read + notify
  *   6a570002  activity state  uint8      read (0=idle, 1=active)
  *
- * Advertising uses slow intervals (1–2 s) — connectable but cheap: the
+ * Advertising uses slow intervals (1-2 s), connectable but cheap. The
  * watch is the peripheral and latency matters less than idle current.
  */
 #include <zephyr/kernel.h>
@@ -69,7 +69,7 @@ static const struct bt_data ad[] = {
 		sizeof(CONFIG_BT_DEVICE_NAME) - 1),
 };
 
-/* slow advertising: 1–2 s interval keeps advertise current in the low µA */
+/* slow advertising: 1-2 s interval keeps advertise current in the low µA */
 static const struct bt_le_adv_param adv_slow = BT_LE_ADV_PARAM_INIT(
 	BT_LE_ADV_OPT_CONN, 0x0640 /* 1 s */, 0x0c80 /* 2 s */, NULL);
 

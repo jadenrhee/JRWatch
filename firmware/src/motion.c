@@ -25,7 +25,7 @@ LOG_MODULE_REGISTER(motion, CONFIG_LOG_DEFAULT_LEVEL);
 
 static const struct device *const imu = DEVICE_DT_GET_ONE(bosch_bmi270);
 
-/* ACTIVE-state step sampling cadence — matches the 50 Hz accel ODR */
+/* ACTIVE-state step sampling cadence, matches the 50 Hz accel ODR */
 #define STEP_SAMPLE_MS   20
 
 static void motion_trigger(const struct device *dev,

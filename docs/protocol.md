@@ -2,7 +2,7 @@
 
 Device name `JRWatch`, BLE peripheral, connectable slow advertising
 (1-2 s interval). Preferred connection parameters: 50-100 ms interval,
-slave latency 4, timeout 4 s - chosen for idle-connected current, not
+slave latency 4, timeout 4 s, chosen for idle-connected current rather than
 latency.
 
 ## Services
@@ -24,7 +24,7 @@ channels + OCV table; NCS `nrf_fuel_gauge` is the drop-in upgrade).
 | Activity state | `6a570002-...` | read | uint8: 0 = idle (armed sleep), 1 = active |
 
 Step notifications are emitted only when the value changes and only while a
-client has subscribed - no periodic radio traffic otherwise.
+client has subscribed. There is no periodic radio traffic otherwise.
 
 ## Planned (documented, not yet implemented)
 

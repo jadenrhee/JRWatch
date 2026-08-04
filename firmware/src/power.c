@@ -100,7 +100,7 @@ void jr_power_sample(void)
 			       (enum sensor_channel)SENSOR_CHAN_NPM1300_CHARGER_STATUS,
 			       &v) == 0) {
 		/* any charging phase counts as charging: TRICKLE (bit 2),
-		 * CC (bit 3), CV (bit 4) — COMPLETED (bit 1) is not charging */
+		 * CC (bit 3), CV (bit 4). COMPLETED (bit 1) is not charging */
 		jr_status.charging = (v.val1 & 0x1C) != 0;
 	}
 	(void)bt_bas_set_battery_level(jr_status.battery_pct);
@@ -131,13 +131,13 @@ void jr_power_ship_mode(void)
 	 * path). */
 	(void)jr_ui_display_power(false);
 	k_msleep(10);
-	/* TASKENTERSHIPMODE via the regulator parent — true ship mode
+	/* TASKENTERSHIPMODE via the regulator parent gives true ship mode
 	 * (IQSHIP), not hibernate's wake-timer variant. Exit: SW1 (SHPHLD
-	 * low >= 96 ms) or VBUS. With VBUS absent, entry is immediate —
+	 * low >= 96 ms) or VBUS. With VBUS absent, entry is immediate, so
 	 * on success this does not return. */
 	err = regulator_parent_ship_mode(regulators);
 	k_msleep(100);
-	/* still running: entry failed (bus error?) — recover the face */
+	/* still running: entry failed (bus error?), so recover the face */
 	LOG_WRN("ship mode failed (err %d)", err);
 	(void)jr_ui_display_power(true);
 }

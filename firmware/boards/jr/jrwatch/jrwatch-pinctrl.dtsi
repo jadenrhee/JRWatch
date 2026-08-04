@@ -1,4 +1,4 @@
-/* JRWatch pin control — matches the schematic pin table exactly. */
+/* JRWatch pin control. Matches the schematic pin table exactly. */
 
 &pinctrl {
 	i2c0_default: i2c0_default {

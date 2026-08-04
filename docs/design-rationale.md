@@ -15,23 +15,23 @@ USB-C ──► nPM1300 PMIC ──► BUCK2 3.0V (always-on) ──► nRF52840
 ```
 
 One always-on rail, two hardware-gated domains, everything else dead in
-sleep. The idea is simple: if a part can leak current, don't leave it
-electrically attached while the watch is idle. That's the entire trick
-behind the sleep numbers.
+sleep. If a part can leak current, it doesn't stay electrically attached
+while the watch is idle. The sleep numbers follow from that.
 
 ## BLE SoC - Raytac MDBT50Q-1MV2 (D-001, D-010)
 
 nRF52840 with the antenna already tuned and certified (FCC/CE/TELEC).
 A bare chip + meandered-F antenna needs VNA matching this project can't do;
-an untuned antenna costs link budget -> retransmissions -> battery, silently.
+an untuned antenna silently costs link budget -> retransmissions -> battery.
 The module still demands real layout discipline: 61 castellations, a
 hard 12.4 × 3.8 mm all-layer keep-out, and radio-adjacent pins that are
-restricted to low-frequency signals (datasheet §2.6) - respected in the pin
-map (buttons/EXTCOMIN only on those pins). Datasheet: Raytac spec Ver.K.
+restricted to low-frequency signals (datasheet §2.6). The pin map respects
+that restriction, with only buttons and EXTCOMIN on those pins. Datasheet:
+Raytac spec Ver.K.
 
 ## PMIC - Nordic nPM1300 (D-002, D-011, D-012)
 
-The one-chip version of the entire power story: linear LiPo charger with
+One chip covers the whole power path: linear LiPo charger with
 NTC/JEITA windows, two 200 mA bucks, two load switches, USB-C sink
 detection, ship mode (370 nA), and the measurement chain for Nordic's fuel
 gauge. Bucks are asymmetric in their VSET tables, which decided the rail
@@ -45,24 +45,25 @@ pack.
 ## IMU - Bosch BMI270 (D-003)
 
 The common choice in shipping wearables, picked for its 5.9 µA low-power
-accel mode with a hardware any-motion interrupt: the SoC sleeps and the
-wrist wakes it. SPI (not I2C) keeps active-mode transactions short; VDDIO
+accel mode with a hardware any-motion interrupt, so the SoC can stay asleep
+until the wrist moves. SPI (not I2C) keeps active-mode transactions short; VDDIO
 rides the always-on rail so the interface stays defined while VDD is gated
 (explicitly allowed by the datasheet); unused aux/OIS pins strapped per
 Table 22.
 
 ## Display - Sharp Memory-in-Pixel LS013B7DH03 (D-004, D-013)
 
-Chosen on power: the panel retains its image at 12 µW typical, so the watch
-face costs ~4 µA while the system sleeps - no backlight, sunlight-readable.
-A GC9A01-class TFT draws three orders of magnitude more. The costs: 10-pin FPC assembly, a 1 Hz EXTCOMIN toggle
-(driven by a timer, not the CPU; EXTMODE strapped high), and 128×128 mono
-aesthetics. Firmware only redraws when content changes.
+Chosen on power. The panel retains its image at 12 µW typical, so the watch
+face costs ~4 µA while the system sleeps, with no backlight and readable in
+sunlight. A GC9A01-class TFT draws three orders of magnitude more. The costs:
+10-pin FPC assembly, a 1 Hz EXTCOMIN toggle (driven by a timer, not the CPU;
+EXTMODE strapped high), and 128×128 mono aesthetics. Firmware only redraws
+when content changes.
 
 ## USB-C (D-015, D-019)
 
 Charge + Full-Speed data (nRF52840 USB for DFU). CC lines go straight to
-the nPM1300 - it implements Type-C sink detection internally, so the
+the nPM1300, which implements Type-C sink detection internally, so the
 classic 5.1 k pull-downs would be wrong here, not just redundant. ESD
 (USBLC6-2SC6) sits in the data path; VBUS enters through one merged pad
 pair (each physical pad on this connector already bridges A/B) with an
@@ -70,11 +71,11 @@ IPC-2221-verified width.
 
 ## Controls (D-014)
 
-Two side buttons. SW1 goes **only** to the PMIC's SHPHLD pin - that node
+Two side buttons. SW1 goes **only** to the PMIC's SHPHLD pin. That node
 swings to VBAT and must never meet an nRF GPIO; it wakes the board from
-ship mode in hardware. SW2 is the user button on P1.13 (a radio-restricted
-low-frequency pin - buttons are exactly what those pins are for) with GPIO
-SENSE wake. Both lines: 100 Ω series + SOD-923 TVS sized to their voltage
+ship mode in hardware. SW2 is the user button on P1.13 with GPIO SENSE
+wake; that pin is one of the radio-restricted low-frequency ones, which is
+fine for a button. Both lines: 100 Ω series + SOD-923 TVS sized to their voltage
 domains (5 V part on the VBAT-domain node, 3.3 V part on the logic node).
 
 ## Timekeeping (D-009)
@@ -103,10 +104,10 @@ UART.
 
 ## Not included (and why)
 
-- Charge LED (D-016) - invisible in a case, ruinous to the µA budget.
-- PPG heart rate (stretch in the brief) - omitted to protect the core
+- Charge LED (D-016): invisible in a case, and it would wreck the µA budget.
+- PPG heart rate (stretch in the brief): omitted to protect the core
   power/size goals; the gated `VDD_IMU` domain and spare module pins are
-  the landing zone for a future MAX30101 daughter experiment.
-- NFC antenna - module pins exist, no user story on this product.
-- Bare-chip + tuned trace antenna respin - documented stretch once a VNA
+  where a future MAX30101 daughter experiment would land.
+- NFC antenna: module pins exist, but there is no use for it on this product.
+- Bare-chip + tuned trace antenna respin: documented stretch once a VNA
   is available (D-001).

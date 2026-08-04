@@ -1,5 +1,5 @@
 /*
- * JRWatch r1 — Raytac MDBT50Q-1MV2 (nRF52840) wearable.
+ * JRWatch r1: Raytac MDBT50Q-1MV2 (nRF52840) wearable.
  * Pin map is the schematic of record (hardware/skidl/jrwatch.py):
  *   I2C0  SDA P0.14  SCL P0.13   -> nPM1300 PMIC (addr 0x6B)
  *   SPI1  SCK P0.19 MOSI P0.21 MISO P0.23 CS P0.22, INT1 P0.25 -> BMI270
@@ -81,7 +81,7 @@
 			compatible = "nordic,npm1300-regulator";
 
 			/* BUCK1: populated per reference config, held OFF by
-			 * firmware (D-012) — 1.8 V experiment rail only. */
+			 * firmware (D-012); 1.8 V experiment rail only. */
 			npm1300_buck1: BUCK1 {
 				regulator-min-microvolt = <1800000>;
 				regulator-max-microvolt = <1800000>;

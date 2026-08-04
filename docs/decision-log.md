@@ -34,11 +34,10 @@ Priorities used to break ties, in order:
 - **Why:** Power management *is* the project story. The nPM1300 gives coulomb-counting
   class fuel gauging (VBAT/IBAT/temp measurement feeding Nordic's fuel-gauge algorithm),
   hardware ship mode (~µA off-state), programmable charge current, and two load-switch
-  outputs used here to hard-gate the display and sensor rails in ship mode - hardware
-  gating with no sneak paths is what makes the off-state story real instead of
-  rhetorical (priority #1). One QFN32
-  replaces 4+ packages (priority #3) and is a part Apple/Nordic-adjacent interviewers
-  recognize (priority #4).
+  outputs used here to hard-gate the display and sensor rails in ship mode. Gating in
+  hardware leaves no sneak paths, so the off-state figure is real rather than
+  rhetorical (priority #1). One QFN32 replaces 4+ packages (priority #3) and is a part
+  Apple/Nordic-adjacent interviewers recognize (priority #4).
 - **Risk accepted:** QFN-32 0.4 mm... *(pitch verified against datasheet in D-010)*
   reflow requires hot-air/stencil rather than an iron; acceptable for a solo builder
   with paste + hot plate, and JLCPCB can assemble it if hand assembly fails (priority #2).
@@ -59,14 +58,14 @@ Priorities used to break ties, in order:
   (b) GC9A01 round TFT (240×240, SPI).
 - **Decision: (a) Sharp MIP LS013B7DH03.** *(Supply voltage and FPC pinout verified
   against the Sharp datasheet in D-011 before committing the schematic.)*
-- **Why:** Power is the deciding factor and it is not close: the MIP panel holds a
-  static image at single-digit-µW (it only draws meaningful current while lines are
-  being rewritten), needs no backlight, and is always readable in daylight - a watch
-  face that costs ~µA average. A GC9A01 TFT draws tens of mA with backlight on and
-  ~mA-class even dimmed; it would destroy the armed-sleep budget that is the entire
-  headline (priority #1). MIP sourcing is via Digi-Key/Mouser/Adafruit rather than LCSC -
-  acceptable because the display is a hand-attached FPC module, never JLC-assembled;
-  only its 10-pin FPC *connector* must be LCSC-stocked (priority #2).
+- **Why:** Power decides this one. The MIP panel holds a static image at
+  single-digit-µW (it only draws meaningful current while lines are being rewritten),
+  needs no backlight, and stays readable in daylight, so the watch face costs ~µA
+  average. A GC9A01 TFT draws tens of mA with backlight on and ~mA-class even dimmed;
+  it would destroy the armed-sleep budget, which is the headline number (priority #1).
+  MIP sourcing is via Digi-Key/Mouser/Adafruit rather than LCSC. That is acceptable
+  because the display is a hand-attached FPC module, never JLC-assembled; only its
+  10-pin FPC *connector* must be LCSC-stocked (priority #2).
 - **Logged:** GC9A01 kept as the documented fallback if MIP sourcing collapses.
 
 ## D-005: System rails and power-gating topology
@@ -116,8 +115,8 @@ Three power tiers, each with a projected budget to be computed part-by-part in
   signal/components.
 - **Why:** The Sharp 1.28" panel (~27 × 28 mm active module) sets the minimum face size;
   36 mm is small-watch territory and leaves a real antenna keep-out strip plus button /
-  USB edge room (priority #3). 4 layers with a dedicated unbroken GND plane (In2)
-  is what makes the PMIC switching loops and module grounding verifiable
+  USB edge room (priority #3). A dedicated unbroken GND plane (In2) on the 4-layer
+  stack keeps the PMIC switching loops and module grounding verifiable
   (priority #1); 0.8 mm halves stack height in a wearable and is a standard JLC 4-layer
   offering (priority #2). USB is FS-only (12 Mbps) over ~15 mm - controlled impedance
   is not required; the pair is still routed tightly coupled and length-matched as good
@@ -128,8 +127,8 @@ Three power tiers, each with a projected budget to be computed part-by-part in
 - **Decision:** TC2030-IDC-NL footprint (no connector BOM cost, zero height) for SWD,
   plus nRF52840 USB DFU (factory Nordic bootloader is absent on Raytac modules -
   a UF2/MCUboot bootloader is flashed once over SWD, then USB DFU serves daily
-  development). Also: SWDIO/SWCLK castellations are what Tag-Connect lands on; no
-  10-pin Cortex header fits a 36 mm watch.
+  development). Tag-Connect lands on the SWDIO/SWCLK castellations; no 10-pin
+  Cortex header fits a 36 mm watch.
 - **Why:** Space (priority #3) and solo-builder practicality (priority #2).
 
 ## D-009: 32.768 kHz timekeeping crystal - include it
@@ -137,7 +136,7 @@ Three power tiers, each with a projected budget to be computed part-by-part in
 - **Options:** (a) external 32.768 kHz crystal (Epson FC-135 class) on P0.00/P0.01;
   (b) internal LFRC oscillator.
 - **Decision: (a) external crystal.**
-- **Why:** This is a *watch*: LFRC's ±250 ppm-class error is minutes/week of drift and
+- **Why:** On a watch, LFRC's ±250 ppm-class error is minutes/week of drift, and
   it costs more current than the LFXO once calibration wakeups are counted
   (LFXO ~ 0.23 µA vs LFRC ~ 0.7 µA + periodic HFCLK calibration bursts on nRF52840).
   Crystal accuracy also tightens BLE sleep-clock windows -> shorter radio-on time per
@@ -154,10 +153,10 @@ Three power tiers, each with a projected budget to be computed part-by-part in
   MDBT50Q-1MV2 in stock, ships today.
 - **Options:** (a) keep 1MV2, source DigiKey, hand-place; (b) swap to an LCSC-stocked
   non-Raytac module (e.g. Ebyte E73-2G4M08S1C); (c) wait for restock.
-- **Decision: (a).** The module's castellated pads are the single most iron-friendly
-  package on the board - hand-placing it costs nothing in practice (priority #2 intact),
-  and Raytac + nRF52840 is the wearable-industry-standard combination the project story
-  depends on (priorities #1/#4). The KiCad footprint accepts 1MV2 and P1MV2
+- **Decision: (a).** The module's castellated pads are the most iron-friendly
+  package on the board, so hand-placing it costs nothing in practice (priority #2
+  intact), and Raytac + nRF52840 is the wearable-industry-standard combination the
+  project depends on (priorities #1/#4). The KiCad footprint accepts 1MV2 and P1MV2
   interchangeably (identical pads per datasheet §2.1), so a future JLC-assembled run can
   use whichever variant LCSC restocks - C-numbers recorded in `hardware/parts.yaml`.
 - **Verified datasheet rules to carry into layout:** antenna keep-out **12.4 mm wide ×
@@ -172,8 +171,8 @@ Three power tiers, each with a projected budget to be computed part-by-part in
 - **Options:** (a) keep nPM1300, DigiKey, hand hot-air reflow; (b) invoke the discrete
   fallback (MCP73831 + MAX17048 + LDO + 2× load switch, all LCSC basic).
 - **Decision: (a).** The fallback would cost the design its ship mode, hardware
-  power-gating, coulomb-counting-class fuel gauge, and USB-C detection - i.e. the
-  measurable low-power architecture that is priority #1 - in exchange for fixing a
+  power-gating, coulomb-counting-class fuel gauge, and USB-C detection (i.e. the
+  measurable low-power architecture that is priority #1) in exchange for fixing a
   sourcing gap that DigiKey already fills. QFN32 @ 0.5 mm pitch with a 3.5 mm EP
   (PS mech spec) reflows fine with paste + hot plate. The two hand-place lines (U1, U2)
   are exactly the two parts a JLC economic-assembly order can't place today; everything
@@ -216,7 +215,7 @@ Three power tiers, each with a projected budget to be computed part-by-part in
   which buttons are perfect for) - GPIO SENSE wakes the SoC from System OFF.
   Both lines get 100 Ω series + a TVS at the switch (user-touchable nets): D2 =
   ESD9B3.3 on the SW2/GPIO line (3V0 domain), D1 = **ESD9B5.0** on the SW1/SHPHLD
-  line - that node rides the battery domain (up to ~5 V), where a 3.3 V-working
+  line, since that node rides the battery domain (up to ~5 V), where a 3.3 V-working
   part would sit in clamp. No external pull-ups -> zero standing current either
   way (priority #1).
 
@@ -241,8 +240,8 @@ Three power tiers, each with a projected budget to be computed part-by-part in
 - Small hobby LiPo packs frequently omit the thermistor lead; the nPM1300 requires NTC
   or an explicit register disable. Populating a board NTC (Murata NCP15XH103F03RC,
   10 k B3380 1%, placed at the battery connector) keeps hardware charge-temperature
-  protection real (JEITA windows in the charger) instead of software-disabled - a
-  safety-credibility point for a wearable strapped to a wrist. If a pack with its own
+  protection real (JEITA windows in the charger) instead of software-disabled, which
+  matters on something strapped to a wrist. If a pack with its own
   NTC is chosen later, the board part is depopulated and the pack lead lands on the
   same net (noted in human-review checklist).
 
@@ -372,13 +371,13 @@ Three power tiers, each with a projected budget to be computed part-by-part in
 
 ## D-026: LFXO load caps refit 12 pF → 18 pF (calculation error found on review)
 
-- **What happened:** the original fit used C = 2·(CL − Cs) with Cs = 6.5 pF as a
+- **What happened:** the original fit used C = 2·(CL - Cs) with Cs = 6.5 pF as a
   *per-side* stray - a formula that only holds when Cs is the lumped parallel
   stray. With per-side stray the crystal sees CL_eff = (C + Cs)/2, so the fitted
   12 pF landed at ≈ 9.25 pF against the Q13FC13500004's 12.5 pF spec - tens of
   ppm fast, seconds per day, on a design that rejected the LFRC over drift
   (D-009).
-- **Fix:** C = 2·CL − Cs ≈ 18.5 → **18 pF** (C16/C17), giving CL_eff ≈ 12.25 pF
+- **Fix:** C = 2·CL - Cs ≈ 18.5 → **18 pF** (C16/C17), giving CL_eff ≈ 12.25 pF
   under the same stray estimate - and closer to spec than 12 pF for any
   plausible stray, so the swap is safe even though the estimate is soft.
   Changed in the schematic source and parts.yaml; the 18 pF LCSC number gets
