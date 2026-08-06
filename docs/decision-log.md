@@ -368,6 +368,19 @@ Three power tiers, each with a projected budget to be computed part-by-part in
   routed. Remaining: the south-quadrant fabric (strap highways, DISP_SCK
   east path, 3V0 pin 12, pin 28/29 pocket) needs one interactive-router
   session; scripted attempts oscillate against the autorouter's re-lays.
+- **Correction (third pass):** (100, 107.75) does not work with the stock
+  FH12 footprint. Its MP tabs span y 108.05-110.25 and J1's pad field starts
+  at y 108.83, so the two connectors want the same space. DRC stays quiet
+  about it because both nets are GND, which is why the earlier passes read
+  as clean. The MP trim this entry already called for is what resolves it:
+  tabs re-cut to y 107.00-108.58, clearing J1 by 0.25 mm and keeping
+  2.84 mm2 of the 3.96 mm2 anchor by growing north into free space rather
+  than only cutting south. Landed with the mirrored pad order on branch
+  `d025-rework`, together with DISP_ON, EXTCOMIN, VDD_DISP, DISP_MOSI and
+  part of DISP_CS. DISP_SCK, the rest of DISP_CS, 3V0 pin 12, SHPHLD, CC2
+  and three GND zone links are still open: Freerouting plateaus and the A*
+  completer reports no path, so these are the interactive-router work.
+  Ordering stays blocked.
 
 ## D-026: LFXO load caps refit 12 pF → 18 pF (calculation error found on review)
 
