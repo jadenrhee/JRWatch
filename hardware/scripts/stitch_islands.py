@@ -7,7 +7,8 @@ and stitch them with vias where clearance allows. Usage:
 import sys
 import pcbnew
 
-BOARD = "/Users/jadenrhee/JRWatch/hardware/jrwatch.kicad_pcb"
+import os as _os
+BOARD = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "jrwatch.kicad_pcb")
 NM = pcbnew.FromMM
 CLR = 0.13
 VIA_PAD, VIA_DRILL = 0.45, 0.2
