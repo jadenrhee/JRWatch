@@ -292,12 +292,11 @@ Three power tiers, each with a projected budget to be computed part-by-part in
   Chosen because the alternative (per-pad spoke tuning) added no electrical
   value on a board with a dedicated In2 ground plane.
 
-## D-022: Seven links left unrouted at the autoroute stage
+## D-022: Seven links left open in the U2 south-west quadrant
 
-- After three autoroute rounds and a raster-verified completion pass, seven
-  links in the congested U2 south-west quadrant still could not be closed
-  without clearance violations (each attempt collided with other nets'
-  copper). Rather than force them in, each was documented with exact endpoints
+- Seven links in the congested U2 south-west quadrant could not be closed
+  without clearance violations; every attempt collided with other nets'
+  copper. Rather than force them in, each was documented with exact endpoints
   and the surrounding copper that blocks it. The board is otherwise DRC-clean
   (zero violations), and the fab README gates ordering on closing them.
 
@@ -313,11 +312,11 @@ Three power tiers, each with a projected budget to be computed part-by-part in
   These three links were mandatory: pin 20 is the PMIC's VSYS output, so the
   board was electrically dead without them.
 - The remaining four (DISP_SCK, 3V0 to pin 12, SHPHLD, CC2) were also
-  attempted: two further Freerouting rounds with 13 corridor nets ripped
-  closed SHPHLD but broke I2C_SCL in exchange, so that state was reverted.
+  attempted: ripping and re-laying 13 corridor nets closed SHPHLD but broke
+  I2C_SCL in exchange, so that state was reverted.
   Manual analysis shows each survivor is blocked by locked routing (the
   USB_DP via sits 0.45 mm under pin 12's pad mouth) or requires multi-net
-  shoves beyond safe scripted reach. They stay documented in the review
+  shoves that could not be made safely without a full re-lay. They stay documented in the review
   checklist with the updated analysis; closing them interactively is the
   remaining pre-order work.
 
@@ -367,7 +366,7 @@ Three power tiers, each with a projected budget to be computed part-by-part in
   zero-violation checkpoint with the display fan, I2C, SHPHLD and CC pair
   routed. Remaining: the south-quadrant fabric (strap highways, DISP_SCK
   east path, 3V0 pin 12, pin 28/29 pocket) needs one interactive-router
-  session; scripted attempts oscillate against the autorouter's re-lays.
+  session; every attempt so far has simply undone the one before it.
 - **Correction (third pass):** (100, 107.75) does not work with the stock
   FH12 footprint. Its MP tabs span y 108.05-110.25 and J1's pad field starts
   at y 108.83, so the two connectors want the same space. DRC stays quiet
@@ -378,8 +377,11 @@ Three power tiers, each with a projected budget to be computed part-by-part in
   than only cutting south. Landed with the mirrored pad order on branch
   `d025-rework`, together with DISP_ON, EXTCOMIN, VDD_DISP, DISP_MOSI and
   part of DISP_CS. DISP_SCK, the rest of DISP_CS, 3V0 pin 12, SHPHLD, CC2
-  and three GND zone links are still open: Freerouting plateaus and the A*
-  completer reports no path, so these are the interactive-router work.
+  and three GND zone links are still open. Each is blocked by geometry
+  rather than effort: U2 is a QFN on 0.5 mm pitch, so nothing fits between
+  adjacent pins, and the In1 3V0 pour does not start until x = 100, so a
+  via dropped straight under pin 12 lands on the VSYS island instead.
+  Closing them means working the corridor east of the pin row by hand.
   Ordering stays blocked.
 
 ## D-026: LFXO load caps refit 12 pF → 18 pF (calculation error found on review)
