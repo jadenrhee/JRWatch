@@ -32,3 +32,6 @@ twister-out*/
 
 # macOS
 .DS_Store
+
+# Private working notes
+NOTES.md
