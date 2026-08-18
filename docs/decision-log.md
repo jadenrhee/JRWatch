@@ -302,9 +302,9 @@ Three power tiers, each with a projected budget to be computed part-by-part in
 
 ## D-023: Review pass closed the three power-critical links
 
-- A dedicated layout review re-attacked the seven open links with a full
-  survey of local copper (hardware/scripts/survey.py) instead of the earlier
-  incomplete obstacle model. Result: VBAT (pin 19), VSYS pin 20 and VSYS
+- A dedicated layout review re-attacked the seven open links against a full
+  survey of the local copper, instead of the earlier incomplete obstacle
+  model. Result: VBAT (pin 19), VSYS pin 20 and VSYS
   pin 4 (PVDD) are now routed and DRC-clean. This took relocating the NTC
   trace out of the south-west slot, one drill resize on a cluster via, a
   via at the VBAT pour edge, a via-less B.Cu path for pin 20 onto existing
@@ -326,7 +326,7 @@ Three power tiers, each with a projected budget to be computed part-by-part in
   Review showed the opposite: every island carries real component ground
   pads (IMU ground pins, decoupling-cap returns, the USB ESD ground, both
   buttons), which floated without a via to the In2 plane. A clearance-checked
-  stitching pass (hardware/scripts/stitch_islands.py) added 13 vias; three
+  stitching pass added 13 vias; three
   islands (C1.2, C9.2, C21.2/C22.2 - four capacitor ground pads) have no
   legal via site without moving adjacent routing and are listed in the
   checklist for the same interactive session.
